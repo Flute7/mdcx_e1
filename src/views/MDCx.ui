@@ -24881,7 +24881,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           </size>
          </property>
          <property name="text">
-          <string> 日志</string>
+          <string> Log</string>
          </property>
         </widget>
        </item>
@@ -24916,7 +24916,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           </size>
          </property>
          <property name="text">
-          <string> 工具</string>
+          <string> Tools</string>
          </property>
         </widget>
        </item>
@@ -24951,7 +24951,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           </size>
          </property>
          <property name="text">
-          <string> 设置</string>
+          <string> Settings</string>
          </property>
         </widget>
        </item>
@@ -24986,7 +24986,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           </size>
          </property>
          <property name="text">
-          <string> 检测网络</string>
+          <string> Network</string>
          </property>
         </widget>
        </item>
@@ -25021,7 +25021,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           </size>
          </property>
          <property name="text">
-          <string> 使用说明</string>
+          <string> Help</string>
          </property>
         </widget>
        </item>
