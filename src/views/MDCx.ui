@@ -24846,7 +24846,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           <bool>false</bool>
          </property>
          <property name="text">
-          <string> 主界面</string>
+          <string> Home</string>
          </property>
         </widget>
        </item>
