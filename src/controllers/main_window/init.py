@@ -300,7 +300,7 @@ def init_QTreeWidget(self):
         signal.show_traceback_log(traceback.format_exc())
     signal.add_label_info('')
     Flags.count_claw = 0  # 批量刮削次数
-    if self.Ui.pushButton_start_cap.text() != '开始':
+    if self.Ui.pushButton_start_cap.text() != 'Start':
         Flags.count_claw = 1  # 批量刮削次数
     else:
         self.label_result.emit(' 刮削中：0 成功：0 失败：0')

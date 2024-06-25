@@ -55,7 +55,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>开始</string>
+       <string>Start</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_number1">
@@ -233,7 +233,7 @@ color:#336699</string>
        <number>0</number>
       </property>
       <property name="text">
-       <string>简介：</string>
+       <string>Introduction:</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_title">
@@ -482,7 +482,7 @@ color:#336699</string>
        <number>0</number>
       </property>
       <property name="text">
-       <string>Tag:</string>
+       <string>Tags:</string>
       </property>
      </widget>
      <widget class="QCheckBox" name="checkBox_cover">
@@ -1287,7 +1287,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        </rect>
       </property>
       <property name="text">
-       <string>开始</string>
+       <string>Start</string>
       </property>
      </widget>
      <widget class="QTextBrowser" name="textBrowser_log_main">
@@ -6830,7 +6830,7 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
            </size>
           </property>
           <property name="title">
-           <string>Tag</string>
+           <string>Tags:</string>
           </property>
           <widget class="QWidget" name="layoutWidget_7">
            <property name="geometry">
@@ -16003,7 +16003,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
            </size>
           </property>
           <property name="title">
-           <string>Tag</string>
+           <string>Tags:</string>
           </property>
           <widget class="QWidget" name="layoutWidget_21">
            <property name="geometry">
@@ -19618,7 +19618,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>简介：</string>
+               <string>Introduction:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -25323,7 +25323,7 @@ QProgressBar {
         <number>0</number>
        </property>
        <property name="text">
-        <string>简介：</string>
+        <string>Introduction:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

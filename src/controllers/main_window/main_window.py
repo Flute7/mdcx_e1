@@ -231,7 +231,7 @@ class MyMAinWindow(QMainWindow):
         else:
             menu.addAction(QAction('请刮削后使用！', self))
             menu.addSeparator()
-            if self.Ui.pushButton_start_cap.text() != '开始':
+            if self.Ui.pushButton_start_cap.text() != 'Start':
                 menu.addAction(self.menu_stop)
             else:
                 menu.addAction(self.menu_start)
@@ -661,7 +661,7 @@ class MyMAinWindow(QMainWindow):
     # region 主界面
     # 开始刮削按钮
     def pushButton_start_scrape_clicked(self):
-        if self.Ui.pushButton_start_cap.text() == '开始':
+        if self.Ui.pushButton_start_cap.text() == 'Start':
             if not get_remain_list():
                 start_new_scrape(FileMode.Default)
         elif self.Ui.pushButton_start_cap.text() == '■ 停止':
@@ -1091,7 +1091,7 @@ class MyMAinWindow(QMainWindow):
             if ok and text:
                 Flags.again_dic[file_path] = [text, '', '']
                 signal.show_scrape_info('💡 已添加刮削！%s' % get_current_time())
-                if self.Ui.pushButton_start_cap.text() == '开始':
+                if self.Ui.pushButton_start_cap.text() == 'Start':
                     again_search()
 
     def search_by_url_clicked(self):
@@ -1111,7 +1111,7 @@ class MyMAinWindow(QMainWindow):
                 if website:
                     Flags.again_dic[file_path] = ['', url, website]
                     signal.show_scrape_info('💡 已添加刮削！%s' % get_current_time())
-                    if self.Ui.pushButton_start_cap.text() == '开始':
+                    if self.Ui.pushButton_start_cap.text() == 'Start':
                         again_search()
                 else:
                     signal.show_scrape_info('💡 不支持的网站！%s' % get_current_time())
@@ -1363,7 +1363,7 @@ class MyMAinWindow(QMainWindow):
 
     # 日志页点一键刮削失败列表
     def pushButton_scraper_failed_list_clicked(self):
-        if len(Flags.failed_file_list) and self.Ui.pushButton_start_cap.text() == '开始':
+        if len(Flags.failed_file_list) and self.Ui.pushButton_start_cap.text() == 'Start':
             start_new_scrape(FileMode.Default, movie_list=Flags.failed_file_list)
             self.show_hide_failed_list(False)
 
@@ -2427,8 +2427,8 @@ class MyMAinWindow(QMainWindow):
     def reset_buttons_status(self):
         self.Ui.pushButton_start_cap.setEnabled(True)
         self.Ui.pushButton_start_cap2.setEnabled(True)
-        self.pushButton_start_cap.emit('开始')
-        self.pushButton_start_cap2.emit('开始')
+        self.pushButton_start_cap.emit('Start')
+        self.pushButton_start_cap2.emit('Start')
         self.Ui.pushButton_select_media_folder.setVisible(True)
         self.Ui.pushButton_start_single_file.setEnabled(True)
         self.pushButton_start_single_file.emit('刮削')
@@ -2467,7 +2467,7 @@ class MyMAinWindow(QMainWindow):
 
     # region 自动刮削
     def auto_scrape(self):
-        if 'timed_scrape' in config.switch_on and self.Ui.pushButton_start_cap.text() == '开始':
+        if 'timed_scrape' in config.switch_on and self.Ui.pushButton_start_cap.text() == 'Start':
             time.sleep(0.1)
             timed_interval = config.timed_interval
             self.atuo_scrape_count += 1
