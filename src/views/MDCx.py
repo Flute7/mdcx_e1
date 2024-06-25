@@ -10860,17 +10860,17 @@ class Ui_MDCx(object):
     def retranslateUi(self, MDCx):
         _translate = QtCore.QCoreApplication.translate
         MDCx.setWindowTitle(_translate("MDCx", "MDCx"))
-        self.pushButton_start_cap.setText(_translate("MDCx", "开始"))
+        self.pushButton_start_cap.setText(_translate("MDCx", "Start"))
         self.label_number1.setText(_translate("MDCx", "Number:"))
         self.label_13.setText(_translate("MDCx", "Date:"))
         self.label_actor1.setText(_translate("MDCx", "Actress:"))
-        self.label_18.setText(_translate("MDCx", "简介："))
+        self.label_18.setText(_translate("MDCx", "Introduction:"))
         self.label_title1.setText(_translate("MDCx", "Title:"))
         self.label_23.setText(_translate("MDCx", "Director:"))
         self.label_24.setText(_translate("MDCx", "Release Date:"))
         self.label_30.setText(_translate("MDCx", "Maker:"))
         self.label_31.setText(_translate("MDCx", "Series:"))
-        self.label_33.setText(_translate("MDCx", "Tag:"))
+        self.label_33.setText(_translate("MDCx", "Tags:"))
         self.checkBox_cover.setText(_translate("MDCx", "Show Cover"))
         self.label_result.setText(_translate("MDCx", " The wait begins..."))
         self.label_22.setText(_translate("MDCx", "Runtime:"))
@@ -10895,7 +10895,7 @@ class Ui_MDCx(object):
 "</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           </p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">       </p></body></html>"))
-        self.pushButton_start_cap2.setText(_translate("MDCx", "开始"))
+        self.pushButton_start_cap2.setText(_translate("MDCx", "Start"))
         self.textBrowser_log_main.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -11090,7 +11090,7 @@ class Ui_MDCx(object):
         self.label_86.setText(_translate("MDCx", "用于排除字段不存在或不合适的网站，在请求该字段网站时将不刮削这些网站"))
         self.label_405.setText(_translate("MDCx", "部分番号可以从官网获取数据，如果勾选此项，各字段将优先使用官网数据"))
         self.pushButton_field_tips_website.setText(_translate("MDCx", "详细说明"))
-        self.groupBox_76.setTitle(_translate("MDCx", "Tag"))
+        self.groupBox_76.setTitle(_translate("MDCx", "Tags:"))
         self.label_144.setText(_translate("MDCx", "刮削网站："))
         self.label_188.setText(_translate("MDCx", "排除网站："))
         self.radioButton_tag_listed.setText(_translate("MDCx", "刮削列出的网站"))
@@ -11489,7 +11489,7 @@ class Ui_MDCx(object):
         self.checkBox_actor_realname.setText(_translate("MDCx", "使用AV-wiki获取演员真实名字"))
         self.checkBox_actor_translate.setText(_translate("MDCx", "使用演员映射表翻译演员"))
         self.label_248.setText(_translate("MDCx", "演员语言："))
-        self.groupBox_85.setTitle(_translate("MDCx", "Tag"))
+        self.groupBox_85.setTitle(_translate("MDCx", "Tags:"))
         self.radioButton_tag_zh_cn.setText(_translate("MDCx", "中文简体"))
         self.radioButton_tag_zh_tw.setText(_translate("MDCx", "中文繁体"))
         self.radioButton_tag_jp.setText(_translate("MDCx", "日语"))
@@ -11683,7 +11683,7 @@ class Ui_MDCx(object):
         self.checkBox_tag_publisher.setText(_translate("MDCx", "发行商"))
         self.checkBox_nfo_series.setText(_translate("MDCx", "系列（series）"))
         self.checkBox_nfo_tag.setText(_translate("MDCx", "标签（tag）"))
-        self.label_384.setText(_translate("MDCx", "简介："))
+        self.label_384.setText(_translate("MDCx", "Introduction:"))
         self.label_208.setText(_translate("MDCx", "系列/标签："))
         self.label_418.setText(_translate("MDCx", "标签中发行的格式："))
         self.lineEdit_nfo_tag_publisher.setText(_translate("MDCx", "Distributor: publisher"))
@@ -12020,7 +12020,7 @@ class Ui_MDCx(object):
         self.pushButton_about.setText(_translate("MDCx", " Help"))
         self.pushButton_close.setText(_translate("MDCx", "×"))
         self.pushButton_min.setText(_translate("MDCx", "-"))
-        self.label_19.setText(_translate("MDCx", "简介："))
+        self.label_19.setText(_translate("MDCx", "Introduction:"))
         self.label_359.setText(_translate("MDCx", "演员："))
         self.label_360.setText(_translate("MDCx", "Number:"))
         self.label_361.setText(_translate("MDCx", "标题："))
