@@ -55,7 +55,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>开始</string>
+       <string>Start</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_number1">
@@ -71,7 +71,7 @@
        <number>0</number>
       </property>
       <property name="text">
-       <string>番号：</string>
+       <string>Number:</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_number">
@@ -425,7 +425,7 @@ color:#336699</string>
        <number>0</number>
       </property>
       <property name="text">
-       <string>制作：</string>
+       <string>Maker：</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_31">
@@ -495,7 +495,7 @@ color:#336699</string>
        </rect>
       </property>
       <property name="text">
-       <string>显示封面</string>
+       <string>Show cover</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_result">
@@ -797,7 +797,7 @@ color:#336699</string>
        <number>0</number>
       </property>
       <property name="text">
-       <string>封面：</string>
+       <string>Cover:</string>
       </property>
      </widget>
      <widget class="QTreeWidget" name="treeWidget_number">
@@ -894,12 +894,12 @@ color:#336699</string>
       </column>
       <item>
        <property name="text">
-        <string>成功</string>
+        <string>Success</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>失败</string>
+        <string>Fail</string>
        </property>
       </item>
      </widget>
@@ -976,7 +976,7 @@ color:#336699</string>
        </rect>
       </property>
       <property name="text">
-       <string>选择目录</string>
+       <string>Select directory</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_poster_size">
@@ -1287,7 +1287,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
        </rect>
       </property>
       <property name="text">
-       <string>开始</string>
+       <string>Start</string>
       </property>
      </widget>
      <widget class="QTextBrowser" name="textBrowser_log_main">
@@ -1897,7 +1897,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           </rect>
          </property>
          <property name="text">
-          <string>选择目录</string>
+          <string>Select directory</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_62">
@@ -2146,7 +2146,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           </rect>
          </property>
          <property name="text">
-          <string>选择目录</string>
+          <string>Select directory</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_340">
@@ -2187,7 +2187,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           </rect>
          </property>
          <property name="text">
-          <string>选择目录</string>
+          <string>Select directory</string>
          </property>
         </widget>
         <widget class="QWidget" name="layoutWidget">
@@ -2452,7 +2452,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                  </size>
                 </property>
                 <property name="text">
-                 <string>选择目录</string>
+                 <string>Select directory</string>
                 </property>
                </widget>
               </item>
@@ -2657,7 +2657,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                  </size>
                 </property>
                 <property name="text">
-                 <string>选择目录</string>
+                 <string>Select directory</string>
                 </property>
                </widget>
               </item>
@@ -2743,7 +2743,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                  </size>
                 </property>
                 <property name="text">
-                 <string>选择目录</string>
+                 <string>Select directory</string>
                 </property>
                </widget>
               </item>
@@ -2838,7 +2838,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
                  </size>
                 </property>
                 <property name="text">
-                 <string>选择目录</string>
+                 <string>Select directory</string>
                 </property>
                </widget>
               </item>
@@ -6830,7 +6830,7 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
            </size>
           </property>
           <property name="title">
-           <string>标签</string>
+           <string>Tag</string>
           </property>
           <widget class="QWidget" name="layoutWidget_7">
            <property name="geometry">
@@ -7038,7 +7038,7 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
            </size>
           </property>
           <property name="title">
-           <string>简介</string>
+           <string>Introduction</string>
           </property>
           <widget class="QWidget" name="layoutWidget_4">
            <property name="geometry">
@@ -8272,7 +8272,7 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
            </size>
           </property>
           <property name="title">
-           <string>系列</string>
+           <string>Series</string>
           </property>
           <widget class="QWidget" name="layoutWidget_14">
            <property name="geometry">
@@ -9979,7 +9979,7 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
            </size>
           </property>
           <property name="title">
-           <string>时长</string>
+           <string>Runtime</string>
           </property>
           <widget class="QWidget" name="layoutWidget_36">
            <property name="geometry">
@@ -10603,7 +10603,7 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
            </size>
           </property>
           <property name="title">
-           <string>导演</string>
+           <string>Director</string>
           </property>
           <widget class="QWidget" name="layoutWidget_19">
            <property name="geometry">
@@ -14616,7 +14616,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>标题：</string>
+               <string>Title:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -15587,7 +15587,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
            </size>
           </property>
           <property name="title">
-           <string>简介</string>
+           <string>Introduction</string>
           </property>
           <widget class="QWidget" name="layoutWidget_13">
            <property name="geometry">
@@ -16003,7 +16003,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
            </size>
           </property>
           <property name="title">
-           <string>标签</string>
+           <string>Tag</string>
           </property>
           <widget class="QWidget" name="layoutWidget_21">
            <property name="geometry">
@@ -16150,7 +16150,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
            </size>
           </property>
           <property name="title">
-           <string>系列</string>
+           <string>Series</string>
           </property>
           <widget class="QWidget" name="layoutWidget_23">
            <property name="geometry">
@@ -16591,7 +16591,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
            </size>
           </property>
           <property name="title">
-           <string>导演</string>
+           <string>Director</string>
           </property>
           <widget class="QWidget" name="layoutWidget_29">
            <property name="geometry">
@@ -17215,7 +17215,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
                  </size>
                 </property>
                 <property name="text">
-                 <string>选择目录</string>
+                 <string>Select directory</string>
                 </property>
                </widget>
               </item>
@@ -19104,7 +19104,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>标题：</string>
+               <string>Title:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -19538,7 +19538,7 @@ line-height:50px</string>
               <item>
                <widget class="QCheckBox" name="checkBox_tag_series">
                 <property name="text">
-                 <string>系列</string>
+                 <string>Series</string>
                 </property>
                </widget>
               </item>
@@ -19726,7 +19726,7 @@ line-height:50px</string>
 </string>
                 </property>
                 <property name="text">
-                 <string>发行: publisher</string>
+                 <string>Distributor: publisher</string>
                 </property>
                </widget>
               </item>
@@ -21152,7 +21152,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>选择目录</string>
+                 <string>Select directory</string>
                 </property>
                </widget>
               </item>
@@ -23700,7 +23700,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>选择目录</string>
+                 <string>Select directory</string>
                 </property>
                </widget>
               </item>
@@ -25361,7 +25361,7 @@ QProgressBar {
         <number>0</number>
        </property>
        <property name="text">
-        <string>番号：</string>
+        <string>Number:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
