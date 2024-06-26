@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -48,9 +48,9 @@
      <widget class="QPushButton" name="pushButton_start_cap">
       <property name="geometry">
        <rect>
-        <x>680</x>
-        <y>13</y>
-        <width>120</width>
+        <x>688</x>
+        <y>10</y>
+        <width>121</width>
         <height>40</height>
        </rect>
       </property>
@@ -61,9 +61,9 @@
      <widget class="QLabel" name="label_number1">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>70</y>
-        <width>50</width>
+        <width>51</width>
         <height>40</height>
        </rect>
       </property>
@@ -79,7 +79,7 @@
        <rect>
         <x>80</x>
         <y>70</y>
-        <width>161</width>
+        <width>151</width>
         <height>40</height>
        </rect>
       </property>
@@ -106,9 +106,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>530</y>
-        <width>50</width>
+        <width>31</width>
         <height>40</height>
        </rect>
       </property>
@@ -122,9 +122,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_release">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>89</x>
         <y>530</y>
-        <width>220</width>
+        <width>201</width>
         <height>40</height>
        </rect>
       </property>
@@ -146,7 +146,7 @@ color:#336699</string>
        <rect>
         <x>250</x>
         <y>70</y>
-        <width>50</width>
+        <width>101</width>
         <height>40</height>
        </rect>
       </property>
@@ -154,15 +154,15 @@ color:#336699</string>
        <number>0</number>
       </property>
       <property name="text">
-       <string>Actress:</string>
+       <string>Actress / Actor:</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_actor">
       <property name="geometry">
        <rect>
-        <x>300</x>
+        <x>353</x>
         <y>70</y>
-        <width>161</width>
+        <width>91</width>
         <height>40</height>
        </rect>
       </property>
@@ -189,9 +189,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_outline">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>109</x>
         <y>430</y>
-        <width>500</width>
+        <width>471</width>
         <height>40</height>
        </rect>
       </property>
@@ -223,9 +223,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_18">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>430</y>
-        <width>50</width>
+        <width>81</width>
         <height>40</height>
        </rect>
       </property>
@@ -241,7 +241,7 @@ color:#336699</string>
        <rect>
         <x>80</x>
         <y>110</y>
-        <width>341</width>
+        <width>321</width>
         <height>40</height>
        </rect>
       </property>
@@ -267,9 +267,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_title1">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>110</y>
-        <width>50</width>
+        <width>31</width>
         <height>40</height>
        </rect>
       </property>
@@ -283,9 +283,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_director">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>89</x>
         <y>580</y>
-        <width>220</width>
+        <width>201</width>
         <height>40</height>
        </rect>
       </property>
@@ -308,9 +308,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_publish">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>379</x>
         <y>630</y>
-        <width>220</width>
+        <width>201</width>
         <height>40</height>
        </rect>
       </property>
@@ -333,9 +333,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_23">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>580</y>
-        <width>50</width>
+        <width>61</width>
         <height>40</height>
        </rect>
       </property>
@@ -351,7 +351,7 @@ color:#336699</string>
        <rect>
         <x>310</x>
         <y>630</y>
-        <width>50</width>
+        <width>51</width>
         <height>40</height>
        </rect>
       </property>
@@ -359,15 +359,15 @@ color:#336699</string>
        <number>0</number>
       </property>
       <property name="text">
-       <string>Release Date:</string>
+       <string>Release:</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_studio">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>89</x>
         <y>630</y>
-        <width>220</width>
+        <width>201</width>
         <height>40</height>
        </rect>
       </property>
@@ -390,9 +390,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_series">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>380</x>
         <y>580</y>
-        <width>220</width>
+        <width>201</width>
         <height>40</height>
        </rect>
       </property>
@@ -415,7 +415,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_30">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>630</y>
         <width>50</width>
         <height>40</height>
@@ -433,7 +433,7 @@ color:#336699</string>
        <rect>
         <x>310</x>
         <y>580</y>
-        <width>50</width>
+        <width>41</width>
         <height>40</height>
        </rect>
       </property>
@@ -447,9 +447,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_tag">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>89</x>
         <y>480</y>
-        <width>500</width>
+        <width>491</width>
         <height>40</height>
        </rect>
       </property>
@@ -472,9 +472,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_33">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>480</y>
-        <width>50</width>
+        <width>41</width>
         <height>40</height>
        </rect>
       </property>
@@ -488,9 +488,9 @@ color:#336699</string>
      <widget class="QCheckBox" name="checkBox_cover">
       <property name="geometry">
        <rect>
-        <x>490</x>
+        <x>486</x>
         <y>380</y>
-        <width>91</width>
+        <width>101</width>
         <height>40</height>
        </rect>
       </property>
@@ -552,7 +552,7 @@ color:#336699</string>
        <rect>
         <x>310</x>
         <y>530</y>
-        <width>50</width>
+        <width>61</width>
         <height>40</height>
        </rect>
       </property>
@@ -566,9 +566,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_runtime">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>379</x>
         <y>530</y>
-        <width>220</width>
+        <width>201</width>
         <height>40</height>
        </rect>
       </property>
@@ -588,9 +588,9 @@ color:#336699</string>
      <widget class="Line" name="line_6">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>109</x>
         <y>460</y>
-        <width>500</width>
+        <width>471</width>
         <height>20</height>
        </rect>
       </property>
@@ -601,9 +601,9 @@ color:#336699</string>
      <widget class="Line" name="line_7">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>89</x>
         <y>510</y>
-        <width>500</width>
+        <width>491</width>
         <height>20</height>
        </rect>
       </property>
@@ -614,9 +614,9 @@ color:#336699</string>
      <widget class="Line" name="line_8">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>89</x>
         <y>560</y>
-        <width>220</width>
+        <width>201</width>
         <height>20</height>
        </rect>
       </property>
@@ -627,9 +627,9 @@ color:#336699</string>
      <widget class="Line" name="line_9">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>379</x>
         <y>560</y>
-        <width>220</width>
+        <width>201</width>
         <height>20</height>
        </rect>
       </property>
@@ -640,9 +640,9 @@ color:#336699</string>
      <widget class="Line" name="line_10">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>379</x>
         <y>610</y>
-        <width>220</width>
+        <width>201</width>
         <height>20</height>
        </rect>
       </property>
@@ -653,9 +653,9 @@ color:#336699</string>
      <widget class="Line" name="line_11">
       <property name="geometry">
        <rect>
-        <x>350</x>
+        <x>379</x>
         <y>660</y>
-        <width>220</width>
+        <width>201</width>
         <height>20</height>
        </rect>
       </property>
@@ -666,9 +666,9 @@ color:#336699</string>
      <widget class="Line" name="line_12">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>89</x>
         <y>610</y>
-        <width>220</width>
+        <width>201</width>
         <height>20</height>
        </rect>
       </property>
@@ -679,9 +679,9 @@ color:#336699</string>
      <widget class="Line" name="line_13">
       <property name="geometry">
        <rect>
-        <x>70</x>
+        <x>89</x>
         <y>660</y>
-        <width>220</width>
+        <width>201</width>
         <height>20</height>
        </rect>
       </property>
@@ -787,9 +787,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_poster1">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>150</y>
-        <width>50</width>
+        <width>41</width>
         <height>40</height>
        </rect>
       </property>
@@ -888,6 +888,7 @@ color:#336699</string>
        <property name="font">
         <font>
          <pointsize>12</pointsize>
+         <weight>50</weight>
          <bold>false</bold>
         </font>
        </property>
@@ -906,11 +907,14 @@ color:#336699</string>
      <widget class="QLabel" name="label_file_path">
       <property name="geometry">
        <rect>
-        <x>30</x>
-        <y>10</y>
-        <width>786</width>
+        <x>20</x>
+        <y>30</y>
+        <width>781</width>
         <height>50</height>
        </rect>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
       </property>
       <property name="styleSheet">
        <string notr="true"/>
@@ -928,9 +932,9 @@ color:#336699</string>
      <widget class="Line" name="line_14">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>60</y>
-        <width>771</width>
+        <width>781</width>
         <height>20</height>
        </rect>
       </property>
@@ -969,9 +973,9 @@ color:#336699</string>
      <widget class="QPushButton" name="pushButton_select_media_folder">
       <property name="geometry">
        <rect>
-        <x>565</x>
-        <y>13</y>
-        <width>101</width>
+        <x>593</x>
+        <y>10</y>
+        <width>91</width>
         <height>40</height>
        </rect>
       </property>
@@ -984,7 +988,7 @@ color:#336699</string>
        <rect>
         <x>80</x>
         <y>380</y>
-        <width>411</width>
+        <width>156</width>
         <height>40</height>
        </rect>
       </property>
@@ -1012,9 +1016,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_thumb_size">
       <property name="geometry">
        <rect>
-        <x>222</x>
+        <x>252</x>
         <y>380</y>
-        <width>201</width>
+        <width>221</width>
         <height>40</height>
        </rect>
       </property>
@@ -1042,7 +1046,7 @@ color:#336699</string>
      <widget class="QPushButton" name="pushButton_play">
       <property name="geometry">
        <rect>
-        <x>507</x>
+        <x>500</x>
         <y>110</y>
         <width>40</width>
         <height>40</height>
@@ -1070,7 +1074,7 @@ color:#336699</string>
      <widget class="QPushButton" name="pushButton_open_folder">
       <property name="geometry">
        <rect>
-        <x>467</x>
+        <x>460</x>
         <y>110</y>
         <width>40</width>
         <height>40</height>
@@ -1098,7 +1102,7 @@ color:#336699</string>
      <widget class="QPushButton" name="pushButton_open_nfo">
       <property name="geometry">
        <rect>
-        <x>427</x>
+        <x>420</x>
         <y>110</y>
         <width>40</width>
         <height>40</height>
@@ -1129,7 +1133,7 @@ color:#336699</string>
      <widget class="QPushButton" name="pushButton_right_menu">
       <property name="geometry">
        <rect>
-        <x>547</x>
+        <x>540</x>
         <y>110</y>
         <width>40</width>
         <height>40</height>
@@ -1258,14 +1262,11 @@ color:#336699</string>
       </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;       &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="textInteractionFlags">
        <set>Qt::TextBrowserInteraction</set>
@@ -1316,14 +1317,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;       &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="textInteractionFlags">
        <set>Qt::TextBrowserInteraction</set>
@@ -1413,14 +1411,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;       &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;       &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="textInteractionFlags">
        <set>Qt::TextBrowserInteraction</set>
@@ -4305,7 +4300,8 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset theme="system-help"/>
+                 <iconset theme="system-help">
+                  <normaloff>.</normaloff>.</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -4592,7 +4588,8 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset theme="system-help"/>
+                 <iconset theme="system-help">
+                  <normaloff>.</normaloff>.</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -4714,7 +4711,8 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset theme="system-help"/>
+                 <iconset theme="system-help">
+                  <normaloff>.</normaloff>.</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -4865,7 +4863,8 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset theme="system-help"/>
+                 <iconset theme="system-help">
+                  <normaloff>.</normaloff>.</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -6296,7 +6295,8 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset theme="system-help"/>
+                 <iconset theme="system-help">
+                  <normaloff>.</normaloff>.</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -6399,7 +6399,8 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
                  <string/>
                 </property>
                 <property name="icon">
-                 <iconset theme="system-help"/>
+                 <iconset theme="system-help">
+                  <normaloff>.</normaloff>.</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -9056,9 +9057,9 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
                </property>
               </item>
               <item>
-                <property name="text">
-                 <string>javday</string>
-                </property>
+               <property name="text">
+                <string>javday</string>
+               </property>
               </item>
              </widget>
             </item>
@@ -20296,7 +20297,7 @@ line-height:50px</string>
              <x>20</x>
              <y>30</y>
              <width>661</width>
-             <height>268</height>
+             <height>292</height>
             </rect>
            </property>
            <layout class="QGridLayout" name="gridLayout_25">
@@ -22971,7 +22972,7 @@ font-weight:bold</string>
              <x>160</x>
              <y>130</y>
              <width>441</width>
-             <height>39</height>
+             <height>43</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_150">
@@ -24362,14 +24363,11 @@ font-weight:bold</string>
        </property>
        <property name="html">
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;            &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;        &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="overwriteMode">
         <bool>false</bool>
@@ -24499,14 +24497,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
        </property>
        <property name="html">
         <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;            &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;        &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;            &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;        &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <property name="overwriteMode">
         <bool>false</bool>
@@ -24585,119 +24580,116 @@ li.checked::marker { content: &quot;\2612&quot;; }
       </property>
       <property name="html">
        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;· Movie_Data_Capture：https://github.com/yoshiko2/Movie_Data_Capture&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;· AVDC-GUI：https://github.com/moyy996/AVDC&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;· MDCx-docker：https://github.com/northsea4/mdcx-docker&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Instructions for use (from AVDC-GUI：https://github.com/moyy996/AVDC&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Table of contents&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;1. Function introduction&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;2. Project introduction&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3. Common serial number naming references&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4. Settings instructions&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;1. Function introduction&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Japanese movie metadata grabbing tool/scraper, cooperates with local movie management software EMBY, KODI, PLEX, etc to manage local movies. This software plays the role of classification and metadata grabbing, using metadata information to classify, for local movie classification and sorting use.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;2. Project introduction&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;GUI made by moyy996，Core made by yoshiko2&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Command line version：https://github.com/yoshiko2/Movie_Data_Capture&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;GUI version：https://github.com/moyy996/AVDC&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3. Common serial number naming references&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;It is not case sensitive, try to name it as standard as possible before scraping!!!!&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3.1. Standard coded&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Javdb, Javbus:SSNI-111&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;DMM：ssni00111&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3.2. Uncensored&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Javdb, Javbus, Avsox:111111-1111, 111111_111, HEYZO-1111, n1111&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3.3. Amateur&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Mgstage:259LUXU-1111&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Javdb:LUXU-1111&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Fc2club:FC2-111111, FC2-PPV-111111, FC2PPV-111111&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3.4. Europe and America&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Javdb, Javbus:sexart.11.11.11(Series.Year.Month.Day)&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3.5. Videos with subtitles&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;You can name the movie something like ssni-xxx-c.mp4,ssni-xxx-C.mp4，abp-xxx-CD1-C.mp4 the rule of.&lt;/span&gt;     
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;      &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3.6. Multi-episode videos&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;You can name multi-episode movies based on the episode number suffix, similar to ssni-xxx-cd1.mp4, ssni-xxx-cd2.mp4, abp-xxx-CD1-C.mp4 the rule of，As long as it contains -CDn/-cdn Similar to the naming rules, you can use the diversity function. ** Not supported -A -B -1 -2,Easily confused with -C in subtitles **.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3.7. Multiple episodes, subtitle order&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;abp-xxx-CD1-C.mp4，Episodes come first and subtitles come last. The subtitles must be close to the extension.，-C.mp4.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3.8. External subtitle file&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;The subtitle file name must be consistent with the video file name before they can be moved to a new directory together. Currently supported srt ass sub type of subtitle file.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4. Setting instructions&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Detailed explanation： https://github.com/moyy996/AVDC/blob/master/README.md&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.1.Scraping mode/finishing mode&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;1, Scraping mode: scrape data by number, including metadata, cover images, thumbnails, and background images.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;2, Organizing mode: Name the movies based only on the actresses and classify them into folders with the actresses' names.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.2. Soft link mode: To use this mode, run as administrator.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;After scraping, the video will not be moved, but a soft link (similar to a shortcut) will be created in the corresponding directory to facilitate the hamster party comrades who want to scrape and continue uploading after the PT download.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;However, it can only be displayed in the media library and cannot be played in the media library.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.3. Debug mode&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Output the metadata of the number, including cover, director, actors, introduction, etc.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.4. Exclude directory&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Exclude filled directories when scraping multi-level directories.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.5. Video directory&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;The directory of videos to be sorted will traverse all videos in this directory, including subdirectories.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.6. Naming rules&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;1, Directory naming: the name of the directory where video data is stored. It supports multi-layer directories and custom symbols. For example：[actor]/studio/number-[title].&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;2, Video title (in media library): Title naming in nfo. example：number-[title]. Symbols can be customized.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3, Video title (local file): naming of local videos and pictures. example：number-[title]. Symbols can be customized.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4, The optional option is title, actor, studio, director, release, year, number, runtime, series, publisher &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.7. Proxy settings&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;1, Agent&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;proxy=127.0.0.1:1080&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;ProxyLine to set the local proxy address and port, support Shadowxxxx/X,V2XXX local proxy port, proxy software turns on global mode, It is recommended to use a Japanese agent.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;If you keep reporting Connect Failed! Please check your Proxy or Network! Error, please check whether the port number is correct, or delete the address and port after proxy=, and enable the global mode of the proxy software, or restart the computer, proxy software, and network card.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;2, Connection timeout retry settings&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;timeout=10 &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;10 Timeout retry time unit: seconds, optional range3-10&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3, Connection retry settings&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;retry=3 &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3 is the number of retries, the optional range is 2-5&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.8. Media library selection&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;If it is PLEX, please install the plug-in: XBMCnfoMoviesImporter&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.9. Exclude specified characters, directories, and strings&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;1, Exclude characters: delete specified characters, for example, exclude characters: \(), delete the \() character when creating a folder&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;2, Exclude directory: specify the directory, for example, exclude directory: failed, JAV_output, skip failed, JAV_output when scraping multiple directories&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;3, Exclude strings: When extracting numbers, delete the specified string first to improve the success rate. Use ',' to separate strings.&lt;/span&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;         &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.10. Website selection&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;You can use all websites, or specified websites (avsox, javbus, dmm, javdb, fc2club, mgstage) for scraping.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;Only use javdb for scraping. Try not to use it. If you scrape for about 30 seconds, your IP will be blocked by JAVDB for a period of time.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.11. Save logs&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;After being turned on, the log is saved in a txt file in the Log directory of the program directory. A txt file will be generated each time it is run. The txt file can be deleted without affecting the program operation.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;4.12. Moving files after failure&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt;If the video information cannot be scraped, you can choose not to move the video, or automatically move it to the failed output directory.&lt;/span&gt;           &lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','PingFang SC','Microsoft YaHei UI'; font-size:13pt;&quot;&gt; &lt;/span&gt;       &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'.AppleSystemUIFont'; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;· Movie_Data_Capture：https://github.com/yoshiko2/Movie_Data_Capture&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;· AVDC-GUI：https://github.com/moyy996/AVDC&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;· MDCx-docker：https://github.com/northsea4/mdcx-docker&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;&lt;br /&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Instructions for use (from AVDC-GUI：https://github.com/moyy996/AVDC&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;&lt;br /&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Table of contents&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;1. Function introduction&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;2. Project introduction&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3. Common serial number naming references&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4. Settings instructions&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;&lt;br /&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;1. Function introduction&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Japanese movie metadata grabbing tool/scraper, cooperates with local movie management software EMBY, KODI, PLEX, etc to manage local movies. This software plays the role of classification and metadata grabbing, using metadata information to classify, for local movie classification and sorting use.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;&lt;br /&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;2. Project introduction&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;GUI made by moyy996，Core made by yoshiko2&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Command line version：https://github.com/yoshiko2/Movie_Data_Capture&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;GUI version：https://github.com/moyy996/AVDC&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;&lt;br /&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3. Common serial number naming references&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;It is not case sensitive, try to name it as standard as possible before scraping!!!!&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3.1. Standard coded&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Javdb, Javbus:SSNI-111&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;DMM：ssni00111&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3.2. Uncensored&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Javdb, Javbus, Avsox:111111-1111, 111111_111, HEYZO-1111, n1111&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3.3. Amateur&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Mgstage:259LUXU-1111&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Javdb:LUXU-1111&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Fc2club:FC2-111111, FC2-PPV-111111, FC2PPV-111111&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3.4. Europe and America&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Javdb, Javbus:sexart.11.11.11(Series.Year.Month.Day)&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3.5. Videos with subtitles&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;You can name the movie something like ssni-xxx-c.mp4,ssni-xxx-C.mp4，abp-xxx-CD1-C.mp4 the rule of.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;     &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;                 &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3.6. Multi-episode videos&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;You can name multi-episode movies based on the episode number suffix, similar to ssni-xxx-cd1.mp4, ssni-xxx-cd2.mp4, abp-xxx-CD1-C.mp4 the rule of，As long as it contains -CDn/-cdn Similar to the naming rules, you can use the diversity function. ** Not supported -A -B -1 -2,Easily confused with -C in subtitles **.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3.7. Multiple episodes, subtitle order&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;abp-xxx-CD1-C.mp4，Episodes come first and subtitles come last. The subtitles must be close to the extension.，-C.mp4.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3.8. External subtitle file&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;The subtitle file name must be consistent with the video file name before they can be moved to a new directory together. Currently supported srt ass sub type of subtitle file.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;&lt;br /&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4. Setting instructions&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Detailed explanation： https://github.com/moyy996/AVDC/blob/master/README.md&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.1.Scraping mode/finishing mode&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;1, Scraping mode: scrape data by number, including metadata, cover images, thumbnails, and background images.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;2, Organizing mode: Name the movies based only on the actresses and classify them into folders with the actresses' names.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.2. Soft link mode: To use this mode, run as administrator.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;After scraping, the video will not be moved, but a soft link (similar to a shortcut) will be created in the corresponding directory to facilitate the hamster party comrades who want to scrape and continue uploading after the PT download.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;However, it can only be displayed in the media library and cannot be played in the media library.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.3. Debug mode&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Output the metadata of the number, including cover, director, actors, introduction, etc.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.4. Exclude directory&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Exclude filled directories when scraping multi-level directories.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.5. Video directory&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;The directory of videos to be sorted will traverse all videos in this directory, including subdirectories.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.6. Naming rules&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;1, Directory naming: the name of the directory where video data is stored. It supports multi-layer directories and custom symbols. For example：[actor]/studio/number-[title].&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;2, Video title (in media library): Title naming in nfo. example：number-[title]. Symbols can be customized.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3, Video title (local file): naming of local videos and pictures. example：number-[title]. Symbols can be customized.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4, The optional option is title, actor, studio, director, release, year, number, runtime, series, publisher &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.7. Proxy settings&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;1, Agent&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;proxy=127.0.0.1:1080&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;ProxyLine to set the local proxy address and port, support Shadowxxxx/X,V2XXX local proxy port, proxy software turns on global mode, It is recommended to use a Japanese agent.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;If you keep reporting Connect Failed! Please check your Proxy or Network! Error, please check whether the port number is correct, or delete the address and port after proxy=, and enable the global mode of the proxy software, or restart the computer, proxy software, and network card.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;2, Connection timeout retry settings&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;timeout=10 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;10 Timeout retry time unit: seconds, optional range3-10&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3, Connection retry settings&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;retry=3 &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3 is the number of retries, the optional range is 2-5&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.8. Media library selection&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;If it is PLEX, please install the plug-in: XBMCnfoMoviesImporter&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.9. Exclude specified characters, directories, and strings&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;1, Exclude characters: delete specified characters, for example, exclude characters: \(), delete the \() character when creating a folder&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;2, Exclude directory: specify the directory, for example, exclude directory: failed, JAV_output, skip failed, JAV_output when scraping multiple directories&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;3, Exclude strings: When extracting numbers, delete the specified string first to improve the success rate. Use ',' to separate strings.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;                    &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.10. Website selection&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;You can use all websites, or specified websites (avsox, javbus, dmm, javdb, fc2club, mgstage) for scraping.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;Only use javdb for scraping. Try not to use it. If you scrape for about 30 seconds, your IP will be blocked by JAVDB for a period of time.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.11. Save logs&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;After being turned on, the log is saved in a txt file in the Log directory of the program directory. A txt file will be generated each time it is run. The txt file can be deleted without affecting the program operation.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;4.12. Moving files after failure&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt;If the video information cannot be scraped, you can choose not to move the video, or automatically move it to the failed output directory.&lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;           &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas,PingFang SC,Microsoft YaHei UI';&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Microsoft YaHei UI'; font-size:9pt;&quot;&gt;       &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
      </widget>
     </widget>
@@ -24825,7 +24817,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           <bool>false</bool>
          </property>
          <property name="text">
-          <string> Home</string>
+          <string>Home</string>
          </property>
         </widget>
        </item>
@@ -25000,7 +24992,7 @@ li.checked::marker { content: &quot;\2612&quot;; }
           </size>
          </property>
          <property name="text">
-          <string> Help</string>
+          <string>About</string>
          </property>
         </widget>
        </item>
