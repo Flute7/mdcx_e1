@@ -25059,15 +25059,15 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	font: 900 14pt &quot;Tahoma&quot;;
-	color:#F14C4C;
-	background:#F14C4C;
-	border-radius:8px;
-	margin:2px;
+      font: 900 14pt &quot;Tahoma&quot;;
+      color:#F14C4C;
+      background:#F14C4C;
+      border-radius:8px;
+      margin:2px;
 }
 QPushButton:hover{
-	color:black;
-	background:#FF6058;
+      color:black;
+      background:#FF6058;
 }</string>
       </property>
       <property name="text">
@@ -25115,15 +25115,15 @@ QPushButton:hover{
       </property>
       <property name="styleSheet">
        <string notr="true">QPushButton{
-	font: 900 14pt &quot;Tahoma&quot;;
-	color:#FFBC3C;
-	background:#FFBC3C;
-	border-radius:8px;
-	margin:2px;
+      font: 900 14pt &quot;Tahoma&quot;;
+      color:#FFBC3C;
+      background:#FFBC3C;
+      border-radius:8px;
+      margin:2px;
 }
 QPushButton:hover{
-	color:black;
-	background:#FFBC3C;
+      color:black;
+      background:#FFBC3C;
 }
 </string>
       </property>

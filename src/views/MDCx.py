@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MDCx(object):
     def setupUi(self, MDCx):
         MDCx.setObjectName("MDCx")
-        MDCx.resize(1030, 700)
+        MDCx.resize(1165, 956)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -32,10 +32,10 @@ class Ui_MDCx(object):
         self.page_main.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
         self.page_main.setObjectName("page_main")
         self.pushButton_start_cap = QtWidgets.QPushButton(self.page_main)
-        self.pushButton_start_cap.setGeometry(QtCore.QRect(688, 10, 121, 40))
+        self.pushButton_start_cap.setGeometry(QtCore.QRect(690, 10, 101, 40))
         self.pushButton_start_cap.setObjectName("pushButton_start_cap")
         self.label_number1 = QtWidgets.QLabel(self.page_main)
-        self.label_number1.setGeometry(QtCore.QRect(20, 70, 51, 40))
+        self.label_number1.setGeometry(QtCore.QRect(20, 70, 61, 40))
         self.label_number1.setLineWidth(0)
         self.label_number1.setObjectName("label_number1")
         self.label_number = QtWidgets.QLabel(self.page_main)
@@ -49,18 +49,18 @@ class Ui_MDCx(object):
         self.label_number.setWordWrap(False)
         self.label_number.setObjectName("label_number")
         self.label_13 = QtWidgets.QLabel(self.page_main)
-        self.label_13.setGeometry(QtCore.QRect(20, 530, 31, 40))
+        self.label_13.setGeometry(QtCore.QRect(20, 530, 41, 40))
         self.label_13.setLineWidth(0)
         self.label_13.setObjectName("label_13")
         self.label_release = QtWidgets.QLabel(self.page_main)
-        self.label_release.setGeometry(QtCore.QRect(89, 530, 201, 40))
+        self.label_release.setGeometry(QtCore.QRect(109, 530, 181, 40))
         self.label_release.setStyleSheet("border:0px solid rgba(0, 0, 0, 80);")
         self.label_release.setFrameShape(QtWidgets.QFrame.Box)
         self.label_release.setLineWidth(0)
         self.label_release.setText("")
         self.label_release.setObjectName("label_release")
         self.label_actor1 = QtWidgets.QLabel(self.page_main)
-        self.label_actor1.setGeometry(QtCore.QRect(250, 70, 101, 40))
+        self.label_actor1.setGeometry(QtCore.QRect(250, 70, 111, 40))
         self.label_actor1.setLineWidth(0)
         self.label_actor1.setObjectName("label_actor1")
         self.label_actor = QtWidgets.QLabel(self.page_main)
@@ -85,7 +85,7 @@ class Ui_MDCx(object):
         self.label_outline.setWordWrap(False)
         self.label_outline.setObjectName("label_outline")
         self.label_18 = QtWidgets.QLabel(self.page_main)
-        self.label_18.setGeometry(QtCore.QRect(20, 430, 81, 40))
+        self.label_18.setGeometry(QtCore.QRect(20, 430, 101, 40))
         self.label_18.setLineWidth(0)
         self.label_18.setObjectName("label_18")
         self.label_title = QtWidgets.QLabel(self.page_main)
@@ -98,11 +98,11 @@ class Ui_MDCx(object):
         self.label_title.setWordWrap(False)
         self.label_title.setObjectName("label_title")
         self.label_title1 = QtWidgets.QLabel(self.page_main)
-        self.label_title1.setGeometry(QtCore.QRect(20, 110, 31, 40))
+        self.label_title1.setGeometry(QtCore.QRect(20, 110, 41, 40))
         self.label_title1.setLineWidth(0)
         self.label_title1.setObjectName("label_title1")
         self.label_director = QtWidgets.QLabel(self.page_main)
-        self.label_director.setGeometry(QtCore.QRect(89, 580, 201, 40))
+        self.label_director.setGeometry(QtCore.QRect(109, 580, 181, 40))
         self.label_director.setStyleSheet("border:0px solid rgba(0, 0, 0, 80);")
         self.label_director.setFrameShape(QtWidgets.QFrame.Box)
         self.label_director.setLineWidth(0)
@@ -122,11 +122,11 @@ class Ui_MDCx(object):
         self.label_23.setLineWidth(0)
         self.label_23.setObjectName("label_23")
         self.label_24 = QtWidgets.QLabel(self.page_main)
-        self.label_24.setGeometry(QtCore.QRect(310, 630, 51, 40))
+        self.label_24.setGeometry(QtCore.QRect(310, 630, 61, 40))
         self.label_24.setLineWidth(0)
         self.label_24.setObjectName("label_24")
         self.label_studio = QtWidgets.QLabel(self.page_main)
-        self.label_studio.setGeometry(QtCore.QRect(89, 630, 201, 40))
+        self.label_studio.setGeometry(QtCore.QRect(109, 630, 181, 40))
         self.label_studio.setStyleSheet("border:0px solid rgba(0, 0, 0, 80);")
         self.label_studio.setFrameShape(QtWidgets.QFrame.Box)
         self.label_studio.setLineWidth(0)
@@ -146,11 +146,11 @@ class Ui_MDCx(object):
         self.label_30.setLineWidth(0)
         self.label_30.setObjectName("label_30")
         self.label_31 = QtWidgets.QLabel(self.page_main)
-        self.label_31.setGeometry(QtCore.QRect(310, 580, 41, 40))
+        self.label_31.setGeometry(QtCore.QRect(310, 580, 51, 40))
         self.label_31.setLineWidth(0)
         self.label_31.setObjectName("label_31")
         self.label_tag = QtWidgets.QLabel(self.page_main)
-        self.label_tag.setGeometry(QtCore.QRect(89, 480, 491, 40))
+        self.label_tag.setGeometry(QtCore.QRect(109, 480, 471, 40))
         self.label_tag.setStyleSheet("border:0px solid rgba(0, 0, 0, 80);")
         self.label_tag.setFrameShape(QtWidgets.QFrame.Box)
         self.label_tag.setLineWidth(0)
@@ -158,14 +158,14 @@ class Ui_MDCx(object):
         self.label_tag.setWordWrap(True)
         self.label_tag.setObjectName("label_tag")
         self.label_33 = QtWidgets.QLabel(self.page_main)
-        self.label_33.setGeometry(QtCore.QRect(20, 480, 41, 40))
+        self.label_33.setGeometry(QtCore.QRect(20, 480, 51, 40))
         self.label_33.setLineWidth(0)
         self.label_33.setObjectName("label_33")
         self.checkBox_cover = QtWidgets.QCheckBox(self.page_main)
         self.checkBox_cover.setGeometry(QtCore.QRect(486, 380, 101, 40))
         self.checkBox_cover.setObjectName("checkBox_cover")
         self.label_result = QtWidgets.QLabel(self.page_main)
-        self.label_result.setGeometry(QtCore.QRect(600, 70, 211, 40))
+        self.label_result.setGeometry(QtCore.QRect(610, 70, 211, 40))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Preferred, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -197,12 +197,12 @@ class Ui_MDCx(object):
         self.line_6.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_6.setObjectName("line_6")
         self.line_7 = QtWidgets.QFrame(self.page_main)
-        self.line_7.setGeometry(QtCore.QRect(89, 510, 491, 20))
+        self.line_7.setGeometry(QtCore.QRect(109, 510, 471, 20))
         self.line_7.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_7.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_7.setObjectName("line_7")
         self.line_8 = QtWidgets.QFrame(self.page_main)
-        self.line_8.setGeometry(QtCore.QRect(89, 560, 201, 20))
+        self.line_8.setGeometry(QtCore.QRect(109, 560, 181, 20))
         self.line_8.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_8.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_8.setObjectName("line_8")
@@ -222,12 +222,12 @@ class Ui_MDCx(object):
         self.line_11.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_11.setObjectName("line_11")
         self.line_12 = QtWidgets.QFrame(self.page_main)
-        self.line_12.setGeometry(QtCore.QRect(89, 610, 201, 20))
+        self.line_12.setGeometry(QtCore.QRect(109, 610, 181, 20))
         self.line_12.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_12.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_12.setObjectName("line_12")
         self.line_13 = QtWidgets.QFrame(self.page_main)
-        self.line_13.setGeometry(QtCore.QRect(89, 660, 201, 20))
+        self.line_13.setGeometry(QtCore.QRect(109, 660, 181, 20))
         self.line_13.setFrameShape(QtWidgets.QFrame.HLine)
         self.line_13.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.line_13.setObjectName("line_13")
@@ -261,7 +261,7 @@ class Ui_MDCx(object):
         self.label_poster.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.label_poster.setObjectName("label_poster")
         self.label_poster1 = QtWidgets.QLabel(self.page_main)
-        self.label_poster1.setGeometry(QtCore.QRect(20, 150, 41, 40))
+        self.label_poster1.setGeometry(QtCore.QRect(20, 150, 51, 40))
         self.label_poster1.setLineWidth(0)
         self.label_poster1.setObjectName("label_poster1")
         self.treeWidget_number = QtWidgets.QTreeWidget(self.page_main)
@@ -298,7 +298,7 @@ class Ui_MDCx(object):
         self.treeWidget_number.header().setVisible(False)
         self.treeWidget_number.header().setSortIndicatorShown(False)
         self.label_file_path = QtWidgets.QLabel(self.page_main)
-        self.label_file_path.setGeometry(QtCore.QRect(20, 30, 781, 50))
+        self.label_file_path.setGeometry(QtCore.QRect(20, 10, 561, 50))
         self.label_file_path.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label_file_path.setStyleSheet("")
         self.label_file_path.setFrameShape(QtWidgets.QFrame.Box)
@@ -319,7 +319,7 @@ class Ui_MDCx(object):
         self.label_source.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_source.setObjectName("label_source")
         self.pushButton_select_media_folder = QtWidgets.QPushButton(self.page_main)
-        self.pushButton_select_media_folder.setGeometry(QtCore.QRect(593, 10, 91, 40))
+        self.pushButton_select_media_folder.setGeometry(QtCore.QRect(590, 10, 91, 40))
         self.pushButton_select_media_folder.setObjectName("pushButton_select_media_folder")
         self.label_poster_size = QtWidgets.QLabel(self.page_main)
         self.label_poster_size.setGeometry(QtCore.QRect(80, 380, 156, 40))
@@ -10503,15 +10503,15 @@ class Ui_MDCx(object):
         self.pushButton_close.setMouseTracking(True)
         self.pushButton_close.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.pushButton_close.setStyleSheet("QPushButton{\n"
-"    font: 900 14pt \"Tahoma\";\n"
-"    color:#F14C4C;\n"
-"    background:#F14C4C;\n"
-"    border-radius:8px;\n"
-"    margin:2px;\n"
+"      font: 900 14pt \"Tahoma\";\n"
+"      color:#F14C4C;\n"
+"      background:#F14C4C;\n"
+"      border-radius:8px;\n"
+"      margin:2px;\n"
 "}\n"
 "QPushButton:hover{\n"
-"    color:black;\n"
-"    background:#FF6058;\n"
+"      color:black;\n"
+"      background:#FF6058;\n"
 "}")
         self.pushButton_close.setObjectName("pushButton_close")
         self.pushButton_min = QtWidgets.QPushButton(self.close_widget)
@@ -10527,15 +10527,15 @@ class Ui_MDCx(object):
         self.pushButton_min.setMouseTracking(True)
         self.pushButton_min.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.pushButton_min.setStyleSheet("QPushButton{\n"
-"    font: 900 14pt \"Tahoma\";\n"
-"    color:#FFBC3C;\n"
-"    background:#FFBC3C;\n"
-"    border-radius:8px;\n"
-"    margin:2px;\n"
+"      font: 900 14pt \"Tahoma\";\n"
+"      color:#FFBC3C;\n"
+"      background:#FFBC3C;\n"
+"      border-radius:8px;\n"
+"      margin:2px;\n"
 "}\n"
 "QPushButton:hover{\n"
-"    color:black;\n"
-"    background:#FFBC3C;\n"
+"      color:black;\n"
+"      background:#FFBC3C;\n"
 "}\n"
 "")
         self.pushButton_min.setObjectName("pushButton_min")
@@ -11996,12 +11996,12 @@ class Ui_MDCx(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.12. Moving files after failure</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">If the video information cannot be scraped, you can choose not to move the video, or automatically move it to the failed output directory.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">       </span></p></body></html>"))
-        self.pushButton_main.setText(_translate("MDCx", "Home"))
+        self.pushButton_main.setText(_translate("MDCx", "  Home"))
         self.pushButton_log.setText(_translate("MDCx", " Log"))
         self.pushButton_tool.setText(_translate("MDCx", " Tools"))
         self.pushButton_setting.setText(_translate("MDCx", " Settings"))
         self.pushButton_net.setText(_translate("MDCx", " Network"))
-        self.pushButton_about.setText(_translate("MDCx", "About"))
+        self.pushButton_about.setText(_translate("MDCx", "  About"))
         self.pushButton_close.setText(_translate("MDCx", "×"))
         self.pushButton_min.setText(_translate("MDCx", "-"))
         self.label_19.setText(_translate("MDCx", "Introduction:"))
