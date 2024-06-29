@@ -162,7 +162,7 @@ class Ui_MDCx(object):
         self.label_33.setLineWidth(0)
         self.label_33.setObjectName("label_33")
         self.checkBox_cover = QtWidgets.QCheckBox(self.page_main)
-        self.checkBox_cover.setGeometry(QtCore.QRect(490, 380, 91, 40))
+        self.checkBox_cover.setGeometry(QtCore.QRect(480, 380, 91, 40))
         self.checkBox_cover.setObjectName("checkBox_cover")
         self.label_result = QtWidgets.QLabel(self.page_main)
         self.label_result.setGeometry(QtCore.QRect(600, 70, 211, 40))
@@ -291,6 +291,7 @@ class Ui_MDCx(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(False)
+        font.setWeight(50)
         self.treeWidget_number.headerItem().setFont(0, font)
         item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget_number)
         item_0 = QtWidgets.QTreeWidgetItem(self.treeWidget_number)
@@ -852,7 +853,7 @@ class Ui_MDCx(object):
         self.groupBox_16.setStyleSheet("")
         self.groupBox_16.setObjectName("groupBox_16")
         self.gridLayoutWidget_7 = QtWidgets.QWidget(self.groupBox_16)
-        self.gridLayoutWidget_7.setGeometry(QtCore.QRect(20, 30, 661, 511))
+        self.gridLayoutWidget_7.setGeometry(QtCore.QRect(20, 30, 701, 511))
         self.gridLayoutWidget_7.setObjectName("gridLayoutWidget_7")
         self.gridLayout_7 = QtWidgets.QGridLayout(self.gridLayoutWidget_7)
         self.gridLayout_7.setContentsMargins(0, 0, 0, 0)
@@ -8601,7 +8602,7 @@ class Ui_MDCx(object):
         self.groupBox_43.setStyleSheet("font:\"Courier\";")
         self.groupBox_43.setObjectName("groupBox_43")
         self.gridLayoutWidget_25 = QtWidgets.QWidget(self.groupBox_43)
-        self.gridLayoutWidget_25.setGeometry(QtCore.QRect(20, 30, 661, 268))
+        self.gridLayoutWidget_25.setGeometry(QtCore.QRect(20, 30, 661, 292))
         self.gridLayoutWidget_25.setObjectName("gridLayoutWidget_25")
         self.gridLayout_25 = QtWidgets.QGridLayout(self.gridLayoutWidget_25)
         self.gridLayout_25.setContentsMargins(0, 0, 0, 0)
@@ -9449,7 +9450,7 @@ class Ui_MDCx(object):
         self.groupBox_28.setStyleSheet("font:\"Courier\";")
         self.groupBox_28.setObjectName("groupBox_28")
         self.gridLayoutWidget_9 = QtWidgets.QWidget(self.groupBox_28)
-        self.gridLayoutWidget_9.setGeometry(QtCore.QRect(20, 30, 671, 261))
+        self.gridLayoutWidget_9.setGeometry(QtCore.QRect(20, 30, 875, 261))
         self.gridLayoutWidget_9.setObjectName("gridLayoutWidget_9")
         self.gridLayout_9 = QtWidgets.QGridLayout(self.gridLayoutWidget_9)
         self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
@@ -9735,7 +9736,7 @@ class Ui_MDCx(object):
         self.label_356.setTextInteractionFlags(QtCore.Qt.LinksAccessibleByKeyboard|QtCore.Qt.LinksAccessibleByMouse)
         self.label_356.setObjectName("label_356")
         self.layoutWidget7 = QtWidgets.QWidget(self.groupBox_14)
-        self.layoutWidget7.setGeometry(QtCore.QRect(160, 130, 441, 39))
+        self.layoutWidget7.setGeometry(QtCore.QRect(160, 130, 441, 43))
         self.layoutWidget7.setObjectName("layoutWidget7")
         self.horizontalLayout_150 = QtWidgets.QHBoxLayout(self.layoutWidget7)
         self.horizontalLayout_150.setContentsMargins(0, 0, 0, 0)
@@ -10853,8 +10854,8 @@ class Ui_MDCx(object):
         MDCx.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MDCx)
-        self.stackedWidget.setCurrentIndex(3)
-        self.tabWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(MDCx)
 
     def retranslateUi(self, MDCx):
@@ -10863,8 +10864,8 @@ class Ui_MDCx(object):
         self.pushButton_start_cap.setText(_translate("MDCx", "Start"))
         self.label_number1.setText(_translate("MDCx", "Number:"))
         self.label_13.setText(_translate("MDCx", "Date:"))
-        self.label_actor1.setText(_translate("MDCx", "Actress:"))
-        self.label_18.setText(_translate("MDCx", "Introduction:"))
+        self.label_actor1.setText(_translate("MDCx", "Performer:"))
+        self.label_18.setText(_translate("MDCx", "Intro:"))
         self.label_title1.setText(_translate("MDCx", "Title:"))
         self.label_23.setText(_translate("MDCx", "Director:"))
         self.label_24.setText(_translate("MDCx", "Release Date:"))
@@ -10884,59 +10885,51 @@ class Ui_MDCx(object):
         self.treeWidget_number.topLevelItem(0).setText(0, _translate("MDCx", "Success"))
         self.treeWidget_number.topLevelItem(1).setText(0, _translate("MDCx", "Fail"))
         self.treeWidget_number.setSortingEnabled(__sortingEnabled)
-        self.label_file_path.setText(_translate("MDCx", "视频目录设置：【设置】-【目录】-【待刮削视频目录】。程序将刮削该目录及子目录的所有文件。"))
+        self.label_file_path.setText(_translate("MDCx", "Video directory settings: [Settings]-[Catalog]-[Video directory to be scraped].\n"
+"The program will scrape all files in the directory and subdirectories."))
         self.pushButton_select_media_folder.setText(_translate("MDCx", "Directory"))
         self.textBrowser_log_main_2.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">       </p></body></html>"))
+"</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">       </span></p></body></html>"))
         self.pushButton_start_cap2.setText(_translate("MDCx", "Start"))
         self.textBrowser_log_main.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">       </p></body></html>"))
-        self.pushButton_view_failed_list.setText(_translate("MDCx", "失败 0"))
+"</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">       </span></p></body></html>"))
+        self.pushButton_view_failed_list.setText(_translate("MDCx", "Failed 0"))
         self.textBrowser_log_main_3.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">       </p></body></html>"))
-        self.pushButton_scraper_failed_list.setText(_translate("MDCx", "当有失败任务时，点击可以一键刮削当前失败列表"))
-        self.pushButton_check_net.setText(_translate("MDCx", "开始检测"))
-        self.groupBox_7.setTitle(_translate("MDCx", "单文件刮削（指定某个文件的番号网址进行刮削，当存在相同番号时可用这个）"))
-        self.pushButton_select_file.setText(_translate("MDCx", "选择文件"))
-        self.label_10.setText(_translate("MDCx", "*番号网址："))
-        self.pushButton_start_single_file.setText(_translate("MDCx", "刮削"))
-        self.label_3.setText(_translate("MDCx", "*文件路径："))
-        self.label.setText(_translate("MDCx", "不要填写网站首页地址！！！要填写该番号的网页地址！！！然后选择对应网站，点击刮削即可！"))
-        self.pushButton_select_file_clear_info.setText(_translate("MDCx", "清空信息"))
+"</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">       </span></p></body></html>"))
+        self.pushButton_scraper_failed_list.setText(_translate("MDCx", "When there is a failed task, click to scrape the current failed list with one click."))
+        self.pushButton_check_net.setText(_translate("MDCx", "Start Test"))
+        self.groupBox_7.setTitle(_translate("MDCx", "Single file scraping (specify a file number URL to scrape, when there is the same number can use this)"))
+        self.pushButton_select_file.setText(_translate("MDCx", "Select File"))
+        self.label_10.setText(_translate("MDCx", "*Number website:"))
+        self.pushButton_start_single_file.setText(_translate("MDCx", "Scrape"))
+        self.label_3.setText(_translate("MDCx", "*File path:"))
+        self.label.setText(_translate("MDCx", "Don\'t fill in the address of the homepage of the website!!! You need to fill in the web address of this number!!! Then select the corresponding website and click Scrape!"))
+        self.pushButton_select_file_clear_info.setText(_translate("MDCx", "Clear Information"))
         self.groupBox_13.setTitle(_translate("MDCx", "裁剪图片（将某个图片裁剪为封面图大小，支持加水印）"))
         self.pushButton_select_thumb.setText(_translate("MDCx", "选择图片"))
         self.label_6.setText(_translate("MDCx", "此工具支持拖动选择裁剪范围，可将图片裁剪为封面图（poster）。"))
-        self.groupBox_19.setTitle(_translate("MDCx", "检查演员缺失番号（检查资源库中指定演员本地缺失的番号）"))
-        self.label_53.setText(_translate("MDCx", "演员名："))
-        self.label_72.setText(_translate("MDCx", "本地资源库："))
-        self.pushButton_find_missing_number.setText(_translate("MDCx", "检查缺失番号"))
+        self.groupBox_19.setTitle(_translate("MDCx", "Check the missing number of the actor (check the missing number of the designated actor in the resource library)"))
+        self.label_53.setText(_translate("MDCx", "Actor\'s name:"))
+        self.label_72.setText(_translate("MDCx", "Local resource library:"))
+        self.pushButton_find_missing_number.setText(_translate("MDCx", "Check the missing number"))
         self.pushButton_select_local_library.setText(_translate("MDCx", "Directory"))
-        self.label_62.setText(_translate("MDCx", "本地资源库和演员名都可以填写多个，以逗号分开（中英文逗号都可以）"))
-        self.groupBox_6.setTitle(_translate("MDCx", "移动视频、字幕（将待刮削目录下所有子目录中的视频移动到一个目录中以方便进行查看）"))
+        self.label_62.setText(_translate("MDCx", "Multiple local resource libraries and actor names can be filled in, separated by commas (Chinese and English commas are acceptable)"))
+        self.groupBox_6.setTitle(_translate("MDCx", "Move videos and subtitles (move the videos in all subdirectories under the directory to be scraped into one directory for easy viewing)"))
         self.pushButton_move_mp4.setText(_translate("MDCx", "开始移动"))
-        self.label_41.setText(_translate("MDCx", "排除目录："))
-        self.label_8.setText(_translate("MDCx", "移动「待刮削视频目录」中的所有视频和字幕到「待刮削视频目录」下的「Movie_moved」目录下。"))
+        self.label_41.setText(_translate("MDCx", "Exclude table of contents:"))
+        self.label_8.setText(_translate("MDCx", "Move all videos and subtitles in the \"Video to be scraped\" directory to the \"Movie_moved\" directory under the \"Video to be scraped\" directory."))
         self.groupBox_21.setTitle(_translate("MDCx", "软链接助手（将挂载的网盘文件目录及子目录中的所有视频一键创建软链接到本地）"))
         self.label_338.setText(_translate("MDCx", "本地目录："))
         self.label_339.setText(_translate("MDCx", "网盘目录："))
@@ -10950,16 +10943,16 @@ class Ui_MDCx(object):
         self.groupBox_16.setTitle(_translate("MDCx", "刮削目录"))
         self.pushButton_select_softlink_folder.setText(_translate("MDCx", "Directory"))
         self.label_58.setText(_translate("MDCx", "指不想要刮削的目录，可以填写多个目录，以逗号分开（中英文逗号都可以）"))
-        self.label_49.setText(_translate("MDCx", "待刮削视频目录："))
-        self.checkBox_no_escape_dir.setText(_translate("MDCx", "不排除"))
+        self.label_49.setText(_translate("MDCx", "Scraping Directory:"))
+        self.checkBox_no_escape_dir.setText(_translate("MDCx", "Don\'t Exclude"))
         self.label_56.setText(_translate("MDCx", "指含有视频的文件夹，将刮削该目录（含子目录）所有视频的元数据信息"))
         self.checkBox_scrape_softlink_path.setText(_translate("MDCx", "在以下目录为待刮削目录中的视频创建软链接，然后刮削以下目录（适合网盘用户）"))
-        self.label_47.setText(_translate("MDCx", "成功输出目录："))
+        self.label_47.setText(_translate("MDCx", "Success Output Directory:"))
         self.pushButton_select_media_folder_setting_page.setText(_translate("MDCx", "Directory"))
-        self.label_48.setText(_translate("MDCx", "排除目录："))
+        self.label_48.setText(_translate("MDCx", "Exclusions:"))
         self.label_57.setText(_translate("MDCx", "指刮削失败时，视频将移动到这个文件夹。输出目录可以不在待刮削视频目录下"))
         self.pushButton_select_failed_folder.setText(_translate("MDCx", "Directory"))
-        self.label_46.setText(_translate("MDCx", "失败输出目录："))
+        self.label_46.setText(_translate("MDCx", "Failed Output Directory:"))
         self.pushButton_select_sucess_folder.setText(_translate("MDCx", "Directory"))
         self.label_29.setText(_translate("MDCx", "指刮削成功时，视频将移动到这个文件夹。输出目录可以不在待刮削视频目录下"))
         self.label_383.setText(_translate("MDCx", "如果创建软链接时要复制图片和NFO，请到「工具」-「软链接助手」勾选即可\n"
@@ -11007,7 +11000,7 @@ class Ui_MDCx(object):
         self.groupBox_9.setTitle(_translate("MDCx", "文件格式设置"))
         self.label_78.setText(_translate("MDCx", "字幕格式："))
         self.label_50.setText(_translate("MDCx", "视频格式："))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab2), _translate("MDCx", " 刮削目录 "))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab2), _translate("MDCx", "Catalog"))
         self.groupBox.setTitle(_translate("MDCx", "刮削模式"))
         self.radioButton_mode_sort.setText(_translate("MDCx", "视频模式"))
         self.label_312.setText(_translate("MDCx", "不刮削，读取本地信息并显示，适合检查媒体库或媒体库重新整理分类"))
@@ -11078,7 +11071,7 @@ class Ui_MDCx(object):
         self.label_hardlink.setText(_translate("MDCx", "适合 PT 用户。刮削资料同盘单独存放，不影响分享率。\n"
 "注意：Mac 用户，请选择创建软连接，输出目录同盘即可（硬链接有权限问题）"))
         self.label_342.setText(_translate("MDCx", "注：软硬链接不会移动和重命名原视频文件，仅移动和重命名链接文件"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab1), _translate("MDCx", " 刮削模式 "))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab1), _translate("MDCx", " Scrape "))
         self.groupBox_25.setTitle(_translate("MDCx", "标题"))
         self.label_186.setText(_translate("MDCx", "排除网站："))
         self.label_76.setText(_translate("MDCx", "不同网站字段准确度不同，你可设置刮削网站的顺序，多个以逗号分隔"))
@@ -11259,7 +11252,7 @@ class Ui_MDCx(object):
         self.label_274.setText(_translate("MDCx", "刮削设置："))
         self.label_307.setText(_translate("MDCx", "刮削网站："))
         self.label_300.setText(_translate("MDCx", "⚠️ 注意！！！选择「字段优先」时，以下设置才有效！！！"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MDCx", " 刮削网站 "))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MDCx", "Data Source"))
         self.groupBox_24.setTitle(_translate("MDCx", "下载"))
         self.checkBox_download_poster.setText(_translate("MDCx", "封面图"))
         self.checkBox_download_thumb.setText(_translate("MDCx", "缩略图"))
@@ -11330,7 +11323,7 @@ class Ui_MDCx(object):
         self.checkBox_extras.setText(_translate("MDCx", "剧照作为附加内容显示"))
         self.pushButton_add_all_extras.setText(_translate("MDCx", "为所有视频复制剧照"))
         self.pushButton_del_all_extras.setText(_translate("MDCx", "删除所有复制的剧照"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MDCx", " 下载 "))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_4), _translate("MDCx", " Download"))
         self.groupBox_8.setTitle(_translate("MDCx", "视频命名规则"))
         self.label_66.setText(_translate("MDCx", "<p style=\'line-height:20px\'>当刮削成功时，将为该视频创建一个视频目录，并移动该视频目录到成功输出目录。<br>\n"
 "目录名字支持自定义。命名字段有：<br>\n"
@@ -11434,7 +11427,7 @@ class Ui_MDCx(object):
         self.label_352.setText(_translate("MDCx", "<html><head/><body><p>1）Emby 支持多版本显示（类似选集）， 需要：</p><p>视频文件名的开头部分必须包含视频目录名。（比如：SSIS-111/SSIS-111-4K.mp4） </p><p>查看规则：<a href=\"https://support.emby.media/support/solutions/articles/44001159102-movie-naming\"><span style=\" text-decoration: underline; color:#094fd1;\">https://support.emby.media/support/solutions/articles/44001159102-movie-naming</span></a></p><p>2）分集视频默认会显示为附加视频，如果要以多版本样式显示，分集命名规则还需要选择「-1」</p></body></html>"))
         self.label_351.setText(_translate("MDCx", "Emby 分集封面需要每个分集都提供图片，图片命名规则需要选择「视频文件名-poster.jpg」"))
         self.label_354.setText(_translate("MDCx", "2，分集封面显示："))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MDCx", " 命名 "))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_3), _translate("MDCx", " Name"))
         self.groupBox_79.setTitle(_translate("MDCx", "翻译引擎"))
         self.label_81.setText(_translate("MDCx", "翻译引擎："))
         self.label_60.setText(_translate("MDCx", "填写免费或付费 key 时，将使用 API 翻译 ；不填写时，将使用网页端接口翻译。"))
@@ -11529,7 +11522,7 @@ class Ui_MDCx(object):
         self.radioButton_director_zh_cn.setText(_translate("MDCx", "中文简体"))
         self.radioButton_director_zh_tw.setText(_translate("MDCx", "中文繁体"))
         self.radioButton_director_jp.setText(_translate("MDCx", "日语"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_6), _translate("MDCx", " 翻译 "))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_6), _translate("MDCx", " Translate"))
         self.groupBox_20.setTitle(_translate("MDCx", "中文字幕字符规则"))
         self.label_89.setText(_translate("MDCx", "中文字幕判断字符："))
         self.label_90.setText(_translate("MDCx", "指视频有中文字幕时，在重命名文件名及目录名时在番号后添加该字符表示有中文字幕"))
@@ -11557,7 +11550,7 @@ class Ui_MDCx(object):
 "当勾选添加.chs后缀时，字幕文件会被统一命名为：视频文件名.chs.srt</p>"))
         self.checkBox_sub_add_chs.setText(_translate("MDCx", "字幕文件名添加.chs后缀"))
         self.checkBox_sub_rescrape.setText(_translate("MDCx", "新添加字幕的视频在结束后重新刮削"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MDCx", " 字幕 "))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MDCx", " Subtitle"))
         self.groupBox_26.setTitle(_translate("MDCx", "自定义水印样式"))
         self.label_118.setText(_translate("MDCx", "<p style=\'line-height:20px\'>1、下载水印图片包并解压（也可以使用自己的图片），水印图片的保存路径为：<br>\n"
 "   · Windows位置：（配置文件目录在「设置」-「高级」中设置）<br>\n"
@@ -11641,7 +11634,7 @@ class Ui_MDCx(object):
         self.radioButton_bottom_right_corner.setText(_translate("MDCx", "右下"))
         self.radioButton_bottom_left_corner.setText(_translate("MDCx", "左下"))
         self.label_233.setText(_translate("MDCx", "水印显示位置："))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab4), _translate("MDCx", " 水印 "))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab4), _translate("MDCx", " Watermark"))
         self.groupBox_81.setTitle(_translate("MDCx", "写入 NFO 的字段："))
         self.checkBox_nfo_all_actor.setText(_translate("MDCx", "写入男女演员（不勾选，则仅写入女演员）"))
         self.label_391.setText(_translate("MDCx", "年份/时长/想看人数："))
@@ -11779,15 +11772,15 @@ class Ui_MDCx(object):
         self.label_415.setText(_translate("MDCx", "图片已存在时："))
         self.pushButton_del_actor_folder.setText(_translate("MDCx", "清除所有 .actors 文件夹"))
         self.checkBox_actor_photo_kodi.setText(_translate("MDCx", "刮削结束后自动创建"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MDCx", " 演员 "))
-        self.groupBox_10.setTitle(_translate("MDCx", "Cookie设置"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MDCx", " Performer "))
+        self.groupBox_10.setTitle(_translate("MDCx", "Cookie Settings"))
         self.plainTextEdit_cookie_javbus.setPlaceholderText(_translate("MDCx", "美国节点需要填写，其他节点一般不需要填写，除非提示需要填写。"))
         self.plainTextEdit_cookie_javdb.setPlaceholderText(_translate("MDCx", "刮削FC2需要填写"))
         self.pushButton_check_javdb_cookie.setText(_translate("MDCx", "检查cookie"))
-        self.label_425.setText(_translate("MDCx", "javbus：\n"
-"（登录状态）"))
-        self.label_45.setText(_translate("MDCx", "javdb：\n"
-"（登录状态）"))
+        self.label_425.setText(_translate("MDCx", "javbus:\n"
+"(Login Status)"))
+        self.label_45.setText(_translate("MDCx", "javdb:\n"
+"(Login Status)"))
         self.pushButton_check_javbus_cookie.setText(_translate("MDCx", "检查cookie"))
         self.label_75.setText(_translate("MDCx", "<p style=\'line-height:20px\'>Cookie 获取方法：<br>\n"
 "1，使用 Chrome 打开目标网站并登录，在页面空白位置点击鼠标右键，选择 「检查」 ；<br>\n"
@@ -11798,18 +11791,18 @@ class Ui_MDCx(object):
 "（注意：Cookie 存在有效期，过期无效时请重新获取。）</p>"))
         self.label_get_cookie_url.setText(_translate("MDCx", "https://tieba.baidu.com/p/5492736764"))
         self.label_7.setText(_translate("MDCx", "演示动画："))
-        self.groupBox_28.setTitle(_translate("MDCx", "代理设置"))
-        self.checkBox_net_ipv4_only.setText(_translate("MDCx", "强制使用 IPv4 请求数据"))
-        self.label_64.setText(_translate("MDCx", "IP+端口号："))
-        self.label_65.setText(_translate("MDCx", "重试次数："))
-        self.label_103.setText(_translate("MDCx", "带用户名和密码时，填写格式: username:password@ip:port"))
+        self.groupBox_28.setTitle(_translate("MDCx", "Proxy Settings"))
+        self.checkBox_net_ipv4_only.setText(_translate("MDCx", "Force IPv4"))
+        self.label_64.setText(_translate("MDCx", "IP+Port:"))
+        self.label_65.setText(_translate("MDCx", "Retries:"))
+        self.label_103.setText(_translate("MDCx", "Username and password example format: username:password@ip:port"))
         self.radioButton_proxy_http.setText(_translate("MDCx", "http"))
         self.radioButton_proxy_socks5.setText(_translate("MDCx", "socks5"))
-        self.radioButton_proxy_nouse.setText(_translate("MDCx", "不使用"))
+        self.radioButton_proxy_nouse.setText(_translate("MDCx", "none"))
         self.label_410.setText(_translate("MDCx", "IPv4 only："))
-        self.label_70.setText(_translate("MDCx", "代理："))
-        self.label_73.setText(_translate("MDCx", "超时时间："))
-        self.label_411.setText(_translate("MDCx", "一些网站（Javbus、Amazon）使用 IPv6 请求会失败，建议使用 IPv4（重启后生效）"))
+        self.label_70.setText(_translate("MDCx", "Agent:"))
+        self.label_73.setText(_translate("MDCx", "Timeout:"))
+        self.label_411.setText(_translate("MDCx", "Some websites (Javbus, Amazon) will fail to use IPv6 requests. It is recommended to use IPv4 (effective after restarting)"))
         self.groupBox_44.setTitle(_translate("MDCx", "网址设置"))
         self.label_110.setText(_translate("MDCx", "<p style=\'line-height:15px\'>自定义刮削指定网站时使用的网址，目前支持以下网站：<br>\n"
 "    &nbsp;&nbsp;&nbsp;&nbsp;airavcc  avsex  hdouban  iqqtv  lulubar  mdtv  javbus  javdb  javlibrary* <br>\n"
@@ -11822,7 +11815,7 @@ class Ui_MDCx(object):
         self.label_356.setText(_translate("MDCx", "<html><head/><body><p><a href=\"https://theporndb.net/\"><span style=\" text-decoration: underline; color:#094fd1;\">https://theporndb.net/</span></a> 注册登录后，点头像 - API Tokens - CREATE。复制生成的 API Token 填入此处。</p></body></html>"))
         self.checkBox_theporndb_hash.setText(_translate("MDCx", "不使用Hash值匹配数据"))
         self.label_422.setText(_translate("MDCx", "<html><head/><body><p>该网站的Hash值匹配结果可能错误</p></body></html>"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab3), _translate("MDCx", " 网络 "))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab3), _translate("MDCx", " Network"))
         self.groupBox_17.setTitle(_translate("MDCx", "保存日志"))
         self.radioButton_log_on.setText(_translate("MDCx", "开"))
         self.radioButton_log_off.setText(_translate("MDCx", "关"))
@@ -11869,149 +11862,140 @@ class Ui_MDCx(object):
         self.label_426.setText(_translate("MDCx", "高分屏缩放："))
         self.checkBox_highdpi_passthrough.setText(_translate("MDCx", "非整数倍缩放"))
         self.label_427.setText(_translate("MDCx", "保存后重启软件生效，可能会有点模糊"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab5), _translate("MDCx", " 高级 "))
-        self.pushButton_init_config.setText(_translate("MDCx", "恢复默认"))
-        self.pushButton_save_config.setText(_translate("MDCx", "保存"))
-        self.label_241.setText(_translate("MDCx", "当前配置："))
-        self.pushButton_save_new_config.setText(_translate("MDCx", "另存为"))
+        self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab5), _translate("MDCx", "Advanced"))
+        self.pushButton_init_config.setText(_translate("MDCx", "Default"))
+        self.pushButton_save_config.setText(_translate("MDCx", "Save"))
+        self.label_241.setText(_translate("MDCx", "Configuration:"))
+        self.pushButton_save_new_config.setText(_translate("MDCx", "Save As"))
         self.textBrowser_show_success_list.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">        </p></body></html>"))
+"</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">            </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">        </span></p></body></html>"))
         self.pushButton_success_list_close.setText(_translate("MDCx", "关闭"))
         self.pushButton_success_list_clear.setText(_translate("MDCx", "清空列表"))
         self.pushButton_success_list_save.setText(_translate("MDCx", "保存"))
         self.label_success_title.setText(_translate("MDCx", "已刮削成功文件列表"))
         self.textBrowser_show_tips.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">        </p></body></html>"))
+"</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">            </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">        </span></p></body></html>"))
         self.pushButton_show_tips_close.setText(_translate("MDCx", "关闭"))
         self.label_show_tips_title.setText(_translate("MDCx", "说明"))
         self.textBrowser_about.setHtml(_translate("MDCx", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><meta charset=\"utf-8\" /><style type=\"text/css\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"hr { height: 1px; border-width: 0; }\n"
-"li.unchecked::marker { content: \"\\2610\"; }\n"
-"li.checked::marker { content: \"\\2612\"; }\n"
-"</style></head><body style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">· Movie_Data_Capture：https://github.com/yoshiko2/Movie_Data_Capture</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">· AVDC-GUI：https://github.com/moyy996/AVDC</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">· MDCx-docker：https://github.com/northsea4/mdcx-docker</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Instructions for use (from AVDC-GUI：https://github.com/moyy996/AVDC</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Table of contents</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">1. Function introduction</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">2. Project introduction</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3. Common serial number naming references</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4. Settings instructions</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">1. Function introduction</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Japanese movie metadata grabbing tool/scraper, cooperates with local movie management software EMBY, KODI, PLEX, etc to manage local movies. This software plays the role of classification and metadata grabbing, using metadata information to classify, for local movie classification and sorting use.</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">2. Project introduction</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">GUI made by moyy996，Core made by yoshiko2</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Command line version：https://github.com/yoshiko2/Movie_Data_Capture</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">GUI version：https://github.com/moyy996/AVDC</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3. Common serial number naming references</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">It is not case sensitive, try to name it as standard as possible before scraping!!!!</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.1. Standard coded</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Javdb, Javbus:SSNI-111</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">DMM：ssni00111</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.2. Uncensored</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Javdb, Javbus, Avsox:111111-1111, 111111_111, HEYZO-1111, n1111</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.3. Amateur</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Mgstage:259LUXU-1111</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Javdb:LUXU-1111</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Fc2club:FC2-111111, FC2-PPV-111111, FC2PPV-111111</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.4. Europe and America</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Javdb, Javbus:sexart.11.11.11(Series.Year.Month.Day)</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.5. Videos with subtitles</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">You can name the movie something like ssni-xxx-c.mp4,ssni-xxx-C.mp4，abp-xxx-CD1-C.mp4 the rule of.</span>     \n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>      </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.6. Multi-episode videos</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">You can name multi-episode movies based on the episode number suffix, similar to ssni-xxx-cd1.mp4, ssni-xxx-cd2.mp4, abp-xxx-CD1-C.mp4 the rule of，As long as it contains -CDn/-cdn Similar to the naming rules, you can use the diversity function. ** Not supported -A -B -1 -2,Easily confused with -C in subtitles **.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.7. Multiple episodes, subtitle order</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">abp-xxx-CD1-C.mp4，Episodes come first and subtitles come last. The subtitles must be close to the extension.，-C.mp4.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3.8. External subtitle file</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">The subtitle file name must be consistent with the video file name before they can be moved to a new directory together. Currently supported srt ass sub type of subtitle file.</span>           </p>\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br />           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4. Setting instructions</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Detailed explanation： https://github.com/moyy996/AVDC/blob/master/README.md</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.1.Scraping mode/finishing mode</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">1, Scraping mode: scrape data by number, including metadata, cover images, thumbnails, and background images.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">2, Organizing mode: Name the movies based only on the actresses and classify them into folders with the actresses\' names.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.2. Soft link mode: To use this mode, run as administrator.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">After scraping, the video will not be moved, but a soft link (similar to a shortcut) will be created in the corresponding directory to facilitate the hamster party comrades who want to scrape and continue uploading after the PT download.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">However, it can only be displayed in the media library and cannot be played in the media library.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.3. Debug mode</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Output the metadata of the number, including cover, director, actors, introduction, etc.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.4. Exclude directory</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Exclude filled directories when scraping multi-level directories.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.5. Video directory</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">The directory of videos to be sorted will traverse all videos in this directory, including subdirectories.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.6. Naming rules</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">1, Directory naming: the name of the directory where video data is stored. It supports multi-layer directories and custom symbols. For example：[actor]/studio/number-[title].</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">2, Video title (in media library): Title naming in nfo. example：number-[title]. Symbols can be customized.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3, Video title (local file): naming of local videos and pictures. example：number-[title]. Symbols can be customized.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4, The optional option is title, actor, studio, director, release, year, number, runtime, series, publisher </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.7. Proxy settings</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">1, Agent</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">proxy=127.0.0.1:1080</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">ProxyLine to set the local proxy address and port, support Shadowxxxx/X,V2XXX local proxy port, proxy software turns on global mode, It is recommended to use a Japanese agent.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">If you keep reporting Connect Failed! Please check your Proxy or Network! Error, please check whether the port number is correct, or delete the address and port after proxy=, and enable the global mode of the proxy software, or restart the computer, proxy software, and network card.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">2, Connection timeout retry settings</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">timeout=10 </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">10 Timeout retry time unit: seconds, optional range3-10</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3, Connection retry settings</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">retry=3 </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3 is the number of retries, the optional range is 2-5</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.8. Media library selection</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">If it is PLEX, please install the plug-in: XBMCnfoMoviesImporter</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.9. Exclude specified characters, directories, and strings</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">1, Exclude characters: delete specified characters, for example, exclude characters: \\(), delete the \\() character when creating a folder</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">2, Exclude directory: specify the directory, for example, exclude directory: failed, JAV_output, skip failed, JAV_output when scraping multiple directories</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">3, Exclude strings: When extracting numbers, delete the specified string first to improve the success rate. Use \',\' to separate strings.</span>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>         </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.10. Website selection</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">You can use all websites, or specified websites (avsox, javbus, dmm, javdb, fc2club, mgstage) for scraping.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">Only use javdb for scraping. Try not to use it. If you scrape for about 30 seconds, your IP will be blocked by JAVDB for a period of time.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.11. Save logs</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">After being turned on, the log is saved in a txt file in the Log directory of the program directory. A txt file will be generated each time it is run. The txt file can be deleted without affecting the program operation.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">4.12. Moving files after failure</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\">If the video information cannot be scraped, you can choose not to move the video, or automatically move it to the failed output directory.</span>           </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'PingFang SC\',\'Microsoft YaHei UI\'; font-size:13pt;\"> </span>       </p></body></html>"))
+"</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">· Movie_Data_Capture：https://github.com/yoshiko2/Movie_Data_Capture</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">· AVDC-GUI：https://github.com/moyy996/AVDC</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">· MDCx-docker：https://github.com/northsea4/mdcx-docker</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Instructions for use (from AVDC-GUI：https://github.com/moyy996/AVDC</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Table of contents</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">1. Function introduction</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">2. Project introduction</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3. Common serial number naming references</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4. Settings instructions</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">1. Function introduction</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Japanese movie metadata grabbing tool/scraper, cooperates with local movie management software EMBY, KODI, PLEX, etc to manage local movies. This software plays the role of classification and metadata grabbing, using metadata information to classify, for local movie classification and sorting use.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">2. Project introduction</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">GUI made by moyy996，Core made by yoshiko2</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Command line version：https://github.com/yoshiko2/Movie_Data_Capture</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">GUI version：https://github.com/moyy996/AVDC</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3. Common serial number naming references</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">It is not case sensitive, try to name it as standard as possible before scraping!!!!</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3.1. Standard coded</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Javdb, Javbus:SSNI-111</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">DMM：ssni00111</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3.2. Uncensored</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Javdb, Javbus, Avsox:111111-1111, 111111_111, HEYZO-1111, n1111</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3.3. Amateur</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Mgstage:259LUXU-1111</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Javdb:LUXU-1111</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Fc2club:FC2-111111, FC2-PPV-111111, FC2PPV-111111</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3.4. Europe and America</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Javdb, Javbus:sexart.11.11.11(Series.Year.Month.Day)</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3.5. Videos with subtitles</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">You can name the movie something like ssni-xxx-c.mp4,ssni-xxx-C.mp4，abp-xxx-CD1-C.mp4 the rule of.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">     </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">                 </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3.6. Multi-episode videos</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">You can name multi-episode movies based on the episode number suffix, similar to ssni-xxx-cd1.mp4, ssni-xxx-cd2.mp4, abp-xxx-CD1-C.mp4 the rule of，As long as it contains -CDn/-cdn Similar to the naming rules, you can use the diversity function. ** Not supported -A -B -1 -2,Easily confused with -C in subtitles **.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3.7. Multiple episodes, subtitle order</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">abp-xxx-CD1-C.mp4，Episodes come first and subtitles come last. The subtitles must be close to the extension.，-C.mp4.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3.8. External subtitle file</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">The subtitle file name must be consistent with the video file name before they can be moved to a new directory together. Currently supported srt ass sub type of subtitle file.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\"><br />           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4. Setting instructions</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Detailed explanation： https://github.com/moyy996/AVDC/blob/master/README.md</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.1.Scraping mode/finishing mode</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">1, Scraping mode: scrape data by number, including metadata, cover images, thumbnails, and background images.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">2, Organizing mode: Name the movies based only on the actresses and classify them into folders with the actresses\' names.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.2. Soft link mode: To use this mode, run as administrator.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">After scraping, the video will not be moved, but a soft link (similar to a shortcut) will be created in the corresponding directory to facilitate the hamster party comrades who want to scrape and continue uploading after the PT download.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">However, it can only be displayed in the media library and cannot be played in the media library.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.3. Debug mode</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Output the metadata of the number, including cover, director, actors, introduction, etc.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.4. Exclude directory</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Exclude filled directories when scraping multi-level directories.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.5. Video directory</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">The directory of videos to be sorted will traverse all videos in this directory, including subdirectories.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.6. Naming rules</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">1, Directory naming: the name of the directory where video data is stored. It supports multi-layer directories and custom symbols. For example：[actor]/studio/number-[title].</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">2, Video title (in media library): Title naming in nfo. example：number-[title]. Symbols can be customized.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3, Video title (local file): naming of local videos and pictures. example：number-[title]. Symbols can be customized.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4, The optional option is title, actor, studio, director, release, year, number, runtime, series, publisher </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.7. Proxy settings</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">1, Agent</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">proxy=127.0.0.1:1080</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">ProxyLine to set the local proxy address and port, support Shadowxxxx/X,V2XXX local proxy port, proxy software turns on global mode, It is recommended to use a Japanese agent.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">If you keep reporting Connect Failed! Please check your Proxy or Network! Error, please check whether the port number is correct, or delete the address and port after proxy=, and enable the global mode of the proxy software, or restart the computer, proxy software, and network card.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">2, Connection timeout retry settings</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">timeout=10 </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">10 Timeout retry time unit: seconds, optional range3-10</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3, Connection retry settings</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">retry=3 </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3 is the number of retries, the optional range is 2-5</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.8. Media library selection</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">If it is PLEX, please install the plug-in: XBMCnfoMoviesImporter</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.9. Exclude specified characters, directories, and strings</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">1, Exclude characters: delete specified characters, for example, exclude characters: \\(), delete the \\() character when creating a folder</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">2, Exclude directory: specify the directory, for example, exclude directory: failed, JAV_output, skip failed, JAV_output when scraping multiple directories</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">3, Exclude strings: When extracting numbers, delete the specified string first to improve the success rate. Use \',\' to separate strings.</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">                    </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.10. Website selection</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">You can use all websites, or specified websites (avsox, javbus, dmm, javdb, fc2club, mgstage) for scraping.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">Only use javdb for scraping. Try not to use it. If you scrape for about 30 seconds, your IP will be blocked by JAVDB for a period of time.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.11. Save logs</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">After being turned on, the log is saved in a txt file in the Log directory of the program directory. A txt file will be generated each time it is run. The txt file can be deleted without affecting the program operation.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">4.12. Moving files after failure</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\">If the video information cannot be scraped, you can choose not to move the video, or automatically move it to the failed output directory.</span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas,PingFang SC,Microsoft YaHei UI\';\"> </span><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">       </span></p></body></html>"))
         self.pushButton_main.setText(_translate("MDCx", " Home"))
         self.pushButton_log.setText(_translate("MDCx", " Log"))
         self.pushButton_tool.setText(_translate("MDCx", " Tools"))
