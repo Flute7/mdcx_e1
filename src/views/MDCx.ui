@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -2300,7 +2300,7 @@ p, li { white-space: pre-wrap; }
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <property name="iconSize">
        <size>
@@ -2331,7 +2331,7 @@ p, li { white-space: pre-wrap; }
         </sizepolicy>
        </property>
        <attribute name="title">
-        <string>Catalog</string>
+        <string>Catalogue</string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_2">
         <property name="geometry">
@@ -2394,18 +2394,33 @@ p, li { white-space: pre-wrap; }
            <string notr="true"/>
           </property>
           <property name="title">
-           <string>刮削目录</string>
+           <string>Scraping Catalogue</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_7">
            <property name="geometry">
             <rect>
              <x>20</x>
              <y>30</y>
-             <width>701</width>
+             <width>661</width>
              <height>511</height>
             </rect>
            </property>
-           <layout class="QGridLayout" name="gridLayout_7">
+           <layout class="QGridLayout" name="gridLayout_7" columnstretch="0,0" columnminimumwidth="0,0">
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="spacing">
+             <number>-1</number>
+            </property>
             <item row="3" column="1">
              <layout class="QHBoxLayout" name="horizontalLayout_134">
               <item>
@@ -2445,7 +2460,7 @@ p, li { white-space: pre-wrap; }
                  </size>
                 </property>
                 <property name="text">
-                 <string>Directory</string>
+                 <string>Open...</string>
                 </property>
                </widget>
               </item>
@@ -2485,7 +2500,7 @@ p, li { white-space: pre-wrap; }
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>Scraping Directory:</string>
+               <string>Catalogue:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2587,7 +2602,7 @@ p, li { white-space: pre-wrap; }
             <item row="5" column="0">
              <widget class="QLabel" name="label_47">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
@@ -2605,7 +2620,7 @@ p, li { white-space: pre-wrap; }
                <enum>QFrame::NoFrame</enum>
               </property>
               <property name="text">
-               <string>Success Output Directory:</string>
+               <string>Success:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2650,7 +2665,7 @@ p, li { white-space: pre-wrap; }
                  </size>
                 </property>
                 <property name="text">
-                 <string>Directory</string>
+                 <string>Open...</string>
                 </property>
                </widget>
               </item>
@@ -2666,7 +2681,7 @@ p, li { white-space: pre-wrap; }
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>0</width>
                 <height>0</height>
                </size>
               </property>
@@ -2736,7 +2751,7 @@ p, li { white-space: pre-wrap; }
                  </size>
                 </property>
                 <property name="text">
-                 <string>Directory</string>
+                 <string>Open...</string>
                 </property>
                </widget>
               </item>
@@ -2770,7 +2785,7 @@ p, li { white-space: pre-wrap; }
             <item row="7" column="0">
              <widget class="QLabel" name="label_46">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
@@ -2785,7 +2800,7 @@ p, li { white-space: pre-wrap; }
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>Failed Output Directory:</string>
+               <string>Failed:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -2831,7 +2846,7 @@ p, li { white-space: pre-wrap; }
                  </size>
                 </property>
                 <property name="text">
-                 <string>Directory</string>
+                 <string>Open...</string>
                 </property>
                </widget>
               </item>
@@ -3877,7 +3892,7 @@ p, li { white-space: pre-wrap; }
             </size>
            </property>
            <property name="text">
-            <string>刮削时自动清理</string>
+            <string>Automatic cleaning when scraping</string>
            </property>
           </widget>
           <widget class="QCheckBox" name="checkBox_i_agree_clean">
@@ -6452,7 +6467,7 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
       </widget>
       <widget class="QWidget" name="tab">
        <attribute name="title">
-        <string>Data Source</string>
+        <string>Website</string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_8">
         <property name="geometry">
