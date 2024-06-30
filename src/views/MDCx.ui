@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -61,7 +61,7 @@
      <widget class="QLabel" name="label_number1">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>70</y>
         <width>71</width>
         <height>40</height>
@@ -77,7 +77,7 @@
      <widget class="QLabel" name="label_number">
       <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>80</x>
         <y>70</y>
         <width>311</width>
         <height>40</height>
@@ -106,7 +106,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_13">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>530</y>
         <width>71</width>
         <height>40</height>
@@ -122,9 +122,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_release">
       <property name="geometry">
        <rect>
-        <x>79</x>
+        <x>90</x>
         <y>530</y>
-        <width>211</width>
+        <width>201</width>
         <height>40</height>
        </rect>
       </property>
@@ -144,7 +144,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_actor1">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>100</y>
         <width>81</width>
         <height>40</height>
@@ -154,15 +154,15 @@ color:#336699</string>
        <number>0</number>
       </property>
       <property name="text">
-       <string>Performer:</string>
+       <string>Actor:</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_actor">
       <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>80</x>
         <y>100</y>
-        <width>141</width>
+        <width>311</width>
         <height>40</height>
        </rect>
       </property>
@@ -189,7 +189,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_outline">
       <property name="geometry">
        <rect>
-        <x>79</x>
+        <x>90</x>
         <y>430</y>
         <width>491</width>
         <height>40</height>
@@ -223,7 +223,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_18">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>430</y>
         <width>61</width>
         <height>40</height>
@@ -239,7 +239,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_title">
       <property name="geometry">
        <rect>
-        <x>100</x>
+        <x>80</x>
         <y>130</y>
         <width>311</width>
         <height>40</height>
@@ -267,7 +267,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_title1">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>130</y>
         <width>51</width>
         <height>40</height>
@@ -283,9 +283,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_director">
       <property name="geometry">
        <rect>
-        <x>79</x>
+        <x>90</x>
         <y>580</y>
-        <width>211</width>
+        <width>201</width>
         <height>40</height>
        </rect>
       </property>
@@ -308,9 +308,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_publish">
       <property name="geometry">
        <rect>
-        <x>369</x>
+        <x>389</x>
         <y>630</y>
-        <width>201</width>
+        <width>191</width>
         <height>40</height>
        </rect>
       </property>
@@ -333,7 +333,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_23">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>580</y>
         <width>61</width>
         <height>40</height>
@@ -365,9 +365,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_studio">
       <property name="geometry">
        <rect>
-        <x>79</x>
+        <x>90</x>
         <y>630</y>
-        <width>211</width>
+        <width>201</width>
         <height>40</height>
        </rect>
       </property>
@@ -390,9 +390,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_series">
       <property name="geometry">
        <rect>
-        <x>369</x>
+        <x>389</x>
         <y>580</y>
-        <width>201</width>
+        <width>191</width>
         <height>40</height>
        </rect>
       </property>
@@ -415,7 +415,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_30">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>630</y>
         <width>50</width>
         <height>40</height>
@@ -447,7 +447,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_tag">
       <property name="geometry">
        <rect>
-        <x>79</x>
+        <x>90</x>
         <y>480</y>
         <width>491</width>
         <height>40</height>
@@ -472,7 +472,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_33">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>480</y>
         <width>41</width>
         <height>40</height>
@@ -569,9 +569,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_runtime">
       <property name="geometry">
        <rect>
-        <x>369</x>
+        <x>389</x>
         <y>530</y>
-        <width>201</width>
+        <width>191</width>
         <height>40</height>
        </rect>
       </property>
@@ -591,9 +591,9 @@ color:#336699</string>
      <widget class="Line" name="line_6">
       <property name="geometry">
        <rect>
-        <x>99</x>
+        <x>89</x>
         <y>460</y>
-        <width>481</width>
+        <width>491</width>
         <height>20</height>
        </rect>
       </property>
@@ -604,9 +604,9 @@ color:#336699</string>
      <widget class="Line" name="line_7">
       <property name="geometry">
        <rect>
-        <x>99</x>
+        <x>89</x>
         <y>510</y>
-        <width>481</width>
+        <width>491</width>
         <height>20</height>
        </rect>
       </property>
@@ -617,9 +617,9 @@ color:#336699</string>
      <widget class="Line" name="line_8">
       <property name="geometry">
        <rect>
-        <x>99</x>
+        <x>89</x>
         <y>560</y>
-        <width>191</width>
+        <width>201</width>
         <height>20</height>
        </rect>
       </property>
@@ -669,9 +669,9 @@ color:#336699</string>
      <widget class="Line" name="line_12">
       <property name="geometry">
        <rect>
-        <x>99</x>
+        <x>89</x>
         <y>610</y>
-        <width>191</width>
+        <width>201</width>
         <height>20</height>
        </rect>
       </property>
@@ -682,9 +682,9 @@ color:#336699</string>
      <widget class="Line" name="line_13">
       <property name="geometry">
        <rect>
-        <x>99</x>
+        <x>89</x>
         <y>660</y>
-        <width>191</width>
+        <width>201</width>
         <height>20</height>
        </rect>
       </property>
@@ -735,7 +735,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_poster">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>90</x>
         <y>180</y>
         <width>156</width>
         <height>220</height>
@@ -790,7 +790,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_poster1">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>165</y>
         <width>61</width>
         <height>40</height>
@@ -910,9 +910,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_file_path">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>10</y>
-        <width>551</width>
+        <width>581</width>
         <height>50</height>
        </rect>
       </property>
@@ -933,9 +933,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="Line" name="line_14">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>10</x>
         <y>60</y>
-        <width>781</width>
+        <width>791</width>
         <height>20</height>
        </rect>
       </property>
@@ -946,8 +946,8 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QLabel" name="label_source">
       <property name="geometry">
        <rect>
-        <x>270</x>
-        <y>100</y>
+        <x>430</x>
+        <y>70</y>
         <width>141</width>
         <height>40</height>
        </rect>
@@ -974,9 +974,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QPushButton" name="pushButton_select_media_folder">
       <property name="geometry">
        <rect>
-        <x>590</x>
+        <x>594</x>
         <y>13</y>
-        <width>91</width>
+        <width>81</width>
         <height>40</height>
        </rect>
       </property>
@@ -989,7 +989,7 @@ The program will scrape all files in the directory and subdirectories.</string>
        <rect>
         <x>80</x>
         <y>400</y>
-        <width>411</width>
+        <width>201</width>
         <height>40</height>
        </rect>
       </property>
@@ -1017,9 +1017,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QLabel" name="label_thumb_size">
       <property name="geometry">
        <rect>
-        <x>250</x>
+        <x>300</x>
         <y>400</y>
-        <width>201</width>
+        <width>171</width>
         <height>40</height>
        </rect>
       </property>
