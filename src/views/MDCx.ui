@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1051</width>
-    <height>823</height>
+    <width>1030</width>
+    <height>700</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -1651,9 +1651,9 @@ p, li { white-space: pre-wrap; }
          <property name="geometry">
           <rect>
            <x>60</x>
-           <y>140</y>
+           <y>160</y>
            <width>611</width>
-           <height>51</height>
+           <height>31</height>
           </rect>
          </property>
          <property name="styleSheet">
@@ -1899,7 +1899,7 @@ p, li { white-space: pre-wrap; }
            <x>80</x>
            <y>140</y>
            <width>561</width>
-           <height>20</height>
+           <height>51</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -2300,7 +2300,7 @@ p, li { white-space: pre-wrap; }
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>11</number>
       </property>
       <property name="iconSize">
        <size>
@@ -2331,7 +2331,7 @@ p, li { white-space: pre-wrap; }
         </sizepolicy>
        </property>
        <attribute name="title">
-        <string>Catalogue</string>
+        <string> Catalogue </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_2">
         <property name="geometry">
@@ -4125,7 +4125,7 @@ p, li { white-space: pre-wrap; }
       </widget>
       <widget class="QWidget" name="tab1">
        <attribute name="title">
-        <string>Scrape </string>
+        <string> Scrape </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea">
         <property name="geometry">
@@ -6467,7 +6467,7 @@ QPushButton:pressed{ background-color: rgba(255, 255, 255, 10);}</string>
       </widget>
       <widget class="QWidget" name="tab">
        <attribute name="title">
-        <string>Website</string>
+        <string> Website </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_8">
         <property name="geometry">
@@ -11016,7 +11016,7 @@ font-weight:bold
       </widget>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
-        <string>Download</string>
+        <string> Download </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_6">
         <property name="enabled">
@@ -12294,7 +12294,7 @@ font-weight:bold</string>
       </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
-        <string>Name</string>
+        <string> Name </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_7">
         <property name="geometry">
@@ -15156,7 +15156,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
       </widget>
       <widget class="QWidget" name="tab_6">
        <attribute name="title">
-        <string>Translate</string>
+        <string> Translate </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_11">
         <property name="geometry">
@@ -16735,7 +16735,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
       </widget>
       <widget class="QWidget" name="tab_2">
        <attribute name="title">
-        <string>Subtitle</string>
+        <string> Subtitle </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_9">
         <property name="geometry">
@@ -17338,7 +17338,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
       </widget>
       <widget class="QWidget" name="tab4">
        <attribute name="title">
-        <string>Watermark</string>
+        <string> Watermark </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_4">
         <property name="geometry">
@@ -18655,7 +18655,7 @@ line-height:50px</string>
       </widget>
       <widget class="QWidget" name="tab_7">
        <attribute name="title">
-        <string>NFO </string>
+        <string> NFO </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_13">
         <property name="geometry">
@@ -20251,7 +20251,7 @@ line-height:50px</string>
       </widget>
       <widget class="QWidget" name="tab_5">
        <attribute name="title">
-        <string>Performer </string>
+        <string> Performer </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_12">
         <property name="geometry">
@@ -21982,7 +21982,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
       </widget>
       <widget class="QWidget" name="tab3">
        <attribute name="title">
-        <string>Network</string>
+        <string> Network </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_3">
         <property name="geometry">
@@ -23044,7 +23044,7 @@ font-weight:bold</string>
         <bool>true</bool>
        </property>
        <attribute name="title">
-        <string>Advanced</string>
+        <string> Advanced </string>
        </attribute>
        <widget class="QScrollArea" name="scrollArea_5">
         <property name="geometry">
@@ -25347,7 +25347,7 @@ QProgressBar {
         <number>0</number>
        </property>
        <property name="text">
-        <string>演员：</string>
+        <string>Performers:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -25385,7 +25385,7 @@ QProgressBar {
         <number>0</number>
        </property>
        <property name="text">
-        <string>标题：</string>
+        <string>Title:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
