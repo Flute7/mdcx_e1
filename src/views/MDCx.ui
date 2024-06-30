@@ -23158,7 +23158,7 @@ font-weight:bold</string>
            </size>
           </property>
           <property name="title">
-           <string>保存日志</string>
+           <string>Save Log</string>
           </property>
           <widget class="QWidget" name="horizontalLayoutWidget_11">
            <property name="geometry">
@@ -23173,14 +23173,14 @@ font-weight:bold</string>
             <item>
              <widget class="QRadioButton" name="radioButton_log_on">
               <property name="text">
-               <string>开</string>
+               <string>Yes</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QRadioButton" name="radioButton_log_off">
               <property name="text">
-               <string>关</string>
+               <string>No</string>
               </property>
              </widget>
             </item>
@@ -23209,7 +23209,7 @@ font-weight:bold</string>
            </size>
           </property>
           <property name="title">
-           <string>调试模式（日志页面）</string>
+           <string>Debug Mode (log page)</string>
           </property>
           <widget class="QWidget" name="layoutWidget_3">
            <property name="geometry">
@@ -23236,7 +23236,7 @@ font-weight:bold</string>
                </size>
               </property>
               <property name="text">
-               <string>显示刮削过程信息</string>
+               <string>Display scraping info</string>
               </property>
              </widget>
             </item>
@@ -23255,7 +23255,7 @@ font-weight:bold</string>
                </size>
               </property>
               <property name="text">
-               <string>显示字段来源信息</string>
+               <string>Display field source info</string>
               </property>
              </widget>
             </item>
@@ -23274,7 +23274,7 @@ font-weight:bold</string>
                </size>
               </property>
               <property name="text">
-               <string>显示字段内容信息</string>
+               <string>Display field content info</string>
               </property>
              </widget>
             </item>
@@ -23303,7 +23303,7 @@ font-weight:bold</string>
            </size>
           </property>
           <property name="title">
-           <string>检查更新</string>
+           <string>Update Check</string>
           </property>
           <widget class="QWidget" name="horizontalLayoutWidget_7">
            <property name="geometry">
@@ -23318,14 +23318,14 @@ font-weight:bold</string>
             <item>
              <widget class="QRadioButton" name="radioButton_update_on">
               <property name="text">
-               <string>开</string>
+               <string>Yes</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QRadioButton" name="radioButton_update_off">
               <property name="text">
-               <string>关</string>
+               <string>No</string>
               </property>
              </widget>
             </item>
@@ -23341,6 +23341,12 @@ font-weight:bold</string>
             <height>581</height>
            </rect>
           </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
           <property name="minimumSize">
            <size>
             <width>200</width>
@@ -23354,18 +23360,21 @@ font-weight:bold</string>
            </size>
           </property>
           <property name="title">
-           <string>高级功能</string>
+           <string>Advanced Functions</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_20">
            <property name="geometry">
             <rect>
-             <x>30</x>
+             <x>10</x>
              <y>30</y>
-             <width>950</width>
-             <height>531</height>
+             <width>681</width>
+             <height>545</height>
             </rect>
            </property>
            <layout class="QGridLayout" name="gridLayout_20">
+            <property name="horizontalSpacing">
+             <number>-1</number>
+            </property>
             <item row="9" column="1">
              <widget class="QFrame" name="frame">
               <property name="frameShape">
@@ -23387,7 +23396,7 @@ font-weight:bold</string>
                 <item>
                  <widget class="QCheckBox" name="checkBox_hide_window_title">
                   <property name="text">
-                   <string>隐藏边框（美观样式）</string>
+                   <string>Hide window border</string>
                   </property>
                  </widget>
                 </item>
@@ -23400,7 +23409,7 @@ font-weight:bold</string>
                    </size>
                   </property>
                   <property name="text">
-                   <string>暗黑模式</string>
+                   <string>Dark mode</string>
                   </property>
                  </widget>
                 </item>
@@ -23493,7 +23502,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>间歇刮削：</string>
+               <string>Interval Scrape:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -23648,7 +23657,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Automatic scraping interval (hours: minutes: seconds)</string>
+                 <string>Scrape interval (h:m:s)</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -23675,7 +23684,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>自动任务：</string>
+               <string>Automation:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -23700,7 +23709,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>自动刮削：</string>
+               <string>Auto Scrape:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -23725,7 +23734,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>弹窗确认：</string>
+               <string>Confirmation:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -23753,6 +23762,9 @@ font-weight:bold</string>
  border: 1px solid rgba(0,0,0, 50);
  border-radius: 15px;
 </string>
+                </property>
+                <property name="text">
+                 <string/>
                 </property>
                </widget>
               </item>
@@ -23794,7 +23806,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>记住未完成的刮削任务，即使退出或中止，下次仍可继续刮削未完成任务</string>
+                 <string>Remember unfinished scraping task</string>
                 </property>
                </widget>
               </item>
@@ -23818,7 +23830,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>保留任务：</string>
+               <string>Retention:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -23837,7 +23849,8 @@ font-weight:bold</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>将读取该目录中的配置文件、映射表、水印图片、演员头像等数据，修改后重启程序方可生效</string>
+               <string>Read configuration files, mapping tables, watermark images, actor avatars and other data.
+*restart required</string>
               </property>
              </widget>
             </item>
@@ -23852,7 +23865,7 @@ font-weight:bold</string>
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>使用 QT 选择对话框</string>
+                 <string>QT dialogs</string>
                 </property>
                </widget>
               </item>
@@ -23874,7 +23887,7 @@ font-weight:bold</string>
                  <string notr="true">color: rgb(8, 128, 128);</string>
                 </property>
                 <property name="text">
-                 <string>目录中的文件较多时，可以勾选此项以提高打开速度</string>
+                 <string>Improves opening speed of directories with a large numbers of files.</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -23901,7 +23914,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>隐藏图标：</string>
+               <string>Hide Icon:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -23926,7 +23939,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>配置文件目录：</string>
+               <string>Config Directory:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -23960,21 +23973,21 @@ font-weight:bold</string>
                    </size>
                   </property>
                   <property name="text">
-                   <string>点关闭按钮</string>
+                   <string>Close button</string>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <widget class="QRadioButton" name="radioButton_hide_mini">
                   <property name="text">
-                   <string>点最小化按钮</string>
+                   <string>Minimise button</string>
                   </property>
                  </widget>
                 </item>
                 <item>
                  <widget class="QRadioButton" name="radioButton_hide_none">
                   <property name="text">
-                   <string>无</string>
+                   <string>Disabled</string>
                   </property>
                  </widget>
                 </item>
@@ -23999,7 +24012,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>连续刮削</string>
+                 <string>Active</string>
                 </property>
                </widget>
               </item>
@@ -24043,7 +24056,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>个文件后，自动休息</string>
+                 <string>Quantity</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -24090,7 +24103,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>（时:分:秒）</string>
+                 <string>Rest interval (h:m:s)</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -24117,7 +24130,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>隐藏窗口：</string>
+               <string>Hide Window:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -24142,7 +24155,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>界面外观：</string>
+               <string>Appearance:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -24167,7 +24180,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>选择对话框：</string>
+               <string>Dialog:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -24192,7 +24205,7 @@ font-weight:bold</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>高分屏缩放：</string>
+               <string>Resolution:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -24216,7 +24229,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>非整数倍缩放</string>
+                 <string>Non-integer scaling</string>
                 </property>
                </widget>
               </item>
@@ -24238,7 +24251,7 @@ font-weight:bold</string>
                  <string notr="true">color: rgb(8, 128, 128);</string>
                 </property>
                 <property name="text">
-                 <string>保存后重启软件生效，可能会有点模糊</string>
+                 <string>Requires restart (may cause blurring).</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -24270,7 +24283,7 @@ font-weight:bold</string>
      <widget class="QPushButton" name="pushButton_init_config">
       <property name="geometry">
        <rect>
-        <x>440</x>
+        <x>470</x>
         <y>630</y>
         <width>91</width>
         <height>40</height>
@@ -24283,9 +24296,9 @@ font-weight:bold</string>
      <widget class="QPushButton" name="pushButton_save_config">
       <property name="geometry">
        <rect>
-        <x>550</x>
+        <x>580</x>
         <y>630</y>
-        <width>181</width>
+        <width>151</width>
         <height>50</height>
        </rect>
       </property>
@@ -24296,7 +24309,7 @@ font-weight:bold</string>
      <widget class="QComboBox" name="comboBox_change_config">
       <property name="geometry">
        <rect>
-        <x>160</x>
+        <x>180</x>
         <y>635</y>
         <width>151</width>
         <height>30</height>
@@ -24348,7 +24361,7 @@ font-weight:bold</string>
      <widget class="QLabel" name="label_241">
       <property name="geometry">
        <rect>
-        <x>60</x>
+        <x>80</x>
         <y>629</y>
         <width>91</width>
         <height>40</height>
@@ -24382,7 +24395,7 @@ font-weight:bold</string>
      <widget class="QPushButton" name="pushButton_save_new_config">
       <property name="geometry">
        <rect>
-        <x>330</x>
+        <x>360</x>
         <y>630</y>
         <width>91</width>
         <height>40</height>
