@@ -48,9 +48,9 @@
      <widget class="QPushButton" name="pushButton_start_cap">
       <property name="geometry">
        <rect>
-        <x>689</x>
+        <x>699</x>
         <y>13</y>
-        <width>111</width>
+        <width>101</width>
         <height>40</height>
        </rect>
       </property>
@@ -77,9 +77,9 @@
      <widget class="QLabel" name="label_number">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>90</x>
         <y>70</y>
-        <width>311</width>
+        <width>491</width>
         <height>40</height>
        </rect>
       </property>
@@ -111,6 +111,12 @@ color:#336699</string>
         <width>71</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="lineWidth">
        <number>0</number>
@@ -160,9 +166,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_actor">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>90</x>
         <y>100</y>
-        <width>311</width>
+        <width>491</width>
         <height>40</height>
        </rect>
       </property>
@@ -229,6 +235,12 @@ color:#336699</string>
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="lineWidth">
        <number>0</number>
       </property>
@@ -239,9 +251,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_title">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>90</x>
         <y>130</y>
-        <width>311</width>
+        <width>491</width>
         <height>40</height>
        </rect>
       </property>
@@ -339,6 +351,12 @@ color:#336699</string>
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="lineWidth">
        <number>0</number>
       </property>
@@ -354,6 +372,12 @@ color:#336699</string>
         <width>71</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="lineWidth">
        <number>0</number>
@@ -421,6 +445,12 @@ color:#336699</string>
         <height>40</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
       <property name="lineWidth">
        <number>0</number>
       </property>
@@ -436,6 +466,12 @@ color:#336699</string>
         <width>61</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="lineWidth">
        <number>0</number>
@@ -477,6 +513,12 @@ color:#336699</string>
         <width>41</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="lineWidth">
        <number>0</number>
@@ -558,6 +600,12 @@ color:#336699</string>
         <width>71</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="font">
+       <font>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
       </property>
       <property name="lineWidth">
        <number>0</number>
@@ -735,7 +783,7 @@ color:#336699</string>
      <widget class="QLabel" name="label_poster">
       <property name="geometry">
        <rect>
-        <x>90</x>
+        <x>89</x>
         <y>180</y>
         <width>156</width>
         <height>220</height>
@@ -910,9 +958,9 @@ color:#336699</string>
      <widget class="QLabel" name="label_file_path">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>0</x>
         <y>10</y>
-        <width>581</width>
+        <width>571</width>
         <height>50</height>
        </rect>
       </property>
@@ -933,7 +981,7 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="Line" name="line_14">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>9</x>
         <y>60</y>
         <width>791</width>
         <height>20</height>
@@ -974,7 +1022,7 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QPushButton" name="pushButton_select_media_folder">
       <property name="geometry">
        <rect>
-        <x>594</x>
+        <x>600</x>
         <y>13</y>
         <width>81</width>
         <height>40</height>
@@ -987,9 +1035,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QLabel" name="label_poster_size">
       <property name="geometry">
        <rect>
-        <x>80</x>
+        <x>90</x>
         <y>400</y>
-        <width>201</width>
+        <width>381</width>
         <height>40</height>
        </rect>
       </property>
@@ -1017,9 +1065,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QLabel" name="label_thumb_size">
       <property name="geometry">
        <rect>
-        <x>300</x>
+        <x>280</x>
         <y>400</y>
-        <width>171</width>
+        <width>191</width>
         <height>40</height>
        </rect>
       </property>
@@ -1048,7 +1096,7 @@ The program will scrape all files in the directory and subdirectories.</string>
       <property name="geometry">
        <rect>
         <x>507</x>
-        <y>130</y>
+        <y>80</y>
         <width>40</width>
         <height>40</height>
        </rect>
@@ -1076,7 +1124,7 @@ The program will scrape all files in the directory and subdirectories.</string>
       <property name="geometry">
        <rect>
         <x>467</x>
-        <y>130</y>
+        <y>80</y>
         <width>40</width>
         <height>40</height>
        </rect>
@@ -1104,7 +1152,7 @@ The program will scrape all files in the directory and subdirectories.</string>
       <property name="geometry">
        <rect>
         <x>427</x>
-        <y>130</y>
+        <y>80</y>
         <width>40</width>
         <height>40</height>
        </rect>
@@ -1135,7 +1183,7 @@ The program will scrape all files in the directory and subdirectories.</string>
       <property name="geometry">
        <rect>
         <x>547</x>
-        <y>130</y>
+        <y>80</y>
         <width>40</width>
         <height>40</height>
        </rect>
