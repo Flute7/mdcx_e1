@@ -9897,7 +9897,7 @@ class Ui_MDCx(object):
         self.groupBox_12.setMaximumSize(QtCore.QSize(739, 16777215))
         self.groupBox_12.setObjectName("groupBox_12")
         self.gridLayoutWidget_20 = QtWidgets.QWidget(self.groupBox_12)
-        self.gridLayoutWidget_20.setGeometry(QtCore.QRect(30, 30, 665, 531))
+        self.gridLayoutWidget_20.setGeometry(QtCore.QRect(30, 30, 950, 531))
         self.gridLayoutWidget_20.setObjectName("gridLayoutWidget_20")
         self.gridLayout_20 = QtWidgets.QGridLayout(self.gridLayoutWidget_20)
         self.gridLayout_20.setContentsMargins(0, 0, 0, 0)
@@ -10925,8 +10925,8 @@ class Ui_MDCx(object):
         MDCx.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MDCx)
-        self.stackedWidget.setCurrentIndex(5)
-        self.tabWidget.setCurrentIndex(0)
+        self.stackedWidget.setCurrentIndex(4)
+        self.tabWidget.setCurrentIndex(11)
         QtCore.QMetaObject.connectSlotsByName(MDCx)
 
     def retranslateUi(self, MDCx):
@@ -11900,20 +11900,20 @@ class Ui_MDCx(object):
         self.groupBox_12.setTitle(_translate("MDCx", "高级功能"))
         self.checkBox_hide_window_title.setText(_translate("MDCx", "隐藏边框（美观样式）"))
         self.checkBox_dark_mode.setText(_translate("MDCx", "暗黑模式"))
-        self.checkBox_hide_dock_icon.setText(_translate("MDCx", "隐藏 Dock 图标（Mac）"))
-        self.label_42.setText(_translate("MDCx", "保存后重启软件生效    "))
-        self.checkBox_hide_menu_icon.setText(_translate("MDCx", "隐藏菜单栏图标（Mac）"))
+        self.checkBox_hide_dock_icon.setText(_translate("MDCx", "Hide dock icon (Mac)"))
+        self.label_42.setText(_translate("MDCx", "*requires restart"))
+        self.checkBox_hide_menu_icon.setText(_translate("MDCx", "Hide menu bar icon (Mac)"))
         self.label_321.setText(_translate("MDCx", "间歇刮削："))
-        self.checkBox_auto_start.setText(_translate("MDCx", "启动软件后自动开始刮削"))
-        self.checkBox_auto_exit.setText(_translate("MDCx", "刮削结束后自动退出软件"))
-        self.checkBox_show_dialog_exit.setText(_translate("MDCx", "退出软件时"))
-        self.checkBox_show_dialog_stop_scrape.setText(_translate("MDCx", "停止刮削时"))
-        self.checkBox_timed_scrape.setText(_translate("MDCx", "每隔"))
-        self.label_84.setText(_translate("MDCx", "（时:分:秒），自动开始刮削（读取配置时开始计时）"))
+        self.checkBox_auto_start.setText(_translate("MDCx", "Automatically scrape on software startup"))
+        self.checkBox_auto_exit.setText(_translate("MDCx", "Automatically exit after scraping"))
+        self.checkBox_show_dialog_exit.setText(_translate("MDCx", "When exiting the software"))
+        self.checkBox_show_dialog_stop_scrape.setText(_translate("MDCx", "When you stop scraping"))
+        self.checkBox_timed_scrape.setText(_translate("MDCx", "Active"))
+        self.label_84.setText(_translate("MDCx", "Automatic scraping interval (hours: minutes: seconds)"))
         self.label_308.setText(_translate("MDCx", "自动任务："))
         self.label_309.setText(_translate("MDCx", "自动刮削："))
         self.label_277.setText(_translate("MDCx", "弹窗确认："))
-        self.pushButton_select_config_folder.setText(_translate("MDCx", "Directory"))
+        self.pushButton_select_config_folder.setText(_translate("MDCx", "Open..."))
         self.checkBox_remain_task.setText(_translate("MDCx", "记住未完成的刮削任务，即使退出或中止，下次仍可继续刮削未完成任务"))
         self.label_279.setText(_translate("MDCx", "保留任务："))
         self.label_40.setText(_translate("MDCx", "将读取该目录中的配置文件、映射表、水印图片、演员头像等数据，修改后重启程序方可生效"))
@@ -11960,17 +11960,19 @@ class Ui_MDCx(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'.AppleSystemUIFont\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:14pt; font-weight:600;\">Instructions For Use</span><span style=\" font-weight:600;\"> </span>(modified from AVDC-GUI: https://github.com/moyy996/AVDC)</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; font-weight:600;\">Instructions for Use</span><span style=\" font-weight:600;\"> </span>(modified from AVDC-GUI: https://github.com/moyy996/AVDC)</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">· Movie_Data_Capture: https://github.com/yoshiko2/Movie_Data_Capture</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">· AVDC-GUI: https://github.com/moyy996/AVDC</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">· MDCx-docker: https://github.com/northsea4/mdcx-docker</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Table of Contents</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    1. Function Introduction</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    2. Project Introduction</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    3. Common Serial Number Naming References</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    4. Settings Instructions</p>\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">1. Function Introduction</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Japanese movie metadata grabbing tool/scraper, co-operates with local movie management</p>\n"
@@ -11985,7 +11987,7 @@ class Ui_MDCx(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">3. Common Serial Number Naming References</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    It is not case sensitive, try to name it as standard as possible before scraping!!!!</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            </p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">      3.1 Standard Coded</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">     3.1 Standard Coded</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           Javdb, Javbus:SSNI-111</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           DMM: ssni00111</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
@@ -12023,10 +12025,10 @@ class Ui_MDCx(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    Detailed explanation: https://github.com/moyy996/AVDC/blob/master/README.md</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">      4.1 Scraping Mode / Finishing Mode</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           1. Scraping mode: scrape data by number, including metadata, cover images, thumbnails,</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">               and background images.</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">           2. Organizing mode: Name the movies based on the actresses and classify them into</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">               folders with the actresses\' names.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            1. Scraping mode: scrape data by number, including metadata, cover images, thumbnails,</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                and background images.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            2. Organizing mode: Name the movies based on the actresses and classify them into</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                folders with the actresses\' names.</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">      4.2 Soft Link Mode (run as administrator)</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            After scraping, the video will not be moved, but a soft link (similar to a shortcut) will be</p>\n"
@@ -12049,11 +12051,11 @@ class Ui_MDCx(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                multi-layer directories and custom symbols.</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                For example：[actor]/studio/number-[title].</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            2. Video title (in media library): Title naming in nfo. example：number-[title].</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                 Symbols can be customized.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                Symbols can be customized.</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            3. Video title (local file): naming of local videos and pictures. example：number-[title].</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                Symbols can be customized.</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            4. The optional option is title, actor, studio, director, release, year, number, runtime,</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                 series, publisher.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                series, publisher.</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">      4.7 Proxy Settings</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            1. Agent settings.</p>\n"
@@ -12065,22 +12067,22 @@ class Ui_MDCx(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                is correct, or delete the address and port after proxy=, and enable the global mode</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                of the proxy software, or restart the computer, proxy software, and network card.</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            2. Connection timeout retry settings.</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                 timeout=10</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                 10 Timeout retry time unit: seconds, optional range 3-10</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                timeout=10</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                10 Timeout retry time unit: seconds, optional range 3-10</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            3. Connection retry settings</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                 retry=3</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                 3 is the number of retries, the optional range is 2-5</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                retry=3</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                3 is the number of retries, the optional range is 2-5</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">      4.8 Media Library Selection</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">             If it is PLEX, please install the plug-in: XBMCnfoMoviesImporter</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            If it is PLEX, please install the plug-in: XBMCnfoMoviesImporter</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            </p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">      4.9 Exclude Specified Sharacters, Directories, and Strings</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">             1. Exclude characters: delete specified characters,</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                 e.g: \\(), delete the \\() character when creating a folder.</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">             2. Exclude directory: specify the directory,</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                  e.g. failed, JAV_output, skip failed, JAV_output.</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">             3. Exclude strings: When extracting numbers, delete the specified string first to</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                 improve the success rate. Use \',\' to separate strings.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            1. Exclude characters: delete specified characters,</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                e.g: \\(), delete the \\() character when creating a folder.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            2. Exclude directory: specify the directory,</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                e.g. failed, JAV_output, skip failed, JAV_output.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">            3. Exclude strings: When extracting numbers, delete the specified string first to</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">                improve the success rate. Use \',\' to separate strings.</p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">      4.10 Website Selection</span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">              You can use all websites, or specified websites</p>\n"
