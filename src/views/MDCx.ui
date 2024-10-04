@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -1385,7 +1385,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_show_hide_logs">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>5</x>
         <y>650</y>
         <width>40</width>
         <height>40</height>
@@ -1492,7 +1492,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_save_failed_list">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>5</x>
         <y>650</y>
         <width>40</width>
         <height>40</height>
@@ -1567,6 +1567,9 @@ p, li { white-space: pre-wrap; }
         <width>120</width>
         <height>40</height>
        </rect>
+      </property>
+      <property name="focusPolicy">
+       <enum>Qt::NoFocus</enum>
       </property>
       <property name="text">
        <string>Test Network</string>
@@ -24652,10 +24655,10 @@ p, li { white-space: pre-wrap; }
      <widget class="QTextBrowser" name="textBrowser_about">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>20</x>
         <y>0</y>
-        <width>790</width>
-        <height>689</height>
+        <width>780</width>
+        <height>690</height>
        </rect>
       </property>
       <property name="styleSheet">
