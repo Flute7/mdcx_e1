@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -1288,9 +1288,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QTextBrowser" name="textBrowser_log_main_2">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>20</x>
         <y>420</y>
-        <width>778</width>
+        <width>798</width>
         <height>270</height>
        </rect>
       </property>
@@ -1343,7 +1343,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QTextBrowser" name="textBrowser_log_main">
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>20</x>
         <y>0</y>
         <width>778</width>
         <height>420</height>
@@ -1385,7 +1385,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_show_hide_logs">
       <property name="geometry">
        <rect>
-        <x>5</x>
+        <x>760</x>
         <y>650</y>
         <width>40</width>
         <height>40</height>
@@ -1437,11 +1437,17 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="geometry">
        <rect>
-        <x>40</x>
+        <x>20</x>
         <y>0</y>
-        <width>660</width>
+        <width>778</width>
         <height>690</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>778</width>
+        <height>16777215</height>
+       </size>
       </property>
       <property name="focusPolicy">
        <enum>Qt::StrongFocus</enum>
@@ -1492,7 +1498,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_save_failed_list">
       <property name="geometry">
        <rect>
-        <x>5</x>
+        <x>760</x>
         <y>650</y>
         <width>40</width>
         <height>40</height>
@@ -24657,7 +24663,7 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>20</x>
         <y>0</y>
-        <width>796</width>
+        <width>798</width>
         <height>690</height>
        </rect>
       </property>
