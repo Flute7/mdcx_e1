@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>5</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -1288,9 +1288,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QTextBrowser" name="textBrowser_log_main_2">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>40</x>
         <y>420</y>
-        <width>790</width>
+        <width>778</width>
         <height>270</height>
        </rect>
       </property>
@@ -1343,10 +1343,10 @@ p, li { white-space: pre-wrap; }
      <widget class="QTextBrowser" name="textBrowser_log_main">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>40</x>
         <y>0</y>
-        <width>790</width>
-        <height>418</height>
+        <width>778</width>
+        <height>420</height>
        </rect>
       </property>
       <property name="focusPolicy">
@@ -1437,9 +1437,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>40</x>
         <y>0</y>
-        <width>670</width>
+        <width>660</width>
         <height>690</height>
        </rect>
       </property>
