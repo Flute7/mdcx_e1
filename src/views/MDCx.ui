@@ -48,7 +48,7 @@
      <widget class="QPushButton" name="pushButton_start_cap">
       <property name="geometry">
        <rect>
-        <x>700</x>
+        <x>690</x>
         <y>13</y>
         <width>100</width>
         <height>40</height>
@@ -1022,7 +1022,7 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QPushButton" name="pushButton_select_media_folder">
       <property name="geometry">
        <rect>
-        <x>580</x>
+        <x>570</x>
         <y>13</y>
         <width>100</width>
         <height>40</height>
@@ -1288,9 +1288,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QTextBrowser" name="textBrowser_log_main_2">
       <property name="geometry">
        <rect>
-        <x>28</x>
+        <x>20</x>
         <y>420</y>
-        <width>790</width>
+        <width>798</width>
         <height>270</height>
        </rect>
       </property>
@@ -1336,7 +1336,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_start_cap2">
       <property name="geometry">
        <rect>
-        <x>700</x>
+        <x>690</x>
         <y>13</y>
         <width>100</width>
         <height>40</height>
@@ -1349,9 +1349,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QTextBrowser" name="textBrowser_log_main">
       <property name="geometry">
        <rect>
-        <x>28</x>
+        <x>20</x>
         <y>0</y>
-        <width>790</width>
+        <width>798</width>
         <height>420</height>
        </rect>
       </property>
@@ -1403,7 +1403,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_show_hide_logs">
       <property name="geometry">
        <rect>
-        <x>760</x>
+        <x>750</x>
         <y>636</y>
         <width>40</width>
         <height>40</height>
@@ -1439,7 +1439,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_view_failed_list">
       <property name="geometry">
        <rect>
-        <x>580</x>
+        <x>570</x>
         <y>13</y>
         <width>100</width>
         <height>40</height>
@@ -1511,7 +1511,7 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>20</x>
         <y>13</y>
-        <width>531</width>
+        <width>530</width>
         <height>40</height>
        </rect>
       </property>
@@ -1522,7 +1522,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_save_failed_list">
       <property name="geometry">
        <rect>
-        <x>760</x>
+        <x>750</x>
         <y>636</y>
         <width>40</width>
         <height>40</height>
