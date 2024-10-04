@@ -10449,7 +10449,7 @@ class Ui_MDCx(object):
         self.page_about = QtWidgets.QWidget()
         self.page_about.setObjectName("page_about")
         self.textBrowser_about = QtWidgets.QTextBrowser(self.page_about)
-        self.textBrowser_about.setGeometry(QtCore.QRect(20, 0, 800, 690))
+        self.textBrowser_about.setGeometry(QtCore.QRect(20, 0, 796, 690))
         self.textBrowser_about.setStyleSheet("")
         self.textBrowser_about.setObjectName("textBrowser_about")
         self.stackedWidget.addWidget(self.page_about)
