@@ -48,7 +48,7 @@
      <widget class="QPushButton" name="pushButton_start_cap">
       <property name="geometry">
        <rect>
-        <x>700</x>
+        <x>690</x>
         <y>13</y>
         <width>100</width>
         <height>40</height>
@@ -1022,9 +1022,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QPushButton" name="pushButton_select_media_folder">
       <property name="geometry">
        <rect>
-        <x>600</x>
+        <x>570</x>
         <y>13</y>
-        <width>80</width>
+        <width>100</width>
         <height>40</height>
        </rect>
       </property>
@@ -1342,7 +1342,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_start_cap2">
       <property name="geometry">
        <rect>
-        <x>700</x>
+        <x>690</x>
         <y>13</y>
         <width>100</width>
         <height>40</height>
@@ -1415,8 +1415,8 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_show_hide_logs">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>636</y>
+        <x>755</x>
+        <y>641</y>
         <width>40</width>
         <height>40</height>
        </rect>
@@ -1451,7 +1451,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_view_failed_list">
       <property name="geometry">
        <rect>
-        <x>580</x>
+        <x>570</x>
         <y>13</y>
         <width>100</width>
         <height>40</height>
@@ -1467,9 +1467,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>20</x>
         <y>0</y>
-        <width>790</width>
+        <width>798</width>
         <height>690</height>
        </rect>
       </property>
@@ -1481,7 +1481,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="minimumSize">
        <size>
-        <width>790</width>
+        <width>798</width>
         <height>0</height>
        </size>
       </property>
@@ -1527,9 +1527,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_scraper_failed_list">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>30</x>
         <y>13</y>
-        <width>540</width>
+        <width>520</width>
         <height>40</height>
        </rect>
       </property>
@@ -1540,8 +1540,8 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_save_failed_list">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>636</y>
+        <x>755</x>
+        <y>641</y>
         <width>40</width>
         <height>40</height>
        </rect>
