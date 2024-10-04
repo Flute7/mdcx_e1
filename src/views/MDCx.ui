@@ -1351,13 +1351,13 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>20</x>
         <y>0</y>
-        <width>798</width>
+        <width>800</width>
         <height>420</height>
        </rect>
       </property>
       <property name="maximumSize">
        <size>
-        <width>798</width>
+        <width>800</width>
         <height>16777215</height>
        </size>
       </property>
@@ -1398,7 +1398,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>760</x>
-        <y>632</y>
+        <y>634</y>
         <width>40</width>
         <height>40</height>
        </rect>
@@ -1451,13 +1451,13 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>20</x>
         <y>0</y>
-        <width>798</width>
+        <width>800</width>
         <height>690</height>
        </rect>
       </property>
       <property name="maximumSize">
        <size>
-        <width>798</width>
+        <width>800</width>
         <height>16777215</height>
        </size>
       </property>
@@ -1511,7 +1511,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>760</x>
-        <y>632</y>
+        <y>634</y>
         <width>40</width>
         <height>40</height>
        </rect>
