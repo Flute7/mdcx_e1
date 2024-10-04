@@ -468,7 +468,7 @@ class Ui_MDCx(object):
         self.page_log = QtWidgets.QWidget()
         self.page_log.setObjectName("page_log")
         self.textBrowser_log_main_2 = QtWidgets.QTextBrowser(self.page_log)
-        self.textBrowser_log_main_2.setGeometry(QtCore.QRect(20, 420, 780, 270))
+        self.textBrowser_log_main_2.setGeometry(QtCore.QRect(30, 420, 790, 270))
         self.textBrowser_log_main_2.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.textBrowser_log_main_2.setStyleSheet("")
         self.textBrowser_log_main_2.setFrameShape(QtWidgets.QFrame.Box)
@@ -482,7 +482,7 @@ class Ui_MDCx(object):
         self.pushButton_start_cap2.setGeometry(QtCore.QRect(700, 13, 100, 40))
         self.pushButton_start_cap2.setObjectName("pushButton_start_cap2")
         self.textBrowser_log_main = QtWidgets.QTextBrowser(self.page_log)
-        self.textBrowser_log_main.setGeometry(QtCore.QRect(20, 0, 780, 420))
+        self.textBrowser_log_main.setGeometry(QtCore.QRect(30, 0, 790, 418))
         self.textBrowser_log_main.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.textBrowser_log_main.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.textBrowser_log_main.setFrameShadow(QtWidgets.QFrame.Sunken)
@@ -509,7 +509,7 @@ class Ui_MDCx(object):
         self.pushButton_view_failed_list.setObjectName("pushButton_view_failed_list")
         self.textBrowser_log_main_3 = QtWidgets.QTextBrowser(self.page_log)
         self.textBrowser_log_main_3.setEnabled(True)
-        self.textBrowser_log_main_3.setGeometry(QtCore.QRect(20, 0, 670, 690))
+        self.textBrowser_log_main_3.setGeometry(QtCore.QRect(30, 0, 670, 690))
         self.textBrowser_log_main_3.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.textBrowser_log_main_3.setStyleSheet("")
         self.textBrowser_log_main_3.setFrameShape(QtWidgets.QFrame.Box)
@@ -547,14 +547,14 @@ class Ui_MDCx(object):
         self.page_net = QtWidgets.QWidget()
         self.page_net.setObjectName("page_net")
         self.textBrowser_net_main = QtWidgets.QTextBrowser(self.page_net)
-        self.textBrowser_net_main.setGeometry(QtCore.QRect(30, 0, 790, 682))
+        self.textBrowser_net_main.setGeometry(QtCore.QRect(20, 0, 800, 682))
         self.textBrowser_net_main.setStyleSheet("")
         self.textBrowser_net_main.setReadOnly(True)
         self.textBrowser_net_main.setOpenExternalLinks(True)
         self.textBrowser_net_main.setObjectName("textBrowser_net_main")
         self.pushButton_check_net = QtWidgets.QPushButton(self.page_net)
         self.pushButton_check_net.setGeometry(QtCore.QRect(680, 13, 120, 40))
-        self.pushButton_check_net.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.pushButton_check_net.setFocusPolicy(QtCore.Qt.TabFocus)
         self.pushButton_check_net.setObjectName("pushButton_check_net")
         self.stackedWidget.addWidget(self.page_net)
         self.page_tool = QtWidgets.QWidget()
@@ -10338,10 +10338,10 @@ class Ui_MDCx(object):
         self.label_config.setText("")
         self.label_config.setObjectName("label_config")
         self.pushButton_init_config = QtWidgets.QPushButton(self.page_setting)
-        self.pushButton_init_config.setGeometry(QtCore.QRect(470, 630, 91, 40))
+        self.pushButton_init_config.setGeometry(QtCore.QRect(470, 630, 90, 40))
         self.pushButton_init_config.setObjectName("pushButton_init_config")
         self.pushButton_save_config = QtWidgets.QPushButton(self.page_setting)
-        self.pushButton_save_config.setGeometry(QtCore.QRect(580, 630, 151, 50))
+        self.pushButton_save_config.setGeometry(QtCore.QRect(580, 630, 150, 50))
         self.pushButton_save_config.setObjectName("pushButton_save_config")
         self.comboBox_change_config = QtWidgets.QComboBox(self.page_setting)
         self.comboBox_change_config.setGeometry(QtCore.QRect(180, 635, 151, 30))
@@ -10373,7 +10373,7 @@ class Ui_MDCx(object):
         self.label_241.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_241.setObjectName("label_241")
         self.pushButton_save_new_config = QtWidgets.QPushButton(self.page_setting)
-        self.pushButton_save_new_config.setGeometry(QtCore.QRect(360, 630, 91, 40))
+        self.pushButton_save_new_config.setGeometry(QtCore.QRect(360, 630, 90, 40))
         self.pushButton_save_new_config.setObjectName("pushButton_save_new_config")
         self.widget_show_success = QtWidgets.QWidget(self.page_setting)
         self.widget_show_success.setGeometry(QtCore.QRect(4, 0, 0, 0))
@@ -10449,7 +10449,7 @@ class Ui_MDCx(object):
         self.page_about = QtWidgets.QWidget()
         self.page_about.setObjectName("page_about")
         self.textBrowser_about = QtWidgets.QTextBrowser(self.page_about)
-        self.textBrowser_about.setGeometry(QtCore.QRect(20, 0, 780, 690))
+        self.textBrowser_about.setGeometry(QtCore.QRect(20, 0, 800, 690))
         self.textBrowser_about.setStyleSheet("")
         self.textBrowser_about.setObjectName("textBrowser_about")
         self.stackedWidget.addWidget(self.page_about)
@@ -10458,7 +10458,7 @@ class Ui_MDCx(object):
         self.widget_setting.setContextMenuPolicy(QtCore.Qt.DefaultContextMenu)
         self.widget_setting.setObjectName("widget_setting")
         self.label_show_version = QtWidgets.QLabel(self.widget_setting)
-        self.label_show_version.setGeometry(QtCore.QRect(0, 489, 210, 201))
+        self.label_show_version.setGeometry(QtCore.QRect(0, 490, 210, 201))
         self.label_show_version.setLineWidth(0)
         self.label_show_version.setText("")
         self.label_show_version.setAlignment(QtCore.Qt.AlignBottom|QtCore.Qt.AlignHCenter)
@@ -10579,11 +10579,12 @@ class Ui_MDCx(object):
         self.pushButton_close.setMouseTracking(True)
         self.pushButton_close.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.pushButton_close.setStyleSheet("QPushButton{\n"
-"      font: 900 14pt \"Tahoma\";\n"
+"      font: 900 12pt \"Tahoma\";\n"
 "      color:#F14C4C;\n"
 "      background:#F14C4C;\n"
 "      border-radius:8px;\n"
 "      margin:2px;\n"
+"      text-align:center;\n"
 "}\n"
 "QPushButton:hover{\n"
 "      color:black;\n"
@@ -10600,14 +10601,23 @@ class Ui_MDCx(object):
         self.pushButton_min.setMinimumSize(QtCore.QSize(20, 20))
         self.pushButton_min.setMaximumSize(QtCore.QSize(20, 20))
         self.pushButton_min.setBaseSize(QtCore.QSize(0, 0))
+        font = QtGui.QFont()
+        font.setFamily("Tahoma")
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setItalic(False)
+        font.setWeight(99)
+        self.pushButton_min.setFont(font)
         self.pushButton_min.setMouseTracking(True)
         self.pushButton_min.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.pushButton_min.setAutoFillBackground(False)
         self.pushButton_min.setStyleSheet("QPushButton{\n"
-"      font: 900 14pt \"Tahoma\";\n"
+"      font: 900 12pt \"Tahoma\";\n"
 "      color:#FFBC3C;\n"
 "      background:#FFBC3C;\n"
 "      border-radius:8px;\n"
 "      margin:2px;\n"
+"      text-align:center;\n"
 "}\n"
 "QPushButton:hover{\n"
 "      color:black;\n"
@@ -10687,6 +10697,11 @@ class Ui_MDCx(object):
         self.horizontalLayout_43.setObjectName("horizontalLayout_43")
         self.widget_nfo = QtWidgets.QWidget(self.centralwidget)
         self.widget_nfo.setGeometry(QtCore.QRect(10, 10, 20, 20))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(False)
+        font.setWeight(50)
+        self.widget_nfo.setFont(font)
         self.widget_nfo.setObjectName("widget_nfo")
         self.scrollArea_nfo = QtWidgets.QScrollArea(self.widget_nfo)
         self.scrollArea_nfo.setGeometry(QtCore.QRect(9, 29, 771, 591))
@@ -10932,8 +10947,8 @@ class Ui_MDCx(object):
         MDCx.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MDCx)
-        self.stackedWidget.setCurrentIndex(2)
-        self.tabWidget.setCurrentIndex(11)
+        self.stackedWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MDCx)
 
     def retranslateUi(self, MDCx):
