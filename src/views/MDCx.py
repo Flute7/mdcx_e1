@@ -468,8 +468,8 @@ class Ui_MDCx(object):
         self.page_log = QtWidgets.QWidget()
         self.page_log.setObjectName("page_log")
         self.textBrowser_log_main_2 = QtWidgets.QTextBrowser(self.page_log)
-        self.textBrowser_log_main_2.setGeometry(QtCore.QRect(20, 420, 798, 270))
-        self.textBrowser_log_main_2.setMaximumSize(QtCore.QSize(798, 16777215))
+        self.textBrowser_log_main_2.setGeometry(QtCore.QRect(28, 420, 790, 270))
+        self.textBrowser_log_main_2.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.textBrowser_log_main_2.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.textBrowser_log_main_2.setStyleSheet("")
         self.textBrowser_log_main_2.setFrameShape(QtWidgets.QFrame.Box)
@@ -483,13 +483,13 @@ class Ui_MDCx(object):
         self.pushButton_start_cap2.setGeometry(QtCore.QRect(700, 13, 100, 40))
         self.pushButton_start_cap2.setObjectName("pushButton_start_cap2")
         self.textBrowser_log_main = QtWidgets.QTextBrowser(self.page_log)
-        self.textBrowser_log_main.setGeometry(QtCore.QRect(20, 0, 798, 420))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Expanding)
+        self.textBrowser_log_main.setGeometry(QtCore.QRect(28, 0, 790, 420))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.textBrowser_log_main.sizePolicy().hasHeightForWidth())
         self.textBrowser_log_main.setSizePolicy(sizePolicy)
-        self.textBrowser_log_main.setMaximumSize(QtCore.QSize(798, 16777215))
+        self.textBrowser_log_main.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.textBrowser_log_main.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.textBrowser_log_main.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.textBrowser_log_main.setFrameShadow(QtWidgets.QFrame.Sunken)
@@ -516,13 +516,13 @@ class Ui_MDCx(object):
         self.pushButton_view_failed_list.setObjectName("pushButton_view_failed_list")
         self.textBrowser_log_main_3 = QtWidgets.QTextBrowser(self.page_log)
         self.textBrowser_log_main_3.setEnabled(True)
-        self.textBrowser_log_main_3.setGeometry(QtCore.QRect(20, 0, 798, 690))
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.MinimumExpanding, QtWidgets.QSizePolicy.Expanding)
+        self.textBrowser_log_main_3.setGeometry(QtCore.QRect(0, 0, 790, 690))
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.textBrowser_log_main_3.sizePolicy().hasHeightForWidth())
         self.textBrowser_log_main_3.setSizePolicy(sizePolicy)
-        self.textBrowser_log_main_3.setMaximumSize(QtCore.QSize(798, 16777215))
+        self.textBrowser_log_main_3.setMaximumSize(QtCore.QSize(16777215, 16777215))
         self.textBrowser_log_main_3.setFocusPolicy(QtCore.Qt.StrongFocus)
         self.textBrowser_log_main_3.setStyleSheet("")
         self.textBrowser_log_main_3.setFrameShape(QtWidgets.QFrame.Box)
@@ -550,12 +550,12 @@ class Ui_MDCx(object):
         self.pushButton_save_failed_list.setObjectName("pushButton_save_failed_list")
         self.textBrowser_log_main_2.raise_()
         self.textBrowser_log_main.raise_()
-        self.pushButton_start_cap2.raise_()
         self.pushButton_show_hide_logs.raise_()
         self.textBrowser_log_main_3.raise_()
         self.pushButton_view_failed_list.raise_()
         self.pushButton_scraper_failed_list.raise_()
         self.pushButton_save_failed_list.raise_()
+        self.pushButton_start_cap2.raise_()
         self.stackedWidget.addWidget(self.page_log)
         self.page_net = QtWidgets.QWidget()
         self.page_net.setObjectName("page_net")
@@ -10598,6 +10598,7 @@ class Ui_MDCx(object):
 "      border-radius:8px;\n"
 "      margin:2px;\n"
 "      text-align:center;\n"
+"      padding-bottom: 2px;\n"
 "}\n"
 "QPushButton:hover{\n"
 "      color:black;\n"
@@ -10631,6 +10632,7 @@ class Ui_MDCx(object):
 "      border-radius:8px;\n"
 "      margin:2px;\n"
 "      text-align:center;\n"
+"      padding-bottom: 2px;\n"
 "}\n"
 "QPushButton:hover{\n"
 "      color:black;\n"

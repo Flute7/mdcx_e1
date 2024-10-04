@@ -1288,15 +1288,15 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QTextBrowser" name="textBrowser_log_main_2">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>28</x>
         <y>420</y>
-        <width>798</width>
+        <width>790</width>
         <height>270</height>
        </rect>
       </property>
       <property name="maximumSize">
        <size>
-        <width>798</width>
+        <width>16777215</width>
         <height>16777215</height>
        </size>
       </property>
@@ -1349,21 +1349,21 @@ p, li { white-space: pre-wrap; }
      <widget class="QTextBrowser" name="textBrowser_log_main">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>28</x>
         <y>0</y>
-        <width>798</width>
+        <width>790</width>
         <height>420</height>
        </rect>
       </property>
       <property name="sizePolicy">
-       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
       <property name="maximumSize">
        <size>
-        <width>798</width>
+        <width>16777215</width>
         <height>16777215</height>
        </size>
       </property>
@@ -1455,21 +1455,21 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>0</x>
         <y>0</y>
-        <width>798</width>
+        <width>790</width>
         <height>690</height>
        </rect>
       </property>
       <property name="sizePolicy">
-       <sizepolicy hsizetype="MinimumExpanding" vsizetype="Expanding">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
       </property>
       <property name="maximumSize">
        <size>
-        <width>798</width>
+        <width>16777215</width>
         <height>16777215</height>
        </size>
       </property>
@@ -1562,12 +1562,12 @@ p, li { white-space: pre-wrap; }
      </widget>
      <zorder>textBrowser_log_main_2</zorder>
      <zorder>textBrowser_log_main</zorder>
-     <zorder>pushButton_start_cap2</zorder>
      <zorder>pushButton_show_hide_logs</zorder>
      <zorder>textBrowser_log_main_3</zorder>
      <zorder>pushButton_view_failed_list</zorder>
      <zorder>pushButton_scraper_failed_list</zorder>
      <zorder>pushButton_save_failed_list</zorder>
+     <zorder>pushButton_start_cap2</zorder>
     </widget>
     <widget class="QWidget" name="page_net">
      <widget class="QTextBrowser" name="textBrowser_net_main">
@@ -25254,7 +25254,8 @@ p, li { white-space: pre-wrap; }
       background:#F14C4C;
       border-radius:8px;
       margin:2px;
-	  text-align:center;
+      text-align:center;
+      padding-bottom: 2px;
 }
 QPushButton:hover{
       color:black;
@@ -25324,6 +25325,7 @@ QPushButton:hover{
       border-radius:8px;
       margin:2px;
       text-align:center;
+      padding-bottom: 2px;
 }
 QPushButton:hover{
       color:black;
