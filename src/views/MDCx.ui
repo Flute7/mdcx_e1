@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -1022,9 +1022,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QPushButton" name="pushButton_select_media_folder">
       <property name="geometry">
        <rect>
-        <x>570</x>
+        <x>590</x>
         <y>13</y>
-        <width>100</width>
+        <width>80</width>
         <height>40</height>
        </rect>
       </property>
@@ -1467,9 +1467,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>0</x>
         <y>0</y>
-        <width>798</width>
+        <width>818</width>
         <height>690</height>
        </rect>
       </property>
@@ -1481,7 +1481,7 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="minimumSize">
        <size>
-        <width>798</width>
+        <width>818</width>
         <height>0</height>
        </size>
       </property>
@@ -1527,9 +1527,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_scraper_failed_list">
       <property name="geometry">
        <rect>
-        <x>30</x>
+        <x>10</x>
         <y>13</y>
-        <width>520</width>
+        <width>540</width>
         <height>40</height>
        </rect>
       </property>
@@ -2408,7 +2408,7 @@ p, li { white-space: pre-wrap; }
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <property name="iconSize">
        <size>
