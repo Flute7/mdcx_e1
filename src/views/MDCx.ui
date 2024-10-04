@@ -1294,6 +1294,12 @@ The program will scrape all files in the directory and subdirectories.</string>
         <height>270</height>
        </rect>
       </property>
+      <property name="maximumSize">
+       <size>
+        <width>798</width>
+        <height>16777215</height>
+       </size>
+      </property>
       <property name="focusPolicy">
        <enum>Qt::StrongFocus</enum>
       </property>
@@ -1345,9 +1351,15 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>20</x>
         <y>0</y>
-        <width>778</width>
+        <width>798</width>
         <height>420</height>
        </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>798</width>
+        <height>16777215</height>
+       </size>
       </property>
       <property name="focusPolicy">
        <enum>Qt::StrongFocus</enum>
@@ -1386,7 +1398,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>760</x>
-        <y>650</y>
+        <y>632</y>
         <width>40</width>
         <height>40</height>
        </rect>
@@ -1439,13 +1451,13 @@ p, li { white-space: pre-wrap; }
        <rect>
         <x>20</x>
         <y>0</y>
-        <width>778</width>
+        <width>798</width>
         <height>690</height>
        </rect>
       </property>
       <property name="maximumSize">
        <size>
-        <width>778</width>
+        <width>798</width>
         <height>16777215</height>
        </size>
       </property>
@@ -1499,7 +1511,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>760</x>
-        <y>650</y>
+        <y>632</y>
         <width>40</width>
         <height>40</height>
        </rect>
