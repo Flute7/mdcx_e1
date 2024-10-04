@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -48,9 +48,9 @@
      <widget class="QPushButton" name="pushButton_start_cap">
       <property name="geometry">
        <rect>
-        <x>699</x>
+        <x>700</x>
         <y>13</y>
-        <width>101</width>
+        <width>100</width>
         <height>40</height>
        </rect>
       </property>
@@ -1022,9 +1022,9 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QPushButton" name="pushButton_select_media_folder">
       <property name="geometry">
        <rect>
-        <x>600</x>
+        <x>580</x>
         <y>13</y>
-        <width>81</width>
+        <width>100</width>
         <height>40</height>
        </rect>
       </property>
@@ -1288,10 +1288,10 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QTextBrowser" name="textBrowser_log_main_2">
       <property name="geometry">
        <rect>
-        <x>28</x>
-        <y>421</y>
-        <width>790</width>
-        <height>271</height>
+        <x>20</x>
+        <y>420</y>
+        <width>780</width>
+        <height>270</height>
        </rect>
       </property>
       <property name="focusPolicy">
@@ -1330,9 +1330,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_start_cap2">
       <property name="geometry">
        <rect>
-        <x>680</x>
+        <x>700</x>
         <y>13</y>
-        <width>120</width>
+        <width>100</width>
         <height>40</height>
        </rect>
       </property>
@@ -1343,10 +1343,10 @@ p, li { white-space: pre-wrap; }
      <widget class="QTextBrowser" name="textBrowser_log_main">
       <property name="geometry">
        <rect>
-        <x>28</x>
+        <x>20</x>
         <y>0</y>
-        <width>790</width>
-        <height>421</height>
+        <width>780</width>
+        <height>420</height>
        </rect>
       </property>
       <property name="focusPolicy">
@@ -1385,7 +1385,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_show_hide_logs">
       <property name="geometry">
        <rect>
-        <x>5</x>
+        <x>20</x>
         <y>650</y>
         <width>40</width>
         <height>40</height>
@@ -1421,9 +1421,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_view_failed_list">
       <property name="geometry">
        <rect>
-        <x>565</x>
+        <x>580</x>
         <y>13</y>
-        <width>101</width>
+        <width>100</width>
         <height>40</height>
        </rect>
       </property>
@@ -1437,10 +1437,10 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>20</x>
         <y>0</y>
-        <width>690</width>
-        <height>693</height>
+        <width>670</width>
+        <height>690</height>
        </rect>
       </property>
       <property name="focusPolicy">
@@ -1492,7 +1492,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_save_failed_list">
       <property name="geometry">
        <rect>
-        <x>5</x>
+        <x>20</x>
         <y>650</y>
         <width>40</width>
         <height>40</height>
