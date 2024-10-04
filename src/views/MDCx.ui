@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -48,9 +48,9 @@
      <widget class="QPushButton" name="pushButton_start_cap">
       <property name="geometry">
        <rect>
-        <x>690</x>
+        <x>700</x>
         <y>13</y>
-        <width>100</width>
+        <width>90</width>
         <height>40</height>
        </rect>
       </property>
@@ -1022,7 +1022,7 @@ The program will scrape all files in the directory and subdirectories.</string>
      <widget class="QPushButton" name="pushButton_select_media_folder">
       <property name="geometry">
        <rect>
-        <x>590</x>
+        <x>600</x>
         <y>13</y>
         <width>80</width>
         <height>40</height>
@@ -1342,9 +1342,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_start_cap2">
       <property name="geometry">
        <rect>
-        <x>690</x>
+        <x>700</x>
         <y>13</y>
-        <width>100</width>
+        <width>90</width>
         <height>40</height>
        </rect>
       </property>
@@ -1451,9 +1451,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_view_failed_list">
       <property name="geometry">
        <rect>
-        <x>570</x>
+        <x>580</x>
         <y>13</y>
-        <width>100</width>
+        <width>90</width>
         <height>40</height>
        </rect>
       </property>
@@ -1468,9 +1468,9 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>0</y>
+        <y>-1</y>
         <width>818</width>
-        <height>690</height>
+        <height>691</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -1527,9 +1527,9 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_scraper_failed_list">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>5</x>
         <y>13</y>
-        <width>540</width>
+        <width>545</width>
         <height>40</height>
        </rect>
       </property>
