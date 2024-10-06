@@ -146,17 +146,17 @@ class MyMAinWindow(QMainWindow):
 
         # region 启动显示信息和后台检查更新
         self.show_scrape_info()  # 主界面左下角显示一些配置信息
-        self.show_net_info('\n🏠 代理设置在:【设置】 - 【网络】 - 【代理设置】。\n')  # 检查网络界面显示提示信息
+        self.show_net_info('\n🏠 Proxy settings are at: [Settings] - [Network] - [Proxy Settings].\n')  # 检查网络界面显示提示信息
         show_netstatus()  # 检查网络界面显示当前网络代理信息
         self.show_net_info(
-            '\n💡 说明：\n '
-            '任意代理：javbus、jav321、javlibrary、mgstage、mywife、giga、freejavbt、'
+            '\n💡 Illustrate：\n '
+            'Arbitrary proxy：javbus、jav321、javlibrary、mgstage、mywife、giga、freejavbt、'
             'mdtv、madouqu、7mmtv、faleno、dahlia、prestige、theporndb、cnmdb、fantastica、kin8\n '
-            '非日本代理：javdb、airav-cc、avsex（日本代理会报错）\n '
-            '日本代理：seesaawiki\n '
-            '无需代理：avsex、hdouban、iqqtv、airav-wiki、love6、lulubar、fc2、fc2club、fc2hub\n\n'
-            '▶️ 点击右上角 【开始检测】按钮以测试网络连通性。')  # 检查网络界面显示提示信息
-        signal.add_log("🍯 你可以点击左下角的图标来 显示 / 隐藏 请求信息面板！")
+            'Non-Japanese agent：javdb、airav-cc、avsex（日本代理会报错）\n '
+            'Japan agent：seesaawiki\n '
+            'No agent required：avsex、hdouban、iqqtv、airav-wiki、love6、lulubar、fc2、fc2club、fc2hub\n\n'
+            '▶️ Click the [Start Test] button in the upper right corner to test network connectivity.')  # 检查网络界面显示提示信息
+        signal.add_log("🍯 You can click the icon in the lower left corner to show/hide the request information panel!")
         self.show_version()  # 日志页面显示版本信息
         self.creat_right_menu()  # 加载右键菜单
         self.pushButton_main_clicked()  # 切换到主界面
@@ -181,16 +181,16 @@ class MyMAinWindow(QMainWindow):
         ...
 
     def creat_right_menu(self):
-        self.menu_start = QAction(QIcon(resources.start_icon), u'  开始刮削\tS', self)
-        self.menu_stop = QAction(QIcon(resources.stop_icon), u'  停止刮削\tS', self)
-        self.menu_number = QAction(QIcon(resources.input_number_icon), u'  重新刮削\tN', self)
-        self.menu_website = QAction(QIcon(resources.input_website_icon), u'  输入网址重新刮削\tU', self)
-        self.menu_del_file = QAction(QIcon(resources.del_file_icon), u'  删除文件\tD', self)
-        self.menu_del_folder = QAction(QIcon(resources.del_folder_icon), u'  删除文件和文件夹\tA', self)
-        self.menu_folder = QAction(QIcon(resources.open_folder_icon), u'  打开文件夹\tF', self)
-        self.menu_nfo = QAction(QIcon(resources.open_nfo_icon), u'  编辑 NFO\tE', self)
-        self.menu_play = QAction(QIcon(resources.play_icon), u'  播放\tP', self)
-        self.menu_hide = QAction(QIcon(resources.hide_boss_icon), u'  隐藏\tQ', self)
+        self.menu_start = QAction(QIcon(resources.start_icon), u'  Start scraping\tS', self)
+        self.menu_stop = QAction(QIcon(resources.stop_icon), u'  Stop scraping\tS', self)
+        self.menu_number = QAction(QIcon(resources.input_number_icon), u'  Re-shaving\tN', self)
+        self.menu_website = QAction(QIcon(resources.input_website_icon), u'  Enter the URL to scrape again\tU', self)
+        self.menu_del_file = QAction(QIcon(resources.del_file_icon), u'  Delete files\tD', self)
+        self.menu_del_folder = QAction(QIcon(resources.del_folder_icon), u'  Delete files and folders\tA', self)
+        self.menu_folder = QAction(QIcon(resources.open_folder_icon), u'  Open folder\tF', self)
+        self.menu_nfo = QAction(QIcon(resources.open_nfo_icon), u'  Edit NFO\tE', self)
+        self.menu_play = QAction(QIcon(resources.play_icon), u'  Play\tP', self)
+        self.menu_hide = QAction(QIcon(resources.hide_boss_icon), u'  Hide\tQ', self)
 
         self.menu_start.triggered.connect(self.pushButton_start_scrape_clicked)
         self.menu_stop.triggered.connect(self.pushButton_start_scrape_clicked)
@@ -229,7 +229,7 @@ class MyMAinWindow(QMainWindow):
             menu.addAction(QAction(file_name, self))
             menu.addSeparator()
         else:
-            menu.addAction(QAction('请刮削后使用！', self))
+            menu.addAction(QAction('Please scrape it before use!', self))
             menu.addSeparator()
             if self.Ui.pushButton_start_cap.text() != 'Start':
                 menu.addAction(self.menu_stop)
@@ -413,10 +413,10 @@ class MyMAinWindow(QMainWindow):
 
             # print(self.window().isActiveWindow()) # 是否为活动窗口
             self.raise_()
-            box = QMessageBox(QMessageBox.Warning, '退出', '确定要退出吗？')
+            box = QMessageBox(QMessageBox.Warning, 'Quit', 'Are you sure you want to exit?')
             box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-            box.button(QMessageBox.Yes).setText('退出 MDCx')
-            box.button(QMessageBox.No).setText('取消')
+            box.button(QMessageBox.Yes).setText('Quit MDCx')
+            box.button(QMessageBox.No).setText('Cancel')
             box.setDefaultButton(QMessageBox.No)
             reply = box.exec()
             if reply != QMessageBox.Yes:
@@ -452,7 +452,7 @@ class MyMAinWindow(QMainWindow):
             self.tray_icon.hide()
         except:
             signal.show_traceback_log(traceback.format_exc())
-        signal.show_traceback_log('\n\n\n\n************ 程序正常退出！************\n')
+        signal.show_traceback_log('\n\n\n\n************ The program exits normally!************\n')
         os._exit(0)
 
     # endregion
@@ -523,20 +523,20 @@ class MyMAinWindow(QMainWindow):
             signal.show_log_text(traceback.format_exc())
 
     def _show_version_thread(self):
-        version_info = f'基于 MDC-GUI 修改 当前版本: {self.localversion}'
+        version_info = f'Based on MDC-GUI modified current version: {self.localversion}'
         download_link = ''
         latest_version = check_version()
         if latest_version:
             if int(self.localversion) < int(latest_version):
-                self.new_version = f'\n🍉 有新版本了！（{latest_version}）'
+                self.new_version = f'\n🍉 There is a new version!（{latest_version}）'
                 signal.show_scrape_info()
                 self.Ui.label_show_version.setCursor(Qt.OpenHandCursor)  # 设置鼠标形状为十字形
-                version_info = f'基于 MDC-GUI 修改 · 当前版本: {self.localversion} （ <font color=\"red\" >最新版本是: {latest_version}，请及时更新！🚀 </font>）'
-                download_link = ' ⬇️ <a href="https://github.com/sqzw-x/mdcx/releases">下载新版本</a>'
+                version_info = f'Modified based on MDC-GUI · Current version: {self.localversion} （ <font color=\"red\" >The latest version is: {latest_version}，Please update in time!🚀 </font>）'
+                download_link = ' ⬇️ <a href="https://github.com/sqzw-x/mdcx/releases">Download new version</a>'
             else:
-                version_info = f'基于 MDC-GUI 修改 · 当前版本: {self.localversion} （ <font color=\"green\">你使用的是最新版本！🎉 </font>）'
+                version_info = f'Modified based on MDC-GUI · Current version: {self.localversion} （ <font color=\"green\">You are using the latest version!🎉 </font>）'
 
-        feedback = f' 💌 问题反馈: <a href="https://github.com/sqzw-x/mdcx/issues/new">GitHub Issues</a>'
+        feedback = f' 💌 Problem feedback: <a href="https://github.com/sqzw-x/mdcx/issues/new">GitHub Issues</a>'
 
         # 显示版本信息和反馈入口
         signal.show_log_text(version_info)
@@ -664,29 +664,29 @@ class MyMAinWindow(QMainWindow):
         if self.Ui.pushButton_start_cap.text() == 'Start':
             if not get_remain_list():
                 start_new_scrape(FileMode.Default)
-        elif self.Ui.pushButton_start_cap.text() == '■ 停止':
+        elif self.Ui.pushButton_start_cap.text() == '■ Stop':
             self.pushButton_stop_scrape_clicked()
 
     # 停止确认弹窗
     def pushButton_stop_scrape_clicked(self):
         if 'show_dialog_stop_scrape' in config.switch_on:
-            box = QMessageBox(QMessageBox.Warning, '停止刮削', '确定要停止刮削吗？')
+            box = QMessageBox(QMessageBox.Warning, 'Stop scraping', 'Are you sure you want to stop scraping?')
             box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-            box.button(QMessageBox.Yes).setText('停止刮削')
-            box.button(QMessageBox.No).setText('取消')
+            box.button(QMessageBox.Yes).setText('Stop scraping')
+            box.button(QMessageBox.No).setText('Cancel')
             box.setDefaultButton(QMessageBox.No)
             reply = box.exec()
             if reply != QMessageBox.Yes:
                 return
-        if self.Ui.pushButton_start_cap.text() == '■ 停止':
+        if self.Ui.pushButton_start_cap.text() == '■ Stop':
             save_success_list()  # 保存成功列表
             Flags.stop_flag = True  # 在pool启动前，点停止按钮时，需要用这个来停止启动pool
             Flags.rest_time_convert_ = Flags.rest_time_convert
             Flags.rest_time_convert = 0
             Flags.rest_sleepping = False
-            self.Ui.pushButton_start_cap.setText(' ■ 停止中 ')
-            self.Ui.pushButton_start_cap2.setText(' ■ 停止中 ')
-            signal.show_scrape_info('⛔️ 刮削停止中...')
+            self.Ui.pushButton_start_cap.setText(' ■ Stopping ')
+            self.Ui.pushButton_start_cap2.setText(' ■ Stopping ')
+            signal.show_scrape_info('⛔️ Scraping has stopped...')
             try:  # pool可能还没启动
                 Flags.pool.shutdown39(wait=False, cancel_futures=True)
             except:
@@ -700,10 +700,10 @@ class MyMAinWindow(QMainWindow):
         try:
             Flags.rest_time_convert = Flags.rest_time_convert_
             if Flags.stop_other:
-                signal.show_scrape_info('⛔️ 已手动停止！')
+                signal.show_scrape_info('⛔️ Stopped manually!')
                 signal.show_log_text(
-                    "⛔️ 已手动停止！\n================================================================================")
-                self.set_label_file_path.emit('⛔️ 已手动停止！')
+                    "⛔️ Stopped manually!\n================================================================================")
+                self.set_label_file_path.emit('⛔️ Stopped manually!')
                 return
             signal.exec_set_processbar.emit(0)
             end_time = time.time()
@@ -712,12 +712,12 @@ class MyMAinWindow(QMainWindow):
                 average_time = str(round((end_time - Flags.start_time) / Flags.scrape_done, 2))
             else:
                 average_time = used_time
-            signal.show_scrape_info('⛔️ 刮削已手动停止！')
+            signal.show_scrape_info('⛔️ Scraping has been stopped manually!')
             self.set_label_file_path.emit(
-                '⛔️ 刮削已手动停止！\n   已刮削 %s 个视频，还剩余 %s 个！刮削用时 %s 秒' % (
+                '⛔️ Scraping has been stopped manually!\n   Scraped %s Videos, still remaining %s indivual! Scraping time %s Second' % (
                     Flags.scrape_done, (Flags.total_count - Flags.scrape_done), used_time))
             signal.show_log_text(
-                '\n ⛔️ 刮削已手动停止！\n 😊 已刮削 %s 个视频，还剩余 %s 个！刮削用时 %s 秒，停止用时 %s 秒' % (
+                '\n ⛔️ Scraping has been stopped manually!\n 😊 Scraped %s videos, still remaining %s indivual! Scraping time %s seconds, stop using time %s Second' % (
                     Flags.scrape_done, (Flags.total_count - Flags.scrape_done), used_time, self.stop_used_time))
             signal.show_log_text("================================================================================")
             signal.show_log_text(
@@ -749,16 +749,16 @@ class MyMAinWindow(QMainWindow):
         Flags.now_kill = 0
         start_time = time.time()
         self.set_label_file_path.emit(
-            f'⛔️ 正在停止刮削...\n   正在停止已在运行的任务线程（1/{Flags.total_kills}）...')
+            f'⛔️ Stopping scraping...\n   Stopping an already running task thread（1/{Flags.total_kills} ...')
         signal.show_log_text(
-            f'\n ⛔️ {get_current_time()} 已停止添加新的刮削任务，正在停止已在运行的任务线程（{Flags.total_kills}）...')
-        signal.show_traceback_log(f"⛔️ 正在停止正在运行的任务线程 ({Flags.total_kills}) ...")
+            f'\n ⛔️ {get_current_time()} Stopped adding new scraping tasks, stopping already running task threads（{Flags.total_kills} ...')
+        signal.show_traceback_log(f"⛔️ Stopping running task thread ({Flags.total_kills}) ...")
         i = 0
         for each in new_thread_list:
             i += 1
-            signal.show_traceback_log(f'正在停止线程: {i}/{Flags.total_kills} {each.getName()} ...')
+            signal.show_traceback_log(f'Stopping thread: {i}/{Flags.total_kills} {each.getName()} ...')
         signal.show_traceback_log(
-            '线程正在停止中，请稍后...\n 🍯 停止时间与线程数量及线程正在执行的任务有关，比如正在执行网络请求、文件下载等IO操作时，需要等待其释放资源。。。\n')
+            'The thread is stopping, please wait...\n 🍯 The stop time is related to the number of threads and the tasks that the threads are performing. For example, when performing network requests, file downloads and other IO operations, you need to wait for them to release resources...\n')
         signal.stop = True
         for each in new_thread_list:  # 线程池的线程
             if 'MDCx-Pool' not in each.getName():
@@ -769,13 +769,13 @@ class MyMAinWindow(QMainWindow):
         signal.stop = False
         self.stop_used_time = get_used_time(start_time)
         signal.show_log_text(
-            ' 🕷 %s 已停止线程：%s/%s %s' % (get_current_time(), Flags.total_kills, Flags.total_kills, other_name))
-        signal.show_traceback_log(f'所有线程已停止！！！({self.stop_used_time}s)\n ⛔️ 刮削已手动停止！\n')
-        signal.show_log_text(f' ⛔️ {get_current_time()} 所有线程已停止！({self.stop_used_time}s)')
+            ' 🕷 %s Thread stopped:%s/%s %s' % (get_current_time(), Flags.total_kills, Flags.total_kills, other_name))
+        signal.show_traceback_log(f'All threads have been stopped! ! !({self.stop_used_time}s)\n ⛔️ Scraping has been stopped manually!\n')
+        signal.show_log_text(f' ⛔️ {get_current_time()} All threads have been stopped!({self.stop_used_time}s)')
         thread_remain_list = []
         [thread_remain_list.append(i.getName()) for i in threading.enumerate()]  # 剩余线程名字列表
         thread_remain = ', '.join(thread_remain_list)
-        print(f"✅ 剩余线程 ({len(thread_remain_list)}): {thread_remain}")
+        print(f"✅ Remaining threads ({len(thread_remain_list)}): {thread_remain}")
         self.show_stop_info_thread()
 
     # 进度条
@@ -940,8 +940,8 @@ class MyMAinWindow(QMainWindow):
             self.Ui.label_studio.setToolTip(str(json_data['studio']))
             self.Ui.label_publish.setText(str(json_data['publisher']))
             self.Ui.label_publish.setToolTip(str(json_data['publisher']))
-            self.Ui.label_poster.setToolTip('点击裁剪图片')
-            self.Ui.label_thumb.setToolTip('点击裁剪图片')
+            self.Ui.label_poster.setToolTip('Click to crop the picture')
+            self.Ui.label_thumb.setToolTip('Click to crop the picture')
             if os.path.isfile(json_data['fanart_path']):  # 生成img_path，用来裁剪使用
                 json_data['img_path'] = json_data['fanart_path']
             else:
@@ -974,16 +974,16 @@ class MyMAinWindow(QMainWindow):
         t.start()
 
     def _set_pixmap(self, poster_path='', thumb_path='', poster_from='', cover_from=''):
-        poster_pix = [False, '', '暂无封面图', 156, 220]
-        thumb_pix = [False, '', '暂无缩略图', 328, 220]
+        poster_pix = [False, '', 'No cover image yet', 156, 220]
+        thumb_pix = [False, '', 'No thumbnail yet', 328, 220]
         if os.path.exists(poster_path):
             poster_pix = get_pixmap(poster_path, poster=True, pic_from=poster_from)
         if os.path.exists(thumb_path):
             thumb_pix = get_pixmap(thumb_path, poster=False, pic_from=cover_from)
 
         # self.Ui.label_poster_size.setText(poster_pix[2] + '  ' + thumb_pix[2])
-        poster_text = poster_pix[2] if poster_pix[2] != '暂无封面图' else ''
-        thumb_text = thumb_pix[2] if thumb_pix[2] != '暂无缩略图' else ''
+        poster_text = poster_pix[2] if poster_pix[2] != 'No cover image yet' else ''
+        thumb_text = thumb_pix[2] if thumb_pix[2] != 'No thumbnail yet' else ''
         self.set_pic_text.emit((poster_text + ' ' + thumb_text).strip())
         self.set_pic_pixmap.emit(poster_pix, thumb_pix)
 
@@ -1006,7 +1006,7 @@ class MyMAinWindow(QMainWindow):
     # 主界面-点击树状条目
     def treeWidget_number_clicked(self, qmodeLindex):
         item = self.Ui.treeWidget_number.currentItem()
-        if item.text(0) != '成功' and item.text(0) != '失败':
+        if item.text(0) != 'Success' and item.text(0) != 'Fail':
             try:
                 index_json = str(item.text(0))
                 signal.add_label_info(self.json_array[str(index_json)])
@@ -1017,8 +1017,8 @@ class MyMAinWindow(QMainWindow):
 
     def _check_main_file_path(self):
         if not self.file_main_open_path:
-            QMessageBox.about(self, '没有目标文件', '请刮削后再使用！！')
-            signal.show_scrape_info('💡 请刮削后使用！%s' % get_current_time())
+            QMessageBox.about(self, 'No target file', 'Please scrape before use!!')
+            signal.show_scrape_info('💡 Please scrape it before use!%s' % get_current_time())
             return False
         return True
 
@@ -1086,11 +1086,11 @@ class MyMAinWindow(QMainWindow):
             file_path = self.file_main_open_path
             main_file_name = split_path(file_path)[1]
             default_text = os.path.splitext(main_file_name)[0].upper()
-            text, ok = QInputDialog.getText(self, '输入番号重新刮削', f'文件名: {main_file_name}\n请输入番号:',
+            text, ok = QInputDialog.getText(self, 'Enter number and re-scrape', f'File name: {main_file_name}\nPlease enter the number:',
                                             text=default_text)
             if ok and text:
                 Flags.again_dic[file_path] = [text, '', '']
-                signal.show_scrape_info('💡 已添加刮削！%s' % get_current_time())
+                signal.show_scrape_info('💡 Scrape added!%s' % get_current_time())
                 if self.Ui.pushButton_start_cap.text() == 'Start':
                     again_search()
 
@@ -1101,11 +1101,11 @@ class MyMAinWindow(QMainWindow):
         if self._check_main_file_path():
             file_path = self.file_main_open_path
             main_file_name = split_path(file_path)[1]
-            text, ok = QInputDialog.getText(self, '输入网址重新刮削',
-                                            f'文件名: {main_file_name}\n支持网站:airav_cc、airav、avsex、avsox、dmm、getchu、fc2'
+            text, ok = QInputDialog.getText(self, 'Enter the URL to scrape again',
+                                            f'File name: {main_file_name}\nSupport website:airav_cc、airav、avsex、avsox、dmm、getchu、fc2'
                                             f'、fc2club、fc2hub、iqqtv、jav321、javbus、javdb、freejavbt、javlibrary、mdtv'
                                             f'、madouqu、mgstage、7mmtv、xcity、mywife、giga、faleno、dahlia、fantastica'
-                                            f'、prestige、hdouban、lulubar、love6、cnmdb、theporndb、kin8\n请输入番号对应的网址（不是网站首页地址！！！是番号页面地址！！！）:')
+                                            f'、prestige、hdouban、lulubar、love6、cnmdb、theporndb、kin8\nPlease enter the URL corresponding to the number (not the homepage address of the website!!! It is the address of the number page!!!）:')
             if ok and text:
                 website, url = deal_url(text)
                 if website:
