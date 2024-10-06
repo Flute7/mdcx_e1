@@ -1415,7 +1415,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_show_hide_logs">
       <property name="geometry">
        <rect>
-        <x>760</x>
+        <x>765</x>
         <y>641</y>
         <width>40</width>
         <height>40</height>
@@ -1540,7 +1540,7 @@ p, li { white-space: pre-wrap; }
      <widget class="QPushButton" name="pushButton_save_failed_list">
       <property name="geometry">
        <rect>
-        <x>760</x>
+        <x>765</x>
         <y>641</y>
         <width>40</width>
         <height>40</height>
