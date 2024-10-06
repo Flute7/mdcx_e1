@@ -155,8 +155,8 @@ class MyMAinWindow(QMainWindow):
             'Non-Japanese agent：javdb、airav-cc、avsex（日本代理会报错）\n '
             'Japan agent：seesaawiki\n '
             'No agent required：avsex、hdouban、iqqtv、airav-wiki、love6、lulubar、fc2、fc2club、fc2hub\n\n'
-            '▶️ Click the [Start Test] button in the upper right corner to test network connectivity.')  # 检查网络界面显示提示信息
-        signal.add_log("🍯 You can click the icon in the lower left corner to show/hide the request information panel!")
+            '▶️ Click the [Test Network] button in the upper right corner to test network connectivity.')  # 检查网络界面显示提示信息
+        signal.add_log("🍯 You can click the icon in the lower right corner to show/hide the request information panel!")
         self.show_version()  # 日志页面显示版本信息
         self.creat_right_menu()  # 加载右键菜单
         self.pushButton_main_clicked()  # 切换到主界面
@@ -317,7 +317,7 @@ class MyMAinWindow(QMainWindow):
 
     # 显示与隐藏窗口标题栏
     def _windows_auto_adjust(self):
-        if config.window_title == 'hide':  # 隐藏标题栏
+        if config.window_title == 'Hide':  # 隐藏标题栏
             if self.window_radius == 0:
                 self.show_flag = True
             self.window_radius = 5
@@ -925,8 +925,8 @@ class MyMAinWindow(QMainWindow):
             self.Ui.label_release.setText(str(json_data['release']))
             self.Ui.label_release.setToolTip(str(json_data['release']))
             if json_data['runtime']:
-                self.Ui.label_runtime.setText(str(json_data['runtime']) + ' 分钟')
-                self.Ui.label_runtime.setToolTip(str(json_data['runtime']) + ' 分钟')
+                self.Ui.label_runtime.setText(str(json_data['runtime']) + ' minute')
+                self.Ui.label_runtime.setToolTip(str(json_data['runtime']) + ' minute')
             else:
                 self.Ui.label_runtime.setText('')
             self.Ui.label_director.setText(str(json_data['director']))
@@ -1110,11 +1110,11 @@ class MyMAinWindow(QMainWindow):
                 website, url = deal_url(text)
                 if website:
                     Flags.again_dic[file_path] = ['', url, website]
-                    signal.show_scrape_info('💡 已添加刮削！%s' % get_current_time())
+                    signal.show_scrape_info('💡 Scrape added!%s' % get_current_time())
                     if self.Ui.pushButton_start_cap.text() == 'Start':
                         again_search()
                 else:
-                    signal.show_scrape_info('💡 不支持的网站！%s' % get_current_time())
+                    signal.show_scrape_info('💡 Unsupported website!%s' % get_current_time())
 
     def main_del_file_click(self):
         """
@@ -1122,16 +1122,16 @@ class MyMAinWindow(QMainWindow):
         """
         if self._check_main_file_path():
             file_path = self.file_main_open_path
-            box = QMessageBox(QMessageBox.Warning, '删除文件', f'将要删除文件: \n{file_path}\n\n 你确定要删除吗？')
+            box = QMessageBox(QMessageBox.Warning, 'Delete files', f'Files to be deleted: \n{file_path}\n\n Are you sure you want to delete it?')
             box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-            box.button(QMessageBox.Yes).setText('删除文件')
-            box.button(QMessageBox.No).setText('取消')
+            box.button(QMessageBox.Yes).setText('Delete files')
+            box.button(QMessageBox.No).setText('Cancel')
             box.setDefaultButton(QMessageBox.No)
             reply = box.exec()
             if reply != QMessageBox.Yes:
                 return
             delete_file(file_path)
-            signal.show_scrape_info('💡 已删除文件！%s' % get_current_time())
+            signal.show_scrape_info('💡 File deleted!%s' % get_current_time())
 
     def main_del_folder_click(self):
         """
@@ -1139,16 +1139,16 @@ class MyMAinWindow(QMainWindow):
         """
         if self._check_main_file_path():
             folder_path = split_path(self.file_main_open_path)[0]
-            box = QMessageBox(QMessageBox.Warning, '删除文件', f'将要删除文件夹: \n{folder_path}\n\n 你确定要删除吗？')
+            box = QMessageBox(QMessageBox.Warning, 'Delete files', f'Folder to be deleted: \n{folder_path}\n\n Are you sure you want to delete it?')
             box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-            box.button(QMessageBox.Yes).setText('删除文件和文件夹')
-            box.button(QMessageBox.No).setText('取消')
+            box.button(QMessageBox.Yes).setText('Delete files and folders')
+            box.button(QMessageBox.No).setText('Cancel')
             box.setDefaultButton(QMessageBox.No)
             reply = box.exec()
             if reply != QMessageBox.Yes:
                 return
             shutil.rmtree(folder_path, ignore_errors=True)
-            self.show_scrape_info('💡 已删除文件夹！%s' % get_current_time())
+            self.show_scrape_info('💡 Folder deleted!%s' % get_current_time())
 
     def _pic_main_clicked(self):
         """
@@ -1160,8 +1160,8 @@ class MyMAinWindow(QMainWindow):
     # 主界面-开关封面显示
     def checkBox_cover_clicked(self):
         if not self.Ui.checkBox_cover.isChecked():
-            self.Ui.label_poster.setText("封面图")
-            self.Ui.label_thumb.setText("缩略图")
+            self.Ui.label_poster.setText("Cover image")
+            self.Ui.label_thumb.setText("Thumbnail")
             self.Ui.label_poster.resize(156, 220)
             self.Ui.label_thumb.resize(328, 220)
             self.Ui.label_poster_size.setText("")
@@ -1246,10 +1246,10 @@ class MyMAinWindow(QMainWindow):
             json_data['website'] = self.Ui.lineEdit_nfo_website.text()
             json_data['country'] = self.Ui.comboBox_nfo.currentText()
             if write_nfo(json_data, nfo_path, nfo_folder, file_path, edit_mode=True):
-                self.Ui.label_save_tips.setText(f'已保存! {get_current_time()}')
+                self.Ui.label_save_tips.setText(f'Saved! {get_current_time()}')
                 signal.add_label_info(json_data)
             else:
-                self.Ui.label_save_tips.setText(f'保存失败! {get_current_time()}')
+                self.Ui.label_save_tips.setText(f'Save failed! {get_current_time()}')
         except:
             if not signal.stop:
                 signal.show_traceback_log(traceback.format_exc())
@@ -1260,15 +1260,15 @@ class MyMAinWindow(QMainWindow):
     def show_scrape_info(self, before_info=''):
         try:
             if Flags.file_mode == FileMode.Single:
-                scrape_info = '💡 单文件刮削\n💠 %s · %s' % (Flags.main_mode_text, self.Ui.comboBox_website.currentText())
+                scrape_info = '💡 Single file scraping\n💠 %s · %s' % (Flags.main_mode_text, self.Ui.comboBox_website.currentText())
             else:
                 scrape_info = '💠 %s · %s' % (Flags.main_mode_text, Flags.scrape_like_text)
                 if config.scrape_like == 'single':
-                    scrape_info = f"💡 {config.website_single} 刮削\n" + scrape_info
+                    scrape_info = f"💡 {config.website_single} Scrape\n" + scrape_info
             if config.soft_link == 1:
-                scrape_info = '🍯 软链接 · 开\n' + scrape_info
+                scrape_info = '🍯 Soft link · open\n' + scrape_info
             elif config.soft_link == 2:
-                scrape_info = '🍯 硬链接 · 开\n' + scrape_info
+                scrape_info = '🍯 Hard link · open\n' + scrape_info
             after_info = '\n%s\n🛠 %s\n🐰 MDCx %s' % (scrape_info, config.file, self.localversion)
             self.label_show_version.emit(before_info + after_info + self.new_version)
         except:
@@ -1276,23 +1276,23 @@ class MyMAinWindow(QMainWindow):
 
     # region 获取/保存成功刮削列表
     def pushButton_success_list_save_clicked(self):
-        box = QMessageBox(QMessageBox.Warning, '保存成功列表', '确定要将当前列表保存为已刮削成功文件列表吗？')
+        box = QMessageBox(QMessageBox.Warning, 'Save success list', 'Are you sure you want to save the current list as a list of successfully scraped files?')
         box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-        box.button(QMessageBox.Yes).setText('保存')
-        box.button(QMessageBox.No).setText('取消')
+        box.button(QMessageBox.Yes).setText('Keep')
+        box.button(QMessageBox.No).setText('Cancel')
         box.setDefaultButton(QMessageBox.No)
         reply = box.exec()
         if reply == QMessageBox.Yes:
             with open(resources.userdata_path('success.txt'), 'w', encoding='utf-8', errors='ignore') as f:
-                f.write(self.Ui.textBrowser_show_success_list.toPlainText().replace('暂无成功刮削的文件', '').strip())
+                f.write(self.Ui.textBrowser_show_success_list.toPlainText().replace('No files successfully scraped yet', '').strip())
                 get_success_list()
             self.Ui.widget_show_success.hide()
 
     def pushButton_success_list_clear_clicked(self):
-        box = QMessageBox(QMessageBox.Warning, '清空成功列表', '确定要清空当前已刮削成功文件列表吗？')
+        box = QMessageBox(QMessageBox.Warning, 'Clear success list', 'Are you sure you want to clear the current list of successfully scraped files?')
         box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-        box.button(QMessageBox.Yes).setText('清空')
-        box.button(QMessageBox.No).setText('取消')
+        box.button(QMessageBox.Yes).setText('Clear')
+        box.button(QMessageBox.No).setText('Cancel')
         box.setDefaultButton(QMessageBox.No)
         reply = box.exec()
         if reply == QMessageBox.Yes:
@@ -1302,7 +1302,7 @@ class MyMAinWindow(QMainWindow):
 
     def pushButton_view_success_file_clicked(self):
         self.Ui.widget_show_success.show()
-        info = '暂无成功刮削的文件'
+        info = 'No files successfully scraped yet'
         if len(Flags.success_list):
             temp = list(Flags.success_list)
             temp.sort()
@@ -1372,7 +1372,7 @@ class MyMAinWindow(QMainWindow):
         if len(Flags.failed_file_list) or True:
             log_name = 'failed_' + time.strftime("%Y-%m-%d-%H-%M-%S", time.localtime()) + '.txt'
             log_name = convert_path(os.path.join(get_movie_path_setting()[0], log_name))
-            filename, filetype = QFileDialog.getSaveFileName(None, "保存失败文件列表", log_name, "Text Files (*.txt)",
+            filename, filetype = QFileDialog.getSaveFileName(None, "Save failed file list", log_name, "Text Files (*.txt)",
                                                              options=self.options)
             if filename:
                 with open(filename, 'w', encoding='utf-8') as f:
@@ -1388,7 +1388,7 @@ class MyMAinWindow(QMainWindow):
             else:
                 self.req_logs_counts = 0
                 self.req_logs_clear.emit('')
-                self.main_req_logs_show.emit(add_html(' 🗑️ 日志过多，已清屏！'))
+                self.main_req_logs_show.emit(add_html(' 🗑️ There are too many logs, the screen has been cleared!'))
 
     # 日志页面显示内容
     def show_log_text(self, text):
@@ -1416,7 +1416,7 @@ class MyMAinWindow(QMainWindow):
             else:
                 self.logs_counts = 0
                 self.main_logs_clear.emit('')
-                self.main_logs_show.emit(add_html(' 🗑️ 日志过多，已清屏！'))
+                self.main_logs_show.emit(add_html(' 🗑️ There are too many logs, the screen has been cleared!'))
             # self.show_traceback_log(self.Ui.textBrowser_log_main.document().lineCount())
 
         except:
@@ -1511,7 +1511,7 @@ class MyMAinWindow(QMainWindow):
         media_path = self.Ui.lineEdit_movie_path.text()  # 获取待刮削目录作为打开目录
         if not media_path:
             media_path = get_main_path()
-        file_path, filetype = QFileDialog.getOpenFileName(None, "选取视频文件", media_path,
+        file_path, filetype = QFileDialog.getOpenFileName(None, "Select video file", media_path,
                                                           "Movie Files(*.mp4 " "*.avi *.rmvb *.wmv " "*.mov *.mkv *.flv *.ts " "*.webm *.MP4 *.AVI " "*.RMVB *.WMV *.MOV " "*.MKV *.FLV *.TS " "*.WEBM);;All Files(*)",
                                                           options=self.options)
         if file_path:
@@ -1520,15 +1520,15 @@ class MyMAinWindow(QMainWindow):
     def pushButton_start_single_file_clicked(self):  # 点刮削
         Flags.single_file_path = self.Ui.lineEdit_single_file_path.text().strip()
         if not Flags.single_file_path:
-            signal.show_scrape_info('💡 请选择文件！')
+            signal.show_scrape_info('💡 Please select a file!')
             return
 
         if not os.path.isfile(Flags.single_file_path):
-            signal.show_scrape_info('💡 文件不存在！')  # 主界面左下角显示信息
+            signal.show_scrape_info('💡 File does not exist!')  # 主界面左下角显示信息
             return
 
         if not self.Ui.lineEdit_appoint_url.text():
-            signal.show_scrape_info('💡 请填写番号网址！')  # 主界面左下角显示信息
+            signal.show_scrape_info('💡 Please fill in the number and URL!')  # 主界面左下角显示信息
             return
 
         self.pushButton_show_log_clicked()  # 点击刮削按钮后跳转到日志页面
@@ -1538,7 +1538,7 @@ class MyMAinWindow(QMainWindow):
         if website:
             Flags.website_name = website
         else:
-            signal.show_scrape_info('💡 不支持的网站！%s' % get_current_time())
+            signal.show_scrape_info('💡 Unsupported website!%s' % get_current_time())
             return
         start_new_scrape(FileMode.Single)
 
@@ -1553,7 +1553,7 @@ class MyMAinWindow(QMainWindow):
         path = self.Ui.lineEdit_movie_path.text()
         if not path:
             path = get_main_path()
-        file_path, fileType = QFileDialog.getOpenFileName(None, "选取缩略图", path,
+        file_path, fileType = QFileDialog.getOpenFileName(None, "Select thumbnail", path,
                                                           "Picture Files(*.jpg *.png);;All Files(*)",
                                                           options=self.options)
         if file_path != '':
@@ -1562,10 +1562,10 @@ class MyMAinWindow(QMainWindow):
 
     # 工具-视频移动
     def pushButton_move_mp4_clicked(self):
-        box = QMessageBox(QMessageBox.Warning, '移动视频和字幕', '确定要移动视频和字幕吗？')
+        box = QMessageBox(QMessageBox.Warning, 'Mobile video and subtitles', 'Are you sure you want to move the video and subtitles?')
         box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-        box.button(QMessageBox.Yes).setText('移动')
-        box.button(QMessageBox.No).setText('取消')
+        box.button(QMessageBox.Yes).setText('Move')
+        box.button(QMessageBox.No).setText('Cancel')
         box.setDefaultButton(QMessageBox.No)
         reply = box.exec()
         if reply == QMessageBox.Yes:
@@ -1955,7 +1955,7 @@ class MyMAinWindow(QMainWindow):
         if new_config_file != config.file:
             new_config_path = os.path.join(config.folder, new_config_file)
             signal.show_log_text(
-                '\n================================================================================\n切换配置：%s' % new_config_path)
+                '\n================================================================================\nSwitch configuration:%s' % new_config_path)
             with open(config.get_mark_file_path(), 'w', encoding='UTF-8') as f:
                 f.write(new_config_path)
             temp_dark = self.dark_mode
@@ -1964,7 +1964,7 @@ class MyMAinWindow(QMainWindow):
             if temp_dark != self.dark_mode and temp_window_radius == self.window_radius:
                 self.show_flag = True
                 self._windows_auto_adjust()
-            signal.show_scrape_info('💡 配置已切换！%s' % get_current_time())
+            signal.show_scrape_info('💡 Configuration has been switched!%s' % get_current_time())
 
     # 重置配置
     def pushButton_init_config_clicked(self):
@@ -1977,7 +1977,7 @@ class MyMAinWindow(QMainWindow):
             self.show_flag = True
             self._windows_auto_adjust()
         self.Ui.pushButton_init_config.setEnabled(True)
-        signal.show_scrape_info('💡 配置已重置！%s' % get_current_time())
+        signal.show_scrape_info('💡 Configuration has been reset!%s' % get_current_time())
 
     # 设置-命名-分集-字母
     def checkBox_cd_part_a_clicked(self):
@@ -1999,11 +1999,11 @@ class MyMAinWindow(QMainWindow):
     def _check_mac_config_folder(self):
         if self.check_mac and not config.is_windows and '.app/Contents/Resources' in config.folder:
             self.check_mac = False
-            box = QMessageBox(QMessageBox.Warning, '选择配置文件目录',
-                              f'检测到当前配置文件目录为：\n {config.folder}\n\n由于 MacOS 平台在每次更新 APP 版本时会覆盖该目录的配置，因此请选择其他的配置目录！\n这样下次更新 APP 时，选择相同的配置目录即可读取你之前的配置！！！')
+            box = QMessageBox(QMessageBox.Warning, 'Select configuration file directory',
+                              f'It is detected that the current configuration file directory is:\n {config.folder}\n\nSince the MacOS platform will overwrite the configuration of this directory every time the APP version is updated, please choose another configuration directory!\nIn this way, when you update the APP next time, you can select the same configuration directory to read your previous configuration!!!')
             box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-            box.button(QMessageBox.Yes).setText('选择目录')
-            box.button(QMessageBox.No).setText('取消')
+            box.button(QMessageBox.Yes).setText('Select directory')
+            box.button(QMessageBox.No).setText('Cancel')
             box.setDefaultButton(QMessageBox.Yes)
             reply = box.exec()
             if reply == QMessageBox.Yes:
@@ -2013,11 +2013,11 @@ class MyMAinWindow(QMainWindow):
     def pushButton_save_config_clicked(self):
         self.save_config()
         # self.load_config()
-        signal.show_scrape_info('💡 配置已保存！%s' % get_current_time())
+        signal.show_scrape_info('💡 Configuration saved!%s' % get_current_time())
 
     # 设置-另存为
     def pushButton_save_new_config_clicked(self):
-        new_config_name, ok = QInputDialog.getText(self, '另存为新配置', '请输入新配置的文件名')
+        new_config_name, ok = QInputDialog.getText(self, 'Save as new configuration', 'Please enter the file name of the new configuration')
         if ok and new_config_name:
             new_config_name = new_config_name.replace('/', '').replace('\\', '')
             new_config_name = re.sub(r'[\\:*?"<>|\r\n]+', '', new_config_name)
@@ -2037,10 +2037,10 @@ class MyMAinWindow(QMainWindow):
         start_time = time.time()
         try:
             # 显示代理信息
-            signal.show_net_info('\n⛑ 开始检测网络....')
+            signal.show_net_info('\n⛑ Start checking the network....')
             show_netstatus()
             # 检测网络连通性
-            signal.show_net_info(' 开始检测网络连通性...')
+            signal.show_net_info(' Start checking network connectivity...')
 
             net_info = {'github': ['https://raw.githubusercontent.com', ''],
                         'airav_cc': ['https://airav.io', ''],
@@ -2111,7 +2111,7 @@ class MyMAinWindow(QMainWindow):
             
             for website in config.SUPPORTED_WEBSITES:
                 if hasattr(config, f"{website}_website"):
-                    signal.show_net_info(f"   ⚠️{website} 使用自定义网址：{getattr(config, f'{website}_website')}")
+                    signal.show_net_info(f"   ⚠️{website} Use a custom URL:{getattr(config, f'{website}_website')}")
                     net_info[website][0] = getattr(config, f"{website}_website")
 
             net_info['javdb'][0] += '/v/D16Q5?locale=zh'
@@ -2124,64 +2124,64 @@ class MyMAinWindow(QMainWindow):
                 host_address = each[0].replace('https://', '').replace('http://', '').split('/')[0]
                 if name == 'javdb':
                     res_javdb = self._check_javdb_cookie()
-                    each[1] = res_javdb.replace('✅ 连接正常', f'✅ 连接正常{ping_host(host_address)}')
+                    each[1] = res_javdb.replace('✅ The connection is normal', f'✅ The connection is normal{ping_host(host_address)}')
                 elif name == 'javbus':
                     res_javbus = self._check_javbus_cookie()
-                    each[1] = res_javbus.replace('✅ 连接正常', f'✅ 连接正常{ping_host(host_address)}')
+                    each[1] = res_javbus.replace('✅ The connection is normal', f'✅ The connection is normal{ping_host(host_address)}')
                 elif name == 'theporndb':
                     res_theporndb = check_theporndb_api_token()
-                    each[1] = res_theporndb.replace('✅ 连接正常', f'✅ 连接正常{ping_host(host_address)}')
+                    each[1] = res_theporndb.replace('✅ The connection is normal', f'✅ The connection is normal{ping_host(host_address)}')
                 elif name == 'javlibrary':
                     proxies = True
                     if hasattr(config, f"javlibrary_website"):
                         proxies = False
                     result, html_info = scraper_html(each[0], proxies=proxies)
                     if not result:
-                        each[1] = '❌ 连接失败 请检查网络或代理设置！ ' + html_info
+                        each[1] = '❌ Connection failed. Please check network or proxy settings! ' + html_info
                     elif 'Cloudflare' in html_info:
-                        each[1] = '❌ 连接失败 (被 Cloudflare 5 秒盾拦截！)'
+                        each[1] = '❌ Connection failed (blocked by Cloudflare 5-second shield!)'
                     else:
-                        each[1] = f'✅ 连接正常{ping_host(host_address)}'
+                        each[1] = f'✅ The connection is normal{ping_host(host_address)}'
                 elif name in ['avsex', 'freejavbt', 'airav_cc', 'airav', 'madouqu', '7mmtv']:
                     result, html_info = scraper_html(each[0])
                     if not result:
-                        each[1] = '❌ 连接失败 请检查网络或代理设置！ ' + html_info
+                        each[1] = '❌ Connection failed. Please check network or proxy settings! ' + html_info
                     elif 'Cloudflare' in html_info:
-                        each[1] = '❌ 连接失败 (被 Cloudflare 5 秒盾拦截！)'
+                        each[1] = '❌ Connection failed (blocked by Cloudflare 5-second shield!)'
                     else:
-                        each[1] = f'✅ 连接正常{ping_host(host_address)}'
+                        each[1] = f'✅ The connection is normal{ping_host(host_address)}'
                 else:
                     try:
                         result, html_content = get_html(each[0])
                         if not result:
-                            each[1] = '❌ 连接失败 请检查网络或代理设置！ ' + str(html_content)
+                            each[1] = '❌ Connection failed. Please check network or proxy settings! ' + str(html_content)
                         else:
                             if name == 'dmm':
-                                if re.findall('このページはお住まいの地域からご利用になれません', html_content):
-                                    each[1] = '❌ 连接失败 地域限制, 请使用日本节点访问！'
+                                if re.findall('This page is not available in your region', html_content):
+                                    each[1] = '❌ Connection failed due to geographical restrictions, please use the Japanese node to access!'
                                 else:
-                                    each[1] = f'✅ 连接正常{ping_host(host_address)}'
+                                    each[1] = f'✅ The connection is normal{ping_host(host_address)}'
                             elif name == 'mgstage':
                                 if not html_content.strip():
-                                    each[1] = '❌ 连接失败 地域限制, 请使用日本节点访问！'
+                                    each[1] = '❌ Connection failed due to geographical restrictions, please use the Japanese node to access!'
                                 else:
-                                    each[1] = f'✅ 连接正常{ping_host(host_address)}'
+                                    each[1] = f'✅ The connection is normal{ping_host(host_address)}'
                             else:
-                                each[1] = f'✅ 连接正常{ping_host(host_address)}'
+                                each[1] = f'✅ The connection is normal{ping_host(host_address)}'
                     except Exception as e:
-                        each[1] = '测试连接时出现异常！信息:' + str(e)
+                        each[1] = 'An exception occurred while testing the connection! information:' + str(e)
                         signal.show_traceback_log(traceback.format_exc())
                         signal.show_net_info(traceback.format_exc())
                 signal.show_net_info('   ' + name.ljust(12) + each[1])
-            signal.show_net_info(f"\n🎉 网络检测已完成！用时 {get_used_time(start_time)} 秒！")
+            signal.show_net_info(f"\n🎉 Network detection completed! time {get_used_time(start_time)} Second!")
             signal.show_net_info("================================================================================\n")
         except:
             if signal.stop:
-                signal.show_net_info('\n⛔️ 当前有刮削任务正在停止中，请等待刮削停止后再进行检测！')
+                signal.show_net_info('\n⛔️ A scraping task is currently being stopped. Please wait until the scraping stops before testing again!')
                 signal.show_net_info(
                     "================================================================================\n")
         self.Ui.pushButton_check_net.setEnabled(True)
-        self.Ui.pushButton_check_net.setText('开始检测')
+        self.Ui.pushButton_check_net.setText('Start testing')
         self.Ui.pushButton_check_net.setStyleSheet(
             'QPushButton#pushButton_check_net{background-color:#4C6EFF}QPushButton:hover#pushButton_check_net{background-color: rgba(76,110,255,240)}QPushButton:pressed#pushButton_check_net{#4C6EE0}')
 
@@ -2226,10 +2226,10 @@ class MyMAinWindow(QMainWindow):
     def pushButton_check_javdb_cookie_clicked(self):
         input_cookie = self.Ui.plainTextEdit_cookie_javdb.toPlainText()
         if not input_cookie:
-            self.Ui.label_javdb_cookie_result.setText('❌ 未填写 Cookie，影响 FC2 刮削！')
-            self.show_log_text(' ❌ JavDb 未填写 Cookie，影响 FC2 刮削！可在「设置」-「网络」添加！')
+            self.Ui.label_javdb_cookie_result.setText('❌ Cookie not filled in, affecting FC2 scraping!')
+            self.show_log_text(' ❌ JavDb unfilled cookie, affecting FC2 scraping! It can be added in "Settings" - "Network"!')
             return
-        self.Ui.label_javdb_cookie_result.setText('⏳ 正在检测中...')
+        self.Ui.label_javdb_cookie_result.setText('⏳ Under detection...')
         try:
             t = threading.Thread(target=self._check_javdb_cookie)
             t.start()  # 启动线程,即让线程开始执行
@@ -2238,13 +2238,13 @@ class MyMAinWindow(QMainWindow):
             signal.show_log_text(traceback.format_exc())
 
     def _check_javdb_cookie(self):
-        tips = '❌ 未填写 Cookie，影响 FC2 刮削！'
+        tips = '❌ Cookie not filled in, affecting FC2 scraping!'
         input_cookie = self.Ui.plainTextEdit_cookie_javdb.toPlainText()
         if not input_cookie:
             self.Ui.label_javdb_cookie_result.setText(tips)
             return tips
         # self.Ui.pushButton_check_javdb_cookie.setEnabled(False)
-        tips = '✅ 连接正常！'
+        tips = '✅ The connection is OK!'
         header = {'cookie': input_cookie}
         cookies = config.javdb
         javdb_url = getattr(config, 'javdb_website', 'https://javdb.com') + '/v/D16Q5?locale=zh'
@@ -2253,43 +2253,43 @@ class MyMAinWindow(QMainWindow):
             if not result:
                 if 'Cookie' in response:
                     if cookies != input_cookie:
-                        tips = '❌ Cookie 已过期！'
+                        tips = '❌ Cookie has expired!'
                     else:
-                        tips = '❌ Cookie 已过期！已清理！(不清理无法访问)'
+                        tips = '❌ Cookie has expired! Cleaned! (Cannot be accessed without cleaning)'
                         self.set_javdb_cookie.emit('')
                         self.pushButton_save_config_clicked()
                 else:
-                    tips = f'❌ 连接失败！请检查网络或代理设置！ {response}'
+                    tips = f'❌ Connection failed! Please check your network or proxy settings! {response}'
             else:
                 if "The owner of this website has banned your access based on your browser's behaving" in response:
                     ip_adress = re.findall(r'(\d+\.\d+\.\d+\.\d+)', response)
                     ip_adress = ip_adress[0] + ' ' if ip_adress else ''
-                    tips = f'❌ 你的 IP {ip_adress}被 JavDb 封了！'
+                    tips = f'❌ your IP {ip_adress}Banned by JavDb!'
                 elif 'Due to copyright restrictions' in response or 'Access denied' in response:
-                    tips = '❌ 当前 IP 被禁止访问！请使用非日本节点！'
+                    tips = '❌ The current IP is blocked! Please use non-Japanese nodes!'
                 elif 'ray-id' in response:
-                    tips = '❌ 访问被 CloudFlare 拦截！'
+                    tips = '❌ Access blocked by CloudFlare!'
                 elif '/logout' in response:  # 已登录，有登出按钮
-                    vip_info = '未开通 VIP'
-                    tips = f'✅ 连接正常！（{vip_info}）'
+                    vip_info = 'VIP not activated'
+                    tips = f'✅ The connection is OK! ({vip_info}）'
                     if input_cookie:
                         if 'icon-diamond' in response or '/v/D16Q5' in response:  # 有钻石图标或者跳到详情页表示已开通
                             vip_info = '已开通 VIP'
                         if cookies != input_cookie:  # 保存cookie
-                            tips = f'✅ 连接正常！（{vip_info}）Cookie 已保存！'
+                            tips = f'✅ The connection is OK! ({vip_info}）Cookie Saved!'
                             self.pushButton_save_config_clicked()
                         else:
-                            tips = f'✅ 连接正常！（{vip_info}）'
+                            tips = f'✅ The connection is OK! ({vip_info}）'
 
                 else:
                     if cookies != input_cookie:
-                        tips = '❌ Cookie 无效！请重新填写！'
+                        tips = '❌ Cookie is invalid! Please fill it in again!'
                     else:
-                        tips = '❌ Cookie 无效！已清理！'
+                        tips = '❌ Cookie is invalid! Cleaned!'
                         self.set_javdb_cookie.emit('')
                         self.pushButton_save_config_clicked()
         except Exception as e:
-            tips = f'❌ 连接失败！请检查网络或代理设置！ {e}'
+            tips = f'❌ Connection failed! Please check your network or proxy settings! {e}'
             signal.show_traceback_log(tips)
         if input_cookie:
             self.Ui.label_javdb_cookie_result.setText(tips)
@@ -2307,10 +2307,10 @@ class MyMAinWindow(QMainWindow):
             self.show_log_text(traceback.format_exc())
 
     def _check_javbus_cookie(self):
-        self.set_javbus_status.emit('⏳ 正在检测中...')
+        self.set_javbus_status.emit('⏳ Checking...')
 
         # self.Ui.pushButton_check_javbus_cookie.setEnabled(False)
-        tips = '✅ 连接正常！'
+        tips = '✅ The connection is OK!'
         input_cookie = self.Ui.plainTextEdit_cookie_javbus.toPlainText()
         new_cookie = {'cookie': input_cookie}
         cookies = config.javbus
@@ -2325,18 +2325,18 @@ class MyMAinWindow(QMainWindow):
             result, response = get_html(javbus_url, headers=headers, cookies=new_cookie)
 
             if not result:
-                tips = f'❌ 连接失败！请检查网络或代理设置！ {response}'
+                tips = f'❌ Connection failed! Please check your network or proxy settings! {response}'
             elif 'lostpasswd' in response:
                 if input_cookie:
-                    tips = '❌ Cookie 无效！'
+                    tips = '❌ Cookie is invalid!'
                 else:
-                    tips = '❌ 当前节点需要 Cookie 才能刮削！请填写 Cookie 或更换节点！'
+                    tips = '❌ The current node requires cookies to scrape! Please fill in the cookie or change the node!'
             elif cookies != input_cookie:
                 self.pushButton_save_config_clicked()
-                tips = '✅ 连接正常！Cookie 已保存！  '
+                tips = '✅ The connection is OK! Cookie saved!  '
 
         except Exception as e:
-            tips = f'❌ 连接失败！请检查网络或代理设置！ {e}'
+            tips = f'❌ Connection failed! Please check your network or proxy settings! {e}'
 
         self.show_log_text(tips.replace('❌', ' ❌ JavBus').replace('✅', ' ✅ JavBus'))
         self.set_javbus_status.emit(tips)
@@ -2351,7 +2351,7 @@ class MyMAinWindow(QMainWindow):
         media_path = self.Ui.lineEdit_movie_path.text()  # 获取待刮削目录作为打开目录
         if not media_path:
             media_path = get_main_path()
-        media_folder_path = QFileDialog.getExistingDirectory(None, "选择目录", media_path, options=self.options)
+        media_folder_path = QFileDialog.getExistingDirectory(None, "Select directory", media_path, options=self.options)
         return convert_path(media_folder_path)
 
     # 改回接受焦点状态
@@ -2366,26 +2366,26 @@ class MyMAinWindow(QMainWindow):
     def show_statement(self):
         if not self.statement:
             return
-        msg = '''申明
+        msg = '''Statement
 ————————————————————————————————————————————————————————————————
-当你查阅、下载了本项目源代码或二进制程序，即代表你接受了以下条款
+When you view and download the source code or binary program of this project, you accept the following terms:
 
-    · 本项目和项目成果仅供技术，学术交流和Python3性能测试使用
-    · 用户必须确保获取影片的途径在用户当地是合法的
-    · 运行时和运行后所获取的元数据和封面图片等数据的版权，归版权持有人持有
-    · 本项目贡献者编写该项目旨在学习Python3 ，提高编程水平
-    · 本项目不提供任何影片下载的线索
-    · 请勿提供运行时和运行后获取的数据提供给可能有非法目的的第三方，例如用于非法交易、侵犯未成年人的权利等
-    · 用户仅能在自己的私人计算机或者测试环境中使用该工具，禁止将获取到的数据用于商业目的或其他目的，如销售、传播等
-    · 用户在使用本项目和项目成果前，请用户了解并遵守当地法律法规，如果本项目及项目成果使用过程中存在违反当地法律法规的行为，请勿使用该项目及项目成果
-    · 法律后果及使用后果由使用者承担
+    · This project and project results are only used for technical, academic exchange and Python3 performance testing
+    · Users must ensure that the method of obtaining the video is legal in the user's local area
+    · The copyright of data such as metadata and cover images obtained during and after operation belongs to the copyright holder.
+    · The contributors to this project wrote this project to learn Python3 and improve their programming level
+    · This project does not provide any clues for video downloads
+    · Do not provide data obtained during runtime and after runtime to third parties that may have illegal purposes, such as for illegal transactions, infringement of the rights of minors, etc.
+    · Users can only use this tool in their own private computers or test environments, and are prohibited from using the obtained data for commercial purposes or other purposes, such as sales, dissemination, etc.
+    · Before using this project and project results, users are requested to understand and abide by local laws and regulations. If there are any violations of local laws and regulations during the use of this project and project results, please do not use the project and project results.
+    · The legal consequences and consequences of use shall be borne by the user
     · GPL LICENSE
-    · 若用户不同意上述条款任意一条，请勿使用本项目和项目成果
+    · If the user does not agree with any of the above terms, please do not use this project and project results.
         '''
-        box = QMessageBox(QMessageBox.Warning, '申明', msg)
+        box = QMessageBox(QMessageBox.Warning, 'Statement', msg)
         box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-        box.button(QMessageBox.Yes).setText('同意')
-        box.button(QMessageBox.No).setText('不同意')
+        box.button(QMessageBox.Yes).setText('Agree')
+        box.button(QMessageBox.No).setText('Disagree')
         box.setDefaultButton(QMessageBox.No)
         reply = box.exec()
         if reply == QMessageBox.No:
@@ -2396,29 +2396,29 @@ class MyMAinWindow(QMainWindow):
 
     def change_buttons_status(self):
         Flags.stop_other = True
-        self.Ui.pushButton_start_cap.setText('■ 停止')
-        self.Ui.pushButton_start_cap2.setText('■ 停止')
+        self.Ui.pushButton_start_cap.setText('■ Stop')
+        self.Ui.pushButton_start_cap2.setText('■ Stop')
         self.Ui.pushButton_select_media_folder.setVisible(False)
         self.Ui.pushButton_start_single_file.setEnabled(False)
-        self.Ui.pushButton_start_single_file.setText('正在刮削中...')
+        self.Ui.pushButton_start_single_file.setText('Scraping in progress...')
         self.Ui.pushButton_add_sub_for_all_video.setEnabled(False)
-        self.Ui.pushButton_add_sub_for_all_video.setText('正在刮削中...')
+        self.Ui.pushButton_add_sub_for_all_video.setText('Scraping in progress...')
         self.Ui.pushButton_show_pic_actor.setEnabled(False)
-        self.Ui.pushButton_show_pic_actor.setText('刮削中...')
+        self.Ui.pushButton_show_pic_actor.setText('Scraping...')
         self.Ui.pushButton_add_actor_info.setEnabled(False)
-        self.Ui.pushButton_add_actor_info.setText('正在刮削中...')
+        self.Ui.pushButton_add_actor_info.setText('Scraping in progress...')
         self.Ui.pushButton_add_actor_pic.setEnabled(False)
-        self.Ui.pushButton_add_actor_pic.setText('正在刮削中...')
+        self.Ui.pushButton_add_actor_pic.setText('Scraping in progress...')
         self.Ui.pushButton_add_actor_pic_kodi.setEnabled(False)
-        self.Ui.pushButton_add_actor_pic_kodi.setText('正在刮削中...')
+        self.Ui.pushButton_add_actor_pic_kodi.setText('Scraping in progress...')
         self.Ui.pushButton_del_actor_folder.setEnabled(False)
-        self.Ui.pushButton_del_actor_folder.setText('正在刮削中...')
+        self.Ui.pushButton_del_actor_folder.setText('Scraping in progress...')
         # self.Ui.pushButton_check_and_clean_files.setEnabled(False)
-        self.Ui.pushButton_check_and_clean_files.setText('正在刮削中...')
+        self.Ui.pushButton_check_and_clean_files.setText('Scraping in progress...')
         self.Ui.pushButton_move_mp4.setEnabled(False)
-        self.Ui.pushButton_move_mp4.setText('正在刮削中...')
+        self.Ui.pushButton_move_mp4.setText('Scraping in progress...')
         self.Ui.pushButton_find_missing_number.setEnabled(False)
-        self.Ui.pushButton_find_missing_number.setText('正在刮削中...')
+        self.Ui.pushButton_find_missing_number.setText('Scraping in progress...')
         self.Ui.pushButton_start_cap.setStyleSheet(
             'QPushButton#pushButton_start_cap{color: white;background-color: rgba(230, 66, 30, 255);}QPushButton:hover#pushButton_start_cap{color: white;background-color: rgba(247, 36, 0, 250);}QPushButton:pressed#pushButton_start_cap{color: white;background-color: rgba(180, 0, 0, 250);}')
         self.Ui.pushButton_start_cap2.setStyleSheet(
@@ -2431,26 +2431,26 @@ class MyMAinWindow(QMainWindow):
         self.pushButton_start_cap2.emit('Start')
         self.Ui.pushButton_select_media_folder.setVisible(True)
         self.Ui.pushButton_start_single_file.setEnabled(True)
-        self.pushButton_start_single_file.emit('刮削')
+        self.pushButton_start_single_file.emit('Scrape')
         self.Ui.pushButton_add_sub_for_all_video.setEnabled(True)
-        self.pushButton_add_sub_for_all_video.emit('点击检查所有视频的字幕情况并为无字幕视频添加字幕')
+        self.pushButton_add_sub_for_all_video.emit('Click to check the subtitle status of all videos and add subtitles to videos without subtitles')
 
         self.Ui.pushButton_show_pic_actor.setEnabled(True)
-        self.pushButton_show_pic_actor.emit('查看')
+        self.pushButton_show_pic_actor.emit('Check')
         self.Ui.pushButton_add_actor_info.setEnabled(True)
-        self.pushButton_add_actor_info.emit('开始补全')
+        self.pushButton_add_actor_info.emit('Start completing')
         self.Ui.pushButton_add_actor_pic.setEnabled(True)
-        self.pushButton_add_actor_pic.emit('开始补全')
+        self.pushButton_add_actor_pic.emit('Start completing')
         self.Ui.pushButton_add_actor_pic_kodi.setEnabled(True)
-        self.pushButton_add_actor_pic_kodi.emit('开始补全')
+        self.pushButton_add_actor_pic_kodi.emit('Start completing')
         self.Ui.pushButton_del_actor_folder.setEnabled(True)
-        self.pushButton_del_actor_folder.emit('清除所有.actors文件夹')
+        self.pushButton_del_actor_folder.emit('Clear all .actors folders')
         self.Ui.pushButton_check_and_clean_files.setEnabled(True)
-        self.pushButton_check_and_clean_files.emit('点击检查待刮削目录并清理文件')
+        self.pushButton_check_and_clean_files.emit('Click to check the directory to be scraped and clean the files')
         self.Ui.pushButton_move_mp4.setEnabled(True)
-        self.pushButton_move_mp4.emit('开始移动')
+        self.pushButton_move_mp4.emit('Start moving')
         self.Ui.pushButton_find_missing_number.setEnabled(True)
-        self.pushButton_find_missing_number.emit('检查缺失番号')
+        self.pushButton_find_missing_number.emit('Check for missing numbers')
 
         self.Ui.pushButton_start_cap.setStyleSheet(
             'QPushButton#pushButton_start_cap{color: white;background-color:#4C6EFF;}QPushButton:hover#pushButton_start_cap{color: white;background-color: rgba(76,110,255,240)}QPushButton:pressed#pushButton_start_cap{color: white;background-color:#4C6EE0}')
@@ -2459,9 +2459,9 @@ class MyMAinWindow(QMainWindow):
         Flags.file_mode = FileMode.Default
         Flags.threads_list = []
         if len(Flags.failed_list):
-            self.Ui.pushButton_scraper_failed_list.setText(f'一键重新刮削当前 {len(Flags.failed_list)} 个失败文件')
+            self.Ui.pushButton_scraper_failed_list.setText(f'Re-scrape the current one with one click {len(Flags.failed_list)} failed files')
         else:
-            self.Ui.pushButton_scraper_failed_list.setText('当有失败任务时，点击可以一键刮削当前失败列表')
+            self.Ui.pushButton_scraper_failed_list.setText('When there are failed tasks, click to scrape the current failed list with one click.')
 
     # endregion
 
@@ -2472,15 +2472,15 @@ class MyMAinWindow(QMainWindow):
             timed_interval = config.timed_interval
             self.atuo_scrape_count += 1
             signal.show_log_text(
-                f'\n\n 🍔 已启用「循环刮削」！间隔时间：{timed_interval}！即将开始第 {self.atuo_scrape_count} 次循环刮削！')
+                f'\n\n 🍔 "Cycle Scrape" is enabled! Interval time:{timed_interval}! About to start the chapter {self.atuo_scrape_count} Second cycle scraping!')
             if Flags.scrape_start_time:
                 signal.show_log_text(
-                    ' ⏰ 上次刮削时间: ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(Flags.scrape_start_time)))
+                    ' ⏰ Last scraping time:' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(Flags.scrape_start_time)))
             start_new_scrape(FileMode.Default)
 
     def auto_start(self):
         if 'auto_start' in config.switch_on:
-            signal.show_log_text('\n\n 🍔 已启用「软件启动后自动刮削」！即将开始自动刮削！')
+            signal.show_log_text('\n\n 🍔 "Automatic scraping after software startup" has been enabled! Automatic scraping is about to begin!')
             self.pushButton_start_scrape_clicked()
     # endregion
 

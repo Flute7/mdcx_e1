@@ -26,17 +26,17 @@ def Init_Ui(self):
     self.Ui.label_poster.setScaledContents(True)  # 图片自适应窗口
     self.Ui.label_thumb.setScaledContents(True)  # 图片自适应窗口
     self.Ui.pushButton_right_menu.setIcon(QIcon(resources.right_menu))
-    self.Ui.pushButton_right_menu.setToolTip(' 右键菜单 ')
+    self.Ui.pushButton_right_menu.setToolTip(' Right click menu ')
     self.Ui.pushButton_play.setIcon(QIcon(resources.play_icon))
-    self.Ui.pushButton_play.setToolTip(' 播放 ')
+    self.Ui.pushButton_play.setToolTip(' Play ')
     self.Ui.pushButton_open_folder.setIcon(QIcon(resources.open_folder_icon))
-    self.Ui.pushButton_open_folder.setToolTip(' 打开文件夹 ')
+    self.Ui.pushButton_open_folder.setToolTip(' Open folder ')
     self.Ui.pushButton_open_nfo.setIcon(QIcon(resources.open_nfo_icon))
-    self.Ui.pushButton_open_nfo.setToolTip(' 编辑 NFO ')
+    self.Ui.pushButton_open_nfo.setToolTip(' Edit NFO ')
     self.Ui.pushButton_tree_clear.setIcon(QIcon(resources.clear_tree_icon))
-    self.Ui.pushButton_tree_clear.setToolTip(' 清空结果列表 ')
-    self.Ui.pushButton_close.setToolTip(' 关闭 ')
-    self.Ui.pushButton_min.setToolTip(' 最小化 ')
+    self.Ui.pushButton_tree_clear.setToolTip(' Clear results list ')
+    self.Ui.pushButton_close.setToolTip(' Close ')
+    self.Ui.pushButton_min.setToolTip(' Minimize ')
     self.Ui.pushButton_main.setIcon(QIcon(resources.home_icon))
     self.Ui.pushButton_log.setIcon(QIcon(resources.log_icon))
     self.Ui.pushButton_tool.setIcon(QIcon(resources.tool_icon))
@@ -45,53 +45,53 @@ def Init_Ui(self):
     help_icon = QIcon(resources.help_icon)
     self.Ui.pushButton_about.setIcon(help_icon)
     self.Ui.pushButton_tips_normal_mode.setIcon(help_icon)
-    self.Ui.pushButton_tips_normal_mode.setToolTip('''<html><head/><body><p><b>正常模式：</b><br/>1）适合海报墙用户。正常模式将联网刮削视频字段信息，并执行翻译字段信息，移动和重命名视频文件及文件夹，下载图片、剧照、预告片，添加字幕、4K水印等一系列自动化操作<br/>2）刮削目录请在「设置」-「刮削目录」-「待刮削目录」中设置<br/>3）刮削网站请在「设置」-「刮削网站」中设置。部分网站需要代理访问，可在「设置」-「代理」中设置代理和免翻网址。你可以点击左侧的「检测网络」查看网络连通性<br/>\
-        4）字段翻译请在「设置」-「翻译」中设置<br/>5）图片、剧照、预告片请在「设置」-「下载」中设置<br/>6）视频文件命名请在「设置」-「命名」中设置<br/>7）如果刮削后不需要重命名，请在下面的「刮削成功后重命名文件」设置为「关」<br/>8）如果刮削后不需要移动文件，请在下面的「刮削成功后移动文件」设置为「关」<br/>9）如果想自动刮削，请在「设置」-「高级」中勾选「自动刮削」<br/>10）其他设置项和功能玩法可自行研究</p></body></html>''')
+    self.Ui.pushButton_tips_normal_mode.setToolTip('''<html><head/><body><p><b>Normal mode:</b><br/>1）Suitable for poster wall users. The normal mode will connect to the Internet to scrape video field information, and perform a series of automated operations such as translating field information, moving and renaming video files and folders, downloading pictures, stills, trailers, adding subtitles, 4K watermarks, etc.<br/>2）Please set the scraping directory in "Settings" - "Scraping Directory" - "Directory to be scraped"<br/>3）To scrape websites, please set it up in "Settings" - "Scraping Websites". Some websites require proxy access. You can set up proxy and non-translation URLs in "Settings" - "Proxy". You can click "Detect Network" on the left to check network connectivity<br/>\
+        4）Please set field translation in "Settings" - "Translation"<br/>5）Please set pictures, stills and trailers in "Settings" - "Downloads"<br/>6）Please set the video file naming in "Settings"-"Naming"<br/>7）If you do not need to rename after scraping, please set "Rename file after scraping successfully" below to "Off"<br/>8）If you do not need to move files after scraping, please set "Move files after scraping successfully" below to "Off"<br/>9）If you want to scrape automatically, please check "Automatic scraping" in "Settings" - "Advanced"<br/>10）You can study other settings and functions by yourself</p></body></html>''')
     self.Ui.pushButton_tips_sort_mode.setIcon(help_icon)
     self.Ui.pushButton_tips_sort_mode.setToolTip(
-        '''<html><head/><body><p><b>视频模式：</b><br/>1，适合不需要图片墙的情况。视频模式将联网刮削视频相关字段信息，然后根据「设置」-「命名」中设置的命名规则重命名、移动视频文件<br/>2，仅整理视频，不会下载和重命名图片、nfo 文件<br/>3，如果是海报墙用户，请不要使用视频模式。</p></body></html>''')
+        '''<html><head/><body><p><b>Video mode:</b><br/>1. Suitable for situations where a picture wall is not required. Video mode will scrape video-related field information online, and then rename and move video files according to the naming rules set in "Settings" - "Naming"<br/>2. Only videos will be organized, images and nfo files will not be downloaded or renamed<br/>3. If you are a poster wall user, please do not use video mode.</p></body></html>''')
     self.Ui.pushButton_tips_update_mode.setIcon(help_icon)
-    self.Ui.pushButton_tips_update_mode.setToolTip('''<html><head/><body><p><b>更新模式：</b><br/>1，适合视频已经归类好的情况。更新模式将在不改动文件位置结构的前提下重新刮削更新一些信息<br/>2，更新规则在下面的「更新模式规则中」定义：<br/>-1）如果只更新视频文件名，请选择「只更新C」，视频文件名命名规则请到「设置-」「命名规则」中设置<br/>-2）如果要更新视频所在的目录名，请选择「更新B和C」；如果要更新视频目录的上层目录，请勾选「同时更新A目录」<br/>-3），如果要在视频目录为视频再创建一级目录，请选择「创建D目录」<br/>\
-        3，更新模式将会对「待刮削目录」下的所有视频进行联网刮削和更新。<br/>4，当有部分内容没有更新成功，下次想只刮削这些内容时，请选择「读取模式」，同时勾选「不存在 nfo 时，刮削并执行更新模式规则」，它将查询并读取所有视频本地的 nfo 文件（不联网），当没有 nfo 文件时，则会自动进行联网刮削<br/>5，当部分内容确实无法刮削时，你可以到「日志」页面，点击「失败」按钮，点击左下角的保存按钮，就可以把失败列表保存到本地，然后可以手动查看和处理这些视频信息。</p></body></html>''')
+    self.Ui.pushButton_tips_update_mode.setToolTip('''<html><head/><body><p><b>更新模式：</b><br/>1. Suitable for situations where videos have been classified. The update mode will re-scrape and update some information without changing the file location structure.<br/>2. The update rules are defined in the "Update Mode Rules" below:<br/>-1) If you only update the video file name, please select "Only Update C". For the video file name naming rules, please go to "Settings-" "Naming" Set in "Rules"<br/>-2) If you want to update the directory name where the video is located, please select "Update B and C"; if you want to update the upper-level directory of the video directory, please check "Also update directory A"<br/>-3) if you want to create another first-level directory for the video in the video directory, please select "Create D Directory"<br/>\
+        3. The update mode will scrape and update all videos under the "to-be-scraped directory" online.<br/>4. When some content has not been updated successfully and you want to scrape only this content next time, please select "Read Mode" and check "When nfo does not exist, scrape and execute update mode rules", it will query and read All local nfo files of the video (not connected to the Internet). When there is no nfo file, the network scraping will be automatically performed.<br/>5. When some content cannot be scraped, you can go to the "Log" page, click the "Failure" button, and click the save button in the lower left corner to save the failure list locally, and then manually view and process the video information.</p></body></html>''')
     self.Ui.pushButton_tips_read_mode.setIcon(help_icon)
-    self.Ui.pushButton_tips_read_mode.setToolTip('''<html><head/><body><p><b>读取模式：</b><br/>\
-        1，读取模式通过读取本地的 nfo 文件中的字段信息，可以无需联网，实现查看或更新视频命名等操作<br/>\
-        2，如果仅想查看和检查已刮削的视频信息和图片是否存在问题，可以：<br/>\
-        -1）不勾选「本地已刮削成功的文件，重新整理分类」；<br/>\
-        -2）不勾选「本地自取刮削失败的文件，重新刮削」。<br/>\
-        3，如果想要快速重新整理分类(不联网)，可以：<br/>\
-        -1）勾选「本地已刮削成功的文件，重新整理分类」；<br/>\
-        -2）在下面的「更新模式规则」中自定义更新规则。<br/>\
-        软件将按照「更新模式规则」，和「设置」-「命名」中的设置项，进行重命名等操作。<br/>\
-        4，如果想要重新翻译映射字段，可以：<br/>\
-        -1）勾选「本地已刮削成功的文件，重新整理分类」；<br/>\
-        -2）勾选「重新翻译映射 nfo 的信息」。<br/>\
-        软件将按照「设置」-「翻译」中的设置项，重新翻译映射各字段。<br/>\
-        6，如果想要重新下载图片等文件（需联网），可以：<br/>\
-        -1）勾选「本地已刮削成功的文件，重新整理分类」；<br/>\
-        -2）勾选「重新下载图片等文件」。<br/>\
-        软件将按照「设置」-「下载」中的设置项，进行下载、保留等操作。</p></body></html>''')
+    self.Ui.pushButton_tips_read_mode.setToolTip('''<html><head/><body><p><b>Read mode:</b><br/>\
+        1. The read mode reads the field information in the local nfo file and can view or update video naming without the need for an Internet connection.<br/>\
+        2. If you only want to view and check whether there are problems with the scraped video information and pictures, you can:<br/>\
+        -1) Uncheck "Reorganize and classify files that have been successfully scraped locally";<br/>\
+        -2) Uncheck "Local self-scraping of failed files, re-scraping".<br/>\
+        3. If you want to quickly reorganize categories (not connected to the Internet), you can:<br/>\
+        -1) Check "Local files that have been successfully scraped, reorganize and classify";<br/>\
+        -2) Customize the update rules in the "Update Mode Rules" below.<br/>\
+        The software will perform renaming operations according to the "Update Mode Rules" and the setting items in "Settings" - "Naming".<br/>\
+        4. If you want to re-translate the mapping fields, you can:<br/>\
+        -1) Check "Local files that have been successfully scraped, reorganize and classify";<br/>\
+        -2) Check "Retranslate mapping nfo information".<br/>\
+        The software will re-translate and map each field according to the setting items in "Settings" - "Translation".<br/>\
+        6. If you want to re-download pictures and other files (requires Internet connection), you can:<br/>\
+        -1) Check "Local files that have been successfully scraped, reorganize and classify";<br/>\
+        -2) Check "Re-download pictures and other files".<br/>\
+        The software will perform operations such as downloading and retaining according to the setting items in "Settings" - "Downloads".</p></body></html>''')
     self.Ui.pushButton_tips_soft.setIcon(help_icon)
-    self.Ui.pushButton_tips_soft.setToolTip('''<html><head/><body><p><b>创建软链接：</b><br/>\
-        1，软链接适合网盘用户。软链接类似快捷方式，是指向真实文件的一个符号链接。它体积小，支持跨盘指向，删除后不影响原文件（当原文件删除后，软链接会失效）。<br/>\
-        <span style=" font-weight:700; color:red;">注意：\
-        <br/>Windows版：软链接保存位置必须是本地磁盘（平台限制），真实文件则网盘或本地盘都可以。<br/>\
-        macOS版：没有问题。<br/>\
-        Docker版：挂载目录的完整路径需要和实际目录完整路径一样，这样软链接才能指向实际位置，Emby 才能播放。</span><br/>\
+    self.Ui.pushButton_tips_soft.setToolTip('''<html><head/><body><p><b>Create a soft link:</b><br/>\
+        1. Soft links are suitable for network disk users. A soft link is like a shortcut, a symbolic link to a real file. It is small in size, supports cross-disk pointing, and does not affect the original file after deletion (when the original file is deleted, the soft link will become invalid).<br/>\
+        <span style=" font-weight:700; color:red;">Notice:\
+        <br/>Windows version: The soft link must be saved on a local disk (platform restriction), while real files can be saved on a network disk or a local disk.<br/>\
+        MacOS version: No problem.<br/>\
+        Docker version: The full path of the mounting directory needs to be the same as the full path of the actual directory, so that the soft link can point to the actual location and Emby can play it.</span><br/>\
 
-        2，网盘受网络等因素影响，读写慢，限制多。选择创建软链接时，将在本地盘创建指向网盘视频文件的软链接文件，同时刮削下载的图片同样放在本地磁盘，使用 Emby、Jellyfin 加载速度快！<br/>\
-        3，刮削不会移动、修改、重命名原文件，仅读取原文件的路径位置，用来创建软链接<br/>\
-        4，刮削成功后，将按照刮削设置创建和重命名软链接文件<br/>\
-        5，刮削失败时，不会创建软链接，如果你想要把全部文件都创建软链接，可以到 【工具】-【软链接助手】-【一键创建软链接】）<br/>\
-        6，如果网盘里已经有刮削好的内容，想要把刮削信息转移到本地磁盘，同样使用上述工具，勾选【复制已刮削的图片和NFO文件】即可<br/>\
-        7，网盘挂载和刮削方法：<br/>\
-        -1）使用 CloudDriver、Alist、RaiDrive 等第三方工具挂载网盘<br/>\
-        -2）MDCx 设置待刮削目录为网盘视频目录，输出目录为本地磁盘文件夹<br/>\
-        -3）设置中选择「创建软链接」，其他配置设置好后保存配置，点击开始刮削<br/>\
-        -4）Emby、Jellyfin 媒体库路径设置为本地刮削后保存的磁盘文件夹扫描即可</p></body></html>''')
+        2. The network disk is affected by network and other factors, and its reading and writing are slow and have many restrictions. When you choose to create a soft link, a soft link file pointing to the network disk video file will be created on the local disk. At the same time, the scraped and downloaded pictures will also be placed on the local disk. Use Emby and Jellyfin to load quickly!<br/>\
+        3. Scraping will not move, modify, or rename the original file. It will only read the path location of the original file and use it to create soft links.<br/>\
+        4. After the scraping is successful, the soft link file will be created and renamed according to the scraping settings.<br/>\
+        5. When scraping fails, soft links will not be created. If you want to create soft links for all files, you can go to [Tools]-[Soft Link Assistant]-[Create Soft Links with One Click])<br/>\
+        6. If there is already scraped content in the network disk and you want to transfer the scraped information to the local disk, use the same tool as above and check [Copy scraped pictures and NFO files].<br/>\
+        7. Network disk mounting and scraping methods:<br/>\
+        -1) Use third-party tools such as CloudDriver, Alist, RaiDrive, etc. to mount the network disk<br/>\
+        -2) MDCx sets the directory to be scraped to the network disk video directory, and the output directory to the local disk folder<br/>\
+        -3) Select "Create Soft Link" in the settings, save the configuration after setting other configurations, and click to start scraping<br/>\
+        -4) Emby and Jellyfin media library path is set to the disk folder saved after local scraping and scanned</p></body></html>''')
     self.Ui.pushButton_tips_hard.setIcon(help_icon)
     self.Ui.pushButton_tips_hard.setToolTip(
-        '''<html><head/><body><p><b>创建硬链接：</b><br/>1，硬链接适合 PT 用户。PT 用户视频文件一般存放在 NAS 中，为保证上传分享率，不能修改原文件信息。<br/>2，硬链接指向和原文件相同的硬盘索引，和原文件必须同盘。使用硬链接，可以在同盘单独存放刮削资料，不影响原文件信息。<br/>3，删除硬链接，原文件还在；删除原文件，硬链接还在。两个都删除，文件才会被删除。<br/><span style=" font-weight:700; color:#ff2600;">注意：Mac 平台仅支持本地磁盘创建硬链接（权限问题），非本地磁盘请选择创建软链接。Windows 平台没有这个问题。</span></p></body></html>''')
+        '''<html><head/><body><p><b>Create a hard link:</b><br/>1. Hard links are suitable for PT users. PT user video files are generally stored in NAS. To ensure the upload sharing rate, the original file information cannot be modified.<br/>2. The hard link points to the same hard disk index as the original file, and must be on the same disk as the original file. Using hard links, scraping data can be stored separately on the same disk without affecting the original file information.<br/>3. Delete the hard link and the original file is still there; delete the original file and the hard link is still there. The file will be deleted only if both are deleted.<br/><span style=" font-weight:700; color:#ff2600;">Note: The Mac platform only supports the creation of hard links on local disks (permission issues). For non-local disks, please choose to create soft links. The Windows platform does not have this problem.</span></p></body></html>''')
     self.Ui.textBrowser_log_main_3.hide()  # 失败列表隐藏
     self.Ui.pushButton_scraper_failed_list.hide()
     self.Ui.pushButton_save_failed_list.hide()
@@ -275,10 +275,10 @@ def Init_QSystemTrayIcon(self):
     self.tray_icon = QSystemTrayIcon(self)
     self.tray_icon.setIcon(QIcon(resources.icon_ico))
     self.tray_icon.activated.connect(self.tray_icon_click)
-    self.tray_icon.setToolTip(f'MDCx {self.localversion}（左键显示/隐藏 | 右键退出）')
-    show_action = QAction(u"显示", self)
-    hide_action = QAction(u"隐藏\tQ", self)
-    quit_action = QAction(u"退出 MDCx", self)
+    self.tray_icon.setToolTip(f'MDCx {self.localversion}（Left click to show/hide | Right click to exit）')
+    show_action = QAction(u"Show", self)
+    hide_action = QAction(u"Hide\tQ", self)
+    quit_action = QAction(u"Quit MDCx", self)
     show_action.triggered.connect(self.tray_icon_show)
     hide_action.triggered.connect(self.hide)
     quit_action.triggered.connect(self.ready_to_exit)
@@ -295,7 +295,7 @@ def Init_QSystemTrayIcon(self):
 def init_QTreeWidget(self):
     # 初始化树状控件
     try:
-        self.set_label_file_path.emit('🎈 当前刮削路径: \n %s' % get_movie_path_setting()[0])  # 主界面右上角显示提示信息
+        self.set_label_file_path.emit('🎈 Scraping Path: \n %s' % get_movie_path_setting()[0])  # 主界面右上角显示提示信息
     except:
         signal.show_traceback_log(traceback.format_exc())
     signal.add_label_info('')
@@ -303,10 +303,10 @@ def init_QTreeWidget(self):
     if self.Ui.pushButton_start_cap.text() != 'Start':
         Flags.count_claw = 1  # 批量刮削次数
     else:
-        self.label_result.emit(' 刮削中：0 成功：0 失败：0')
+        self.label_result.emit(' Scraping：0 Success：0 Fail：0')
     self.Ui.treeWidget_number.clear()
     self.item_succ = QTreeWidgetItem(self.Ui.treeWidget_number)
-    self.item_succ.setText(0, '成功')
+    self.item_succ.setText(0, 'Success')
     self.item_fail = QTreeWidgetItem(self.Ui.treeWidget_number)
-    self.item_fail.setText(0, '失败')
+    self.item_fail.setText(0, 'Fail')
     self.Ui.treeWidget_number.expandAll()  # 展开主界面树状内容
