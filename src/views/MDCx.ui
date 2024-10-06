@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>3</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -1626,6 +1626,9 @@ p, li { white-space: pre-wrap; }
     </widget>
     <widget class="QWidget" name="page_tool">
      <widget class="QScrollArea" name="scrollArea_10">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -1634,11 +1637,32 @@ p, li { white-space: pre-wrap; }
         <height>689</height>
        </rect>
       </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
       <property name="contextMenuPolicy">
        <enum>Qt::NoContextMenu</enum>
       </property>
       <property name="frameShape">
        <enum>QFrame::Box</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Sunken</enum>
       </property>
       <property name="lineWidth">
        <number>0</number>
@@ -1648,6 +1672,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="horizontalScrollBarPolicy">
        <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <property name="sizeAdjustPolicy">
+       <enum>QAbstractScrollArea::AdjustIgnored</enum>
       </property>
       <property name="widgetResizable">
        <bool>false</bool>
@@ -1660,6 +1687,27 @@ p, li { white-space: pre-wrap; }
          <width>760</width>
          <height>1260</height>
         </rect>
+       </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="toolTipDuration">
+        <number>-1</number>
        </property>
        <property name="autoFillBackground">
         <bool>true</bool>
@@ -1730,7 +1778,7 @@ p, li { white-space: pre-wrap; }
           </rect>
          </property>
          <property name="text">
-          <string>Start Scrape</string>
+          <string>Start</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_3">
@@ -2034,7 +2082,7 @@ p, li { white-space: pre-wrap; }
          </rect>
         </property>
         <property name="title">
-         <string>Move videos and subtitles</string>
+         <string>Move Videos and Subtitles</string>
         </property>
         <widget class="QPushButton" name="pushButton_move_mp4">
          <property name="geometry">
@@ -2376,6 +2424,11 @@ p, li { white-space: pre-wrap; }
          </property>
         </widget>
        </widget>
+       <zorder>groupBox_7</zorder>
+       <zorder>groupBox_6</zorder>
+       <zorder>groupBox_21</zorder>
+       <zorder>groupBox_19</zorder>
+       <zorder>groupBox_13</zorder>
       </widget>
      </widget>
     </widget>

@@ -522,7 +522,7 @@ class MyMAinWindow(QMainWindow):
             signal.show_log_text(traceback.format_exc())
 
     def _show_version_thread(self):
-        version_info = f'Based on MDC-GUI modified current version: {self.localversion}'
+        version_info = f'Modified from MDC-GUI current version: {self.localversion}'
         download_link = ''
         latest_version = check_version()
         if latest_version:
@@ -530,12 +530,12 @@ class MyMAinWindow(QMainWindow):
                 self.new_version = f'\n🍉 Update Found!（{latest_version}）'
                 signal.show_scrape_info()
                 self.Ui.label_show_version.setCursor(Qt.OpenHandCursor)  # 设置鼠标形状为十字形
-                version_info = f'Modified based on MDC-GUI · Current version: {self.localversion} （ <font color=\"red\" >The latest version is: {latest_version}，Please update in time!🚀 </font>）'
+                version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （ <font color=\"red\" >The latest version is: {latest_version}，Please update!🚀 </font>）'
                 download_link = ' ⬇️ <a href="https://github.com/sqzw-x/mdcx/releases">Download new version</a>'
             else:
-                version_info = f'Modified based on MDC-GUI · Current version: {self.localversion} （ <font color=\"green\">You are using the latest version!🎉 </font>）'
+                version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （ <font color=\"green\">You are using the latest version!🎉 </font>）'
 
-        feedback = f' 💌 Problem feedback: <a href="https://github.com/sqzw-x/mdcx/issues/new">GitHub Issues</a>'
+        feedback = f' 💌 Feedback: <a href="https://github.com/sqzw-x/mdcx/issues/new">GitHub Issues</a>'
 
         # 显示版本信息和反馈入口
         signal.show_log_text(version_info)
@@ -973,16 +973,16 @@ class MyMAinWindow(QMainWindow):
         t.start()
 
     def _set_pixmap(self, poster_path='', thumb_path='', poster_from='', cover_from=''):
-        poster_pix = [False, '', 'No cover image yet', 156, 220]
-        thumb_pix = [False, '', 'No thumbnail yet', 328, 220]
+        poster_pix = [False, '', 'No Cover Image', 156, 220]
+        thumb_pix = [False, '', 'No Thumbnail Image', 328, 220]
         if os.path.exists(poster_path):
             poster_pix = get_pixmap(poster_path, poster=True, pic_from=poster_from)
         if os.path.exists(thumb_path):
             thumb_pix = get_pixmap(thumb_path, poster=False, pic_from=cover_from)
 
         # self.Ui.label_poster_size.setText(poster_pix[2] + '  ' + thumb_pix[2])
-        poster_text = poster_pix[2] if poster_pix[2] != 'No cover image yet' else ''
-        thumb_text = thumb_pix[2] if thumb_pix[2] != 'No thumbnail yet' else ''
+        poster_text = poster_pix[2] if poster_pix[2] != 'No Cover Image' else ''
+        thumb_text = thumb_pix[2] if thumb_pix[2] != 'No Thumbnail Image' else ''
         self.set_pic_text.emit((poster_text + ' ' + thumb_text).strip())
         self.set_pic_pixmap.emit(poster_pix, thumb_pix)
 

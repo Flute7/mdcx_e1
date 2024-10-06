@@ -602,19 +602,19 @@ def load_config(self):
         main_mode = int(config.main_mode)  # 刮削模式
         if main_mode == 1:
             self.Ui.radioButton_mode_common.setChecked(True)
-            Flags.main_mode_text = 'normal mode'
+            Flags.main_mode_text = 'Normal Mode'
         elif main_mode == 2:
             self.Ui.radioButton_mode_sort.setChecked(True)
-            Flags.main_mode_text = 'sorting mode'
+            Flags.main_mode_text = 'Sorting Mode'
         elif main_mode == 3:
             self.Ui.radioButton_mode_update.setChecked(True)
-            Flags.main_mode_text = 'update mode'
+            Flags.main_mode_text = 'Update Mode'
         elif main_mode == 4:
             self.Ui.radioButton_mode_read.setChecked(True)
-            Flags.main_mode_text = 'read mode'
+            Flags.main_mode_text = 'Read Mode'
         else:
             self.Ui.radioButton_mode_common.setChecked(True)
-            Flags.main_mode_text = 'normal mode'
+            Flags.main_mode_text = 'Normal Mode'
 
         read_mode = config.read_mode  # 有nfo，是否执行更新模式
         # region read_mode
@@ -1203,7 +1203,7 @@ def load_config(self):
         self.setWindowState(self.windowState() & ~Qt.WindowMinimized | Qt.WindowActive)
         self.activateWindow()
         try:
-            self.set_label_file_path.emit('🎈 Current scraping path: \n %s' % get_movie_path_setting()[0])  # 主界面右上角显示提示信息
+            self.set_label_file_path.emit('🎈 Scraping Path: \n %s' % get_movie_path_setting()[0])  # 主界面右上角显示提示信息
         except:
             signal.show_traceback_log(traceback.format_exc())
     else:  # ini不存在，重新创建
