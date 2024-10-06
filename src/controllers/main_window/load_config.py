@@ -126,13 +126,13 @@ def load_config(self):
         # 刮削偏好
         if 'speed' in config.scrape_like:
             self.Ui.radioButton_scrape_speed.setChecked(True)
-            Flags.scrape_like_text = '速度优先'
+            Flags.scrape_like_text = 'speed ​​priority'
         elif 'single' in config.scrape_like:
             self.Ui.radioButton_scrape_single.setChecked(True)
-            Flags.scrape_like_text = '指定网站'
+            Flags.scrape_like_text = 'designated website'
         else:
             self.Ui.radioButton_scrape_info.setChecked(True)
-            Flags.scrape_like_text = '字段优先'
+            Flags.scrape_like_text = 'field first'
 
         website_set = str(config.website_set)
         self.Ui.checkBox_use_official_data.setChecked('official,' in website_set)
@@ -602,19 +602,19 @@ def load_config(self):
         main_mode = int(config.main_mode)  # 刮削模式
         if main_mode == 1:
             self.Ui.radioButton_mode_common.setChecked(True)
-            Flags.main_mode_text = '正常模式'
+            Flags.main_mode_text = 'normal mode'
         elif main_mode == 2:
             self.Ui.radioButton_mode_sort.setChecked(True)
-            Flags.main_mode_text = '整理模式'
+            Flags.main_mode_text = 'sorting mode'
         elif main_mode == 3:
             self.Ui.radioButton_mode_update.setChecked(True)
-            Flags.main_mode_text = '更新模式'
+            Flags.main_mode_text = 'update mode'
         elif main_mode == 4:
             self.Ui.radioButton_mode_read.setChecked(True)
-            Flags.main_mode_text = '读取模式'
+            Flags.main_mode_text = 'read mode'
         else:
             self.Ui.radioButton_mode_common.setChecked(True)
-            Flags.main_mode_text = '正常模式'
+            Flags.main_mode_text = 'normal mode'
 
         read_mode = config.read_mode  # 有nfo，是否执行更新模式
         # region read_mode
@@ -1100,7 +1100,7 @@ def load_config(self):
             except:
                 self.Init_QSystemTrayIcon()
                 if not mdcx_config:
-                    self.tray_icon.showMessage(f"MDCx {self.localversion}", u'配置写入失败！所在目录没有读写权限！',
+                    self.tray_icon.showMessage(f"MDCx {self.localversion}", u'Configuration writing failed! The directory you are in does not have read and write permissions!',
                                                QIcon(resources.icon_ico), 3000)
             if 'passthrough' in switch_on:
                 self.Ui.checkBox_highdpi_passthrough.setChecked(True)
@@ -1127,7 +1127,7 @@ def load_config(self):
                     self.Init_QSystemTrayIcon()
                     if not mdcx_config:
                         self.tray_icon.showMessage(f"MDCx {self.localversion}",
-                                                   u'配置写入失败！所在目录没有读写权限！',
+                                                   u'Configuration writing failed! The directory you are in does not have read and write permissions!',
                                                    QIcon(resources.icon_ico), 3000)
 
             # TODO macOS上运行pyinstaller打包的程序，这个处理方式有问题
@@ -1183,16 +1183,16 @@ def load_config(self):
             if config.scrape_like == 'single':
                 scrape_like_text += f" · {config.website_single}"
             if config.soft_link == 1:
-                scrape_like_text += " · 软连接开"
+                scrape_like_text += " · soft connection open"
             elif config.soft_link == 2:
-                scrape_like_text += " · 硬连接开"
+                scrape_like_text += " · hard connection"
             signal.show_log_text(
-                f' 🛠 当前配置：{config.path} 加载完成！\n '
-                f'📂 程序目录：{get_main_path()} \n '
-                f'📂 刮削目录：{get_movie_path_setting()[0]} \n '
-                f'💠 刮削模式：{Flags.main_mode_text} · {scrape_like_text} \n '
-                f'🖥️ 系统信息：{platform.platform()} \n '
-                f'🐰 软件版本：{self.localversion} \n')
+                f' 🛠 Current Configuration:{config.path} Loading completed!\n '
+                f'📂 Program Directory:{get_main_path()} \n '
+                f'📂 Scraping Catalog:{get_movie_path_setting()[0]} \n '
+                f'💠 Scraping Mode:{Flags.main_mode_text} · {scrape_like_text} \n '
+                f'🖥️ System Information:{platform.platform()} \n '
+                f'🐰 Software Version:{self.localversion} \n')
         except:
             signal.show_traceback_log(traceback.format_exc())
         try:
@@ -1203,7 +1203,7 @@ def load_config(self):
         self.setWindowState(self.windowState() & ~Qt.WindowMinimized | Qt.WindowActive)
         self.activateWindow()
         try:
-            self.set_label_file_path.emit('🎈 当前刮削路径: \n %s' % get_movie_path_setting()[0])  # 主界面右上角显示提示信息
+            self.set_label_file_path.emit('🎈 Current scraping path: \n %s' % get_movie_path_setting()[0])  # 主界面右上角显示提示信息
         except:
             signal.show_traceback_log(traceback.format_exc())
     else:  # ini不存在，重新创建

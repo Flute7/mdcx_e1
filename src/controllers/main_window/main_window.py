@@ -146,15 +146,14 @@ class MyMAinWindow(QMainWindow):
 
         # region 启动显示信息和后台检查更新
         self.show_scrape_info()  # 主界面左下角显示一些配置信息
-        self.show_net_info('\n🏠 Proxy settings are at: [Settings] - [Network] - [Proxy Settings].\n')  # 检查网络界面显示提示信息
+        self.show_net_info('\n🏠 Proxy settings are located under: [Settings] -> [Network] -> [Proxy Settings].\n')  # 检查网络界面显示提示信息
         show_netstatus()  # 检查网络界面显示当前网络代理信息
         self.show_net_info(
-            '\n💡 Illustrate：\n '
-            'Arbitrary proxy：javbus、jav321、javlibrary、mgstage、mywife、giga、freejavbt、'
-            'mdtv、madouqu、7mmtv、faleno、dahlia、prestige、theporndb、cnmdb、fantastica、kin8\n '
-            'Non-Japanese agent：javdb、airav-cc、avsex（日本代理会报错）\n '
-            'Japan agent：seesaawiki\n '
-            'No agent required：avsex、hdouban、iqqtv、airav-wiki、love6、lulubar、fc2、fc2club、fc2hub\n\n'
+            '\n💡 Info：\n '
+            'Proxy：javbus, jav321, javlibrary, mgstage, mywife, giga, freejavbt, mdtv, madouqu, 7mmtv, faleno, dahlia, prestige, theporndb, cnmdb, fantastica, kin8\n '
+            'Non-Japanese Agent：javdb, airav-cc, avsex（Japanese agent will report an error）\n '
+            'Japanese Agent：seesaawiki\n '
+            'No Agent Required：avsex, hdouban, iqqtv, airav-wiki, love6, lulubar, fc2, fc2club, fc2hub\n\n'
             '▶️ Click the [Test Network] button in the upper right corner to test network connectivity.')  # 检查网络界面显示提示信息
         signal.add_log("🍯 You can click the icon in the lower right corner to show/hide the request information panel!")
         self.show_version()  # 日志页面显示版本信息
@@ -315,9 +314,9 @@ class MyMAinWindow(QMainWindow):
         self.ready_to_exit()
         event.ignore()
 
-    # 显示与隐藏窗口标题栏
+    # Show and hide window title bar
     def _windows_auto_adjust(self):
-        if config.window_title == 'Hide':  # 隐藏标题栏
+        if config.window_title == 'hide':  # 隐藏标题栏
             if self.window_radius == 0:
                 self.show_flag = True
             self.window_radius = 5
@@ -528,7 +527,7 @@ class MyMAinWindow(QMainWindow):
         latest_version = check_version()
         if latest_version:
             if int(self.localversion) < int(latest_version):
-                self.new_version = f'\n🍉 There is a new version!（{latest_version}）'
+                self.new_version = f'\n🍉 Update Found!（{latest_version}）'
                 signal.show_scrape_info()
                 self.Ui.label_show_version.setCursor(Qt.OpenHandCursor)  # 设置鼠标形状为十字形
                 version_info = f'Modified based on MDC-GUI · Current version: {self.localversion} （ <font color=\"red\" >The latest version is: {latest_version}，Please update in time!🚀 </font>）'
@@ -661,10 +660,10 @@ class MyMAinWindow(QMainWindow):
     # region 主界面
     # 开始刮削按钮
     def pushButton_start_scrape_clicked(self):
-        if self.Ui.pushButton_start_cap.text() == 'Start':
+        if self.Ui.pushButton_start_cap.text() == 'start':
             if not get_remain_list():
                 start_new_scrape(FileMode.Default)
-        elif self.Ui.pushButton_start_cap.text() == '■ Stop':
+        elif self.Ui.pushButton_start_cap.text() == '■ stop':
             self.pushButton_stop_scrape_clicked()
 
     # 停止确认弹窗
@@ -678,7 +677,7 @@ class MyMAinWindow(QMainWindow):
             reply = box.exec()
             if reply != QMessageBox.Yes:
                 return
-        if self.Ui.pushButton_start_cap.text() == '■ Stop':
+        if self.Ui.pushButton_start_cap.text() == '■ stop':
             save_success_list()  # 保存成功列表
             Flags.stop_flag = True  # 在pool启动前，点停止按钮时，需要用这个来停止启动pool
             Flags.rest_time_convert_ = Flags.rest_time_convert
@@ -903,7 +902,7 @@ class MyMAinWindow(QMainWindow):
             self.file_main_open_path = json_data['file_path']  # 文件路径
             self.show_name = json_data['show_name']
             if json_data.get('source'):
-                self.Ui.label_source.setText('数据：' + json_data['source'].replace('.main', ''))
+                self.Ui.label_source.setText('data:' + json_data['source'].replace('.main', ''))
             else:
                 self.Ui.label_source.setText('')
             self.Ui.label_source.setToolTip(json_data['website'])
@@ -1091,7 +1090,7 @@ class MyMAinWindow(QMainWindow):
             if ok and text:
                 Flags.again_dic[file_path] = [text, '', '']
                 signal.show_scrape_info('💡 Scrape added!%s' % get_current_time())
-                if self.Ui.pushButton_start_cap.text() == 'Start':
+                if self.Ui.pushButton_start_cap.text() == 'start':
                     again_search()
 
     def search_by_url_clicked(self):
@@ -1111,7 +1110,7 @@ class MyMAinWindow(QMainWindow):
                 if website:
                     Flags.again_dic[file_path] = ['', url, website]
                     signal.show_scrape_info('💡 Scrape added!%s' % get_current_time())
-                    if self.Ui.pushButton_start_cap.text() == 'Start':
+                    if self.Ui.pushButton_start_cap.text() == 'start':
                         again_search()
                 else:
                     signal.show_scrape_info('💡 Unsupported website!%s' % get_current_time())
@@ -1260,15 +1259,15 @@ class MyMAinWindow(QMainWindow):
     def show_scrape_info(self, before_info=''):
         try:
             if Flags.file_mode == FileMode.Single:
-                scrape_info = '💡 Single file scraping\n💠 %s · %s' % (Flags.main_mode_text, self.Ui.comboBox_website.currentText())
+                scrape_info = '💡 single file scraping\n💠 %s · %s' % (Flags.main_mode_text, self.Ui.comboBox_website.currentText())
             else:
                 scrape_info = '💠 %s · %s' % (Flags.main_mode_text, Flags.scrape_like_text)
                 if config.scrape_like == 'single':
-                    scrape_info = f"💡 {config.website_single} Scrape\n" + scrape_info
+                    scrape_info = f"💡 {config.website_single} scrape\n" + scrape_info
             if config.soft_link == 1:
-                scrape_info = '🍯 Soft link · open\n' + scrape_info
+                scrape_info = '🍯 soft link · open\n' + scrape_info
             elif config.soft_link == 2:
-                scrape_info = '🍯 Hard link · open\n' + scrape_info
+                scrape_info = '🍯 hard link · open\n' + scrape_info
             after_info = '\n%s\n🛠 %s\n🐰 MDCx %s' % (scrape_info, config.file, self.localversion)
             self.label_show_version.emit(before_info + after_info + self.new_version)
         except:
@@ -1363,7 +1362,7 @@ class MyMAinWindow(QMainWindow):
 
     # 日志页点一键刮削失败列表
     def pushButton_scraper_failed_list_clicked(self):
-        if len(Flags.failed_file_list) and self.Ui.pushButton_start_cap.text() == 'Start':
+        if len(Flags.failed_file_list) and self.Ui.pushButton_start_cap.text() == 'start':
             start_new_scrape(FileMode.Default, movie_list=Flags.failed_file_list)
             self.show_hide_failed_list(False)
 
@@ -1687,13 +1686,13 @@ class MyMAinWindow(QMainWindow):
             else:
                 self.Ui.lineEdit_config_folder.setText(media_folder_path)
                 self.pushButton_save_config_clicked()
-            signal.show_scrape_info('💡 目录已切换！%s' % get_current_time())
+            signal.show_scrape_info('💡 Directory has been changed!%s' % get_current_time())
 
     # endregion
 
     # 设置-演员-补全信息-演员信息数据库-选择文件按钮
     def pushButton_select_actor_info_db_clicked(self):
-        database_path, _ = QFileDialog.getOpenFileName(None, "选择数据库文件", config.folder, options=self.options)
+        database_path, _ = QFileDialog.getOpenFileName(None, "Select database file", config.folder, options=self.options)
         if database_path:
             self.Ui.lineEdit_actor_db_path.setText(convert_path(database_path))
             self.pushButton_save_config_clicked()
@@ -1724,13 +1723,13 @@ class MyMAinWindow(QMainWindow):
 
     # 设置-刮削网站和字段中的详细说明弹窗
     def pushButton_scrape_note_clicked(self):
-        self._show_tips('''<html><head/><body><p><span style=" font-weight:700;">1、以下类型番号，请指定刮削网站，可以提供成功率，节省刮削用时</span></p><p>· 欧美：theporndb </p><p>· 国产：mdtv、madouqu、hdouban、cnmdb、love6</p><p>· 里番：getchu_dmm </p><p>· Mywife：mywife </p><p>· GIGA：giga </p><p>· Kin8：Kin8 </p><p><span style=" font-weight:700;">2、下不了预告片和剧照，请选择「字段优先」</span></p>\
-            <p>· 速度优先：字段来自一个网站 </p><p>· 字段优先：分字段刮削，不同字段来自不同网站</p><p>字段优先的信息会比速度优先好很多！建议默认使用「字段优先」</p><p>当文件数量较多，线程数量10+以上，两者耗时差不太多 </p><p><span style=" font-weight:700;">3、匹配到同名的另一个番号信息或者错误番号</span></p><p>请使用单文件刮削。路径：工具 - 单文件刮削 </p><p><span style=" font-weight:700;">4、频繁请求被封 IP 了</span></p><p>建议更换节点，启用「间歇刮削」： 设置 - 其他 - 间歇刮削</p></body></html>''')
+        self._show_tips('''<html><head/><body><p><span style=" font-weight:700;">1. For the following types and numbers, please specify the scraping website, which can provide the success rate and save scraping time.</span></p><p>· Europe and America: theporndb</p><p>· Domestic: mdtv, madouqu, hdouban, cnmdb, love6</p><p>· Lifan: getchu_dmm</p><p>· Mywife：mywife</p><p>· GIGA: giga</p><p>· Kin8：Kin8</p><p><span style=" font-weight:700;">2. Trailers and stills cannot be downloaded, please select "Field Priority"</span></p>\
+            <p>· Speed ​​first: fields come from a website</p><p>· Field priority: scraping by field, different fields come from different websites</p><p>Field first information will be much better than speed first! It is recommended to use "field priority" by default</p><p>When there are a large number of files and the number of threads is more than 10, the time consumption of the two is about the same.</p><p><span style=" font-weight:700;">3. Match another number information or wrong number with the same name</span></p><p>Please use single file scraping. Path: Tools - Single File Scraping</p><p><span style=" font-weight:700;">4. IP blocked due to frequent requests</span></p><p>It is recommended to replace the node and enable "intermittent scraping": Settings - Others - Intermittent scraping</p></body></html>''')
 
     # 设置-刮削网站和字段中的详细说明弹窗
     def pushButton_field_tips_website_clicked(self):
-        self._show_tips('''<html><head/><body><p><span style=" font-weight:700;">字段说明</span></p><p>举个🌰，比如刮削一个有码番号的简介字段时，假定： </p><p>1，有码番号设置的网站为（1，2，3，4，5，6，7） </p><p>2，简介字段设置的网站为（9，5，2，7） </p><p>3，简介字段的排除网站为（3，6） （比如3和6的网站没有简介，这时没必要去请求，因此可以加入到排除网站）</p><p><br/></p><p><span style=" font-weight:700;">程序将通过以下方法生成请求网站的顺序表：</span></p><p>1，取简介字段网站和有码番号网站的交集：（5，2，7） （此顺序以简介字段设置的网站顺序为准） </p><p>\
-            2，取有码番号剩余的网站，补充在后面，结果为（5，2，7，1，3，4，6） （此顺序以有码番号设置的网站顺序为准。补充的原因是当设置的字段网站未请求到时，可以继续使用有码网站查询，如不想查询可加到排除网站或去掉尽量补全字段的勾选） </p><p>3，去除排除的网站，生成简介的网站请求顺序为（5，2，7，1，4） </p><p>程序将按此顺序进行刮削，即优先请求5，当5获取成功后，就不再继续请求。当5没有获取成功，继续按顺序请求2，依次类推……刮削其他番号和字段同理。</p></body></html>''')
+        self._show_tips('''<html><head/><body><p><span style=" font-weight:700;">Field description</span></p><p>For example 🌰, when scraping the introduction field of a coded number, it is assumed that:</p><p>1. The websites with coded numbers are (1, 2, 3, 4, 5, 6, 7)</p><p>2. The website whose introduction field is set is (9, 5, 2, 7)</p><p>3. The excluded websites in the introduction field are (3, 6) (for example, websites 3 and 6 do not have introductions, so there is no need to request them at this time, so they can be added to the excluded websites)</p><p><br/></p><p><span style=" font-weight:700;">The program will generate a sequence table of requested websites through the following methods:</span></p><p>1. Take the intersection of the profile field website and the coded website: (5, 2, 7) (This order is subject to the website order set in the profile field)</p><p>\
+            2. Take the remaining websites with coded numbers and add them at the end. The result is (5, 2, 7, 1, 3, 4, 6) (This order is based on the order of the websites set with coded numbers. The reason for the supplement is that when If the set field website is not requested, you can continue to use the coded website to query. If you do not want to query, you can add an excluded website or remove the check box to complete the fields as much as possible)</p><p>3. Remove the excluded websites, and the website request sequence for generating profiles is (5, 2, 7, 1, 4)</p><p>The program will scrape in this order, that is, request 5 first, and when 5 is obtained successfully, the request will not continue. When 5 is not obtained successfully, continue to request 2 in sequence, and so on... The same goes for scraping other numbers and fields.</p></body></html>''')
 
     # 设置-刮削网站和字段中的详细说明弹窗
     def pushButton_field_tips_nfo_clicked(self):
@@ -2187,8 +2186,8 @@ class MyMAinWindow(QMainWindow):
 
     # 网络检查
     def pushButton_check_net_clicked(self):
-        if self.Ui.pushButton_check_net.text() == '开始检测':
-            self.Ui.pushButton_check_net.setText('停止检测')
+        if self.Ui.pushButton_check_net.text() == 'start testing':
+            self.Ui.pushButton_check_net.setText('stop detection')
             self.Ui.pushButton_check_net.setStyleSheet(
                 'QPushButton#pushButton_check_net{color: white;background-color: rgba(230, 36, 0, 250);}QPushButton:hover#pushButton_check_net{color: white;background-color: rgba(247, 36, 0, 250);}QPushButton:pressed#pushButton_check_net{color: white;background-color: rgba(180, 0, 0, 250);}')
             try:
@@ -2197,16 +2196,16 @@ class MyMAinWindow(QMainWindow):
             except:
                 signal.show_traceback_log(traceback.format_exc())
                 signal.show_net_info(traceback.format_exc())
-        elif self.Ui.pushButton_check_net.text() == '停止检测':
-            self.Ui.pushButton_check_net.setText(' 停止检测 ')
-            self.Ui.pushButton_check_net.setText(' 停止检测 ')
+        elif self.Ui.pushButton_check_net.text() == 'stop detection':
+            self.Ui.pushButton_check_net.setText(' stop detection ')
+            self.Ui.pushButton_check_net.setText(' stop detection ')
             t = threading.Thread(target=kill_a_thread, args=(self.t_net,))
             t.start()
-            signal.show_net_info('\n⛔️ 网络检测已手动停止！')
+            signal.show_net_info('\n⛔️ Network detection has been stopped manually!')
             signal.show_net_info("================================================================================\n")
             self.Ui.pushButton_check_net.setStyleSheet(
                 'QPushButton#pushButton_check_net{color: white;background-color:#4C6EFF;}QPushButton:hover#pushButton_check_net{color: white;background-color: rgba(76,110,255,240)}QPushButton:pressed#pushButton_check_net{color: white;background-color:#4C6EE0}')
-            self.Ui.pushButton_check_net.setText('开始检测')
+            self.Ui.pushButton_check_net.setText('Start testing')
         else:
             try:
                 _async_raise(self.t_net.ident, SystemExit)
@@ -2274,7 +2273,7 @@ class MyMAinWindow(QMainWindow):
                     tips = f'✅ The connection is OK! ({vip_info}）'
                     if input_cookie:
                         if 'icon-diamond' in response or '/v/D16Q5' in response:  # 有钻石图标或者跳到详情页表示已开通
-                            vip_info = '已开通 VIP'
+                            vip_info = 'Already activated VIP'
                         if cookies != input_cookie:  # 保存cookie
                             tips = f'✅ The connection is OK! ({vip_info}）Cookie Saved!'
                             self.pushButton_save_config_clicked()
@@ -2467,7 +2466,7 @@ When you view and download the source code or binary program of this project, yo
 
     # region 自动刮削
     def auto_scrape(self):
-        if 'timed_scrape' in config.switch_on and self.Ui.pushButton_start_cap.text() == 'Start':
+        if 'timed_scrape' in config.switch_on and self.Ui.pushButton_start_cap.text() == 'start':
             time.sleep(0.1)
             timed_interval = config.timed_interval
             self.atuo_scrape_count += 1

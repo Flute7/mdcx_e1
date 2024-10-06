@@ -921,16 +921,16 @@ def save_config(self):
         if config.scrape_like == 'single':
             scrape_like_text += f" · {config.website_single}"
         if config.soft_link == 1:
-            scrape_like_text += " · 软连接开"
+            scrape_like_text += "· Soft connection open"
         elif config.soft_link == 2:
-            scrape_like_text += " · 硬连接开"
+            scrape_like_text += "· Hard connection"
         signal.show_log_text(
-            f' 🛠 当前配置：{config.path} 保存完成！\n '
-            f'📂 程序目录：{get_main_path()} \n '
-            f'📂 刮削目录：{get_movie_path_setting()[0]} \n '
-            f'💠 刮削模式：{Flags.main_mode_text} · {scrape_like_text} \n '
-            f'🖥️ 系统信息：{platform.platform()} \n '
-            f'🐰 软件版本：{self.localversion} \n')
+            f' 🛠 Current Configuration:{config.path} Save completed!\n '
+            f'📂 Program Directory:{get_main_path()} \n '
+            f'📂 Scraping Catalog:{get_movie_path_setting()[0]} \n '
+            f'💠 Scraping Mode:{Flags.main_mode_text} · {scrape_like_text} \n '
+            f'🖥️ System Information:{platform.platform()} \n '
+            f'🐰 Software Version:{self.localversion} \n')
     except:
         signal.show_traceback_log(traceback.format_exc())
     try:
@@ -941,6 +941,6 @@ def save_config(self):
     self.setWindowState(self.windowState() & ~Qt.WindowMinimized | Qt.WindowActive)
     self.activateWindow()
     try:
-        self.set_label_file_path.emit('🎈 当前刮削路径: \n %s' % get_movie_path_setting()[0])  # 主界面右上角显示提示信息
+        self.set_label_file_path.emit('🎈 Current scraping path: \n %s' % get_movie_path_setting()[0])  # 主界面右上角显示提示信息
     except:
         signal.show_traceback_log(traceback.format_exc())
