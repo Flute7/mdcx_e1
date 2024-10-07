@@ -149,9 +149,9 @@ class MyMAinWindow(QMainWindow):
         self.show_net_info('\n🏠 Proxy settings are located under: [Settings] -> [Network] -> [Proxy Settings].\n')  # 检查网络界面显示提示信息
         show_netstatus()  # 检查网络界面显示当前网络代理信息
         self.show_net_info(
-            '\n💡 Info: \n '
-            'Proxy:              javbus, jav321, javlibrary, mgstage, mywife, giga, freejavbt, mdtv, madouqu, 7mmtv, faleno,\n '
-            '                    dahlia, prestige, theporndb, cnmdb, fantastica, kin8\n '
+            '\n💡 Information: \n '
+            'Proxied Agent:      javbus, jav321, javlibrary, mgstage, mywife, giga, freejavbt, mdtv, madouqu,\n '
+            '                    7mmtv, falenodahlia, prestige, theporndb, cnmdb, fantastica, kin8\n '
             'Non-Japanese Agent: javdb, airav-cc, avsex（Japanese agent will report an error）\n '
             'Japanese Agent:     seesaawiki\n '
             'No Agent Required:  avsex, hdouban, iqqtv, airav-wiki, love6, lulubar, fc2, fc2club, fc2hub\n\n'

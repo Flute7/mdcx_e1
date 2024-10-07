@@ -79,7 +79,7 @@ class WebRequests:
             }
             headers.update(headers_o)
 
-        signal.add_log(f'🔎 请求 {url}')
+        signal.add_log(f'🔎 Ask {url}')
         for i in range(int(retry_times)):
             try:
                 if keep:
@@ -99,10 +99,10 @@ class WebRequests:
                         pass
                     else:
                         error_info = f"{response.status_code} {url}"
-                        signal.add_log('🔴 重试 [%s/%s] %s' % (i + 1, retry_times, error_info))
+                        signal.add_log('🔴 Try again [%s/%s] %s' % (i + 1, retry_times, error_info))
                         continue
                 else:
-                    signal.add_log(f'✅ 成功 {url}')
+                    signal.add_log(f'✅ Success {url}')
                 if res:
                     return _header, response
                 if content:
@@ -114,7 +114,7 @@ class WebRequests:
             except Exception as e:
                 error_info = '%s\nError: %s' % (url, e)
                 signal.add_log('[%s/%s] %s' % (i + 1, retry_times, error_info))
-        signal.add_log(f"🔴 请求失败！{error_info}")
+        signal.add_log(f"🔴 Request failed! {error_info}")
         return False, error_info
 
     def post_html(self, url: str, data=None, json=None, headers=None, cookies=None, proxies=True, json_data=False,
@@ -132,7 +132,7 @@ class WebRequests:
                 "https": None,
             }
 
-        signal.add_log(f'🔎 POST请求 {url}')
+        signal.add_log(f'🔎 POST request {url}')
         for i in range(int(retry_times)):
             try:
                 if keep:
@@ -143,10 +143,10 @@ class WebRequests:
                                              proxies=proxies, timeout=timeout, verify=False)
                 if response.status_code > 299:
                     error_info = f"{response.status_code} {url}"
-                    signal.add_log('🔴 重试 [%s/%s] %s' % (i + 1, retry_times, error_info))
+                    signal.add_log('🔴 Try again [%s/%s] %s' % (i + 1, retry_times, error_info))
                     continue
                 else:
-                    signal.add_log(f'✅ POST成功 {url}')
+                    signal.add_log(f'✅ POST successful {url}')
                 response.encoding = 'utf-8'
                 if json_data:
                     return True, response.json()
@@ -154,7 +154,7 @@ class WebRequests:
             except Exception as e:
                 error_info = '%s\nError: %s' % (url, e)
                 signal.add_log('[%s/%s] %s' % (i + 1, retry_times, error_info))
-        signal.add_log(f"🔴 请求失败！{error_info}")
+        signal.add_log(f"🔴 Request failed! {error_info}")
         return False, error_info
 
     # def scraper_html(self, url: str, proxies=True, cookies=None, headers=None):
@@ -308,7 +308,7 @@ class WebRequests:
                 "https": None,
             }
 
-        signal.add_log(f'🔎 请求 {url}')
+        signal.add_log(f'🔎 Ask {url}')
         for i in range(int(retry_times)):
             try:
                 response = self.curl_session.get(url_encode(url), headers=headers, cookies=cookies, proxies=proxies,
@@ -318,16 +318,16 @@ class WebRequests:
                 else:
                     response.encoding = 'UFT-8'
                 if response.status_code == 200:
-                    signal.add_log(f'✅ 成功 {url}')
+                    signal.add_log(f'✅ Success {url}')
                     return response.headers, response.text
                 else:
                     error_info = f"{response.status_code} {url}"
-                    signal.add_log('🔴 重试 [%s/%s] %s' % (i + 1, retry_times, error_info))
+                    signal.add_log('🔴 Try again [%s/%s] %s' % (i + 1, retry_times, error_info))
                     continue
             except Exception as e:
                 error_info = '%s\nError: %s' % (url, e)
                 signal.add_log('[%s/%s] %s' % (i + 1, retry_times, error_info))
-        signal.add_log(f"🔴 请求失败！{error_info}")
+        signal.add_log(f"🔴 Request failed! {error_info}")
         return False, error_info
 
 
@@ -357,9 +357,9 @@ def check_url(url, length=False, real_url=False):
     if not url:
         return 0
 
-    signal.add_log(f'⛑️ 检测链接 {url}')
+    signal.add_log(f'⛑️ Check link {url}')
     if 'http' not in url:
-        signal.add_log(f'🔴 检测未通过！链接格式错误！ {url}')
+        signal.add_log(f'🔴 Test failed! Link format error! {url}')
         return 0
 
     if 'getchu' in url:
@@ -376,7 +376,7 @@ def check_url(url, length=False, real_url=False):
             # 状态码 > 299，表示请求失败，视为不可用
             if r.status_code > 299:
                 error_info = f"{r.status_code} {url}"
-                signal.add_log('🔴 请求失败！ 重试: [%s/%s] %s' % (j + 1, retry_times, error_info))
+                signal.add_log('🔴 Request failed! Try again: [%s/%s] %s' % (j + 1, retry_times, error_info))
                 continue
 
             # 返回重定向的url
@@ -386,7 +386,7 @@ def check_url(url, length=False, real_url=False):
 
             # 检查是否需要登录 https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=637921621668064
             if 'login' in true_url:
-                signal.add_log(f'🔴 检测未通过！需要登录查看 {true_url}')
+                signal.add_log(f'🔴 Test failed! Please login to view {true_url}')
                 return 0
 
             # 检查是否带有图片不存在的关键词
@@ -401,7 +401,7 @@ def check_url(url, length=False, real_url=False):
             bad_url_keys = ['now_printing', 'nowprinting', 'noimage', 'nopic', 'media_violation']
             for each_key in bad_url_keys:
                 if each_key in true_url:
-                    signal.add_log(f'🔴 检测未通过！当前图片已被网站删除 {url}')
+                    signal.add_log(f'🔴 Test failed! The current image has been deleted by the website {url}')
                     return 0
 
             # 获取文件大小。如果没有获取到文件大小，尝试下载15k数据，如果失败，视为不可用
@@ -415,51 +415,51 @@ def check_url(url, length=False, real_url=False):
                     i += 1
                     if i == 3:
                         response.close()
-                        signal.add_log(f'✅ 检测通过！未返回大小，预下载15k通过 {true_url}')
+                        signal.add_log(f'✅ Test passed! No size returned, 15k pre-download passed {true_url}')
                         return 10240 if length else true_url
-                signal.add_log(f'🔴 检测未通过！未返回大小，预下载15k失败 {true_url}')
+                signal.add_log(f'🔴 Test failed! No size returned, 15k pre-download failed {true_url}')
                 return 0
 
             # 如果返回内容的文件大小 < 8k，视为不可用
             elif int(content_length) < 8192:
-                signal.add_log(f'🔴 检测未通过！返回大小({content_length}) < 8k {true_url}')
+                signal.add_log(f'🔴 Test failed! Return size ({content_length}) < 8k {true_url}')
                 return 0
-            signal.add_log(f'✅ 检测通过！返回大小({content_length}) {true_url}')
+            signal.add_log(f'✅ Test passed! Return size ({content_length}) {true_url}')
             return int(content_length) if length else true_url
         except InvalidProxyURL as e:
-            error_info = f' 无效的代理链接 ({e}) {url}'
+            error_info = f' Invalid proxy link ({e}) {url}'
         except ProxyError as e:
-            error_info = f' 代理错误 {e} {url}'
+            error_info = f' proxy error {e} {url}'
         except SSLError as e:
-            error_info = f' SSL错误 ({e}) {url}'
+            error_info = f' SSL error ({e}) {url}'
         except ConnectTimeout as e:
-            error_info = f' 尝试连接到远程服务器时超时 ({e}) {url}'
+            error_info = f' Timed out while trying to connect to remote server ({e}) {url}'
         except ReadTimeout as e:
-            error_info = f' 服务器未在分配的时间内发送任何数据 ({e}) {url}'
+            error_info = f' The server did not send any data within the allotted time ({e}) {url}'
         except Timeout as e:
-            error_info = f' 请求超时错误 ({e}) {url}'
+            error_info = f' Request timeout error ({e}) {url}'
         except ConnectionError as e:
-            error_info = f' 连接错误 {e} {url}'
+            error_info = f' Connection error {e} {url}'
         except URLRequired as e:
-            error_info = f' URL格式错误 ({e}) {url}'
+            error_info = f' URL format error ({e}) {url}'
         except TooManyRedirects as e:
-            error_info = f' 过多的重定向 ({e}) {url}'
+            error_info = f' Too many redirects ({e}) {url}'
         except InvalidURL as e:
-            error_info = f' 无效的url ({e}) {url}'
+            error_info = f' Invalid url ({e}) {url}'
         except InvalidHeader as e:
-            error_info = f' 无效的请求头 ({e}) {url}'
+            error_info = f' Invalid request header ({e}) {url}'
         except HTTPError as e:
-            error_info = f' HTTP错误 {e} {url}'
+            error_info = f' HTTP error {e} {url}'
         except ChunkedEncodingError as e:
-            error_info = f' 服务器声明了分块编码，但发送了无效的分块 ({e}) {url}'
+            error_info = f' The server declared a chunked encoding but sent an invalid chunk ({e}) {url}'
         except ContentDecodingError as e:
-            error_info = f' 解码响应内容失败 ({e}) {url}'
+            error_info = f' Failed to decode response content ({e}) {url}'
         except StreamConsumedError as e:
-            error_info = f' 该响应的内容已被占用 ({e}) {url}'
+            error_info = f' The content of this response is already occupied ({e}) {url}'
         except Exception as e:
             error_info = f' Error ({e}) {url}'
-        signal.add_log('🔴 重试 [%s/%s] %s' % (j + 1, retry_times, error_info))
-    signal.add_log(f'🔴 检测未通过！ {url}')
+        signal.add_log('🔴 Try again [%s/%s] %s' % (j + 1, retry_times, error_info))
+    signal.add_log(f'🔴 Test failed! {url}')
     return 0
 
 
@@ -559,12 +559,12 @@ def get_amazon_data(req_url):
                     }
                     result, html_info = curl_html(req_url, headers=headers)
                 else:
-                    print('Amazon 修改地区失败: ', req_url, str(result), str(html))
+                    print('Amazon failed to modify region: ', req_url, str(result), str(html))
             else:
-                print('Amazon 修改地区异常: ', req_url, str(result), str(html))
+                print('Amazon modify regional exception: ', req_url, str(result), str(html))
 
         except Exception as e:
-            print('Amazon 修改地区出错: ', req_url, str(e))
+            print('Amazon error when modifying region: ', req_url, str(e))
             print(traceback.format_exc())
 
     return result, html_info
@@ -689,11 +689,11 @@ def check_version():
                 latest_version = int(latest_version)
                 return latest_version
             except:
-                signal.add_log(f'❌ 获取最新版本失败！{res_json}')
+                signal.add_log(f'❌ Update check failed! {res_json}')
 
 
 def check_theporndb_api_token():
-    tips = '✅ 连接正常! '
+    tips = '✅ Connection OK! '
     headers = config.headers
     proxies = config.proxies
     timeout = config.timeout
@@ -706,21 +706,21 @@ def check_theporndb_api_token():
         'User-Agent': get_user_agent(),
     }
     if not api_token:
-        tips = '❌ 未填写 API Token，影响欧美刮削！可在「设置」-「网络」添加！'
+        tips = '❌ ThePornDB API token missing，This will affect European and American scraping! It can be added under [Settings] -> [Network]!'
     else:
         try:
             response = requests.get(url, headers=headers, proxies=proxies, timeout=timeout, verify=False)
             if response.status_code == 401 and 'Unauthenticated' in str(response.text):
-                tips = '❌ API Token 错误！影响欧美刮削！请到「设置」-「网络」中修改。'
+                tips = '❌ API token error! This will affect European and American scraping! Please go to [Settings] -> [Network] to modify it.'
             elif response.status_code == 200:
                 if response.json().get('data'):
-                    tips = '✅ 连接正常！'
+                    tips = '✅ Connection OK!'
                 else:
-                    tips = '❌ 返回数据异常！'
+                    tips = '❌ The returned data is abnormal!'
             else:
-                tips = f'❌ 连接失败！请检查网络或代理设置！ {response.status_code} {response.text}'
+                tips = f'❌ Connection failed! Please check your network or proxy settings! {response.status_code} {response.text}'
         except Exception as e:
-            tips = f'❌ 连接失败!请检查网络或代理设置！ {e}'
+            tips = f'❌ Connection failed! Please check network or proxy settings! {e}'
     signal.show_log_text(tips.replace('❌', ' ❌ ThePornDB').replace('✅', ' ✅ ThePornDB'))
     return tips
 
