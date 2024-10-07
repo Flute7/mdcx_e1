@@ -132,7 +132,7 @@ def load_config(self):
             Flags.scrape_like_text = 'designated website'
         else:
             self.Ui.radioButton_scrape_info.setChecked(True)
-            Flags.scrape_like_text = 'field first'
+            Flags.scrape_like_text = 'Field First'
 
         website_set = str(config.website_set)
         self.Ui.checkBox_use_official_data.setChecked('official,' in website_set)
