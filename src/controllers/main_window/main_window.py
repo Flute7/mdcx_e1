@@ -228,7 +228,7 @@ class MyMAinWindow(QMainWindow):
             menu.addAction(QAction(file_name, self))
             menu.addSeparator()
         else:
-            menu.addAction(QAction('Please scrape it before use!', self))
+            menu.addAction(QAction('Please scrape before use!', self))
             menu.addSeparator()
             if self.Ui.pushButton_start_cap.text() != 'Start':
                 menu.addAction(self.menu_stop)
@@ -527,7 +527,7 @@ class MyMAinWindow(QMainWindow):
         latest_version = check_version()
         if latest_version:
             if int(self.localversion) < int(latest_version):
-                self.new_version = f'\n🍉 Update Found!（{latest_version}）'
+                self.new_version = f'\n🍉 New Update!（{latest_version}）'
                 signal.show_scrape_info()
                 self.Ui.label_show_version.setCursor(Qt.OpenHandCursor)  # 设置鼠标形状为十字形
                 version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （ <font color=\"red\" >The latest version is: {latest_version}，Please update!🚀 </font>）'
@@ -660,7 +660,7 @@ class MyMAinWindow(QMainWindow):
     # region 主界面
     # 开始刮削按钮
     def pushButton_start_scrape_clicked(self):
-        if self.Ui.pushButton_start_cap.text() == 'start':
+        if self.Ui.pushButton_start_cap.text() == 'Start':
             if not get_remain_list():
                 start_new_scrape(FileMode.Default)
         elif self.Ui.pushButton_start_cap.text() == '■ stop':
@@ -939,8 +939,8 @@ class MyMAinWindow(QMainWindow):
             self.Ui.label_studio.setToolTip(str(json_data['studio']))
             self.Ui.label_publish.setText(str(json_data['publisher']))
             self.Ui.label_publish.setToolTip(str(json_data['publisher']))
-            self.Ui.label_poster.setToolTip('Click to crop the picture')
-            self.Ui.label_thumb.setToolTip('Click to crop the picture')
+            self.Ui.label_poster.setToolTip('Click to crop the image')
+            self.Ui.label_thumb.setToolTip('Click to crop the image')
             if os.path.isfile(json_data['fanart_path']):  # 生成img_path，用来裁剪使用
                 json_data['img_path'] = json_data['fanart_path']
             else:
@@ -1005,7 +1005,7 @@ class MyMAinWindow(QMainWindow):
     # 主界面-点击树状条目
     def treeWidget_number_clicked(self, qmodeLindex):
         item = self.Ui.treeWidget_number.currentItem()
-        if item.text(0) != 'Success' and item.text(0) != 'Fail':
+        if item.text(0) != 'Success' and item.text(0) != 'Failure':
             try:
                 index_json = str(item.text(0))
                 signal.add_label_info(self.json_array[str(index_json)])
@@ -1016,8 +1016,8 @@ class MyMAinWindow(QMainWindow):
 
     def _check_main_file_path(self):
         if not self.file_main_open_path:
-            QMessageBox.about(self, 'No target file', 'Please scrape before use!!')
-            signal.show_scrape_info('💡 Please scrape it before use!%s' % get_current_time())
+            QMessageBox.about(self, 'No target file', 'Please scrape before use!')
+            signal.show_scrape_info('💡 Please scrape before use!%s' % get_current_time())
             return False
         return True
 
@@ -1090,7 +1090,7 @@ class MyMAinWindow(QMainWindow):
             if ok and text:
                 Flags.again_dic[file_path] = [text, '', '']
                 signal.show_scrape_info('💡 Scrape added!%s' % get_current_time())
-                if self.Ui.pushButton_start_cap.text() == 'start':
+                if self.Ui.pushButton_start_cap.text() == 'Start':
                     again_search()
 
     def search_by_url_clicked(self):
@@ -1110,7 +1110,7 @@ class MyMAinWindow(QMainWindow):
                 if website:
                     Flags.again_dic[file_path] = ['', url, website]
                     signal.show_scrape_info('💡 Scrape added!%s' % get_current_time())
-                    if self.Ui.pushButton_start_cap.text() == 'start':
+                    if self.Ui.pushButton_start_cap.text() == 'Start':
                         again_search()
                 else:
                     signal.show_scrape_info('💡 Unsupported website!%s' % get_current_time())
@@ -1259,15 +1259,15 @@ class MyMAinWindow(QMainWindow):
     def show_scrape_info(self, before_info=''):
         try:
             if Flags.file_mode == FileMode.Single:
-                scrape_info = '💡 single file scraping\n💠 %s · %s' % (Flags.main_mode_text, self.Ui.comboBox_website.currentText())
+                scrape_info = '💡 single File Scraping\n💠 %s · %s' % (Flags.main_mode_text, self.Ui.comboBox_website.currentText())
             else:
                 scrape_info = '💠 %s · %s' % (Flags.main_mode_text, Flags.scrape_like_text)
                 if config.scrape_like == 'single':
                     scrape_info = f"💡 {config.website_single} scrape\n" + scrape_info
             if config.soft_link == 1:
-                scrape_info = '🍯 soft link · open\n' + scrape_info
+                scrape_info = '🍯 Soft Link · Open\n' + scrape_info
             elif config.soft_link == 2:
-                scrape_info = '🍯 hard link · open\n' + scrape_info
+                scrape_info = '🍯 Hard Link · Open\n' + scrape_info
             after_info = '\n%s\n🛠 %s\n🐰 MDCx %s' % (scrape_info, config.file, self.localversion)
             self.label_show_version.emit(before_info + after_info + self.new_version)
         except:
@@ -1362,7 +1362,7 @@ class MyMAinWindow(QMainWindow):
 
     # 日志页点一键刮削失败列表
     def pushButton_scraper_failed_list_clicked(self):
-        if len(Flags.failed_file_list) and self.Ui.pushButton_start_cap.text() == 'start':
+        if len(Flags.failed_file_list) and self.Ui.pushButton_start_cap.text() == 'Start':
             start_new_scrape(FileMode.Default, movie_list=Flags.failed_file_list)
             self.show_hide_failed_list(False)
 
@@ -2180,14 +2180,14 @@ class MyMAinWindow(QMainWindow):
                 signal.show_net_info(
                     "================================================================================\n")
         self.Ui.pushButton_check_net.setEnabled(True)
-        self.Ui.pushButton_check_net.setText('Start testing')
+        self.Ui.pushButton_check_net.setText('start test')
         self.Ui.pushButton_check_net.setStyleSheet(
             'QPushButton#pushButton_check_net{background-color:#4C6EFF}QPushButton:hover#pushButton_check_net{background-color: rgba(76,110,255,240)}QPushButton:pressed#pushButton_check_net{#4C6EE0}')
 
     # 网络检查
     def pushButton_check_net_clicked(self):
-        if self.Ui.pushButton_check_net.text() == 'start testing':
-            self.Ui.pushButton_check_net.setText('stop detection')
+        if self.Ui.pushButton_check_net.text() == 'start test':
+            self.Ui.pushButton_check_net.setText('stop test')
             self.Ui.pushButton_check_net.setStyleSheet(
                 'QPushButton#pushButton_check_net{color: white;background-color: rgba(230, 36, 0, 250);}QPushButton:hover#pushButton_check_net{color: white;background-color: rgba(247, 36, 0, 250);}QPushButton:pressed#pushButton_check_net{color: white;background-color: rgba(180, 0, 0, 250);}')
             try:
@@ -2196,16 +2196,16 @@ class MyMAinWindow(QMainWindow):
             except:
                 signal.show_traceback_log(traceback.format_exc())
                 signal.show_net_info(traceback.format_exc())
-        elif self.Ui.pushButton_check_net.text() == 'stop detection':
-            self.Ui.pushButton_check_net.setText(' stop detection ')
-            self.Ui.pushButton_check_net.setText(' stop detection ')
+        elif self.Ui.pushButton_check_net.text() == 'stop test':
+            self.Ui.pushButton_check_net.setText(' stop test ')
+            self.Ui.pushButton_check_net.setText(' stop test ')
             t = threading.Thread(target=kill_a_thread, args=(self.t_net,))
             t.start()
             signal.show_net_info('\n⛔️ Network detection has been stopped manually!')
             signal.show_net_info("================================================================================\n")
             self.Ui.pushButton_check_net.setStyleSheet(
                 'QPushButton#pushButton_check_net{color: white;background-color:#4C6EFF;}QPushButton:hover#pushButton_check_net{color: white;background-color: rgba(76,110,255,240)}QPushButton:pressed#pushButton_check_net{color: white;background-color:#4C6EE0}')
-            self.Ui.pushButton_check_net.setText('Start testing')
+            self.Ui.pushButton_check_net.setText('start test')
         else:
             try:
                 _async_raise(self.t_net.ident, SystemExit)
@@ -2466,7 +2466,7 @@ When you view and download the source code or binary program of this project, yo
 
     # region 自动刮削
     def auto_scrape(self):
-        if 'timed_scrape' in config.switch_on and self.Ui.pushButton_start_cap.text() == 'start':
+        if 'timed_scrape' in config.switch_on and self.Ui.pushButton_start_cap.text() == 'Start':
             time.sleep(0.1)
             timed_interval = config.timed_interval
             self.atuo_scrape_count += 1

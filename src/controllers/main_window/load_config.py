@@ -1187,12 +1187,13 @@ def load_config(self):
             elif config.soft_link == 2:
                 scrape_like_text += " · hard connection"
             signal.show_log_text(
-                f' 🛠 Current Configuration:{config.path} Loading completed!\n '
-                f'📂 Program Directory:{get_main_path()} \n '
-                f'📂 Scraping Catalog:{get_movie_path_setting()[0]} \n '
-                f'💠 Scraping Mode:{Flags.main_mode_text} · {scrape_like_text} \n '
-                f'🖥️ System Information:{platform.platform()} \n '
-                f'🐰 Software Version:{self.localversion} \n')
+                  Your Name  
+                f'🛠 \033[1m Configuration \033[0m: {config.path} Loading completed!\n '
+                f'📂 Program Directory: {get_main_path()} \n '
+                f'📂 Catalog Directory: {get_movie_path_setting()[0]} \n '
+                f'💠 Scraping Mode: {Flags.main_mode_text} · {scrape_like_text} \n '
+                f'🖥️ System Information: {platform.platform()} \n '
+                f'🐰 Software Version: {self.localversion} \n')
         except:
             signal.show_traceback_log(traceback.format_exc())
         try:
