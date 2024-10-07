@@ -26,15 +26,15 @@ def Init_Ui(self):
     self.Ui.label_poster.setScaledContents(True)  # 图片自适应窗口
     self.Ui.label_thumb.setScaledContents(True)  # 图片自适应窗口
     self.Ui.pushButton_right_menu.setIcon(QIcon(resources.right_menu))
-    self.Ui.pushButton_right_menu.setToolTip(' Right click menu ')
+    self.Ui.pushButton_right_menu.setToolTip(' Right Click Menu ')
     self.Ui.pushButton_play.setIcon(QIcon(resources.play_icon))
     self.Ui.pushButton_play.setToolTip(' Play ')
     self.Ui.pushButton_open_folder.setIcon(QIcon(resources.open_folder_icon))
-    self.Ui.pushButton_open_folder.setToolTip(' Open folder ')
+    self.Ui.pushButton_open_folder.setToolTip(' Open Folder ')
     self.Ui.pushButton_open_nfo.setIcon(QIcon(resources.open_nfo_icon))
     self.Ui.pushButton_open_nfo.setToolTip(' Edit NFO ')
     self.Ui.pushButton_tree_clear.setIcon(QIcon(resources.clear_tree_icon))
-    self.Ui.pushButton_tree_clear.setToolTip(' Clear results list ')
+    self.Ui.pushButton_tree_clear.setToolTip(' Clear Results List')
     self.Ui.pushButton_close.setToolTip(' Close ')
     self.Ui.pushButton_min.setToolTip(' Minimize ')
     self.Ui.pushButton_main.setIcon(QIcon(resources.home_icon))
@@ -45,13 +45,13 @@ def Init_Ui(self):
     help_icon = QIcon(resources.help_icon)
     self.Ui.pushButton_about.setIcon(help_icon)
     self.Ui.pushButton_tips_normal_mode.setIcon(help_icon)
-    self.Ui.pushButton_tips_normal_mode.setToolTip('''<html><head/><body><p><b>Normal mode:</b><br/>1）Suitable for poster wall users. The normal mode will connect to the Internet to scrape video field information, and perform a series of automated operations such as translating field information, moving and renaming video files and folders, downloading pictures, stills, trailers, adding subtitles, 4K watermarks, etc.<br/>2）Please set the scraping directory in "Settings" - "Scraping Directory" - "Directory to be scraped"<br/>3）To scrape websites, please set it up in "Settings" - "Scraping Websites". Some websites require proxy access. You can set up proxy and non-translation URLs in "Settings" - "Proxy". You can click "Detect Network" on the left to check network connectivity<br/>\
+    self.Ui.pushButton_tips_normal_mode.setToolTip('''<html><head/><body><p><b>Normal Mode:</b><br/>1）Suitable for poster wall users. The normal mode will connect to the Internet to scrape video field information, and perform a series of automated operations such as translating field information, moving and renaming video files and folders, downloading pictures, stills, trailers, adding subtitles, 4K watermarks, etc.<br/>2）Please set the scraping directory in "Settings" - "Scraping Directory" - "Directory to be scraped"<br/>3）To scrape websites, please set it up in "Settings" - "Scraping Websites". Some websites require proxy access. You can set up proxy and non-translation URLs in "Settings" - "Proxy". You can click "Detect Network" on the left to check network connectivity<br/>\
         4）Please set field translation in "Settings" - "Translation"<br/>5）Please set pictures, stills and trailers in "Settings" - "Downloads"<br/>6）Please set the video file naming in "Settings"-"Naming"<br/>7）If you do not need to rename after scraping, please set "Rename file after scraping successfully" below to "Off"<br/>8）If you do not need to move files after scraping, please set "Move files after scraping successfully" below to "Off"<br/>9）If you want to scrape automatically, please check "Automatic scraping" in "Settings" - "Advanced"<br/>10）You can study other settings and functions by yourself</p></body></html>''')
     self.Ui.pushButton_tips_sort_mode.setIcon(help_icon)
     self.Ui.pushButton_tips_sort_mode.setToolTip(
         '''<html><head/><body><p><b>Video mode:</b><br/>1. Suitable for situations where a picture wall is not required. Video mode will scrape video-related field information online, and then rename and move video files according to the naming rules set in "Settings" - "Naming"<br/>2. Only videos will be organized, images and nfo files will not be downloaded or renamed<br/>3. If you are a poster wall user, please do not use video mode.</p></body></html>''')
     self.Ui.pushButton_tips_update_mode.setIcon(help_icon)
-    self.Ui.pushButton_tips_update_mode.setToolTip('''<html><head/><body><p><b>更新模式：</b><br/>1. Suitable for situations where videos have been classified. The update mode will re-scrape and update some information without changing the file location structure.<br/>2. The update rules are defined in the "Update Mode Rules" below:<br/>-1) If you only update the video file name, please select "Only Update C". For the video file name naming rules, please go to "Settings-" "Naming" Set in "Rules"<br/>-2) If you want to update the directory name where the video is located, please select "Update B and C"; if you want to update the upper-level directory of the video directory, please check "Also update directory A"<br/>-3) if you want to create another first-level directory for the video in the video directory, please select "Create D Directory"<br/>\
+    self.Ui.pushButton_tips_update_mode.setToolTip('''<html><head/><body><p><b>Update Mode:</b><br/>1. Suitable for situations where videos have been classified. The update mode will re-scrape and update some information without changing the file location structure.<br/>2. The update rules are defined in the "Update Mode Rules" below:<br/>-1) If you only update the video file name, please select "Only Update C". For the video file name naming rules, please go to "Settings-" "Naming" Set in "Rules"<br/>-2) If you want to update the directory name where the video is located, please select "Update B and C"; if you want to update the upper-level directory of the video directory, please check "Also update directory A"<br/>-3) if you want to create another first-level directory for the video in the video directory, please select "Create D Directory"<br/>\
         3. The update mode will scrape and update all videos under the "to-be-scraped directory" online.<br/>4. When some content has not been updated successfully and you want to scrape only this content next time, please select "Read Mode" and check "When nfo does not exist, scrape and execute update mode rules", it will query and read All local nfo files of the video (not connected to the Internet). When there is no nfo file, the network scraping will be automatically performed.<br/>5. When some content cannot be scraped, you can go to the "Log" page, click the "Failure" button, and click the save button in the lower left corner to save the failure list locally, and then manually view and process the video information.</p></body></html>''')
     self.Ui.pushButton_tips_read_mode.setIcon(help_icon)
     self.Ui.pushButton_tips_read_mode.setToolTip('''<html><head/><body><p><b>Read mode:</b><br/>\
@@ -303,10 +303,10 @@ def init_QTreeWidget(self):
     if self.Ui.pushButton_start_cap.text() != 'Start':
         Flags.count_claw = 1  # 批量刮削次数
     else:
-        self.label_result.emit(' Scraping：0 Success：0 Fail：0')
+        self.label_result.emit(' Scraping:0 Success:0 Failure:0')
     self.Ui.treeWidget_number.clear()
     self.item_succ = QTreeWidgetItem(self.Ui.treeWidget_number)
     self.item_succ.setText(0, 'Success')
     self.item_fail = QTreeWidgetItem(self.Ui.treeWidget_number)
-    self.item_fail.setText(0, 'Fail')
+    self.item_fail.setText(0, 'Failure')
     self.Ui.treeWidget_number.expandAll()  # 展开主界面树状内容

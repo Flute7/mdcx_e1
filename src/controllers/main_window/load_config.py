@@ -1188,7 +1188,7 @@ def load_config(self):
                 scrape_like_text += " · hard connection"
             signal.show_log_text(
                   Your Name  
-                f'🛠 \033[1m Configuration \033[0m: {config.path} Loading completed!\n '
+                f'🛠 \033[1m Configuration \033[0m: {config.path} Loading complete!\n '
                 f'📂 Program Directory: {get_main_path()} \n '
                 f'📂 Catalog Directory: {get_movie_path_setting()[0]} \n '
                 f'💠 Scraping Mode: {Flags.main_mode_text} · {scrape_like_text} \n '

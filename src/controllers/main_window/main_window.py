@@ -154,7 +154,7 @@ class MyMAinWindow(QMainWindow):
             'Non-Japanese Agent：javdb, airav-cc, avsex（Japanese agent will report an error）\n '
             'Japanese Agent：seesaawiki\n '
             'No Agent Required：avsex, hdouban, iqqtv, airav-wiki, love6, lulubar, fc2, fc2club, fc2hub\n\n'
-            '▶️ Click the [Test Network] button in the upper right corner to test network connectivity.')  # 检查网络界面显示提示信息
+            '▶️ Click the [Start Test] button in the upper right corner to test network connectivity.')  # 检查网络界面显示提示信息
         signal.add_log("🍯 You can click the icon in the lower right corner to show/hide the request information panel!")
         self.show_version()  # 日志页面显示版本信息
         self.creat_right_menu()  # 加载右键菜单
@@ -530,10 +530,10 @@ class MyMAinWindow(QMainWindow):
                 self.new_version = f'\n🍉 New Update!（{latest_version}）'
                 signal.show_scrape_info()
                 self.Ui.label_show_version.setCursor(Qt.OpenHandCursor)  # 设置鼠标形状为十字形
-                version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （ <font color=\"red\" >The latest version is: {latest_version}，Please update!🚀 </font>）'
-                download_link = ' ⬇️ <a href="https://github.com/sqzw-x/mdcx/releases">Download new version</a>'
+                version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （ <font color=\"red\" >The latest version is: {latest_version}，Please update! 🚀</font> ）'
+                download_link = ' ⬇️ <a href="https://github.com/sqzw-x/mdcx/releases">Download latest version</a>'
             else:
-                version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （ <font color=\"green\">You are using the latest version!🎉 </font>）'
+                version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （ <font color=\"green\">You are using the latest version! 🎉</font> ）'
 
         feedback = f' 💌 Feedback: <a href="https://github.com/sqzw-x/mdcx/issues/new">GitHub Issues</a>'
 
@@ -2180,14 +2180,14 @@ class MyMAinWindow(QMainWindow):
                 signal.show_net_info(
                     "================================================================================\n")
         self.Ui.pushButton_check_net.setEnabled(True)
-        self.Ui.pushButton_check_net.setText('start test')
+        self.Ui.pushButton_check_net.setText('Start Test')
         self.Ui.pushButton_check_net.setStyleSheet(
             'QPushButton#pushButton_check_net{background-color:#4C6EFF}QPushButton:hover#pushButton_check_net{background-color: rgba(76,110,255,240)}QPushButton:pressed#pushButton_check_net{#4C6EE0}')
 
     # 网络检查
     def pushButton_check_net_clicked(self):
-        if self.Ui.pushButton_check_net.text() == 'start test':
-            self.Ui.pushButton_check_net.setText('stop test')
+        if self.Ui.pushButton_check_net.text() == 'Start Test':
+            self.Ui.pushButton_check_net.setText('Stop Test')
             self.Ui.pushButton_check_net.setStyleSheet(
                 'QPushButton#pushButton_check_net{color: white;background-color: rgba(230, 36, 0, 250);}QPushButton:hover#pushButton_check_net{color: white;background-color: rgba(247, 36, 0, 250);}QPushButton:pressed#pushButton_check_net{color: white;background-color: rgba(180, 0, 0, 250);}')
             try:
@@ -2196,16 +2196,16 @@ class MyMAinWindow(QMainWindow):
             except:
                 signal.show_traceback_log(traceback.format_exc())
                 signal.show_net_info(traceback.format_exc())
-        elif self.Ui.pushButton_check_net.text() == 'stop test':
-            self.Ui.pushButton_check_net.setText(' stop test ')
-            self.Ui.pushButton_check_net.setText(' stop test ')
+        elif self.Ui.pushButton_check_net.text() == 'Stop Test':
+            self.Ui.pushButton_check_net.setText(' Stop Test ')
+            self.Ui.pushButton_check_net.setText(' Stop Test ')
             t = threading.Thread(target=kill_a_thread, args=(self.t_net,))
             t.start()
-            signal.show_net_info('\n⛔️ Network detection has been stopped manually!')
+            signal.show_net_info('\n⛔️ Network testing has been stopped manually!')
             signal.show_net_info("================================================================================\n")
             self.Ui.pushButton_check_net.setStyleSheet(
                 'QPushButton#pushButton_check_net{color: white;background-color:#4C6EFF;}QPushButton:hover#pushButton_check_net{color: white;background-color: rgba(76,110,255,240)}QPushButton:pressed#pushButton_check_net{color: white;background-color:#4C6EE0}')
-            self.Ui.pushButton_check_net.setText('start test')
+            self.Ui.pushButton_check_net.setText('Start Test')
         else:
             try:
                 _async_raise(self.t_net.ident, SystemExit)
