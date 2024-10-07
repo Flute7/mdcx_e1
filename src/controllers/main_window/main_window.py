@@ -542,7 +542,7 @@ class MyMAinWindow(QMainWindow):
         signal.show_log_text(version_info)
         if feedback or download_link:
             self.main_logs_show.emit(f'{feedback}{download_link}')
-        signal.show_log_text('================================================================================')
+        signal.show_log_text('========================================================================================================================')
         self.pushButton_check_javdb_cookie_clicked()  # 检测javdb cookie
         self.pushButton_check_javbus_cookie_clicked()  # 检测javbus cookie
         if config.use_database:
@@ -702,7 +702,7 @@ class MyMAinWindow(QMainWindow):
             if Flags.stop_other:
                 signal.show_scrape_info('⛔️ Stopped manually!')
                 signal.show_log_text(
-                    "⛔️ Stopped manually!\n================================================================================")
+                    "⛔️ Stopped manually!\n====================================================================================================")
                 self.set_label_file_path.emit('⛔️ Stopped manually!')
                 return
             signal.exec_set_processbar.emit(0)
@@ -719,7 +719,7 @@ class MyMAinWindow(QMainWindow):
             signal.show_log_text(
                 '\n ⛔️ Scraping has been stopped manually!\n 😊 Scraped %s videos, still remaining %s indivual! Scraping time %s seconds, stop using time %s Second' % (
                     Flags.scrape_done, (Flags.total_count - Flags.scrape_done), used_time, self.stop_used_time))
-            signal.show_log_text("================================================================================")
+            signal.show_log_text("====================================================================================================")
             signal.show_log_text(
                 ' ⏰ Start time'.ljust(13) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S",
                                                                  time.localtime(Flags.start_time)))
@@ -727,7 +727,7 @@ class MyMAinWindow(QMainWindow):
                 ' 🏁 End time'.ljust(13) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end_time)))
             signal.show_log_text(' ⏱ Used time'.ljust(13) + ': %sS' % used_time)
             signal.show_log_text(' 🍕 Per time'.ljust(13) + ': %sS' % average_time)
-            signal.show_log_text("================================================================================")
+            signal.show_log_text("====================================================================================================")
             Flags.again_dic.clear()
         except:
             signal.show_traceback_log(traceback.format_exc())
@@ -1600,7 +1600,7 @@ class MyMAinWindow(QMainWindow):
         movie_list = movie_lists(escape_folder_new_list, all_type, movie_path)
         if not movie_list:
             signal.show_log_text("No movie found!")
-            signal.show_log_text("================================================================================")
+            signal.show_log_text("====================================================================================================")
             signal.reset_buttons_status.emit()
             return
         des_path = os.path.join(movie_path, 'Movie_moved')
@@ -1628,7 +1628,7 @@ class MyMAinWindow(QMainWindow):
                 i += 1
                 signal.show_log_text("[%s] %s\n file path: %s\n %s\n" % (i, info[0], info[1], info[2]))
         signal.show_log_text("Move movies finished!")
-        signal.show_log_text("================================================================================")
+        signal.show_log_text("====================================================================================================")
         signal.reset_buttons_status.emit()
 
     # endregion
@@ -1955,7 +1955,7 @@ class MyMAinWindow(QMainWindow):
         if new_config_file != config.file:
             new_config_path = os.path.join(config.folder, new_config_file)
             signal.show_log_text(
-                '\n================================================================================\nSwitch configuration:%s' % new_config_path)
+                '\n====================================================================================================\nSwitch configuration:%s' % new_config_path)
             with open(config.get_mark_file_path(), 'w', encoding='UTF-8') as f:
                 f.write(new_config_path)
             temp_dark = self.dark_mode
@@ -2037,10 +2037,10 @@ class MyMAinWindow(QMainWindow):
         start_time = time.time()
         try:
             # 显示代理信息
-            signal.show_net_info('\n⛑ Start checking the network....')
+            signal.show_net_info('\n⛑ Starting network check....')
             show_netstatus()
             # 检测网络连通性
-            signal.show_net_info(' Start checking network connectivity...')
+            signal.show_net_info(' Starting network connectivity check...')
 
             net_info = {'github': ['https://raw.githubusercontent.com', ''],
                         'airav_cc': ['https://airav.io', ''],
@@ -2124,13 +2124,13 @@ class MyMAinWindow(QMainWindow):
                 host_address = each[0].replace('https://', '').replace('http://', '').split('/')[0]
                 if name == 'javdb':
                     res_javdb = self._check_javdb_cookie()
-                    each[1] = res_javdb.replace('✅ Connection normal', f'✅ Connection normal{ping_host(host_address)}')
+                    each[1] = res_javdb.replace('✅ Connection OK', f'✅ Connection OK{ping_host(host_address)}')
                 elif name == 'javbus':
                     res_javbus = self._check_javbus_cookie()
-                    each[1] = res_javbus.replace('✅ Connection normal', f'✅ Connection normal{ping_host(host_address)}')
+                    each[1] = res_javbus.replace('✅ Connection OK', f'✅ Connection OK{ping_host(host_address)}')
                 elif name == 'theporndb':
                     res_theporndb = check_theporndb_api_token()
-                    each[1] = res_theporndb.replace('✅ Connection normal', f'✅ Connection normal{ping_host(host_address)}')
+                    each[1] = res_theporndb.replace('✅ Connection OK', f'✅ Connection OK{ping_host(host_address)}')
                 elif name == 'javlibrary':
                     proxies = True
                     if hasattr(config, f"javlibrary_website"):
@@ -2141,7 +2141,7 @@ class MyMAinWindow(QMainWindow):
                     elif 'Cloudflare' in html_info:
                         each[1] = '❌ Connection failed (blocked by Cloudflare 5-second shield!)'
                     else:
-                        each[1] = f'✅ Connection normal{ping_host(host_address)}'
+                        each[1] = f'✅ Connection OK{ping_host(host_address)}'
                 elif name in ['avsex', 'freejavbt', 'airav_cc', 'airav', 'madouqu', '7mmtv']:
                     result, html_info = scraper_html(each[0])
                     if not result:
@@ -2149,7 +2149,7 @@ class MyMAinWindow(QMainWindow):
                     elif 'Cloudflare' in html_info:
                         each[1] = '❌ Connection failed (blocked by Cloudflare 5-second shield!)'
                     else:
-                        each[1] = f'✅ Connection normal{ping_host(host_address)}'
+                        each[1] = f'✅ Connection OK{ping_host(host_address)}'
                 else:
                     try:
                         result, html_content = get_html(each[0])
@@ -2160,26 +2160,26 @@ class MyMAinWindow(QMainWindow):
                                 if re.findall('This page is not available in your region', html_content):
                                     each[1] = '❌ Connection failed due to geographical restrictions, please use the Japanese node to access!'
                                 else:
-                                    each[1] = f'✅ Connection normal{ping_host(host_address)}'
+                                    each[1] = f'✅ Connection OK{ping_host(host_address)}'
                             elif name == 'mgstage':
                                 if not html_content.strip():
                                     each[1] = '❌ Connection failed due to geographical restrictions, please use the Japanese node to access!'
                                 else:
-                                    each[1] = f'✅ Connection normal{ping_host(host_address)}'
+                                    each[1] = f'✅ Connection OK{ping_host(host_address)}'
                             else:
-                                each[1] = f'✅ Connection normal{ping_host(host_address)}'
+                                each[1] = f'✅ Connection OK{ping_host(host_address)}'
                     except Exception as e:
                         each[1] = 'An exception occurred while testing the connection! information:' + str(e)
                         signal.show_traceback_log(traceback.format_exc())
                         signal.show_net_info(traceback.format_exc())
                 signal.show_net_info('   ' + name.ljust(12) + each[1])
             signal.show_net_info(f"\n🎉 Network detection completed! time {get_used_time(start_time)} Second!")
-            signal.show_net_info("================================================================================\n")
+            signal.show_net_info("====================================================================================================\n")
         except:
             if signal.stop:
                 signal.show_net_info('\n⛔️ A scraping task is currently being stopped. Please wait until the scraping stops before testing again!')
                 signal.show_net_info(
-                    "================================================================================\n")
+                    "====================================================================================================\n")
         self.Ui.pushButton_check_net.setEnabled(True)
         self.Ui.pushButton_check_net.setText('Start Test')
         self.Ui.pushButton_check_net.setStyleSheet(
@@ -2202,8 +2202,8 @@ class MyMAinWindow(QMainWindow):
             self.Ui.pushButton_check_net.setText(' Stop Test ')
             t = threading.Thread(target=kill_a_thread, args=(self.t_net,))
             t.start()
-            signal.show_net_info('\n⛔️ Network testing has been stopped manually!')
-            signal.show_net_info("================================================================================\n")
+            signal.show_net_info('\n⛔️ Network testing manually stopped!')
+            signal.show_net_info("====================================================================================================\n")
             self.Ui.pushButton_check_net.setStyleSheet(
                 'QPushButton#pushButton_check_net{color: white;background-color:#4C6EFF;}QPushButton:hover#pushButton_check_net{color: white;background-color: rgba(76,110,255,240)}QPushButton:pressed#pushButton_check_net{color: white;background-color:#4C6EE0}')
             self.Ui.pushButton_check_net.setText('Start Test')
@@ -2226,8 +2226,8 @@ class MyMAinWindow(QMainWindow):
     def pushButton_check_javdb_cookie_clicked(self):
         input_cookie = self.Ui.plainTextEdit_cookie_javdb.toPlainText()
         if not input_cookie:
-            self.Ui.label_javdb_cookie_result.setText('❌ JavDB cookie missing, this will affect FC2 scraping!')
-            self.show_log_text(' ❌ JavDB cookie missing, this will affect FC2 scraping! It can be added under [Settings] -> [Network]!')
+            self.Ui.label_javdb_cookie_result.setText('❌ JavDB: Cookie missing, this will affect FC2 scraping!')
+            self.show_log_text(' ❌ JavDB: Cookie missing, this will affect FC2 scraping! It can be added under [Settings] -> [Network]!')
             return
         self.Ui.label_javdb_cookie_result.setText('⏳ Checking...')
         try:
@@ -2238,7 +2238,7 @@ class MyMAinWindow(QMainWindow):
             signal.show_log_text(traceback.format_exc())
 
     def _check_javdb_cookie(self):
-        tips = '❌ JavDB cookie missing, this will affect FC2 scraping!'
+        tips = '❌ JavDB: Cookie missing, this will affect FC2 scraping!'
         input_cookie = self.Ui.plainTextEdit_cookie_javdb.toPlainText()
         if not input_cookie:
             self.Ui.label_javdb_cookie_result.setText(tips)
@@ -2253,13 +2253,13 @@ class MyMAinWindow(QMainWindow):
             if not result:
                 if 'Cookie' in response:
                     if cookies != input_cookie:
-                        tips = '❌ JavDB cookie expired!'
+                        tips = '❌ JavDB: Cookie expired!'
                     else:
-                        tips = '❌ JavDB cookie expired! Cleared! (Cannot be accessed without removal)'
+                        tips = '❌ JavDB: Cookie expired! Cleared! (Cannot be accessed without removal)'
                         self.set_javdb_cookie.emit('')
                         self.pushButton_save_config_clicked()
                 else:
-                    tips = f'❌ Connection failed! Please check your network or proxy settings! {response}'
+                    tips = f'❌ Connection failed! Please check settings! {response}'
             else:
                 if "The owner of this website has banned your access based on your browser's behaving" in response:
                     ip_adress = re.findall(r'(\d+\.\d+\.\d+\.\d+)', response)
@@ -2289,7 +2289,7 @@ class MyMAinWindow(QMainWindow):
                         self.set_javdb_cookie.emit('')
                         self.pushButton_save_config_clicked()
         except Exception as e:
-            tips = f'❌ Connection failed! Please check your network or proxy settings! {e}'
+            tips = f'❌ Connection failed! Please check settings! {e}'
             signal.show_traceback_log(tips)
         if input_cookie:
             self.Ui.label_javdb_cookie_result.setText(tips)
@@ -2310,7 +2310,7 @@ class MyMAinWindow(QMainWindow):
         self.set_javbus_status.emit('⏳ Checking...')
 
         # self.Ui.pushButton_check_javbus_cookie.setEnabled(False)
-        tips = '✅ The connection is OK!'
+        tips = '✅ Connection OK!'
         input_cookie = self.Ui.plainTextEdit_cookie_javbus.toPlainText()
         new_cookie = {'cookie': input_cookie}
         cookies = config.javbus
@@ -2325,7 +2325,7 @@ class MyMAinWindow(QMainWindow):
             result, response = get_html(javbus_url, headers=headers, cookies=new_cookie)
 
             if not result:
-                tips = f'❌ Connection failed! Please check your network or proxy settings! {response}'
+                tips = f'❌ Connection failed! Please check settings! {response}'
             elif 'lostpasswd' in response:
                 if input_cookie:
                     tips = '❌ Cookie is invalid!'
@@ -2333,10 +2333,10 @@ class MyMAinWindow(QMainWindow):
                     tips = '❌ The current node requires cookies to scrape! Please fill in the cookie or change the node!'
             elif cookies != input_cookie:
                 self.pushButton_save_config_clicked()
-                tips = '✅ The connection is OK! Cookie saved!  '
+                tips = '✅ Connection OK! Cookie saved!  '
 
         except Exception as e:
-            tips = f'❌ Connection failed! Please check your network or proxy settings! {e}'
+            tips = f'❌ Connection failed! Please check settings! {e}'
 
         self.show_log_text(tips.replace('❌', ' ❌ JavBus').replace('✅', ' ✅ JavBus'))
         self.set_javbus_status.emit(tips)
