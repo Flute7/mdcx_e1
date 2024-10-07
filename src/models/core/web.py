@@ -851,18 +851,18 @@ def fanart_download(json_data, fanart_final_path):
     else:
         # 本地有 fanart 时，不下载
         if fanart_path:
-            json_data['logs'] += "\n 🟠 Fanart copy failed! 未找到 thumb 图片，将继续使用之前的图片！"
+            json_data['logs'] += "\n 🟠 Fanart copy failed! Thumb image not found, will continue to use previous image!"
             json_data['logs'] += "\n 🍀 Fanart done! (old)(%ss)" % get_used_time(start_time)
             return True
 
         else:
             if 'ignore_pic_fail' in download_files:
-                json_data['logs'] += "\n 🟠 Fanart failed! (你已勾选「图片下载失败时，不视为失败！」) "
+                json_data['logs'] += "\n 🟠 Fanart failed! (You have checked 'When the image download fails, it is not considered a failure!')"
                 json_data['logs'] += "\n 🍀 Fanart done! (none)(%ss)" % get_used_time(start_time)
                 return True
             else:
-                json_data['logs'] += "\n 🔴 Fanart failed! 你可以到「设置」-「下载」，勾选「图片下载失败时，不视为失败！」 "
-                json_data['error_info'] = 'Fanart 下载失败！你可以到「设置」-「下载」，勾选「图片下载失败时，不视为失败！」'
+                json_data['logs'] += "\n 🔴 Fanart failed! You can go to [Settings] -> [Downloads] and check 'When the image download fails, it is not considered a failure!'"
+                json_data['error_info'] = "Fanart download failed! You can go to [Settings] -> [Downloads] and check 'When the image download fails, it is not considered a failure!'"
                 return False
 
 
@@ -929,7 +929,7 @@ def extrafanart_download(json_data, folder_new_path):
             else:
                 json_data['logs'] += "\n 🍀 ExtraFanart done! (incomplete)(%ss)" % get_used_time(start_time)
                 return False
-        json_data['logs'] += "\n 🟠 ExtraFanart download failed! 将继续使用之前的本地文件！"
+        json_data['logs'] += "\n 🟠 ExtraFanart download failed! Will continue to use the previous local file！"
     if os.path.exists(extrafanart_folder_path):  # 使用旧文件
         json_data['logs'] += "\n 🍀 ExtraFanart done! (old)(%ss)" % get_used_time(start_time)
         return True
@@ -947,12 +947,10 @@ def show_netstatus():
         signal.show_traceback_log(traceback.format_exc())
         signal.show_net_info(traceback.format_exc())
     if proxy == '' or proxy_type == '' or proxy_type == 'no':
-        signal.show_net_info(' 当前网络状态：❌ 未启用代理\n   类型： ' + str(proxy_type) + '    地址：' + str(
-            proxy) + '    超时时间：' + str(timeout) + '    重试次数：' + str(retry_count))
+        signal.show_net_info(' Network Status: ❌ Proxy disabled\n   Type: ' + str(proxy_type) + '    Address: ' + str(proxy) + '    Timeout: ' + str(timeout) + '    Retries:' + str(retry_count))
     else:
         signal.show_net_info(
-            ' 当前网络状态：✅ 已启用代理\n   类型： ' + proxy_type + '    地址：' + proxy + '    超时时间：' + str(
-                timeout) + '    重试次数：' + str(retry_count))
+            ' Network status: ✅ Proxy enabled\n   Type: ' + proxy_type + '    Address: ' + proxy + '    Timeout: ' + str(timeout) + '    Retries: ' + str(retry_count))
     signal.show_net_info('=' * 80)
 
 
@@ -960,6 +958,6 @@ def check_proxyChange():
     new_proxy = (config.type, config.proxy, config.timeout, config.retry)
     if Flags.current_proxy:
         if new_proxy != Flags.current_proxy:
-            signal.show_net_info('\n🌈 代理设置已改变：')
+            signal.show_net_info('\n🌈 Proxy settings changed: ')
             show_netstatus()
     Flags.current_proxy = new_proxy

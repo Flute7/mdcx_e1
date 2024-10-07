@@ -59,7 +59,7 @@ class CutWindow(QDialog):
         self.pic_new_h = self.show_h
         self.pic_w = self.show_w
         self.pic_h = self.show_h
-        self.Ui.pushButton_select_cutrange = DraggableButton('拖动选择裁剪范围', self.Ui.label_backgroud_pic, self)
+        self.Ui.pushButton_select_cutrange = DraggableButton('Drag to select crop range', self.Ui.label_backgroud_pic, self)
         self.Ui.pushButton_select_cutrange.setObjectName(u"pushButton_select_cutrange")
         self.Ui.pushButton_select_cutrange.setGeometry(QRect(420, 0, 379, 539))
         self.Ui.pushButton_select_cutrange.setCursor(QCursor(Qt.OpenHandCursor))
@@ -148,7 +148,7 @@ class CutWindow(QDialog):
     # 打开图片选择框
     def open_image(self):
         img_path, img_type = QFileDialog. \
-            getOpenFileName(None, "打开图片", "", "*.jpg *.png;;All Files(*)", options=self.parent().options)
+            getOpenFileName(None, "Open image", "", "*.jpg *.png;;All Files(*)", options=self.parent().options)
         if img_path:
             self.showimage(img_path)
 
@@ -218,7 +218,7 @@ class CutWindow(QDialog):
                 json_data, movie_number, folder_old_path, file_name, file_ex, \
                     sub_list, file_show_name, file_show_path = models.core.file.get_file_info(temp_path, copy_sub=False)
 
-            self.setWindowTitle(json_data.get('number') + ' 封面图片裁剪')  # 设置窗口标题
+            self.setWindowTitle(json_data.get('number') + ' Cover image cropping')  # 设置窗口标题
 
             # 获取水印信息
             has_sub = json_data['has_sub']

@@ -1620,7 +1620,7 @@ p, li { white-space: pre-wrap; }
        <enum>Qt::TabFocus</enum>
       </property>
       <property name="text">
-       <string>Test Network</string>
+       <string>Start Test</string>
       </property>
      </widget>
     </widget>

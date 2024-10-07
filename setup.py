@@ -20,7 +20,7 @@ OPTIONS = {
         'CFBundleIdentifier': "MDCx",  # 进程名字
         'CFBundleVersion': "20231005",
         'CFBundleShortVersionString': "20231005",  # 版本号
-        'NSHumanReadableCopyright': u"版权所有 © 2023",
+        'NSHumanReadableCopyright': u"All rights reserved © 2023",
         'Localization native development region': '',
     }
 }

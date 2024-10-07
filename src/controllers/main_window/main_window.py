@@ -149,13 +149,14 @@ class MyMAinWindow(QMainWindow):
         self.show_net_info('\n🏠 Proxy settings are located under: [Settings] -> [Network] -> [Proxy Settings].\n')  # 检查网络界面显示提示信息
         show_netstatus()  # 检查网络界面显示当前网络代理信息
         self.show_net_info(
-            '\n💡 Info：\n '
-            'Proxy：javbus, jav321, javlibrary, mgstage, mywife, giga, freejavbt, mdtv, madouqu, 7mmtv, faleno, dahlia, prestige, theporndb, cnmdb, fantastica, kin8\n '
-            'Non-Japanese Agent：javdb, airav-cc, avsex（Japanese agent will report an error）\n '
-            'Japanese Agent：seesaawiki\n '
-            'No Agent Required：avsex, hdouban, iqqtv, airav-wiki, love6, lulubar, fc2, fc2club, fc2hub\n\n'
+            '\n💡 Info: \n '
+            'Proxy:              javbus, jav321, javlibrary, mgstage, mywife, giga, freejavbt, mdtv, madouqu, 7mmtv, faleno,\n '
+            '                    dahlia, prestige, theporndb, cnmdb, fantastica, kin8\n '
+            'Non-Japanese Agent: javdb, airav-cc, avsex（Japanese agent will report an error）\n '
+            'Japanese Agent:     seesaawiki\n '
+            'No Agent Required:  avsex, hdouban, iqqtv, airav-wiki, love6, lulubar, fc2, fc2club, fc2hub\n\n'
             '▶️ Click the [Start Test] button in the upper right corner to test network connectivity.')  # 检查网络界面显示提示信息
-        signal.add_log("🍯 You can click the icon in the lower right corner to show/hide the request information panel!")
+        signal.add_log("🍯 You can click the icon in the lower right hand corner to show/hide this panel!")
         self.show_version()  # 日志页面显示版本信息
         self.creat_right_menu()  # 加载右键菜单
         self.pushButton_main_clicked()  # 切换到主界面
@@ -530,10 +531,10 @@ class MyMAinWindow(QMainWindow):
                 self.new_version = f'\n🍉 New Update!（{latest_version}）'
                 signal.show_scrape_info()
                 self.Ui.label_show_version.setCursor(Qt.OpenHandCursor)  # 设置鼠标形状为十字形
-                version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （ <font color=\"red\" >The latest version is: {latest_version}，Please update! 🚀</font> ）'
+                version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （<font color=\"red\" >The latest version is {latest_version}，Please update! 🚀</font>）'
                 download_link = ' ⬇️ <a href="https://github.com/sqzw-x/mdcx/releases">Download latest version</a>'
             else:
-                version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （ <font color=\"green\">You are using the latest version! 🎉</font> ）'
+                version_info = f'Modified from MDC-GUI · Current version: {self.localversion} （<font color=\"green\">You are using the latest version! 🎉</font>）'
 
         feedback = f' 💌 Feedback: <a href="https://github.com/sqzw-x/mdcx/issues/new">GitHub Issues</a>'
 
@@ -2123,13 +2124,13 @@ class MyMAinWindow(QMainWindow):
                 host_address = each[0].replace('https://', '').replace('http://', '').split('/')[0]
                 if name == 'javdb':
                     res_javdb = self._check_javdb_cookie()
-                    each[1] = res_javdb.replace('✅ The connection is normal', f'✅ The connection is normal{ping_host(host_address)}')
+                    each[1] = res_javdb.replace('✅ Connection normal', f'✅ Connection normal{ping_host(host_address)}')
                 elif name == 'javbus':
                     res_javbus = self._check_javbus_cookie()
-                    each[1] = res_javbus.replace('✅ The connection is normal', f'✅ The connection is normal{ping_host(host_address)}')
+                    each[1] = res_javbus.replace('✅ Connection normal', f'✅ Connection normal{ping_host(host_address)}')
                 elif name == 'theporndb':
                     res_theporndb = check_theporndb_api_token()
-                    each[1] = res_theporndb.replace('✅ The connection is normal', f'✅ The connection is normal{ping_host(host_address)}')
+                    each[1] = res_theporndb.replace('✅ Connection normal', f'✅ Connection normal{ping_host(host_address)}')
                 elif name == 'javlibrary':
                     proxies = True
                     if hasattr(config, f"javlibrary_website"):
@@ -2140,7 +2141,7 @@ class MyMAinWindow(QMainWindow):
                     elif 'Cloudflare' in html_info:
                         each[1] = '❌ Connection failed (blocked by Cloudflare 5-second shield!)'
                     else:
-                        each[1] = f'✅ The connection is normal{ping_host(host_address)}'
+                        each[1] = f'✅ Connection normal{ping_host(host_address)}'
                 elif name in ['avsex', 'freejavbt', 'airav_cc', 'airav', 'madouqu', '7mmtv']:
                     result, html_info = scraper_html(each[0])
                     if not result:
@@ -2148,7 +2149,7 @@ class MyMAinWindow(QMainWindow):
                     elif 'Cloudflare' in html_info:
                         each[1] = '❌ Connection failed (blocked by Cloudflare 5-second shield!)'
                     else:
-                        each[1] = f'✅ The connection is normal{ping_host(host_address)}'
+                        each[1] = f'✅ Connection normal{ping_host(host_address)}'
                 else:
                     try:
                         result, html_content = get_html(each[0])
@@ -2159,14 +2160,14 @@ class MyMAinWindow(QMainWindow):
                                 if re.findall('This page is not available in your region', html_content):
                                     each[1] = '❌ Connection failed due to geographical restrictions, please use the Japanese node to access!'
                                 else:
-                                    each[1] = f'✅ The connection is normal{ping_host(host_address)}'
+                                    each[1] = f'✅ Connection normal{ping_host(host_address)}'
                             elif name == 'mgstage':
                                 if not html_content.strip():
                                     each[1] = '❌ Connection failed due to geographical restrictions, please use the Japanese node to access!'
                                 else:
-                                    each[1] = f'✅ The connection is normal{ping_host(host_address)}'
+                                    each[1] = f'✅ Connection normal{ping_host(host_address)}'
                             else:
-                                each[1] = f'✅ The connection is normal{ping_host(host_address)}'
+                                each[1] = f'✅ Connection normal{ping_host(host_address)}'
                     except Exception as e:
                         each[1] = 'An exception occurred while testing the connection! information:' + str(e)
                         signal.show_traceback_log(traceback.format_exc())
@@ -2225,10 +2226,10 @@ class MyMAinWindow(QMainWindow):
     def pushButton_check_javdb_cookie_clicked(self):
         input_cookie = self.Ui.plainTextEdit_cookie_javdb.toPlainText()
         if not input_cookie:
-            self.Ui.label_javdb_cookie_result.setText('❌ Cookie not filled in, affecting FC2 scraping!')
-            self.show_log_text(' ❌ JavDb unfilled cookie, affecting FC2 scraping! It can be added in "Settings" - "Network"!')
+            self.Ui.label_javdb_cookie_result.setText('❌ JavDB cookie missing, this will affect FC2 scraping!')
+            self.show_log_text(' ❌ JavDB cookie missing, this will affect FC2 scraping! It can be added under [Settings] -> [Network]!')
             return
-        self.Ui.label_javdb_cookie_result.setText('⏳ Under detection...')
+        self.Ui.label_javdb_cookie_result.setText('⏳ Checking...')
         try:
             t = threading.Thread(target=self._check_javdb_cookie)
             t.start()  # 启动线程,即让线程开始执行
@@ -2237,13 +2238,13 @@ class MyMAinWindow(QMainWindow):
             signal.show_log_text(traceback.format_exc())
 
     def _check_javdb_cookie(self):
-        tips = '❌ Cookie not filled in, affecting FC2 scraping!'
+        tips = '❌ JavDB cookie missing, this will affect FC2 scraping!'
         input_cookie = self.Ui.plainTextEdit_cookie_javdb.toPlainText()
         if not input_cookie:
             self.Ui.label_javdb_cookie_result.setText(tips)
             return tips
         # self.Ui.pushButton_check_javdb_cookie.setEnabled(False)
-        tips = '✅ The connection is OK!'
+        tips = '✅ Connection OK!'
         header = {'cookie': input_cookie}
         cookies = config.javdb
         javdb_url = getattr(config, 'javdb_website', 'https://javdb.com') + '/v/D16Q5?locale=zh'
@@ -2252,9 +2253,9 @@ class MyMAinWindow(QMainWindow):
             if not result:
                 if 'Cookie' in response:
                     if cookies != input_cookie:
-                        tips = '❌ Cookie has expired!'
+                        tips = '❌ JavDB cookie expired!'
                     else:
-                        tips = '❌ Cookie has expired! Cleaned! (Cannot be accessed without cleaning)'
+                        tips = '❌ JavDB cookie expired! Cleared! (Cannot be accessed without removal)'
                         self.set_javdb_cookie.emit('')
                         self.pushButton_save_config_clicked()
                 else:
@@ -2263,28 +2264,28 @@ class MyMAinWindow(QMainWindow):
                 if "The owner of this website has banned your access based on your browser's behaving" in response:
                     ip_adress = re.findall(r'(\d+\.\d+\.\d+\.\d+)', response)
                     ip_adress = ip_adress[0] + ' ' if ip_adress else ''
-                    tips = f'❌ your IP {ip_adress}Banned by JavDb!'
+                    tips = f'❌ Your IP {ip_adress} has been banned by JavDB!'
                 elif 'Due to copyright restrictions' in response or 'Access denied' in response:
                     tips = '❌ The current IP is blocked! Please use non-Japanese nodes!'
                 elif 'ray-id' in response:
                     tips = '❌ Access blocked by CloudFlare!'
                 elif '/logout' in response:  # 已登录，有登出按钮
                     vip_info = 'VIP not activated'
-                    tips = f'✅ The connection is OK! ({vip_info}）'
+                    tips = f'✅ Connection OK! ({vip_info}）'
                     if input_cookie:
                         if 'icon-diamond' in response or '/v/D16Q5' in response:  # 有钻石图标或者跳到详情页表示已开通
-                            vip_info = 'Already activated VIP'
+                            vip_info = 'VIP already activated'
                         if cookies != input_cookie:  # 保存cookie
-                            tips = f'✅ The connection is OK! ({vip_info}）Cookie Saved!'
+                            tips = f'✅ Connection OK! ({vip_info}）Cookie Saved!'
                             self.pushButton_save_config_clicked()
                         else:
-                            tips = f'✅ The connection is OK! ({vip_info}）'
+                            tips = f'✅ Connection OK! ({vip_info}）'
 
                 else:
                     if cookies != input_cookie:
-                        tips = '❌ Cookie is invalid! Please fill it in again!'
+                        tips = '❌ Cookie invalid! Please fill it in again!'
                     else:
-                        tips = '❌ Cookie is invalid! Cleaned!'
+                        tips = '❌ Cookie invalid! Cleared!'
                         self.set_javdb_cookie.emit('')
                         self.pushButton_save_config_clicked()
         except Exception as e:
@@ -2293,7 +2294,7 @@ class MyMAinWindow(QMainWindow):
         if input_cookie:
             self.Ui.label_javdb_cookie_result.setText(tips)
             # self.Ui.pushButton_check_javdb_cookie.setEnabled(True)
-        self.show_log_text(tips.replace('❌', ' ❌ JavDb').replace('✅', ' ✅ JavDb'))
+        self.show_log_text(tips.replace('❌', ' ❌ JavDB').replace('✅', ' ✅ JavDB'))
         return tips
 
     # javbus cookie

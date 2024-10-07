@@ -11048,7 +11048,7 @@ class Ui_MDCx(object):
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">           </span></p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Microsoft YaHei UI\'; font-size:9pt;\">       </span></p></body></html>"))
         self.pushButton_scraper_failed_list.setText(_translate("MDCx", "Re-scrape Failed"))
-        self.pushButton_check_net.setText(_translate("MDCx", "Test Network"))
+        self.pushButton_check_net.setText(_translate("MDCx", "Start Test"))
         self.groupBox_7.setTitle(_translate("MDCx", "Single file scraping"))
         self.pushButton_select_file.setText(_translate("MDCx", "Open..."))
         self.label_10.setText(_translate("MDCx", "*URL:"))
