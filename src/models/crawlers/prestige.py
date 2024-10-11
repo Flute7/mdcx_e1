@@ -88,7 +88,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             # ========================================================================搜索番号
             result, html_search = get_html(search_url, json_data=True)
             if not result:
-                debug_info = '网络请求错误: %s ' % html_search
+                debug_info = 'Network Request Error: %s ' % html_search
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
@@ -105,7 +105,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             log_info += web_info + debug_info
             result, page_data = get_html(real_url, json_data=True)
             if not result:
-                debug_info = '网络请求错误: %s ' % page_data
+                debug_info = 'Network Request Error: %s ' % page_data
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

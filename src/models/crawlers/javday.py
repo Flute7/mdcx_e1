@@ -214,7 +214,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 log_info += web_info + debug_info
                 result, html_content = get_html(testNumberUrl)
                 if not result:
-                    debug_info = '网络请求错误: %s' % html_content
+                    debug_info = 'Network Request Error: %s' % html_content
                     log_info += web_info + debug_info
                 else:
                     if '你似乎來到了沒有視頻存在的荒原' in html_content:

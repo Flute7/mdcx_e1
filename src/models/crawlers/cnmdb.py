@@ -144,7 +144,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                     log_info += web_info + debug_info
                     result, response = get_html(search_url, keep=False)
                     if not result:
-                        debug_info = '网络请求错误: %s' % response
+                        debug_info = 'Network Request Error: %s' % response
                         log_info += web_info + debug_info
                         raise Exception(debug_info)
                     search_page = etree.fromstring(response, etree.HTMLParser())

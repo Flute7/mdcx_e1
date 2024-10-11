@@ -2226,8 +2226,8 @@ class MyMAinWindow(QMainWindow):
     def pushButton_check_javdb_cookie_clicked(self):
         input_cookie = self.Ui.plainTextEdit_cookie_javdb.toPlainText()
         if not input_cookie:
-            self.Ui.label_javdb_cookie_result.setText('❌ JavDB cookie missing, this will affect FC2 scraping!')
-            self.show_log_text(' ❌ JavDB cookie missing, this will affect FC2 scraping! It can be added under [Settings] -> [Network].')
+            self.Ui.label_javdb_cookie_result.setText('❌ JavDB cookie missing!')
+            self.show_log_text(' ❌ JavDB cookie missing! It can be added under [Settings] -> [Network].')
             return
         self.Ui.label_javdb_cookie_result.setText('⏳ Checking...')
         try:
@@ -2238,7 +2238,7 @@ class MyMAinWindow(QMainWindow):
             signal.show_log_text(traceback.format_exc())
 
     def _check_javdb_cookie(self):
-        tips = '❌ JavDB cookie missing, this will affect FC2 scraping!'
+        tips = '❌ JavDB cookie missing!'
         input_cookie = self.Ui.plainTextEdit_cookie_javdb.toPlainText()
         if not input_cookie:
             self.Ui.label_javdb_cookie_result.setText(tips)

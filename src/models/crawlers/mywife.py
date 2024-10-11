@@ -181,7 +181,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
             result, html_content = get_html(url_search)
             if not result:
-                debug_info = f'网络请求错误: {html_content} '
+                debug_info = f'Network Request Error: {html_content} '
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             html_info = etree.fromstring(html_content, etree.HTMLParser())
@@ -193,7 +193,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
                 result, html_content = get_html(first_url)
                 if not result:
-                    debug_info = f'网络请求错误: {html_content} '
+                    debug_info = f'Network Request Error: {html_content} '
                     log_info += web_info + debug_info
                     raise Exception(debug_info)
                 html_info = etree.fromstring(html_content, etree.HTMLParser())
@@ -216,7 +216,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
             result, html_content = get_html(real_url)
             if not result:
-                debug_info = f'网络请求错误: {html_content} '
+                debug_info = f'Network Request Error: {html_content} '
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             html_info = etree.fromstring(html_content, etree.HTMLParser())

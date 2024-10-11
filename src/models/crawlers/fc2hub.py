@@ -106,7 +106,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             # ========================================================================搜索番号
             result, html_search = get_html(url_search)
             if not result:
-                debug_info = '网络请求错误: %s' % html_search
+                debug_info = 'Network Request Error: %s' % html_search
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             html = etree.fromstring(html_search, etree.HTMLParser())
@@ -128,7 +128,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             log_info += web_info + debug_info
             result, html_content = get_html(real_url)
             if not result:
-                debug_info = '网络请求错误: %s' % html_content
+                debug_info = 'Network Request Error: %s' % html_content
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             html_info = etree.fromstring(html_content, etree.HTMLParser())

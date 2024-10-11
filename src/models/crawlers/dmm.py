@@ -424,7 +424,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
         if 'tv.dmm.' not in real_url:
             result, htmlcode = get_html(real_url, cookies=cookies)
             if not result:  # 请求失败
-                debug_info = '网络请求错误: %s ' % htmlcode
+                debug_info = 'Network Request Error: %s ' % htmlcode
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
@@ -447,7 +447,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
                         log_info += web_info + debug_info
                         result, htmlcode = get_html(real_url, cookies=cookies)
                         if not result:  # 请求失败
-                            debug_info = '网络请求错误: %s ' % htmlcode
+                            debug_info = 'Network Request Error: %s ' % htmlcode
                             log_info += web_info + debug_info
                             raise Exception(debug_info)
                         html = etree.fromstring(htmlcode, etree.HTMLParser())
@@ -463,7 +463,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
                     log_info += web_info + debug_info
                     result, htmlcode = get_html(real_url, cookies=cookies)
                     if not result:  # 请求失败
-                        debug_info = '网络请求错误: %s ' % htmlcode
+                        debug_info = 'Network Request Error: %s ' % htmlcode
                         log_info += web_info + debug_info
                         raise Exception(debug_info)
                     html = etree.fromstring(htmlcode, etree.HTMLParser())
@@ -518,7 +518,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
             result, htmlcode = get_html(real_url, cookies=cookies)
             html = etree.fromstring(htmlcode, etree.HTMLParser())
             if not result:
-                debug_info = '网络请求错误: %s ' % htmlcode
+                debug_info = 'Network Request Error: %s ' % htmlcode
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

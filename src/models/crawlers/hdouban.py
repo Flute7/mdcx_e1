@@ -232,7 +232,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 # ========================================================================搜索番号
                 result, html_search = get_html(url_search, json_data=True)
                 if not result:
-                    debug_info = '网络请求错误: %s ' % html_search
+                    debug_info = 'Network Request Error: %s ' % html_search
                     log_info += web_info + debug_info
                     raise Exception(debug_info)
                 try:
@@ -275,7 +275,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
             data = {"id": str(detail_id[0])}
             result, response = post_html(detail_url, data=data, json_data=True)
             if not result:
-                debug_info = '网络请求错误: %s' % response
+                debug_info = 'Network Request Error: %s' % response
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             res = response['data']

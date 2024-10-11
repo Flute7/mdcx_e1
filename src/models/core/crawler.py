@@ -411,7 +411,7 @@ def _decide_websites(json_data, number_website_list):
     if short_number:
         json_data['number'] = file_number
 
-    json_data['fields_info'] = '\n 🌐 [website] %s' % json_data['req_web'].strip('-> ') + json_data['fields_info']
+    json_data['fields_info'] = '\n 🌐 [Website] %s' % json_data['req_web'].strip('-> ') + json_data['fields_info']
     if "javdb" in all_json_data and "javdbid" in all_json_data["javdb"]['jp']:
         json_data['javdbid'] = all_json_data["javdb"]['jp']['javdbid']
     else:
@@ -647,7 +647,7 @@ def _call_specific_crawler(json_data, website):
     json_data['cover_from'] = website
     json_data['extrafanart_from'] = website
     json_data['trailer_from'] = website
-    json_data['fields_info'] = '\n 🌐 [website] %s' % json_data['req_web'].strip('-> ')
+    json_data['fields_info'] = '\n 🌐 [Website] %s' % json_data['req_web'].strip('-> ')
 
     if short_number:
         json_data['number'] = file_number

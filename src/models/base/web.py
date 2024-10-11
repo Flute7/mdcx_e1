@@ -706,12 +706,12 @@ def check_theporndb_api_token():
         'User-Agent': get_user_agent(),
     }
     if not api_token:
-        tips = '❌ API token missing，this will affect European and American scraping! It can be added under [Settings] -> [Network].'
+        tips = '❌ API token missing! It can be added under [Settings] -> [Network].'
     else:
         try:
             response = requests.get(url, headers=headers, proxies=proxies, timeout=timeout, verify=False)
             if response.status_code == 401 and 'Unauthenticated' in str(response.text):
-                tips = '❌ API token error, this will affect European and American scraping! Please go to [Settings] -> [Network] to modify it.'
+                tips = '❌ API token error! Please go to [Settings] -> [Network] to modify it.'
             elif response.status_code == 200:
                 if response.json().get('data'):
                     tips = '✅ connection OK!'

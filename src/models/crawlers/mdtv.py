@@ -214,7 +214,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 log_info += web_info + debug_info
                 result, response = post_html(search_url, data={"wd": number}, keep=False)
                 if not result:
-                    debug_info = '网络请求错误: %s' % response
+                    debug_info = 'Network Request Error: %s' % response
                     log_info += web_info + debug_info
                     raise Exception(debug_info)
                 if '没有找到匹配数据' in response:
@@ -238,7 +238,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
         if real_url:
             result, html_content = get_html(real_url)
             if not result:
-                debug_info = '网络请求错误: %s' % html_content
+                debug_info = 'Network Request Error: %s' % html_content
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             html_info = etree.fromstring(html_content, etree.HTMLParser())

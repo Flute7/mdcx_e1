@@ -115,28 +115,28 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
         if not real_url:
             avsox_url = get_avsox_domain()
             url_search = f'{avsox_url}/cn/search/{number}'
-            debug_info = '搜索地址: %s ' % url_search
+            debug_info = 'Search Address: %s ' % url_search
             log_info += web_info + debug_info
             result, response = get_html(url_search)
             if not result:
-                debug_info = '网络请求错误: %s' % response
+                debug_info = 'Network Request Error: %s' % response
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             html_search = etree.fromstring(response, etree.HTMLParser())
             real_url, count = get_real_url(number, html_search)
             if not real_url:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             poster_url = get_poster(html_search, count)
             if poster_url:
                 image_download = True
 
-        debug_info = '番号地址: %s ' % real_url
+        debug_info = 'Number Address: %s ' % real_url
         log_info += web_info + debug_info
         result, htmlcode = get_html(real_url)
         if not result:
-            debug_info = '网络请求错误: %s' % htmlcode
+            debug_info = 'Network Request Error: %s' % htmlcode
             log_info += web_info + debug_info
             raise Exception(debug_info)
         html = etree.fromstring(htmlcode, etree.HTMLParser())
@@ -145,7 +145,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
         web_number = get_web_number(html)
         title = get_title(html).replace(web_number + ' ', '').strip()
         if not title:
-            debug_info = '数据获取失败: 未获取到title！'
+            debug_info = 'Data Acquisition Failed: Title not obtained!'
             log_info += web_info + debug_info
             raise Exception(debug_info)
         cover_url = get_cover(html)

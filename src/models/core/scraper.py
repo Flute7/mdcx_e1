@@ -288,7 +288,7 @@ def _scrape_exec_thread(task):
     if count == 1 or thread_time == 0 or config.main_mode == 4:
         Flags.next_start_time = time.time()
         signal.show_log_text(
-            f' 🕷 {get_current_time()} Start Scraping: {Flags.scrape_starting}/{count_all} {file_name_temp}')
+            f' 🕷 {get_current_time()} Scraping: {Flags.scrape_starting}/{count_all} {file_name_temp}')
         thread_time = 0
     else:
         Flags.next_start_time += thread_time
@@ -304,7 +304,7 @@ def _scrape_exec_thread(task):
     Flags.scrape_started += 1
     if count > 1 and thread_time != 0:
         signal.show_log_text(
-            f' 🕷 {get_current_time()} Start Scraping: {Flags.scrape_started}/{count_all} {file_name_temp}')
+            f' 🕷 {get_current_time()} Scraping: {Flags.scrape_started}/{count_all} {file_name_temp}')
 
     start_time = time.time()
     file_mode = Flags.file_mode
@@ -503,15 +503,15 @@ def scrape(file_mode: FileMode, movie_list):
     if count_all:
         Flags.count_claw += 1
         if config.main_mode == 4:
-            signal.show_log_text(f' 🕷 Currently in read mode, number of threads（{thread_number}），Thread delay (0) seconds...')
+            signal.show_log_text(f' 🕷 Currently in read mode, Number of threads（{thread_number}) Thread delay (0s)')
         else:
             if count_all < thread_number:
                 thread_number = count_all
-            signal.show_log_text(f' 🕷 Enabled multithreading, number of threads（{thread_number}）,thread delay（{thread_time}）seconds...')
+            signal.show_log_text(f' 🕷 Multithreading enabled, Number of threads（{thread_number}) Thread delay（{thread_time}s)')
         if 'rest_scrape' in config.switch_on and config.main_mode != 4:
             signal.show_log_text(
-                f'<font color=\"brown\"> 🍯 Intermittent scraping Enabled, continuous scraping {config.rest_count} After files, '
-                f'将自动休息 {Flags.rest_time_convert} 秒...</font>')
+                f'<font color=\"brown\"> 🍯 Intermittent scraping enabled, batch of {config.rest_count} files, '
+                f'{Flags.rest_time_convert} second rest interval...</font>')
 
         # 在启动前点了停止按钮
         if Flags.stop_flag:

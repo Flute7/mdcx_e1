@@ -195,7 +195,7 @@ def get_real_url(number, url_type, javbus_url, json_log, headers, cookie):  # �
             raise Exception('当前节点需要填写 Cookie 才能刮削！请到 设置-网络 填写 Cookie 或更换节点！')
 
     if not result:
-        debug_info = '网络请求错误: %s ' % html_search
+        debug_info = 'Network Request Error: %s ' % html_search
         json_log['log_info_javbus'] += json_log['web_info'] + debug_info
         raise Exception(debug_info)
 
@@ -271,7 +271,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', mosaic=
 
             # 有404时尝试再次搜索 DV-1175
             if '404' not in htmlcode:
-                debug_info = '番号地址:%s \n       网络请求错误: %s ' % (real_url, htmlcode)
+                debug_info = '番号地址:%s \n       Network Request Error: %s ' % (real_url, htmlcode)
                 json_log['log_info_javbus'] += web_info + debug_info
                 raise Exception(debug_info)
 
