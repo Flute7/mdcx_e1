@@ -79,7 +79,7 @@ class WebRequests:
             }
             headers.update(headers_o)
 
-        signal.add_log(f'🔎 Check {url}')
+        signal.add_log(f'🔎 Checking {url}')
         for i in range(int(retry_times)):
             try:
                 if keep:
@@ -308,7 +308,7 @@ class WebRequests:
                 "https": None,
             }
 
-        signal.add_log(f'🔎 Check {url}')
+        signal.add_log(f'🔎 Checking {url}')
         for i in range(int(retry_times)):
             try:
                 response = self.curl_session.get(url_encode(url), headers=headers, cookies=cookies, proxies=proxies,
@@ -693,7 +693,7 @@ def check_version():
 
 
 def check_theporndb_api_token():
-    tips = '✅ Connection OK! '
+    tips = '✅ connection OK! '
     headers = config.headers
     proxies = config.proxies
     timeout = config.timeout
@@ -706,15 +706,15 @@ def check_theporndb_api_token():
         'User-Agent': get_user_agent(),
     }
     if not api_token:
-        tips = '❌ ThePornDB: API token missing，This will affect European and American scraping! It can be added under [Settings] -> [Network]!'
+        tips = '❌ API token missing，this will affect European and American scraping! It can be added under [Settings] -> [Network].'
     else:
         try:
             response = requests.get(url, headers=headers, proxies=proxies, timeout=timeout, verify=False)
             if response.status_code == 401 and 'Unauthenticated' in str(response.text):
-                tips = '❌ ThePornDB: API token error! This will affect European and American scraping! Please go to [Settings] -> [Network] to modify it.'
+                tips = '❌ API token error, this will affect European and American scraping! Please go to [Settings] -> [Network] to modify it.'
             elif response.status_code == 200:
                 if response.json().get('data'):
-                    tips = '✅ Connection OK!'
+                    tips = '✅ connection OK!'
                 else:
                     tips = '❌ The returned data is abnormal!'
             else:

@@ -507,7 +507,7 @@ def scrape(file_mode: FileMode, movie_list):
         else:
             if count_all < thread_number:
                 thread_number = count_all
-            signal.show_log_text(f' 🕷 Turn on multithreading, number of threads（{thread_number}）,thread delay（{thread_time}）seconds...')
+            signal.show_log_text(f' 🕷 Enabled multithreading, number of threads（{thread_number}）,thread delay（{thread_time}）seconds...')
         if 'rest_scrape' in config.switch_on and config.main_mode != 4:
             signal.show_log_text(
                 f'<font color=\"brown\"> 🍯 Intermittent scraping Enabled, continuous scraping {config.rest_count} After files, '

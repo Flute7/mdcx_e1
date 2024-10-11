@@ -1058,21 +1058,21 @@ def movie_lists(escape_folder_list, movie_type, movie_path):
             i = found_count + 100
             signal.show_traceback_log(
                 f"✅ Found ({found_count})! "
-                f"Skip successfully scraped ({skip}) repeat softlink ({skip_repeat_softlink})! "
+                f"Skip successfully scraped ({skip}) Repeat softlink ({skip_repeat_softlink})! "
                 f"({get_used_time(start_time)}s)... Still searching, please wait... \u3000")
             signal.show_log_text(
                 f'    {get_current_time()} Found ({found_count})! '
-                f'Skip successfully scraped ({skip}) repeat softlink ({skip_repeat_softlink})! '
+                f'Skip successfully scraped ({skip}) Repeat softlink ({skip_repeat_softlink})! '
                 f'({get_used_time(start_time)}s)... Still searching, please wait... \u3000')
 
     total.sort()
     signal.show_traceback_log(
         f"🎉 Done!!! Found ({len(total)})! "
-        f"Skip successfully scraped ({skip}) repeat softlink ({skip_repeat_softlink})! "
+        f"Skip successfully scraped ({skip}) Repeat softlink ({skip_repeat_softlink})! "
         f"({get_used_time(start_time)}s) \u3000")
     signal.show_log_text(
         f'    Done!!! Found ({len(total)})! '
-        f'Skip successfully scraped ({skip}) repeat softlink ({skip_repeat_softlink})! '
+        f'Skip successfully scraped ({skip}) Repeat softlink ({skip_repeat_softlink})! '
         f'({get_used_time(start_time)}s) \u3000')
     return total
 
@@ -1381,9 +1381,9 @@ def get_movie_list(file_mode: FileMode, movie_path, escape_folder_list):
         if not os.path.exists(movie_path):
             signal.show_log_text('\n 🔴 Movie folder does not exist!')
         else:
-            signal.show_log_text(' 🖥 Movie path: ' + movie_path)
+            signal.show_log_text(' 🖥 Movie Path: ' + movie_path)
             signal.show_log_text(' 🔎 Searching all videos, Please wait...')
-            signal.set_label_file_path.emit(f'正在遍历待刮削视频目录中的所有视频，请等待...\n {movie_path}')
+            signal.set_label_file_path.emit(f'Traversing all videos in the video directory to be scraped, please wait...\n {movie_path}')
             if 'folder' in config.no_escape:
                 escape_folder_list = []
             elif config.main_mode == 3 or config.main_mode == 4:
@@ -1394,7 +1394,7 @@ def get_movie_list(file_mode: FileMode, movie_path, escape_folder_list):
                 signal.show_traceback_log(traceback.format_exc())
                 signal.show_log_text(traceback.format_exc())
             count_all = len(movie_list)
-            signal.show_log_text(' 📺 Find ' + str(count_all) + ' movies')
+            signal.show_log_text(' 📺 Found ' + str(count_all) + ' movies.')
 
     elif file_mode == FileMode.Single:  # 刮削单文件（工具页面）
         file_path = Flags.single_file_path.strip()
@@ -1402,9 +1402,9 @@ def get_movie_list(file_mode: FileMode, movie_path, escape_folder_list):
             signal.show_log_text(' 🔴 Movie file does not exist!')
         else:
             movie_list.append(file_path)  # 把文件路径添加到movie_list
-            signal.show_log_text(' 🖥 File path: ' + file_path)
+            signal.show_log_text(' 🖥 File Path: ' + file_path)
             if Flags.appoint_url:
-                signal.show_log_text(' 🌐 File url: ' + Flags.appoint_url)
+                signal.show_log_text(' 🌐 File URL: ' + Flags.appoint_url)
 
     return movie_list
 
@@ -1413,7 +1413,7 @@ def _clean_empty_fodlers(path, file_mode):
     start_time = time.time()
     if config.del_empty_folder == 0 or file_mode == FileMode.Again:
         return
-    signal.set_label_file_path.emit('🗑 正在清理空文件夹，请等待...')
+    signal.set_label_file_path.emit('🗑 Cleaning empty folders, please wait...')
     signal.show_log_text(' ⏳ Cleaning empty folders...')
     if 'folder' in config.no_escape:
         escape_folder_list = ''
@@ -1863,8 +1863,8 @@ def check_and_clean_files():
     start_time = time.time()
     movie_path = get_movie_path_setting()[0]
     signal.show_log_text('🍯 🍯 🍯 NOTE: START CHECKING AND CLEAN FILE NOW!!!')
-    signal.show_log_text(f'\n ⏰ Start time: {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}')
-    signal.show_log_text(f' 🖥 Movie path: {movie_path} \n ⏳ Checking all videos and cleaning, Please wait...')
+    signal.show_log_text(f'\n ⏰ Start Time: {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}')
+    signal.show_log_text(f' 🖥 Movie Path: {movie_path} \n ⏳ Checking all videos and cleaning, Please wait...')
     total = 0
     succ = 0
     fail = 0

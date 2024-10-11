@@ -1187,7 +1187,7 @@ def load_config(self):
             elif config.soft_link == 2:
                 scrape_like_text += " · hard connection"
             signal.show_log_text(
-                f' 🛠 Configuration:      {config.path}      Loading complete!\n '
+                f' 🛠 Configuration:       {config.path}   Loading complete!\n '
                 f'📂 Program Directory:   {get_main_path()} \n '
                 f'📂 Catalog Directory:   {get_movie_path_setting()[0]} \n '
                 f'💠 Scraping Mode:       {Flags.main_mode_text} · {scrape_like_text} \n '

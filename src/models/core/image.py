@@ -284,7 +284,7 @@ def add_del_extrafanart_copy(mode):
     signal.show_log_text('Start %s extrafanart copy! \n' % mode)
 
     movie_path, success_folder, failed_folder, escape_folder_list, extrafanart_folder, softlink_path = get_movie_path_setting()
-    signal.show_log_text(' 🖥 Movie path: %s \n 🔎 Checking all videos, Please wait...' % movie_path)
+    signal.show_log_text(' 🖥 Movie Path: %s \n 🔎 Checking all videos, Please wait...' % movie_path)
     movie_type = config.media_type
     movie_list = movie_lists('', movie_type, movie_path)  # 获取所有需要刮削的影片列表
 

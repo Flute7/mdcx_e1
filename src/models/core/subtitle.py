@@ -12,19 +12,19 @@ from models.signals import signal
 def add_sub_for_all_video():
     signal.change_buttons_status.emit()
     sub_add = True
-    signal.show_log_text('开始检查无字幕视频并为其添加字幕！\n')
+    signal.show_log_text('Start checking and adding subtitles to your unsubtitled videos!\n')
     if config.subtitle_folder == '' or not os.path.exists(config.subtitle_folder):
         sub_add = False
-        signal.show_log_text("字幕文件夹不存在！\n只能检查无字幕视频，无法添加字幕！")
+        signal.show_log_text("The subtitles folder does not exist!\nOnly videos without subtitles can be checked, subtitles cannot be added!")
         signal.show_log_text("========================================================================================================================")
 
     movie_path, success_folder, failed_folder, escape_folder_list, \
         extrafanart_folder, softlink_path = get_movie_path_setting()
-    signal.show_log_text(f' 🖥 Movie path: {movie_path} \n 🔎 正在检查所有视频，请稍候...')
+    signal.show_log_text(f' 🖥 Movie Path: {movie_path} \n 🔎 Checking all videos, please wait...')
     if config.subtitle_add_chs == 'on':
-        signal.show_log_text(" 如果字幕文件名不以 .chs 结尾，则会自动添加！\n")
+        signal.show_log_text(" If the subtitle file name does not end with .chs, it will be added automatically! \n")
     else:
-        signal.show_log_text(" 如果字幕文件名以 .chs 结尾，将被自动删除！\n")
+        signal.show_log_text(" If the subtitle file name ends with .chs, it will be automatically deleted! \n")
     movie_type = config.media_type
     movie_list = movie_lists('', movie_type, movie_path)  # 获取所有需要刮削的影片列表
     sub_type_list = config.sub_type.split('|')  # 本地字幕文件后缀
