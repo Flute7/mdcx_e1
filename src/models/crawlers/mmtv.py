@@ -198,7 +198,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 search_keyword = re.findall(r'\d{3,}', number)[0]
 
             search_url = f'{search_url}?search_keyword={search_keyword}&search_type=searchall&op=search'
-            debug_info = f'搜索地址: {search_url} '
+            debug_info = f'Search Address:  {search_url} '
             log_info += web_info + debug_info
             result, response = curl_html(search_url)
 
@@ -213,7 +213,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 debug_info = '番号地址: %s ' % real_url
                 log_info += web_info + debug_info
             else:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

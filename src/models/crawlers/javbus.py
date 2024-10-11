@@ -182,7 +182,7 @@ def get_real_url(number, url_type, javbus_url, json_log, headers, cookie):  # �
     else:  # 无码
         url_search = javbus_url + '/uncensored/search/' + number + '&type=0&parent=uc'
 
-    debug_info = '搜索地址: %s ' % url_search
+    debug_info = 'Search Address:  %s ' % url_search
     json_log['log_info_javbus'] += json_log['web_info'] + debug_info
     # ========================================================================搜索番号
     result, html_search = get_html(url_search, headers)
@@ -209,7 +209,7 @@ def get_real_url(number, url_type, javbus_url, json_log, headers, cookie):  # �
             debug_info = '番号地址: %s ' % each
             json_log['log_info_javbus'] += json_log['web_info'] + debug_info
             return each
-    debug_info = '搜索结果: 未匹配到番号！'
+    debug_info = 'Search Results: No number matched!'
     json_log['log_info_javbus'] += json_log['web_info'] + debug_info
     raise Exception(debug_info)
 

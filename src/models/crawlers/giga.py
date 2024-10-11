@@ -146,7 +146,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
             # 通过搜索获取real_url https://www.giga-web.jp/search/?keyword=GHOV-22
             url_search = f'https://www.giga-web.jp/search/?keyword={number}'
-            debug_info = '搜索地址: %s ' % url_search
+            debug_info = 'Search Address:  %s ' % url_search
             log_info += web_info + debug_info
 
             # ========================================================================搜索番号
@@ -172,7 +172,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             html = etree.fromstring(html_search, etree.HTMLParser())
             real_url = get_real_url(html, number)
             if not real_url:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

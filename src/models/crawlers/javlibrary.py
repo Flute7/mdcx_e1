@@ -190,7 +190,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn'):
 
             # 生成搜索地址
             url_search = javlibrary_url + number
-            debug_info = '搜索地址: %s ' % url_search
+            debug_info = 'Search Address:  %s ' % url_search
             log_info += web_info + debug_info
 
             result, html_search = curl_html(url_search, proxies=proxies)
@@ -210,7 +210,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn'):
             html = etree.fromstring(html_search, etree.HTMLParser())
             real_url = get_real_url(html, number, domain_2)
             if not real_url:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

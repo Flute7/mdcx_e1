@@ -224,7 +224,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', org_lan
 
             # 生成搜索地址
             url_search = javdb_url + '/search?q=' + number.strip() + '&locale=zh'
-            debug_info = '搜索地址: %s ' % url_search
+            debug_info = 'Search Address:  %s ' % url_search
             log_info += web_info + debug_info
 
             # 先使用scraper方法请求，失败时再使用get请求
@@ -257,7 +257,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', org_lan
             html = etree.fromstring(html_search, etree.HTMLParser())
             real_url = get_real_url(html, number)
             if not real_url:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

@@ -115,7 +115,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
         title = getTitle(html_info)  # 获取标题
         if 'お探しの商品が見つかりません' in title:
-            debug_info = '搜索结果: 未匹配到番号！'
+            debug_info = 'Search Results: No number matched!'
             log_info += web_info + debug_info
             raise Exception(debug_info)
 

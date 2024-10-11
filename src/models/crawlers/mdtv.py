@@ -210,7 +210,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
             number_list_new = list(set(total_number_list))
             number_list_new.sort(key=total_number_list.index)
             for number in number_list_new:
-                debug_info = '搜索地址: %s {"wd": %s}' % (search_url, number)
+                debug_info = 'Search Address:  %s {"wd": %s}' % (search_url, number)
                 log_info += web_info + debug_info
                 result, response = post_html(search_url, data={"wd": number}, keep=False)
                 if not result:
@@ -231,7 +231,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 debug_info = '番号地址: %s ' % real_url
                 log_info += web_info + debug_info
             else:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

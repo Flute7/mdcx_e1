@@ -413,7 +413,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
 
     if not appoint_url:
         real_url = 'https://www.dmm.co.jp/search/=/searchstr=%s/sort=ranking/' % number_00  # 带00
-        debug_info = '搜索地址: %s ' % real_url
+        debug_info = 'Search Address:  %s ' % real_url
         log_info += web_info + debug_info
     else:
         debug_info = '番号地址: %s ' % real_url
@@ -439,7 +439,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
             if not appoint_url:
                 real_url, number = get_real_url(html, number, number, file_path)
                 if not real_url:
-                    debug_info = '搜索结果: 未匹配到番号！'
+                    debug_info = 'Search Results: No number matched!'
                     log_info += web_info + debug_info
                     if number_no_00 != number_00:
                         real_url = 'https://www.dmm.co.jp/search/=/searchstr=%s/sort=ranking/' % number_no_00  # 不带00，旧作 snis-027
@@ -453,7 +453,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
                         html = etree.fromstring(htmlcode, etree.HTMLParser())
                         real_url, number = get_real_url(html, number, number_no_00, file_path)
                         if not real_url:
-                            debug_info = '搜索结果: 未匹配到番号！'
+                            debug_info = 'Search Results: No number matched!'
                             log_info += web_info + debug_info
 
                 # 写真
@@ -469,7 +469,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
                     html = etree.fromstring(htmlcode, etree.HTMLParser())
                     real_url, number0 = get_real_url(html, number, number_no_00, file_path)
                     if not real_url:
-                        debug_info = '搜索结果: 未匹配到番号！'
+                        debug_info = 'Search Results: No number matched!'
                         log_info += web_info + debug_info
 
                 elif real_url.find('?i3_ref=search&i3_ord') != -1:  # 去除url中无用的后缀

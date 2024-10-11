@@ -226,7 +226,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 # https://api.6dccbca.com/api/search?search=JUL-401&ty=movie&page=1&pageSize=12
                 # https://api.6dccbca.com/api/search?ty=movie&search=heyzo-1032&page=1&pageSize=12
                 url_search = f'https://api.6dccbca.com/api/search?ty=movie&search={number}&page=1&pageSize=12'
-                debug_info = '搜索地址: %s ' % url_search
+                debug_info = 'Search Address:  %s ' % url_search
                 log_info += web_info + debug_info
 
                 # ========================================================================搜索番号
@@ -256,7 +256,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 if bingo:
                     break
             else:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

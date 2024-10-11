@@ -177,7 +177,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
         if not real_url:
             url_search = 'https://xcity.jp/result_published/?q=' + \
                          number.replace('-', '')
-            debug_info = '搜索地址: %s ' % url_search
+            debug_info = 'Search Address:  %s ' % url_search
             log_info += web_info + debug_info
 
             result, html_search = get_html(url_search)
@@ -186,13 +186,13 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             if '該当する作品はみつかりませんでした' in html_search:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             html = etree.fromstring(html_search, etree.HTMLParser())
             real_url = html.xpath("//table[@class='resultList']/tr/td/a/@href")
             if not real_url:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             else:

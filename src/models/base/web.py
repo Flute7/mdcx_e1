@@ -132,7 +132,7 @@ class WebRequests:
                 "https": None,
             }
 
-        signal.add_log(f'🔎 POST request {url}')
+        signal.add_log(f'🔎 POST Request {url}')
         for i in range(int(retry_times)):
             try:
                 if keep:
@@ -146,7 +146,7 @@ class WebRequests:
                     signal.add_log('🔴 Retry [%s/%s] %s' % (i + 1, retry_times, error_info))
                     continue
                 else:
-                    signal.add_log(f'✅ POST successful {url}')
+                    signal.add_log(f'✅ POST Successful {url}')
                 response.encoding = 'utf-8'
                 if json_data:
                     return True, response.json()

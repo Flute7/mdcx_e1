@@ -982,7 +982,7 @@ def movie_lists(escape_folder_list, movie_type, movie_path):
     i = 100
     skip = 0
     skip_repeat_softlink = 0
-    signal.show_traceback_log("🔎 遍历待刮削目录....")
+    signal.show_traceback_log("🔎 Traversing the scraping directory...")
     for root, dirs, files in os.walk(movie_path):
 
         # 文件夹是否在排除目录
@@ -1383,7 +1383,7 @@ def get_movie_list(file_mode: FileMode, movie_path, escape_folder_list):
         else:
             signal.show_log_text(' 🖥 Movie Path: ' + movie_path)
             signal.show_log_text(' 🔎 Searching all videos, Please wait...')
-            signal.set_label_file_path.emit(f'Traversing all videos in the video directory to be scraped, please wait...\n {movie_path}')
+            signal.set_label_file_path.emit(f'Traversing all videos in the scraping directory, please wait...\n {movie_path}')
             if 'folder' in config.no_escape:
                 escape_folder_list = []
             elif config.main_mode == 3 or config.main_mode == 4:
@@ -1887,6 +1887,6 @@ def check_and_clean_files():
     _clean_empty_fodlers(movie_path, '')
     signal.set_label_file_path.emit('🗑 清理完成！')
     signal.show_log_text(
-        f" 🎉🎉🎉 All finished!!!({get_used_time(start_time)}s) Total {total} , Success {succ} , Failed {fail} ")
+        f" 🎉🎉🎉 All finished!!!({get_used_time(start_time)}s) Total ({total}) Success ({succ}) Failed ({fail}) ")
     signal.show_log_text('========================================================================================================================')
     signal.reset_buttons_status.emit()

@@ -156,7 +156,7 @@ class MyMAinWindow(QMainWindow):
             'Japanese Agent:     seesaawiki\n '
             'No Agent Required:  avsex, hdouban, iqqtv, airav-wiki, love6, lulubar, fc2, fc2club, fc2hub\n\n'
             '▶️ Click the [Start Test] button in the upper right corner to test network connectivity.')  # 检查网络界面显示提示信息
-        signal.add_log("🍯 You can click the icon in the lower right hand corner to show/hide this panel!")
+        signal.add_log("🍯 You can click the icon in the lower right hand corner to hide/show this panel!")
         self.show_version()  # 日志页面显示版本信息
         self.creat_right_menu()  # 加载右键菜单
         self.pushButton_main_clicked()  # 切换到主界面
@@ -2459,9 +2459,9 @@ When you view and download the source code or binary program of this project, yo
         Flags.file_mode = FileMode.Default
         Flags.threads_list = []
         if len(Flags.failed_list):
-            self.Ui.pushButton_scraper_failed_list.setText(f'Re-scrape the current one with one click {len(Flags.failed_list)} failed files')
+            self.Ui.pushButton_scraper_failed_list.setText(f'One-click re-scrape {len(Flags.failed_list)} failed files')
         else:
-            self.Ui.pushButton_scraper_failed_list.setText('When there are failed tasks, click to scrape the current failed list with one click.')
+            self.Ui.pushButton_scraper_failed_list.setText('When there are failed tasks, click to rescrape the current failed list')
 
     # endregion
 

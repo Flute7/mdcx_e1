@@ -156,7 +156,7 @@ def main(number, appoint_url='', log_info='', req_web='', language=''):
             # https://avsex.cc/web/search?page=1&keyWord=ssis
             # https://paycalling.com/tw/search?_type=films&query=CAWD-582
             url_search = f'{avsex_url}/tw/search?query={number.lower()}'
-            debug_info = '搜索地址: %s ' % url_search
+            debug_info = 'Search Address:  %s ' % url_search
             log_info += web_info + debug_info
 
             # ========================================================================搜索番号
@@ -181,7 +181,7 @@ def main(number, appoint_url='', log_info='', req_web='', language=''):
                         poster_url = temp_poster[0] if temp_poster else ''
                         break
             else:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

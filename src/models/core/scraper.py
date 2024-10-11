@@ -364,7 +364,7 @@ def _scrape_exec_thread(task):
             Flags.failed_list.append([fail_file_path, json_data['error_info']])
             Flags.failed_file_list.append(fail_file_path)
             _failed_file_info_show(str(Flags.fail_count), fail_file_path, json_data['error_info'])
-            signal.view_failed_list_settext.emit(f'Failure {Flags.fail_count}')
+            signal.view_failed_list_settext.emit(f'Failed {Flags.fail_count}')
     except Exception as e:
         _check_stop(file_name_temp)
         signal.show_traceback_log(traceback.format_exc())
@@ -389,7 +389,7 @@ def _scrape_exec_thread(task):
             remain_count = Flags.scrape_started - count
             if Flags.scrape_started == count_all:
                 signal.show_log_text(f' 🕷 Remaining scraping threads: {remain_count}')
-            signal.label_result.emit(f' Scraping:{remain_count} Success: {Flags.succ_count} Failure: {Flags.fail_count}')
+            signal.label_result.emit(f' Scraping: {remain_count} Success: {Flags.succ_count} Failure: {Flags.fail_count}')
             signal.show_scrape_info(f'🔎 Scraped {count}/{count_all}')
         except Exception as e:
             _check_stop(file_name_temp)
@@ -543,9 +543,9 @@ def scrape(file_mode: FileMode, movie_list):
     signal.exec_set_processbar.emit(0)
     signal.set_label_file_path.emit('🎉 Congratulations! Scraping complete! common %s A file! time %s seconds' % (count_all, used_time))
     signal.show_traceback_log(
-        "🎉 All finished!!! Total %s , Success %s , Failed %s " % (count_all, Flags.succ_count, Flags.fail_count))
+        "🎉 All finished!!! Total (%s) Success (%s) Failed (%s) " % (count_all, Flags.succ_count, Flags.fail_count))
     signal.show_log_text(
-        " 🎉🎉🎉 All finished!!! Total %s , Success %s , Failed %s " % (count_all, Flags.succ_count, Flags.fail_count))
+        " 🎉🎉🎉 All finished!!! Total (%s) Success (%s) Failed (%s) " % (count_all, Flags.succ_count, Flags.fail_count))
     signal.show_log_text("========================================================================================================================")
     if Flags.failed_list:
         signal.show_log_text("    *** Failed Results ****")

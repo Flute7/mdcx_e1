@@ -130,7 +130,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             debug_info = '番号地址: %s' % result_url
             log_info += web_info + debug_info
         else:
-            debug_info = '搜索地址: %s {"sn": %s}' % (result_url, number)
+            debug_info = 'Search Address:  %s {"sn": %s}' % (result_url, number)
             log_info += web_info + debug_info
         result, response = post_html(result_url, data={"sn": number})
         if not result:
@@ -138,7 +138,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             log_info += web_info + debug_info
             raise Exception(debug_info)
         if 'AVが見つかりませんでした' in response:
-            debug_info = '搜索结果: 未匹配到番号！'
+            debug_info = 'Search Results: No number matched!'
             log_info += web_info + debug_info
             raise Exception(debug_info)
         detail_page = etree.fromstring(response, etree.HTMLParser())

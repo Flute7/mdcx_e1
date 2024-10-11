@@ -140,7 +140,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
                                                encoding="EUC-JP")  # quote() 不编码斜线，空格‘ ’编码为‘%20’；quote_plus() 会编码斜线为‘%2F’; 空格‘ ’编码为‘+’
             url_search = f'http://www.getchu.com/php/search.phtml?genre=all&search_keyword={keyword2}&gc=gc'
             # http://www.getchu.com/php/search.phtml?genre=anime_dvd&search_keyword=_WORD_&check_key_dtl=1&submit=&genre=anime_dvd&gc=gc
-            debug_info = f'搜索地址: {url_search} '
+            debug_info = f'Search Address:  {url_search} '
             log_info += web_info + debug_info
 
             # ========================================================================搜索番号
@@ -162,7 +162,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
                         real_url = getchu_url + url_list[i].replace('../', '/') + '&gc=gc'
                         break
             else:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 return getchu_dl.main(number, appoint_url, log_info, req_web, 'jp')
 

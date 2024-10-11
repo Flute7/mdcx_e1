@@ -151,7 +151,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
             # 通过搜索获取real_url
             url_search = f'https://love6.tv/search/all/?search_text={number}'
-            debug_info = f'搜索地址: {url_search} '
+            debug_info = f'Search Address:  {url_search} '
             log_info += web_info + debug_info
 
             # ========================================================================搜索番号
@@ -164,7 +164,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             html = etree.fromstring(html_search, etree.HTMLParser())
             title, real_url, poster = get_real_url(html)
             if not real_url:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

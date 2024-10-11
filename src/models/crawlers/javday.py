@@ -210,7 +210,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
             number_list_new.sort(key=total_number_list.index)
             for number in number_list_new:
                 testNumberUrl = 'https://javday.tv/videos/%s/' % number
-                debug_info = '搜索地址: %s {"wd": %s}' % (testNumberUrl, number)
+                debug_info = 'Search Address:  %s {"wd": %s}' % (testNumberUrl, number)
                 log_info += web_info + debug_info
                 result, html_content = get_html(testNumberUrl)
                 if not result:

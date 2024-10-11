@@ -101,7 +101,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             keyword2 = urllib.parse.quote_plus(keyword,
                                                encoding="EUC-JP")  # quote() 不编码斜线，空格‘ ’编码为‘%20’；quote_plus() 会编码斜线为‘%2F’; 空格‘ ’编码为‘+’
             url_search = f'https://dl.getchu.com/search/search_list.php?dojin=1&search_category_id=&search_keyword={keyword2}&btnWordSearch=%B8%A1%BA%F7&action=search&set_category_flag=1'
-            debug_info = f'搜索地址: {url_search} '
+            debug_info = f'Search Address:  {url_search} '
             log_info += web_info + debug_info
 
             # ========================================================================搜索番号
@@ -119,7 +119,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
                     real_url = temp_url
                     break
             else:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

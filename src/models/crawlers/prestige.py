@@ -82,7 +82,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
             # 通过搜索获取real_url
             search_url = f'https://www.prestige-av.com/api/search?isEnabledQuery=true&searchText={number}&isEnableAggregation=false&release=false&reservation=false&soldOut=false&from=0&aggregationTermsSize=0&size=20'
-            debug_info = '搜索地址: %s ' % search_url
+            debug_info = 'Search Address:  %s ' % search_url
             log_info += web_info + debug_info
 
             # ========================================================================搜索番号
@@ -94,7 +94,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
             real_url = get_real_url(html_search, number)
             if not real_url:
-                debug_info = '搜索结果: 未匹配到番号！'
+                debug_info = 'Search Results: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
