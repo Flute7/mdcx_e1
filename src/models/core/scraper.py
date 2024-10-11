@@ -156,7 +156,7 @@ def _scrape_one_file(file_path, file_info, file_mode):
         else:
             done_file_new_path_list.append(file_path)  # 已存在时，添加到列表，停止刮削
             done_file_new_path_list.sort(reverse=True)
-            json_data['error_info'] = '存在重复文件（指刮削后的文件路径相同！），请检查:\n    🍁 %s' % '\n    🍁 '.join(
+            json_data['error_info'] = 'There are duplicate files (meaning the file paths after scraping are the same!), please check:\n    🍁 %s' % '\n    🍁 '.join(
                 done_file_new_path_list)
             # json_data['req_web'] = 'do_not_update_json_data_dic'
             # do_not_update_json_data_dic 是不要更新json_data的标识，表示这个文件的数据有问题
@@ -288,7 +288,7 @@ def _scrape_exec_thread(task):
     if count == 1 or thread_time == 0 or config.main_mode == 4:
         Flags.next_start_time = time.time()
         signal.show_log_text(
-            f' 🕷 {get_current_time()} 开始刮削：{Flags.scrape_starting}/{count_all} {file_name_temp}')
+            f' 🕷 {get_current_time()} Start Scraping: {Flags.scrape_starting}/{count_all} {file_name_temp}')
         thread_time = 0
     else:
         Flags.next_start_time += thread_time
@@ -296,7 +296,7 @@ def _scrape_exec_thread(task):
     # 计算本线程开始剩余时间, 休眠并定时检查是否手动停止
     remain_time = int(Flags.next_start_time - time.time())
     if remain_time > 0:
-        signal.show_log_text(f' ⏱ {get_current_time()}（{remain_time}）秒后开始刮削：{count}/{count_all} {file_name_temp}')
+        signal.show_log_text(f' ⏱ {get_current_time()}（{remain_time}）Start scraping after seconds: {count}/{count_all} {file_name_temp}')
         for i in range(remain_time):
             _check_stop(file_name_temp)
             time.sleep(1)
@@ -304,7 +304,7 @@ def _scrape_exec_thread(task):
     Flags.scrape_started += 1
     if count > 1 and thread_time != 0:
         signal.show_log_text(
-            f' 🕷 {get_current_time()} 开始刮削：{Flags.scrape_started}/{count_all} {file_name_temp}')
+            f' 🕷 {get_current_time()} Start Scraping: {Flags.scrape_started}/{count_all} {file_name_temp}')
 
     start_time = time.time()
     file_mode = Flags.file_mode
@@ -318,9 +318,9 @@ def _scrape_exec_thread(task):
     progress_percentage = '%.2f' % progress_value + '%'
     signal.exec_set_processbar.emit(int(progress_value))
     signal.set_label_file_path.emit(
-        f'正在刮削： {Flags.scrape_started}/{count_all} {progress_percentage} \n {convert_path(file_show_path)}')
-    signal.label_result.emit(f' 刮削中：{Flags.scrape_started - Flags.succ_count - Flags.fail_count} '
-                             f'成功：{Flags.succ_count} 失败：{Flags.fail_count}')
+        f'Scraping: {Flags.scrape_started}/{count_all} {progress_percentage} \n {convert_path(file_show_path)}')
+    signal.label_result.emit(f' Scraping: {Flags.scrape_started - Flags.succ_count - Flags.fail_count} '
+                             f'Success: {Flags.succ_count} Failure: {Flags.fail_count}')
     json_data['logs'] += '\n' + '=' * 80
     json_data['logs'] += "\n 🙈 [Movie] " + convert_path(file_path)
     json_data['logs'] += "\n 🚘 [Number] " + movie_number
@@ -359,12 +359,12 @@ def _scrape_exec_thread(task):
             if json_data['error_info']:
                 json_data['logs'] += f'\n 🔴 [Failed] Reason: {json_data["error_info"]}'
                 if 'WinError 5' in json_data['error_info']:
-                    json_data['logs'] += '\n 🔴 该问题为权限问题：请尝试以管理员身份运行，同时关闭其他正在运行的Python脚本！'
+                    json_data['logs'] += '\n 🔴 This problem is a permissions issue: please try running as an administrator and close other running Python scripts!'
             fail_file_path = move_file_to_failed_folder(json_data, file_path, folder_old_path, file_ex)
             Flags.failed_list.append([fail_file_path, json_data['error_info']])
             Flags.failed_file_list.append(fail_file_path)
             _failed_file_info_show(str(Flags.fail_count), fail_file_path, json_data['error_info'])
-            signal.view_failed_list_settext.emit(f'失败 {Flags.fail_count}')
+            signal.view_failed_list_settext.emit(f'Failure {Flags.fail_count}')
     except Exception as e:
         _check_stop(file_name_temp)
         signal.show_traceback_log(traceback.format_exc())
@@ -383,14 +383,14 @@ def _scrape_exec_thread(task):
                 count, count_all, progress_percentage, Flags.count_claw, split_path(file_path)[1])
             scrape_info_after = f'\n{"=" * 80}\n ' \
                                 f'🕷 {get_current_time()} {count}/{count_all} ' \
-                                f'{split_path(file_path)[1]} 刮削完成！用时 {used_time} 秒！'
+                                f'{split_path(file_path)[1]} Scraping complete! time {used_time} seconds!'
             json_data['logs'] = scrape_info_begin + json_data['logs'] + scrape_info_after
             signal.show_log_text(json_data['logs'])
             remain_count = Flags.scrape_started - count
             if Flags.scrape_started == count_all:
-                signal.show_log_text(f' 🕷 剩余正在刮削的线程：{remain_count}')
-            signal.label_result.emit(f' 刮削中：{remain_count} 成功：{Flags.succ_count} 失败：{Flags.fail_count}')
-            signal.show_scrape_info(f'🔎 已刮削 {count}/{count_all}')
+                signal.show_log_text(f' 🕷 Remaining scraping threads: {remain_count}')
+            signal.label_result.emit(f' Scraping:{remain_count} Success: {Flags.succ_count} Failure: {Flags.fail_count}')
+            signal.show_scrape_info(f'🔎 Scraped {count}/{count_all}')
         except Exception as e:
             _check_stop(file_name_temp)
             signal.show_traceback_log(traceback.format_exc())
@@ -405,7 +405,7 @@ def _scrape_exec_thread(task):
                 Flags.remain_list.remove(file_path)
                 Flags.can_save_remain = True
             except Exception as e1:
-                signal.show_log_text(f'remove:  {file_path}\n {str(e1)}\n {traceback.format_exc()}')
+                signal.show_log_text(f'Remove:  {file_path}\n {str(e1)}\n {traceback.format_exc()}')
         except Exception as e:
             _check_stop(file_name_temp)
             signal.show_traceback_log(traceback.format_exc())
@@ -415,18 +415,18 @@ def _scrape_exec_thread(task):
     # 处理间歇刮削
     try:
         if config.main_mode != 4 and 'rest_scrape' in config.switch_on:
-            time_note = f' 🏖 已累计刮削 {count}/{count_all}，已连续刮削 {count - Flags.rest_now_begin_count}/{config.rest_count}...'
+            time_note = f' 🏖 Accumulated scraping {count}/{count_all}, has been scraped continuously {count - Flags.rest_now_begin_count}/{config.rest_count}...'
             signal.show_log_text(time_note)
             if count - Flags.rest_now_begin_count >= config.rest_count:
                 if Flags.scrape_starting > count:
-                    time_note = f' 🏖 当前还存在 {Flags.scrape_starting - count} 个已经在刮削的任务，等待这些任务结束将进入休息状态...\n'
+                    time_note = f' 🏖 still exists {Flags.scrape_starting - count} There are tasks that are already scraping. Waiting for the completion of these tasks will enter the rest state...\n'
                     signal.show_log_text(time_note)
                     while not Flags.rest_sleepping:
                         time.sleep(1)
                 elif not Flags.rest_sleepping and count < count_all:
                     Flags.rest_sleepping = True  # 开始休眠
                     Flags.rest_next_begin_time = time.time()  # 下一轮倒计时开始时间
-                    time_note = f'\n ⏸ 休息 {Flags.rest_time_convert} 秒，将在 <font color=\"red\">{get_real_time(Flags.rest_next_begin_time + Flags.rest_time_convert)}</font> 继续刮削剩余的 {count_all - count} 个任务...\n'
+                    time_note = f'\n ⏸ rest {Flags.rest_time_convert} seconds, will be in <font color=\"red\">{get_real_time(Flags.rest_next_begin_time + Flags.rest_time_convert)}</font> Continue to scrape the rest {count_all - count} a task...\n'
                     signal.show_log_text(time_note)
                     while 'rest_scrape' in config.switch_on and time.time() - Flags.rest_next_begin_time < Flags.rest_time_convert:
                         if Flags.scrape_starting > count:  # 如果突然调大了文件数量，这时跳出休眠
@@ -453,20 +453,20 @@ def scrape(file_mode: FileMode, movie_list):
     Flags.scrape_start_time = time.time()  # 开始刮削时间
     Flags.file_mode = file_mode  # 刮削模式（工具单文件或主界面/日志点开始正常刮削）
 
-    signal.show_scrape_info('🔎 正在刮削中...')
+    signal.show_scrape_info('🔎 Scraping in progress...')
 
     signal.add_label_info({})  # 清空主界面显示信息
     thread_number = config.thread_number  # 线程数量
     thread_time = config.thread_time  # 线程延时
-    signal.label_result.emit(' 刮削中：%s 成功：%s 失败：%s' % (0, Flags.succ_count, Flags.fail_count))
+    signal.label_result.emit(' Scraping: %s Success: %s Failure: %s' % (0, Flags.succ_count, Flags.fail_count))
     signal.logs_failed_settext.emit('\n\n\n')
 
     # 日志页面显示开始时间
     Flags.start_time = time.time()
     if file_mode == FileMode.Single:
-        signal.show_log_text('🍯 🍯 🍯 NOTE: 当前是单文件刮削模式！')
+        signal.show_log_text('🍯 🍯 🍯 NOTE: Currently in single file scraping mode!')
     elif file_mode == FileMode.Again:
-        signal.show_log_text(f'🍯 🍯 🍯 NOTE: 开始重新刮削！！！ 刮削文件数量（{len(movie_list)})')
+        signal.show_log_text(f'🍯 🍯 🍯 NOTE: Start scraping again!!! Number of scraped files ({len(movie_list)})')
         n = 0
         for each_f, each_i in Flags.new_again_dic.items():
             n += 1
@@ -503,14 +503,14 @@ def scrape(file_mode: FileMode, movie_list):
     if count_all:
         Flags.count_claw += 1
         if config.main_mode == 4:
-            signal.show_log_text(f' 🕷 当前为读取模式，线程数量（{thread_number}），线程延时（0）秒...')
+            signal.show_log_text(f' 🕷 Currently in read mode, number of threads（{thread_number}），Thread delay (0) seconds...')
         else:
             if count_all < thread_number:
                 thread_number = count_all
-            signal.show_log_text(f' 🕷 开启多线程，线程数量（{thread_number}），线程延时（{thread_time}）秒...')
+            signal.show_log_text(f' 🕷 Turn on multithreading, number of threads（{thread_number}）,thread delay（{thread_time}）seconds...')
         if 'rest_scrape' in config.switch_on and config.main_mode != 4:
             signal.show_log_text(
-                f'<font color=\"brown\"> 🍯 间歇刮削 已启用，连续刮削 {config.rest_count} 个文件后，'
+                f'<font color=\"brown\"> 🍯 Intermittent scraping Enabled, continuous scraping {config.rest_count} After files, '
                 f'将自动休息 {Flags.rest_time_convert} 秒...</font>')
 
         # 在启动前点了停止按钮
@@ -527,12 +527,12 @@ def scrape(file_mode: FileMode, movie_list):
 
         # self.extrafanart_pool.shutdown(wait=True)
         Flags.pool.shutdown(wait=True)
-        signal.label_result.emit(' 刮削中：%s 成功：%s 失败：%s' % (0, Flags.succ_count, Flags.fail_count))
+        signal.label_result.emit(' Scraping: %s Success: %s Failure: %s' % (0, Flags.succ_count, Flags.fail_count))
         save_success_list()  # 保存成功列表
         if signal.stop:
             return
 
-    signal.show_log_text("================================================================================")
+    signal.show_log_text("========================================================================================================================")
     _clean_empty_fodlers(movie_path, file_mode)
     end_time = time.time()
     used_time = str(round((end_time - Flags.start_time), 2))
@@ -541,18 +541,18 @@ def scrape(file_mode: FileMode, movie_list):
     else:
         average_time = used_time
     signal.exec_set_processbar.emit(0)
-    signal.set_label_file_path.emit('🎉 恭喜！全部刮削完成！共 %s 个文件！用时 %s 秒' % (count_all, used_time))
+    signal.set_label_file_path.emit('🎉 Congratulations! Scraping complete! common %s A file! time %s seconds' % (count_all, used_time))
     signal.show_traceback_log(
         "🎉 All finished!!! Total %s , Success %s , Failed %s " % (count_all, Flags.succ_count, Flags.fail_count))
     signal.show_log_text(
         " 🎉🎉🎉 All finished!!! Total %s , Success %s , Failed %s " % (count_all, Flags.succ_count, Flags.fail_count))
-    signal.show_log_text("================================================================================")
+    signal.show_log_text("========================================================================================================================")
     if Flags.failed_list:
-        signal.show_log_text("    *** Failed results ****")
+        signal.show_log_text("    *** Failed Results ****")
         for i in range(len(Flags.failed_list)):
             fail_path, fail_reson = Flags.failed_list[i]
             signal.show_log_text(" 🔴 %s %s\n    %s" % (i + 1, fail_path, fail_reson))
-            signal.show_log_text("================================================================================")
+            signal.show_log_text("========================================================================================================================")
     signal.show_log_text(
         ' ⏰ Start time'.ljust(15) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(Flags.start_time)))
     signal.show_log_text(
@@ -560,8 +560,8 @@ def scrape(file_mode: FileMode, movie_list):
     signal.show_log_text(' ⏱ Used time'.ljust(15) + ': %sS' % used_time)
     signal.show_log_text(' 📺 Movies num'.ljust(15) + ': %s' % count_all)
     signal.show_log_text(' 🍕 Per time'.ljust(15) + ': %sS' % average_time)
-    signal.show_log_text("================================================================================")
-    signal.show_scrape_info('🎉 刮削完成 %s/%s' % (count_all, count_all))
+    signal.show_log_text("========================================================================================================================")
+    signal.show_scrape_info('🎉 Scraping complete %s/%s' % (count_all, count_all))
 
     # auto run after scrape
     if 'actor_photo_auto' in config.emby_on:
@@ -578,10 +578,10 @@ def scrape(file_mode: FileMode, movie_list):
         Flags.again_dic.clear()
         start_new_scrape(FileMode.Again, new_movie_list)
     if 'auto_exit' in config.switch_on:
-        signal.show_log_text('\n\n 🍔 已启用「刮削后自动退出软件」！')
+        signal.show_log_text('\n\n 🍔 "Automatically exit the software after scraping" has been enabled!')
         count = 5
         for i in range(count):
-            signal.show_log_text(f' {count - i} 秒后将自动退出！')
+            signal.show_log_text(f' {count - i} It will automatically exit after seconds!')
             time.sleep(1)
         signal.exec_exit_app.emit()
 
@@ -604,20 +604,20 @@ def _check_stop(file_name_temp):
     if signal.stop:
         Flags.now_kill += 1
         signal.show_log_text(
-            f' 🕷 {get_current_time()} 已停止刮削：{Flags.now_kill}/{Flags.total_kills} {file_name_temp}')
+            f' 🕷 {get_current_time()} Scraping Stopped: {Flags.now_kill}/{Flags.total_kills} {file_name_temp}')
         signal.set_label_file_path.emit(
-            f'⛔️ 正在停止刮削...\n   正在停止已在运行的任务线程（{Flags.now_kill}/{Flags.total_kills}）...')
-        raise '手动停止刮削'
+            f'⛔️ Stopping scraping...\n   Stopping an already running task thread ({Flags.now_kill}/{Flags.total_kills}）...')
+        raise 'Stop scraping manually'
 
 
 def _failed_file_info_show(count, path, error_info):
     folder = os.path.dirname(path)
-    info_str = f"{'🔴 ' + count + '.':<3} {path} \n    所在目录: {folder} \n    失败原因: {error_info} \n"
+    info_str = f"{'🔴 ' + count + '.':<3} {path} \n    Directory: {folder} \n    Reason for failure: {error_info} \n"
     if os.path.islink(path):
         real_path = read_link(path)
         real_folder = os.path.dirname(path)
-        info_str = f"{count + '.':<3} {path} \n    指向文件: {real_path} \n    " \
-                   f"所在目录: {real_folder} \n    失败原因: {error_info} \n"
+        info_str = f"{count + '.':<3} {path} \n    Point to file: {real_path} \n    " \
+                   f"Directory: {real_folder} \n    Reason for failure: {error_info} \n"
     signal.logs_failed_show.emit(info_str)
 
 
@@ -628,11 +628,11 @@ def get_remain_list():
             temp = f.read()
             Flags.remain_list = temp.split('\n') if temp.strip() else []
             if 'remain_task' in config.switch_on and len(Flags.remain_list):
-                box = QMessageBox(QMessageBox.Information, '继续刮削', '上次刮削未完成，是否继续刮削剩余任务？')
+                box = QMessageBox(QMessageBox.Information, 'Keep scraping', 'The last scraping was not completed. Do you want to continue scraping the remaining tasks?')
                 box.setStandardButtons(QMessageBox.Yes | QMessageBox.No | QMessageBox.Cancel)
-                box.button(QMessageBox.Yes).setText('继续刮削剩余任务')
-                box.button(QMessageBox.No).setText('从头刮削')
-                box.button(QMessageBox.Cancel).setText('取消')
+                box.button(QMessageBox.Yes).setText('Continue scraping remaining tasks')
+                box.button(QMessageBox.No).setText('scrape from scratch')
+                box.button(QMessageBox.Cancel).setText('Cancel')
                 box.setDefaultButton(QMessageBox.No)
                 reply = box.exec()
                 if reply == QMessageBox.Cancel:
@@ -647,17 +647,17 @@ def get_remain_list():
                     movie_path = convert_path(movie_path)
                     temp_remain_path = convert_path(Flags.remain_list[0])
                     if movie_path not in temp_remain_path:
-                        box = QMessageBox(QMessageBox.Warning, '提醒',
-                                          f'很重要！！请注意：\n当前待刮削目录：{movie_path}\n剩余任务文件路径：{temp_remain_path}\n剩余任务的文件路径，并不在当前待刮削目录中！\n剩余任务很可能是使用其他配置扫描的！\n请确认成功输出目录和失败目录是否正确！如果配置不正确，继续刮削可能会导致文件被移动到新配置的输出位置！\n是否继续刮削？')
+                        box = QMessageBox(QMessageBox.Warning, 'remind',
+                                          f'Very important! ! Please note: \nCurrent directory to be scraped: {movie_path}\nRemaining task file path: {temp_remain_path}\nThe file path of the remaining tasks is not in the current directory to be scraped! \nThe remaining tasks were most likely scanned using other configurations! \n Please confirm whether the successful output directory and failure directory are correct! If configured incorrectly, continuing to scrape may result in files being moved to the newly configured output location! \nDo you want to continue scraping? ')
                         box.setStandardButtons(QMessageBox.Yes | QMessageBox.No)
-                        box.button(QMessageBox.Yes).setText('继续')
-                        box.button(QMessageBox.No).setText('取消')
+                        box.button(QMessageBox.Yes).setText('Continue')
+                        box.button(QMessageBox.No).setText('Cancel')
                         box.setDefaultButton(QMessageBox.No)
                         reply = box.exec()
                         if reply == QMessageBox.No:
                             return True
                     signal.show_log_text(
-                        f'🍯 🍯 🍯 NOTE: 继续刮削未完成任务！！！ 剩余未刮削文件数量（{len(Flags.remain_list)})')
+                        f'🍯 🍯 🍯 NOTE: Keep scraping the unfinished business!!! Number of unscraped files remaining（{len(Flags.remain_list)})')
                     start_new_scrape(FileMode.Default, Flags.remain_list)
                     return True
     return False

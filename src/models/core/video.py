@@ -55,7 +55,7 @@ def add_del_extras(mode):
                 new_count += 1
 
     signal.show_log_text(f'\nDone! \n Total: {total_count}  {mode} copy: {new_count} ')
-    signal.show_log_text("================================================================================")
+    signal.show_log_text("========================================================================================================================")
 
 
 def add_del_theme_videos(mode):
@@ -102,4 +102,4 @@ def add_del_theme_videos(mode):
                 new_count += 1
 
     signal.show_log_text(f'\nDone! \n Total: {total_count}  {mode} copy: {new_count} ')
-    signal.show_log_text("================================================================================")
+    signal.show_log_text("========================================================================================================================")

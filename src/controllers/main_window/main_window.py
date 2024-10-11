@@ -151,7 +151,7 @@ class MyMAinWindow(QMainWindow):
         self.show_net_info(
             '\n💡 Information: \n '
             'Proxied Agent:      javbus, jav321, javlibrary, mgstage, mywife, giga, freejavbt, mdtv, madouqu,\n '
-            '                    7mmtv, falenodahlia, prestige, theporndb, cnmdb, fantastica, kin8\n '
+            '                    7mmtv, faleno, dahlia, prestige, theporndb, cnmdb, fantastica, kin8\n '
             'Non-Japanese Agent: javdb, airav-cc, avsex（Japanese agent will report an error）\n '
             'Japanese Agent:     seesaawiki\n '
             'No Agent Required:  avsex, hdouban, iqqtv, airav-wiki, love6, lulubar, fc2, fc2club, fc2hub\n\n'
@@ -2013,7 +2013,7 @@ class MyMAinWindow(QMainWindow):
     def pushButton_save_config_clicked(self):
         self.save_config()
         # self.load_config()
-        signal.show_scrape_info('💡 Configuration saved!%s' % get_current_time())
+        signal.show_scrape_info('💡 Config Saved! %s' % get_current_time())
 
     # 设置-另存为
     def pushButton_save_new_config_clicked(self):
