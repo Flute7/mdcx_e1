@@ -234,7 +234,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', org_lan
                 if html_search.startswith('403'):
                     debug_info = f'网站禁止访问！！请更换其他非日本节点！点击 {url_search} 查看详情！'
                 else:
-                    debug_info = '请求错误: %s' % html_search
+                    debug_info = 'Request Error: %s' % html_search
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
@@ -257,7 +257,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', org_lan
             html = etree.fromstring(html_search, etree.HTMLParser())
             real_url = get_real_url(html, number)
             if not real_url:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
@@ -267,12 +267,12 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', org_lan
                 javdbid = real_url.replace("/v/", "")
             if not appoint_url:
                 real_url = javdb_url + real_url + '?locale=zh'
-            debug_info = '番号地址: %s ' % real_url
+            debug_info = 'Number Address:  %s ' % real_url
             log_info += web_info + debug_info
 
             result, html_info = curl_html(real_url, headers=header)
             if not result:
-                debug_info = '请求错误: %s' % html_info
+                debug_info = 'Request Error: %s' % html_info
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

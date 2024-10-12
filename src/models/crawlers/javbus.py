@@ -206,10 +206,10 @@ def get_real_url(number, url_type, javbus_url, json_log, headers, cookie):  # �
         number_1 = '/' + number.upper().replace('.', '').replace('-', '')
         number_2 = number_1 + '_'
         if each_url.endswith(number_1) or number_2 in each_url:
-            debug_info = '番号地址: %s ' % each
+            debug_info = 'Number Address:  %s ' % each
             json_log['log_info_javbus'] += json_log['web_info'] + debug_info
             return each
-    debug_info = 'Search Results: No number matched!'
+    debug_info = 'Search Result: No number matched!'
     json_log['log_info_javbus'] += json_log['web_info'] + debug_info
     raise Exception(debug_info)
 
@@ -255,7 +255,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', mosaic=
                         temp_number = temp_number.replace('-', '-0')
                     real_url = javbus_url + '/' + temp_number
 
-        debug_info = '番号地址: %s ' % real_url
+        debug_info = 'Number Address:  %s ' % real_url
         json_log['log_info_javbus'] += web_info + debug_info
         result, htmlcode = get_html(real_url, headers)
 
@@ -271,7 +271,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', mosaic=
 
             # 有404时尝试再次搜索 DV-1175
             if '404' not in htmlcode:
-                debug_info = '番号地址:%s \n       Network Request Error: %s ' % (real_url, htmlcode)
+                debug_info = 'Number Address: %s \n       Network Request Error: %s ' % (real_url, htmlcode)
                 json_log['log_info_javbus'] += web_info + debug_info
                 raise Exception(debug_info)
 

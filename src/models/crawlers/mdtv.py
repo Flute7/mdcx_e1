@@ -228,10 +228,10 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
             detail_page = etree.fromstring(response, etree.HTMLParser())
             real_url = get_real_url(detail_page, number, mdtv_url, file_path)
             if real_url:
-                debug_info = '番号地址: %s ' % real_url
+                debug_info = 'Number Address:  %s ' % real_url
                 log_info += web_info + debug_info
             else:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
@@ -244,7 +244,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
             html_info = etree.fromstring(html_content, etree.HTMLParser())
             title = get_title(html_info)  # 获取标题
             if not title:
-                debug_info = '数据获取失败: 未获取到title！'
+                debug_info = 'Data Acquisition Failed: Title not obtained!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             series, tag, actor = get_some_info(html_info, title, file_path)

@@ -542,7 +542,7 @@ class MyMAinWindow(QMainWindow):
         signal.show_log_text(version_info)
         if feedback or download_link:
             self.main_logs_show.emit(f'{feedback}{download_link}')
-        signal.show_log_text('========================================================================================================================')
+        signal.show_log_text('=========================================================================================================')
         self.pushButton_check_javdb_cookie_clicked()  # 检测javdb cookie
         self.pushButton_check_javbus_cookie_clicked()  # 检测javbus cookie
         if config.use_database:
@@ -721,12 +721,12 @@ class MyMAinWindow(QMainWindow):
                     Flags.scrape_done, (Flags.total_count - Flags.scrape_done), used_time, self.stop_used_time))
             signal.show_log_text("====================================================================================================")
             signal.show_log_text(
-                ' ⏰ Start time'.ljust(13) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S",
+                ' ⏰ Start Time'.ljust(13) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S",
                                                                  time.localtime(Flags.start_time)))
             signal.show_log_text(
-                ' 🏁 End time'.ljust(13) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end_time)))
-            signal.show_log_text(' ⏱ Used time'.ljust(13) + ': %sS' % used_time)
-            signal.show_log_text(' 🍕 Per time'.ljust(13) + ': %sS' % average_time)
+                ' 🏁 End Time'.ljust(13) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end_time)))
+            signal.show_log_text(' ⏱ Used Time'.ljust(13) + ': %sS' % used_time)
+            signal.show_log_text(' 🍕 Average Time'.ljust(13) + ': %sS' % average_time)
             signal.show_log_text("====================================================================================================")
             Flags.again_dic.clear()
         except:
@@ -2174,12 +2174,12 @@ class MyMAinWindow(QMainWindow):
                         signal.show_net_info(traceback.format_exc())
                 signal.show_net_info('   ' + name.ljust(12) + each[1])
             signal.show_net_info(f"\n🎉 Network detection completed! time {get_used_time(start_time)} Second!")
-            signal.show_net_info("====================================================================================================\n")
+            signal.show_net_info("=========================================================================================================\n")
         except:
             if signal.stop:
                 signal.show_net_info('\n⛔️ A scraping task is currently being stopped. Please wait until the scraping stops before testing again!')
                 signal.show_net_info(
-                    "====================================================================================================\n")
+                    "=========================================================================================================\n")
         self.Ui.pushButton_check_net.setEnabled(True)
         self.Ui.pushButton_check_net.setText('Start Test')
         self.Ui.pushButton_check_net.setStyleSheet(
@@ -2203,7 +2203,7 @@ class MyMAinWindow(QMainWindow):
             t = threading.Thread(target=kill_a_thread, args=(self.t_net,))
             t.start()
             signal.show_net_info('\n⛔️ Network testing manually stopped!')
-            signal.show_net_info("====================================================================================================\n")
+            signal.show_net_info("=========================================================================================================\n")
             self.Ui.pushButton_check_net.setStyleSheet(
                 'QPushButton#pushButton_check_net{color: white;background-color:#4C6EFF;}QPushButton:hover#pushButton_check_net{color: white;background-color: rgba(76,110,255,240)}QPushButton:pressed#pushButton_check_net{color: white;background-color:#4C6EE0}')
             self.Ui.pushButton_check_net.setText('Start Test')

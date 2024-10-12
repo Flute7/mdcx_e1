@@ -127,7 +127,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
         result_url = "https://www.jav321.com/search"
         if appoint_url != '':
             result_url = appoint_url
-            debug_info = '番号地址: %s' % result_url
+            debug_info = 'Number Address:  %s' % result_url
             log_info += web_info + debug_info
         else:
             debug_info = 'Search Address:  %s {"sn": %s}' % (result_url, number)
@@ -138,13 +138,13 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             log_info += web_info + debug_info
             raise Exception(debug_info)
         if 'AVが見つかりませんでした' in response:
-            debug_info = 'Search Results: No number matched!'
+            debug_info = 'Search Result: No number matched!'
             log_info += web_info + debug_info
             raise Exception(debug_info)
         detail_page = etree.fromstring(response, etree.HTMLParser())
         website = getWebsite(detail_page)
         if website:
-            debug_info = '番号地址: %s ' % website
+            debug_info = 'Number Address:  %s ' % website
             log_info += web_info + debug_info
         actor = getActor(response)
         actor_photo = getActorPhoto(actor)

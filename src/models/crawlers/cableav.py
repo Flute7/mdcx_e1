@@ -91,7 +91,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
-        debug_info = f'番号地址: {real_url} '
+        debug_info = f'Number Address:  {real_url} '
         log_info += web_info + debug_info
         result, response = curl_html(real_url)
 

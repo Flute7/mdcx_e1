@@ -121,7 +121,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
         if not real_url:
             real_url = 'https://fc2club.top/html/FC2-%s.html' % number
 
-        debug_info = '番号地址: %s ' % real_url
+        debug_info = 'Number Address:  %s ' % real_url
         log_info += web_info + debug_info
 
         # ========================================================================搜索番号
@@ -134,7 +134,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
         title = getTitle(html_info, number)  # 获取标题
         if not title:
-            debug_info = '数据获取失败: 未获取到title！'
+            debug_info = 'Data Acquisition Failed: Title not obtained!'
             log_info += web_info + debug_info
             raise Exception(debug_info)
 

@@ -256,12 +256,12 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 if bingo:
                     break
             else:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
         if real_url:
-            debug_info = '番号地址: %s ' % real_url
+            debug_info = 'Number Address:  %s ' % real_url
             log_info += web_info + debug_info
 
             # 请求api获取详细数据
@@ -284,7 +284,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                 number = number.upper()
             title = res['name'].replace(number, '').strip()
             if not title:
-                debug_info = '数据获取失败: 未获取到title！'
+                debug_info = 'Data Acquisition Failed: Title not obtained!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             cover_url = res['big_cove']

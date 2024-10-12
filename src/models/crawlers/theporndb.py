@@ -283,7 +283,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
 
                     if not result:
                         # 判断返回内容是否有问题
-                        debug_info = '请求错误: %s' % hash_search
+                        debug_info = 'Request Error: %s' % hash_search
                         log_info += web_info + debug_info
                         if '401 http' in hash_search:
                             debug_info = '请检查 API Token 是否正确: %s ' % api_token
@@ -307,7 +307,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
 
                     if not result:
                         # 判断返回内容是否有问题
-                        debug_info = f'请求错误: {url_search}'
+                        debug_info = f'Request Error: {url_search}'
                         log_info += web_info + debug_info
                         if '401 http' in res_search:
                             debug_info = f'请检查 API Token 是否正确: {api_token} '
@@ -323,12 +323,12 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
                     raise Exception(debug_info)
 
         if not hash_data:
-            debug_info = '番号地址: %s ' % real_url
+            debug_info = 'Number Address:  %s ' % real_url
             log_info += web_info + debug_info
             result, res_real = get_html(real_url, headers=headers, json_data=True)
             if not result:
                 # 判断返回内容是否有问题
-                debug_info = '请求错误: %s ' % res_real
+                debug_info = 'Request Error: %s ' % res_real
                 log_info += web_info + debug_info
                 if '401 http' in res_real:
                     debug_info = '请检查 API Token 是否正确: %s ' % api_token

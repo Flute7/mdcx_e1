@@ -131,12 +131,12 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn'):
             if real_url:
                 real_url = airav_url + real_url[0]
             else:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
         if real_url:
-            debug_info = '番号地址: %s ' % real_url
+            debug_info = 'Number Address:  %s ' % real_url
             log_info += web_info + debug_info
             result, html_content = curl_html(real_url)
             if not result:
@@ -147,7 +147,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn'):
             html_info = etree.fromstring(html_content, etree.HTMLParser())
             title = getTitle(html_info)  # 获取标题
             if not title:
-                debug_info = '数据获取失败: 未获取到title！'
+                debug_info = 'Data Acquisition Failed: Title not obtained!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             web_number = getWebNumber(html_info)  # 获取番号，用来替换标题里的番号

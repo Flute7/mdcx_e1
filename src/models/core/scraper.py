@@ -357,9 +357,9 @@ def _scrape_exec_thread(task):
                 movie_number, json_data['number']) + json_data['4K']
             signal.show_list_name(fail_show_name, 'fail', json_data, movie_number)
             if json_data['error_info']:
-                json_data['logs'] += f'\n 🔴 [Failed] Reason: {json_data["error_info"]}'
+                json_data['logs'] += f'\n 🔴 [Failed] Reason:   {json_data["error_info"]}'
                 if 'WinError 5' in json_data['error_info']:
-                    json_data['logs'] += '\n 🔴 This problem is a permissions issue: please try running as an administrator and close other running Python scripts!'
+                    json_data['logs'] += '\n 🔴 Permissions Issue: Please try running as an administrator and close other running Python scripts!'
             fail_file_path = move_file_to_failed_folder(json_data, file_path, folder_old_path, file_ex)
             Flags.failed_list.append([fail_file_path, json_data['error_info']])
             Flags.failed_file_list.append(fail_file_path)
@@ -383,7 +383,7 @@ def _scrape_exec_thread(task):
                 count, count_all, progress_percentage, Flags.count_claw, split_path(file_path)[1])
             scrape_info_after = f'\n{"=" * 80}\n ' \
                                 f'🕷 {get_current_time()} {count}/{count_all} ' \
-                                f'{split_path(file_path)[1]} Scraping complete! time {used_time} seconds!'
+                                f'{split_path(file_path)[1]} Scraping Complete! ({used_time}s)'
             json_data['logs'] = scrape_info_begin + json_data['logs'] + scrape_info_after
             signal.show_log_text(json_data['logs'])
             remain_count = Flags.scrape_started - count
@@ -415,7 +415,7 @@ def _scrape_exec_thread(task):
     # 处理间歇刮削
     try:
         if config.main_mode != 4 and 'rest_scrape' in config.switch_on:
-            time_note = f' 🏖 Accumulated scraping {count}/{count_all}, has been scraped continuously {count - Flags.rest_now_begin_count}/{config.rest_count}...'
+            time_note = f' 🏖 Accumulated scraping {count}/{count_all}, Intermittent scraping {count - Flags.rest_now_begin_count}/{config.rest_count}...'
             signal.show_log_text(time_note)
             if count - Flags.rest_now_begin_count >= config.rest_count:
                 if Flags.scrape_starting > count:
@@ -503,15 +503,15 @@ def scrape(file_mode: FileMode, movie_list):
     if count_all:
         Flags.count_claw += 1
         if config.main_mode == 4:
-            signal.show_log_text(f' 🕷 Currently in read mode, Number of threads（{thread_number}) Thread delay (0s)')
+            signal.show_log_text(f' 🕷 Currently in read mode, number of threads（{thread_number}) thread delay (0s)')
         else:
             if count_all < thread_number:
                 thread_number = count_all
-            signal.show_log_text(f' 🕷 Multithreading enabled, Number of threads（{thread_number}) Thread delay（{thread_time}s)')
+            signal.show_log_text(f' 🕷 Multithreading enabled, threads（{thread_number}) delay（{thread_time}s)')
         if 'rest_scrape' in config.switch_on and config.main_mode != 4:
             signal.show_log_text(
-                f'<font color=\"brown\"> 🍯 Intermittent scraping enabled, batch of {config.rest_count} files, '
-                f'{Flags.rest_time_convert} second rest interval...</font>')
+                f'<font color=\"brown\"> 🍯 Intermittent scraping enabled, batch size {config.rest_count} '
+                f'rest interval ({Flags.rest_time_convert}s)</font>')
 
         # 在启动前点了停止按钮
         if Flags.stop_flag:
@@ -532,7 +532,7 @@ def scrape(file_mode: FileMode, movie_list):
         if signal.stop:
             return
 
-    signal.show_log_text("========================================================================================================================")
+    signal.show_log_text("=========================================================================================================")
     _clean_empty_fodlers(movie_path, file_mode)
     end_time = time.time()
     used_time = str(round((end_time - Flags.start_time), 2))
@@ -541,27 +541,27 @@ def scrape(file_mode: FileMode, movie_list):
     else:
         average_time = used_time
     signal.exec_set_processbar.emit(0)
-    signal.set_label_file_path.emit('🎉 Congratulations! Scraping complete! common %s A file! time %s seconds' % (count_all, used_time))
+    signal.set_label_file_path.emit('🎉 Congratulations! Successfully scraped %s file(s) in (%ss)' % (count_all, used_time))
     signal.show_traceback_log(
         "🎉 All finished!!! Total (%s) Success (%s) Failed (%s) " % (count_all, Flags.succ_count, Flags.fail_count))
     signal.show_log_text(
         " 🎉🎉🎉 All finished!!! Total (%s) Success (%s) Failed (%s) " % (count_all, Flags.succ_count, Flags.fail_count))
-    signal.show_log_text("========================================================================================================================")
+    signal.show_log_text("=========================================================================================================")
     if Flags.failed_list:
-        signal.show_log_text("    *** Failed Results ****")
+        signal.show_log_text("    *** Failed Results ***")
         for i in range(len(Flags.failed_list)):
             fail_path, fail_reson = Flags.failed_list[i]
             signal.show_log_text(" 🔴 %s %s\n    %s" % (i + 1, fail_path, fail_reson))
-            signal.show_log_text("========================================================================================================================")
+            signal.show_log_text("=========================================================================================================")
     signal.show_log_text(
-        ' ⏰ Start time'.ljust(15) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(Flags.start_time)))
+        ' ⏰ Start Time'.ljust(15) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(Flags.start_time)))
     signal.show_log_text(
-        ' 🏁 End time'.ljust(15) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end_time)))
-    signal.show_log_text(' ⏱ Used time'.ljust(15) + ': %sS' % used_time)
-    signal.show_log_text(' 📺 Movies num'.ljust(15) + ': %s' % count_all)
-    signal.show_log_text(' 🍕 Per time'.ljust(15) + ': %sS' % average_time)
-    signal.show_log_text("========================================================================================================================")
-    signal.show_scrape_info('🎉 Scraping complete %s/%s' % (count_all, count_all))
+        ' 🏁 End Time'.ljust(15) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end_time)))
+    signal.show_log_text(' ⏱ Runtime'.ljust(15) + ': %ss' % used_time)
+    signal.show_log_text(' 📺 Movie Count'.ljust(15) + ': %s' % count_all)
+    signal.show_log_text(' 🍕 Average Time'.ljust(15) + ': %ss' % average_time)
+    signal.show_log_text("=========================================================================================================")
+    signal.show_scrape_info('🎉 Scraping Complete %s/%s' % (count_all, count_all))
 
     # auto run after scrape
     if 'actor_photo_auto' in config.emby_on:

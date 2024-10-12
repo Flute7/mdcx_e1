@@ -172,12 +172,12 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             html = etree.fromstring(html_search, etree.HTMLParser())
             real_url = get_real_url(html, number)
             if not real_url:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
         if real_url:
-            debug_info = '番号地址: %s' % real_url
+            debug_info = 'Number Address:  %s' % real_url
             log_info += web_info + debug_info
             result, html_content = get_html(real_url)
             if not result:
@@ -188,7 +188,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
             title = get_title(html_info)
             if not title:
-                debug_info = '数据获取失败: 未获取到title！'
+                debug_info = 'Data Acquisition Failed: Title not obtained!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             number = get_web_number(html_info, number)

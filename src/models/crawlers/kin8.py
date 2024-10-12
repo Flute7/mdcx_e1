@@ -110,7 +110,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             number = f'KIN8-{key}'
             real_url = f'https://www.kin8tengoku.com/moviepages/{key}/index.html'
 
-        debug_info = f'番号地址: {real_url} '
+        debug_info = f'Number Address:  {real_url} '
         log_info += web_info + debug_info
         result, html_content = get_html(real_url, encoding='euc-jp')
         if not result:
@@ -121,7 +121,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
         html_info = etree.fromstring(html_content, etree.HTMLParser())
         title = get_title(html_info)
         if not title:
-            debug_info = '数据获取失败: 未获取到title！'
+            debug_info = 'Data Acquisition Failed: Title not obtained!'
             log_info += web_info + debug_info
             raise Exception(debug_info)
         outline = get_outline(html_info)

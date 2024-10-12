@@ -162,12 +162,12 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
                         real_url = getchu_url + url_list[i].replace('../', '/') + '&gc=gc'
                         break
             else:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 return getchu_dl.main(number, appoint_url, log_info, req_web, 'jp')
 
         if real_url:
-            debug_info = f'番号地址: {real_url} '
+            debug_info = f'Number Address:  {real_url} '
             log_info += web_info + debug_info
 
             result, html_content = get_html(real_url, encoding='euc-jp', timeout=40)
@@ -178,7 +178,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             html_info = etree.fromstring(html_content, etree.HTMLParser())
             title = get_title(html_info)
             if not title:
-                debug_info = '数据获取失败: 未获取到title！'
+                debug_info = 'Data Acquisition Failed: Title not obtained!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             outline = get_outline(html_info)

@@ -144,7 +144,7 @@ def get_video_size(json_data, file_path):
 def show_data_result(json_data, start_time):
     if json_data['error_info'] or json_data['title'] == '':
         json_data['logs'] += '\n 🌐 [Website] %s' % json_data['req_web'].strip('-> ') + '\n' + json_data[
-            'log_info'].strip(' ').strip('\n') + '\n' + ' 🔴 Data failed!(%ss)' % (get_used_time(start_time))
+            'log_info'].strip(' ').strip('\n') + '\n' + ' 🔴 Data failed! (%ss)' % (get_used_time(start_time))
         return False
     else:
         if config.show_web_log == 'on':  # 字段刮削过程

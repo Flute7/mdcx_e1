@@ -416,7 +416,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
         debug_info = 'Search Address:  %s ' % real_url
         log_info += web_info + debug_info
     else:
-        debug_info = '番号地址: %s ' % real_url
+        debug_info = 'Number Address:  %s ' % real_url
         log_info += web_info + debug_info
 
     try:
@@ -439,7 +439,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
             if not appoint_url:
                 real_url, number = get_real_url(html, number, number, file_path)
                 if not real_url:
-                    debug_info = 'Search Results: No number matched!'
+                    debug_info = 'Search Result: No number matched!'
                     log_info += web_info + debug_info
                     if number_no_00 != number_00:
                         real_url = 'https://www.dmm.co.jp/search/=/searchstr=%s/sort=ranking/' % number_no_00  # 不带00，旧作 snis-027
@@ -453,7 +453,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
                         html = etree.fromstring(htmlcode, etree.HTMLParser())
                         real_url, number = get_real_url(html, number, number_no_00, file_path)
                         if not real_url:
-                            debug_info = 'Search Results: No number matched!'
+                            debug_info = 'Search Result: No number matched!'
                             log_info += web_info + debug_info
 
                 # 写真
@@ -469,13 +469,13 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
                     html = etree.fromstring(htmlcode, etree.HTMLParser())
                     real_url, number0 = get_real_url(html, number, number_no_00, file_path)
                     if not real_url:
-                        debug_info = 'Search Results: No number matched!'
+                        debug_info = 'Search Result: No number matched!'
                         log_info += web_info + debug_info
 
                 elif real_url.find('?i3_ref=search&i3_ord') != -1:  # 去除url中无用的后缀
                     real_url = real_url[:real_url.find('?i3_ref=search&i3_ord')]
 
-                debug_info = '番号地址: %s ' % real_url
+                debug_info = 'Number Address:  %s ' % real_url
                 log_info += web_info + debug_info
 
         # 获取详情页信息
@@ -498,7 +498,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
                 real_url = f'https://tv.dmm.com/vod/detail/?season={number_00}'
                 debug_info = '再次搜索地址: %s ' % real_url
             else:
-                debug_info = '番号地址: %s ' % real_url
+                debug_info = 'Number Address:  %s ' % real_url
                 number_00 = re.findall(r'season=([^&]+)', real_url)[0] if 'season=' in real_url else number_00
             log_info += web_info + debug_info
             result, title, outline, actor, poster_url, cover_url, tag, runtime, score, series, director, studio, publisher, extrafanart, trailer, year = get_tv_com_data(
@@ -530,7 +530,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp', file_pa
 
             title = get_title(html).strip()  # 获取标题
             if not title:
-                debug_info = '数据获取失败: 未获取到title！'
+                debug_info = 'Data Acquisition Failed: Title not obtained!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             try:

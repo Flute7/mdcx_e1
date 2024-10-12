@@ -30,7 +30,7 @@ def load_config(self):
         mdcx_config = False
 
     if os.path.exists(config_path):
-        # ========================================================================================================================获取配置文件夹中的配置文件列表
+        # =========================================================================================================获取配置文件夹中的配置文件列表
         all_files = os.listdir(config_folder)
         all_config_files = [i for i in all_files if '.ini' in i]
         all_config_files.sort()
@@ -1176,7 +1176,7 @@ def load_config(self):
 
         self.Ui.checkBox_create_link.setChecked(config.auto_link)
 
-        # ========================================================================================================================END
+        # =========================================================================================================END
         self.checkBox_i_agree_clean_clicked()  # 根据是否同意改变清理按钮状态
         try:
             scrape_like_text = Flags.scrape_like_text

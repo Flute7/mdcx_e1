@@ -97,7 +97,7 @@ def retry_request(real_url, log_info, web_info):
     html_info = etree.fromstring(html_content, etree.HTMLParser())
     title = get_title(html_info)  # 获取标题
     if not title:
-        debug_info = '数据获取失败: 未获取到title！'
+        debug_info = 'Data Acquisition Failed: Title not obtained!'
         log_info += web_info + debug_info
         raise Exception(debug_info)
     web_number = get_web_number(html_info)  # 获取番号，用来替换标题里的番号
@@ -157,14 +157,14 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn'):
             #     real_url = airav_url + '/' + real_url[0]
             # else:
             if not real_url:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
         if real_url:
             if isinstance(real_url, list) and real_url:
                 real_url = real_url[0]
-            debug_info = '番号地址: %s ' % real_url
+            debug_info = 'Number Address:  %s ' % real_url
             log_info += web_info + debug_info
             for i in range(3):
                 html_info, title, outline, actor, cover_url, tag, studio, log_info = (

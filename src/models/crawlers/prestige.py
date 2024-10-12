@@ -94,14 +94,14 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
             real_url = get_real_url(html_search, number)
             if not real_url:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
         if real_url:
             # 'https://www.prestige-av.com/goods/2e4a2de8-7275-4803-bb07-7585fd4f2ff3'
             # 'https://www.prestige-av.com/api/product/2e4a2de8-7275-4803-bb07-7585fd4f2ff3'
-            debug_info = '番号地址: %s ' % real_url.replace('api/product', 'goods')
+            debug_info = 'Number Address:  %s ' % real_url.replace('api/product', 'goods')
             log_info += web_info + debug_info
             result, page_data = get_html(real_url, json_data=True)
             if not result:

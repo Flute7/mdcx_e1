@@ -141,7 +141,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
 
                 result, html_info = get_html(search_url)
                 if not result:
-                    debug_info = '请求错误: %s ' % html_info
+                    debug_info = 'Request Error: %s ' % html_info
                     log_info += web_info + debug_info
                     continue
 
@@ -151,25 +151,25 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
                     real_url_list = [real_url]
                     break
                 else:
-                    debug_info = '未找到搜索结果'
+                    debug_info = 'No search results found'
                     log_info += web_info + debug_info
             else:
                 raise Exception(debug_info)
 
         for real_url in real_url_list:
-            debug_info = '番号地址: %s ' % real_url
+            debug_info = 'Number Address:  %s ' % real_url
             log_info += web_info + debug_info
 
             result, html_info = get_html(real_url)
             if not result:
-                debug_info = '请求错误: %s ' % html_info
+                debug_info = 'Request Error: %s ' % html_info
                 log_info += web_info + debug_info
                 continue
 
             html_detail = etree.fromstring(html_info, etree.HTMLParser())
             title = get_title(html_detail)
             if not title:
-                debug_info = '数据获取失败: 番号标题不存在！'
+                debug_info = 'Data Retrieval Failed: Number title does not exist!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

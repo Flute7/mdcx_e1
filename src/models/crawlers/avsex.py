@@ -181,12 +181,12 @@ def main(number, appoint_url='', log_info='', req_web='', language=''):
                         poster_url = temp_poster[0] if temp_poster else ''
                         break
             else:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
         if real_url:
-            debug_info = '番号地址: %s ' % real_url
+            debug_info = 'Number Address:  %s ' % real_url
             log_info += web_info + debug_info
 
             # https://9sex.tv/#/home/video/332642
@@ -200,7 +200,7 @@ def main(number, appoint_url='', log_info='', req_web='', language=''):
             html_info = etree.fromstring(html_content, etree.HTMLParser())
             title = get_title(html_info)
             if not title:
-                debug_info = '数据获取失败: 未获取到title！'
+                debug_info = 'Data Acquisition Failed: Title not obtained!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             number = get_web_number(html_info, number)

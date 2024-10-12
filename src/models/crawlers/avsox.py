@@ -125,7 +125,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
             html_search = etree.fromstring(response, etree.HTMLParser())
             real_url, count = get_real_url(number, html_search)
             if not real_url:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             poster_url = get_poster(html_search, count)

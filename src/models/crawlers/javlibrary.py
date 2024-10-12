@@ -195,7 +195,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn'):
 
             result, html_search = curl_html(url_search, proxies=proxies)
             if not result:
-                debug_info = '请求错误: %s ' % html_search
+                debug_info = 'Request Error: %s ' % html_search
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
@@ -210,17 +210,17 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn'):
             html = etree.fromstring(html_search, etree.HTMLParser())
             real_url = get_real_url(html, number, domain_2)
             if not real_url:
-                debug_info = 'Search Results: No number matched!'
+                debug_info = 'Search Result: No number matched!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 
         if real_url:
-            debug_info = '番号地址: %s ' % real_url
+            debug_info = 'Number Address:  %s ' % real_url
             log_info += web_info + debug_info
 
             result, html_info = curl_html(real_url, proxies=proxies)
             if not result:
-                debug_info = '请求错误: %s ' % html_info
+                debug_info = 'Request Error: %s ' % html_info
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
 

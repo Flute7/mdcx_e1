@@ -232,7 +232,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='zh_cn', file
             html_info = etree.fromstring(real_html_content, etree.HTMLParser())
             title = get_title(html_info)  # 获取标题
             if not title:
-                debug_info = '数据获取失败: 未获取到title！'
+                debug_info = 'Data Acquisition Failed: Title not obtained!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             series, tag, actor = get_some_info(html_info, title, file_path)

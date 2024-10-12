@@ -188,18 +188,18 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
         real_url = appoint_url.replace('/zh/', '/').replace('/en/', '/').replace('/ja/', '/')
 
     try:  # 捕获主动抛出的异常
-        debug_info = '番号地址: %s ' % real_url
+        debug_info = 'Number Address:  %s ' % real_url
         log_info += web_info + debug_info
 
         result, html_info = curl_html(real_url)
         if not result:
-            debug_info = '请求错误: %s' % html_info
+            debug_info = 'Request Error: %s' % html_info
             log_info += web_info + debug_info
             raise Exception(debug_info)
 
         # 判断返回内容是否有问题
         if not html_info:
-            debug_info = '未匹配到番号！'
+            debug_info = 'No number matched!'
             log_info += web_info + debug_info
             raise Exception(debug_info)
 
@@ -208,7 +208,7 @@ def main(number, appoint_url='', log_info='', req_web='', language='jp'):
         # ========================================================================收集信息
         title, number = get_title(html_detail)  # 获取标题并去掉头尾歌手名
         if not title or 'single-video-info col-12' not in html_info:
-            debug_info = '数据获取失败: 番号标题不存在！'
+            debug_info = 'Data Retrieval Failed: Number title does not exist!'
             log_info += web_info + debug_info
             raise Exception(debug_info)
         actor, all_actor = get_actor(html_detail)  # 获取actor

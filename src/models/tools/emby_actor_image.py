@@ -21,9 +21,9 @@ def update_emby_actor_photo():
     signal.change_buttons_status.emit()
     server_type = config.server_type
     if 'emby' in server_type:
-        signal.show_log_text("👩🏻 开始补全 Emby 演员头像...")
+        signal.show_log_text("👩🏻 Updating Emby actor avatars...")
     else:
-        signal.show_log_text("👩🏻 开始补全 Jellyfin 演员头像...")
+        signal.show_log_text("👩🏻 Updating Jellyfin actor avatars...")
     actor_list = _get_emby_actor_list()
     if actor_list:
         gfriends_actor_data = _get_gfriends_actor_data()
@@ -46,25 +46,25 @@ def _get_emby_actor_list():
     if config.user_id:
         url += f'&userid={config.user_id}'
 
-    signal.show_log_text(f"⏳ 连接 {server_name} 服务器...")
+    signal.show_log_text(f"⏳ connect {server_name} server...")
 
     if config.emby_url == '':
-        signal.show_log_text(f'🔴 {server_name} 地址未填写！')
-        signal.show_log_text("========================================================================================================================")
+        signal.show_log_text(f'🔴 {server_name} The server address is missing!')
+        signal.show_log_text("=========================================================================================================")
     if config.api_key == '':
-        signal.show_log_text(f'🔴 {server_name} API 密钥未填写！')
-        signal.show_log_text("========================================================================================================================")
+        signal.show_log_text(f'🔴 {server_name} API key missing!')
+        signal.show_log_text("=========================================================================================================")
 
     result, response = get_html(url, proxies=False, json_data=True)
     if not result:
         signal.show_log_text(
-            f'🔴 {server_name} 连接失败！请检查 {server_name} 地址 和 API 密钥是否正确填写！ {response}')
+            f'🔴 {server_name} Connection failed! Please check {server_name}, Are the address and API key filled in correctly? {response}')
         signal.show_log_text(traceback.format_exc())
 
     actor_list = response['Items']
-    signal.show_log_text(f"✅ {server_name} 连接成功！共有 {len(actor_list)} 个演员！")
+    signal.show_log_text(f"✅ {server_name} Connection successful! share {len(actor_list)} an actor!")
     if not actor_list:
-        signal.show_log_text("========================================================================================================================")
+        signal.show_log_text("=========================================================================================================")
     return actor_list
 
 
@@ -123,11 +123,11 @@ def _get_gfriends_actor_data():
 
     if 'actor_photo_net' in emby_on:
         update_data = False
-        signal.show_log_text('⏳ 连接 Gfriends 网络头像库...')
+        signal.show_log_text('⏳ Connecting to the Gfriends avatar library...')
         net_url = f'{gfriends_github}/commits/master/Filetree.json'
         result, response = get_html(net_url)
         if not result:
-            signal.show_log_text('🔴 Gfriends 查询最新数据更新时间失败！')
+            signal.show_log_text('🔴 Gfriends failed to query the latest data update time!')
             net_float = 0
             update_data = True
         else:
@@ -137,9 +137,9 @@ def _get_gfriends_actor_data():
                 net_float = time.mktime(lastest_time) - time.timezone
                 net_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(net_float))
             except:
-                signal.show_log_text('🔴 Gfriends 历史页面解析失败！请向开发者报告! ')
+                signal.show_log_text('🔴 Gfriends history page parsing failed! Please report it to the developers!')
                 return False
-            signal.show_log_text(f'✅ Gfriends 连接成功！最新数据更新时间: {net_time}')
+            signal.show_log_text(f'✅ Gfriends connection successful! Latest data update time: {net_time}')
 
         # 更新：本地无文件时；更新时间过期；本地文件读取失败时，重新更新
         gfriends_json_path = resources.userdata_path('gfriends.json')
@@ -150,34 +150,34 @@ def _get_gfriends_actor_data():
                 with open(gfriends_json_path, 'r', encoding='utf-8') as f:
                     gfriends_actor_data = json.load(f)
             except:
-                signal.show_log_text('🔴 本地缓存数据读取失败！需重新缓存！')
+                signal.show_log_text('🔴 Failed to read local cache data! Need to re-cache!')
                 update_data = True
             else:
                 local_float = os.path.getmtime(gfriends_json_path)
                 local_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(local_float))
                 if not net_float or net_float > local_float:
-                    signal.show_log_text(f'🍉 本地缓存数据需要更新！本地数据更新时间: {local_time}')
+                    signal.show_log_text(f'🍉 Local cache data requires an update! Local data update time: {local_time}')
                     update_data = True
                 else:
-                    signal.show_log_text(f'✅ 本地缓存数据无需更新！本地数据更新时间: {local_time}')
+                    signal.show_log_text(f'✅ Local cache data is up to date! Local data update time: {local_time}')
                     return gfriends_actor_data
 
         # 更新数据
         if update_data:
-            signal.show_log_text('⏳ 开始缓存 Gfriends 最新数据表...')
+            signal.show_log_text('⏳ Attempting to cache Gfriends latest datasheet...')
             filetree_url = f'{raw_url}/master/Filetree.json'
             result, response = get_html(filetree_url, content=True)
             if not result:
-                signal.show_log_text('🔴 Gfriends 数据表获取失败！补全已停止！')
+                signal.show_log_text('🔴 Gfriends data table acquisition failed! Completion has stopped!')
                 return False
             with open(gfriends_json_path, "wb") as f:
                 f.write(response)
-            signal.show_log_text('✅ Gfriends 数据表已缓存！')
+            signal.show_log_text('✅ Gfriends data table cached!')
             try:
                 with open(gfriends_json_path, 'r', encoding='utf-8') as f:
                     gfriends_actor_data = json.load(f)
             except:
-                signal.show_log_text('🔴 本地缓存数据读取失败！补全已停止！')
+                signal.show_log_text('🔴 Failed to read local cache data! Completion has stopped!')
                 return False
             else:
                 content = gfriends_actor_data.get('Content')
@@ -240,11 +240,11 @@ def _get_graphis_pic(actor_name):
     if 'graphis_face' not in emby_on:
         pic_path = ''
         if has_backdrop:
-            logs += '✅ graphis.ne.jp 本地背景！ '
+            logs += '✅ graphis.ne.jp local background present!'
             return '', backdrop_path, logs
     elif 'graphis_backdrop' not in emby_on:
         if has_pic:
-            logs += '✅ graphis.ne.jp 本地头像！ '
+            logs += '✅ graphis.ne.jp local avatar present!'
             return pic_path, '', logs
     elif has_pic and has_backdrop:
         return pic_path, backdrop_path, ''
@@ -252,7 +252,7 @@ def _get_graphis_pic(actor_name):
     # 请求图片
     result, res = get_html(url)
     if not result:
-        logs += f'🔴 graphis.ne.jp 请求失败！\n{res}'
+        logs += f'🔴 graphis.ne.jp request failed!\n{res}'
         return '', '', logs
     html = etree.fromstring(res, etree.HTMLParser())
     src = html.xpath("//div[@class='gp-model-box']/ul/li/a/img/@src")
@@ -266,20 +266,20 @@ def _get_graphis_pic(actor_name):
     # 保存图片
     if not has_pic and pic_path:
         if download_file_with_filepath({'logs': ''}, small_pic, pic_path, actor_folder):
-            logs += '🍊 使用 graphis.ne.jp 头像！ '
+            logs += '🍊 Using graphis.ne.jp avatar!'
             if 'graphis_backdrop' not in emby_on:
                 if not has_backdrop:
                     fix_pic(pic_path, backdrop_path)
                 return pic_path, backdrop_path, logs
         else:
-            logs += '🔴 graphis.ne.jp 头像获取失败！ '
+            logs += '🔴 Failed to obtain graphis.ne.jp avatar!'
             pic_path = ''
     if not has_backdrop and 'graphis_backdrop' in emby_on:
         if download_file_with_filepath({'logs': ''}, big_pic, backdrop_path, actor_folder):
-            logs += '🍊 使用 graphis.ne.jp 背景！ '
+            logs += '🍊 Using graphis.ne.jp background!'
             fix_pic(backdrop_path, backdrop_path)
         else:
-            logs += '🔴 graphis.ne.jp 背景获取失败！ '
+            logs += '🔴 Failed to obtain graphis.ne.jp background!'
             backdrop_path = ''
     return pic_path, backdrop_path, logs
 
@@ -390,7 +390,7 @@ def _get_local_actor_photo():
     actor_photo_folder = config.actor_photo_folder
     if actor_photo_folder == '' or not os.path.isdir(actor_photo_folder):
         signal.show_log_text('🔴 本地头像库文件夹不存在！补全已停止！')
-        signal.show_log_text("========================================================================================================================")
+        signal.show_log_text("=========================================================================================================")
         return False
     else:
         local_actor_photo_dic = {}
@@ -404,7 +404,7 @@ def _get_local_actor_photo():
 
         if not local_actor_photo_dic:
             signal.show_log_text('🔴 本地头像库文件夹未发现头像图片！请把图片放到文件夹中！')
-            signal.show_log_text("========================================================================================================================")
+            signal.show_log_text("=========================================================================================================")
             return False
         return local_actor_photo_dic
 

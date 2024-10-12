@@ -147,11 +147,11 @@ def main(number, appoint_url='', log_info='', req_web='', language=''):
         html = etree.fromstring(html_search, etree.HTMLParser())
         real_url, poster = get_real_url(html, number)
         if not real_url:
-            debug_info = 'Search Results: No number matched!'
+            debug_info = 'Search Result: No number matched!'
             log_info += web_info + debug_info
             raise Exception(debug_info)
         else:
-            debug_info = '番号地址: %s ' % real_url
+            debug_info = 'Number Address:  %s ' % real_url
             log_info += web_info + debug_info
 
             result, html_content = get_html(real_url)
@@ -163,7 +163,7 @@ def main(number, appoint_url='', log_info='', req_web='', language=''):
             html_info = etree.fromstring(html_content, etree.HTMLParser())
             title = get_title(html_info)
             if not title:
-                debug_info = '数据获取失败: 未获取到title！'
+                debug_info = 'Data Acquisition Failed: Title not obtained!'
                 log_info += web_info + debug_info
                 raise Exception(debug_info)
             cover_url, extrafanart = get_cover(html_info)
