@@ -1011,11 +1011,11 @@ def load_config(self):
 
         # region network
         proxy_type = config.type  # 代理类型
-        if proxy_type == 'None':
+        if proxy_type == 'no':
             self.Ui.radioButton_proxy_nouse.setChecked(True)
-        elif proxy_type == 'HTTP':
+        elif proxy_type == 'http':
             self.Ui.radioButton_proxy_http.setChecked(True)
-        elif proxy_type == 'SOCKS5':
+        elif proxy_type == 'socks5':
             self.Ui.radioButton_proxy_socks5.setChecked(True)
         else:
             self.Ui.radioButton_proxy_nouse.setChecked(True)

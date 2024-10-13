@@ -946,7 +946,7 @@ def show_netstatus():
     except:
         signal.show_traceback_log(traceback.format_exc())
         signal.show_net_info(traceback.format_exc())
-    if proxy == '' or proxy_type == '' or proxy_type == 'None':
+    if proxy == '' or proxy_type == '' or proxy_type == 'no':
         signal.show_net_info(' Network Status: ❌ Proxy disabled\n   Type: ' + str(proxy_type) + '    Address: ' + str(proxy) + '    Timeout: ' + str(timeout) + '    Retries: ' + str(retry_count))
     else:
         signal.show_net_info(

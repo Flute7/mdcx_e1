@@ -112,7 +112,7 @@ class WebRequests:
                     return _header, response.json()
                 return _header, response.text
             except Exception as e:
-                error_info = '%s\n              Error: %s' % (url, e)
+                error_info = '%s\n                   Error: %s' % (url, e)
                 signal.add_log('[%s/%s] %s' % (i + 1, retry_times, error_info))
         signal.add_log(f"🔴 Request failed! {error_info}")
         return False, error_info
@@ -152,7 +152,7 @@ class WebRequests:
                     return True, response.json()
                 return True, response.text
             except Exception as e:
-                error_info = '%s\n              Error: %s' % (url, e)
+                error_info = '%s\n                   Error: %s' % (url, e)
                 signal.add_log('[%s/%s] %s' % (i + 1, retry_times, error_info))
         signal.add_log(f"🔴 Request failed! {error_info}")
         return False, error_info
@@ -186,7 +186,7 @@ class WebRequests:
     #             response.encoding = 'utf-8'
     #             return True, f.text
     #         except Exception as e:
-    #             error_info = '%s\n              Error: %s' % (url, e)
+    #             error_info = '%s\n                   Error: %s' % (url, e)
     #             signal.add_log('🔴 重试 [%s/%s] %s' % (i + 1, retry_times, error_info))
     #     signal.add_log(f"🔴 Request failed! {error_info}")
     #     return False, error_info
@@ -325,7 +325,7 @@ class WebRequests:
                     signal.add_log('🔴 Retry [%s/%s] %s' % (i + 1, retry_times, error_info))
                     continue
             except Exception as e:
-                error_info = '%s\n              Error: %s' % (url, e)
+                error_info = '%s\n                   Error: %s' % (url, e)
                 signal.add_log('[%s/%s] %s' % (i + 1, retry_times, error_info))
         signal.add_log(f"🔴 Request failed! {error_info}")
         return False, error_info
