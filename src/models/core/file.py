@@ -822,25 +822,25 @@ def _generate_file_name(file_path, json_data):
 
 
 def get_output_name(json_data, file_path, success_folder, file_ex):
-    # =========================================================================================================更新输出文件夹名
+    # ======================================================================================================更新输出文件夹名
     folder_new_path = _get_folder_path(file_path, success_folder, json_data)
     folder_new_path = _deal_path_name(folder_new_path)
-    # =========================================================================================================更新实体文件命名规则
+    # ======================================================================================================更新实体文件命名规则
     naming_rule = _generate_file_name(file_path, json_data)
     naming_rule = _deal_path_name(naming_rule)
-    # =========================================================================================================生成文件和nfo新路径
+    # ======================================================================================================生成文件和nfo新路径
     file_new_name = naming_rule + file_ex.lower()
     nfo_new_name = naming_rule + '.nfo'
     file_new_path = convert_path(os.path.join(folder_new_path, file_new_name))
     nfo_new_path = convert_path(os.path.join(folder_new_path, nfo_new_name))
-    # =========================================================================================================生成图片下载路径
+    # ======================================================================================================生成图片下载路径
     poster_new_name = naming_rule + '-poster.jpg'
     thumb_new_name = naming_rule + '-thumb.jpg'
     fanart_new_name = naming_rule + '-fanart.jpg'
     poster_new_path_with_filename = convert_path(os.path.join(folder_new_path, poster_new_name))
     thumb_new_path_with_filename = convert_path(os.path.join(folder_new_path, thumb_new_name))
     fanart_new_path_with_filename = convert_path(os.path.join(folder_new_path, fanart_new_name))
-    # =========================================================================================================生成图片最终路径
+    # ======================================================================================================生成图片最终路径
     # 如果图片命名规则不加文件名并且视频目录不为空
     if config.pic_name == 1 and json_data['folder_name'].replace(' ', ''):
         poster_final_name = 'poster.jpg'
@@ -968,7 +968,7 @@ def newtdisk_creat_symlink(copy_flag, netdisk_path='', local_path=''):
         print(traceback.format_exc())
         signal.show_log_text(traceback.format_exc())
 
-    signal.show_log_text('=========================================================================================================')
+    signal.show_log_text('======================================================================================================')
     if from_tool:
         signal.reset_buttons_status.emit()
 
@@ -1881,12 +1881,12 @@ def check_and_clean_files():
                     signal.show_log_text(f' 🗑 Clean: {path} ')
                 else:
                     fail += 1
-                    signal.show_log_text(f' 🗑 Clean error: {error_info} ')
-    signal.show_log_text(f' 🍀 Clean done!({get_used_time(start_time)}s)')
-    signal.show_log_text('=========================================================================================================')
+                    signal.show_log_text(f' 🗑 Cleaning error: {error_info} ')
+    signal.show_log_text(f' 🍀 Cleaning done!({get_used_time(start_time)}s)')
+    signal.show_log_text('======================================================================================================')
     _clean_empty_fodlers(movie_path, '')
-    signal.set_label_file_path.emit('🗑 清理完成！')
+    signal.set_label_file_path.emit('🗑 Cleanup complete!')
     signal.show_log_text(
         f" 🎉🎉🎉 All finished!!!({get_used_time(start_time)}s) Total ({total}) Success ({succ}) Failed ({fail}) ")
-    signal.show_log_text('=========================================================================================================')
+    signal.show_log_text('======================================================================================================')
     signal.reset_buttons_status.emit()

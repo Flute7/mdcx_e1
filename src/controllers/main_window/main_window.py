@@ -149,12 +149,12 @@ class MyMAinWindow(QMainWindow):
         self.show_net_info('\n🏠 Proxy settings are located under: [Settings] -> [Network] -> [Proxy Settings].\n')  # 检查网络界面显示提示信息
         show_netstatus()  # 检查网络界面显示当前网络代理信息
         self.show_net_info(
-            '\n💡 Information: \n '
-            'Proxied Agent:      javbus, jav321, javlibrary, mgstage, mywife, giga, freejavbt, mdtv, madouqu,\n '
-            '                    7mmtv, faleno, dahlia, prestige, theporndb, cnmdb, fantastica, kin8\n '
-            'Non-Japanese Agent: javdb, airav-cc, avsex（Japanese agent will report an error）\n '
-            'Japanese Agent:     seesaawiki\n '
-            'No Agent Required:  avsex, hdouban, iqqtv, airav-wiki, love6, lulubar, fc2, fc2club, fc2hub\n\n'
+            '\n💡 Info: \n '
+            'Proxied Agent:       javbus, jav321, javlibrary, mgstage, mywife, giga, freejavbt, mdtv, madouqu,\n '
+            '                     7mmtv, faleno, dahlia, prestige, theporndb, cnmdb, fantastica, kin8\n '
+            'Non-Japanese Agent:  javdb, airav-cc, avsex（Japanese agent will report an error）\n '
+            'Japanese Agent:      seesaawiki\n '
+            'No Agent Required:   avsex, hdouban, iqqtv, airav-wiki, love6, lulubar, fc2, fc2club, fc2hub\n\n'
             '▶️ Click the [Start Test] button in the upper right corner to test network connectivity.')  # 检查网络界面显示提示信息
         signal.add_log("🍯 You can click the icon in the lower right hand corner to hide/show this panel!")
         self.show_version()  # 日志页面显示版本信息
@@ -542,7 +542,7 @@ class MyMAinWindow(QMainWindow):
         signal.show_log_text(version_info)
         if feedback or download_link:
             self.main_logs_show.emit(f'{feedback}{download_link}')
-        signal.show_log_text('=========================================================================================================')
+        signal.show_log_text('======================================================================================================')
         self.pushButton_check_javdb_cookie_clicked()  # 检测javdb cookie
         self.pushButton_check_javbus_cookie_clicked()  # 检测javbus cookie
         if config.use_database:
@@ -2174,12 +2174,12 @@ class MyMAinWindow(QMainWindow):
                         signal.show_net_info(traceback.format_exc())
                 signal.show_net_info('   ' + name.ljust(12) + each[1])
             signal.show_net_info(f"\n🎉 Network detection completed! time {get_used_time(start_time)} Second!")
-            signal.show_net_info("=========================================================================================================\n")
+            signal.show_net_info("======================================================================================================\n")
         except:
             if signal.stop:
                 signal.show_net_info('\n⛔️ A scraping task is currently being stopped. Please wait until the scraping stops before testing again!')
                 signal.show_net_info(
-                    "=========================================================================================================\n")
+                    "======================================================================================================\n")
         self.Ui.pushButton_check_net.setEnabled(True)
         self.Ui.pushButton_check_net.setText('Start Test')
         self.Ui.pushButton_check_net.setStyleSheet(
@@ -2203,7 +2203,7 @@ class MyMAinWindow(QMainWindow):
             t = threading.Thread(target=kill_a_thread, args=(self.t_net,))
             t.start()
             signal.show_net_info('\n⛔️ Network testing manually stopped!')
-            signal.show_net_info("=========================================================================================================\n")
+            signal.show_net_info("======================================================================================================\n")
             self.Ui.pushButton_check_net.setStyleSheet(
                 'QPushButton#pushButton_check_net{color: white;background-color:#4C6EFF;}QPushButton:hover#pushButton_check_net{color: white;background-color: rgba(76,110,255,240)}QPushButton:pressed#pushButton_check_net{color: white;background-color:#4C6EE0}')
             self.Ui.pushButton_check_net.setText('Start Test')

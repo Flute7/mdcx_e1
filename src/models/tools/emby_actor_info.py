@@ -44,7 +44,7 @@ def creat_kodi_actors(add: bool):
     if gfriends_actor_data:
         _deal_kodi_actors(gfriends_actor_data, add)
     signal.reset_buttons_status.emit()
-    signal.show_log_text("=========================================================================================================")
+    signal.show_log_text("======================================================================================================")
 
 
 def update_emby_actor_info():
@@ -267,7 +267,7 @@ def show_emby_actor_list(mode):
             signal.show_log_text(f'👩🏻 演员数量: {total} ✅ 已有信息: {succ_info} 🔴 没有信息: {fail_info}\n')
         else:
             signal.show_log_text(f'👩🏻 演员数量: {total} ✅ 已有头像: {succ_pic} 🔴 没有头像: {fail_pic}\n')
-        signal.show_log_text("=========================================================================================================")
+        signal.show_log_text("======================================================================================================")
         signal.reset_buttons_status.emit()
 
 
