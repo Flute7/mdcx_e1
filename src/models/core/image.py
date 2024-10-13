@@ -317,4 +317,4 @@ def add_del_extrafanart_copy(mode):
                 new_count += 1
 
     signal.show_log_text('\nDone! \n Total: %s  %s copy: %s ' % (total_count, mode, new_count))
-    signal.show_log_text("======================================================================================================")
+    signal.show_log_text("================================================================================")

@@ -532,7 +532,7 @@ def scrape(file_mode: FileMode, movie_list):
         if signal.stop:
             return
 
-    signal.show_log_text("======================================================================================================")
+    signal.show_log_text("================================================================================")
     _clean_empty_fodlers(movie_path, file_mode)
     end_time = time.time()
     used_time = str(round((end_time - Flags.start_time), 2))
@@ -541,26 +541,26 @@ def scrape(file_mode: FileMode, movie_list):
     else:
         average_time = used_time
     signal.exec_set_processbar.emit(0)
-    signal.set_label_file_path.emit('🎉 Congratulations! Successfully scraped %s file(s) in (%ss)' % (count_all, used_time))
+    signal.set_label_file_path.emit('🎉 Congratulations! Scraped %s files in %ss' % (count_all, used_time))
     signal.show_traceback_log(
-        "🎉 All finished!!! Total (%s) Success (%s) Failed (%s) " % (count_all, Flags.succ_count, Flags.fail_count))
+        "🎉 All finished!!! Total (%s) Success (%s) Failure (%s) " % (count_all, Flags.succ_count, Flags.fail_count))
     signal.show_log_text(
-        " 🎉🎉🎉 All finished!!! Total (%s) Success (%s) Failed (%s) " % (count_all, Flags.succ_count, Flags.fail_count))
-    signal.show_log_text("======================================================================================================")
+        " 🎉🎉🎉 All finished!!! Total (%s) Success (%s) Failure (%s) " % (count_all, Flags.succ_count, Flags.fail_count))
+    signal.show_log_text("================================================================================")
     if Flags.failed_list:
         signal.show_log_text("    *** Failed Results ***")
         for i in range(len(Flags.failed_list)):
             fail_path, fail_reson = Flags.failed_list[i]
             signal.show_log_text(" 🔴 %s %s\n    %s" % (i + 1, fail_path, fail_reson))
-            signal.show_log_text("======================================================================================================")
+            signal.show_log_text("================================================================================")
     signal.show_log_text(
-        ' ⏰ Start Time'.ljust(17) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(Flags.start_time)))
+        ' ⏰ Start Time:'.ljust(17) + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(Flags.start_time)))
     signal.show_log_text(
-        ' 🏁 End Time'.ljust(17) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end_time)))
-    signal.show_log_text(' ⏱ Runtime'.ljust(17) + ': %ss' % used_time)
-    signal.show_log_text(' 📺 Movie Count'.ljust(17) + ': %s' % count_all)
-    signal.show_log_text(' 🍕 Average Time'.ljust(17) + ': %ss' % average_time)
-    signal.show_log_text("======================================================================================================")
+        ' 🏁 End Time:'.ljust(17) + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end_time)))
+    signal.show_log_text(' ⏱ Runtime:'.ljust(17) + '%ss' % used_time)
+    signal.show_log_text(' 📺 Movie Count:'.ljust(16) + '%s' % count_all)
+    signal.show_log_text(' 🍕 Average Time:'.ljust(18) + '%ss' % average_time)
+    signal.show_log_text("================================================================================")
     signal.show_scrape_info('🎉 Scraping Complete %s/%s' % (count_all, count_all))
 
     # auto run after scrape

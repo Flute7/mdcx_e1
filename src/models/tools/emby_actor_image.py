@@ -50,10 +50,10 @@ def _get_emby_actor_list():
 
     if config.emby_url == '':
         signal.show_log_text(f'🔴 {server_name} The server address is missing!')
-        signal.show_log_text("======================================================================================================")
+        signal.show_log_text("================================================================================")
     if config.api_key == '':
         signal.show_log_text(f'🔴 {server_name} API key missing!')
-        signal.show_log_text("======================================================================================================")
+        signal.show_log_text("================================================================================")
 
     result, response = get_html(url, proxies=False, json_data=True)
     if not result:
@@ -64,7 +64,7 @@ def _get_emby_actor_list():
     actor_list = response['Items']
     signal.show_log_text(f"✅ {server_name} Connection successful! share {len(actor_list)} an actor!")
     if not actor_list:
-        signal.show_log_text("======================================================================================================")
+        signal.show_log_text("================================================================================")
     return actor_list
 
 
@@ -390,7 +390,7 @@ def _get_local_actor_photo():
     actor_photo_folder = config.actor_photo_folder
     if actor_photo_folder == '' or not os.path.isdir(actor_photo_folder):
         signal.show_log_text('🔴 本地头像库文件夹不存在！补全已停止！')
-        signal.show_log_text("======================================================================================================")
+        signal.show_log_text("================================================================================")
         return False
     else:
         local_actor_photo_dic = {}
@@ -404,7 +404,7 @@ def _get_local_actor_photo():
 
         if not local_actor_photo_dic:
             signal.show_log_text('🔴 本地头像库文件夹未发现头像图片！请把图片放到文件夹中！')
-            signal.show_log_text("======================================================================================================")
+            signal.show_log_text("================================================================================")
             return False
         return local_actor_photo_dic
 

@@ -16,7 +16,7 @@ def add_sub_for_all_video():
     if config.subtitle_folder == '' or not os.path.exists(config.subtitle_folder):
         sub_add = False
         signal.show_log_text("The subtitles folder does not exist!\nOnly videos without subtitles can be checked, subtitles cannot be added!")
-        signal.show_log_text("======================================================================================================")
+        signal.show_log_text("================================================================================")
 
     movie_path, success_folder, failed_folder, escape_folder_list, \
         extrafanart_folder, softlink_path = get_movie_path_setting()
@@ -84,7 +84,7 @@ def add_sub_for_all_video():
 
     signal.show_log_text(
         f'\nDone! \n成功添加字幕影片数量: {add_count} \n仍无字幕影片数量: {no_sub_count - add_count} ')
-    signal.show_log_text("======================================================================================================")
+    signal.show_log_text("================================================================================")
     # 重新刮削新添加字幕的影片
     list2 = list(set(new_sub_movie_list))  # 去重
     list3 = [each for each in list2 if each.strip()]  # 去空

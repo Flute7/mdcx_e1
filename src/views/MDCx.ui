@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -1422,7 +1422,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>765</x>
-        <y>641</y>
+        <y>636</y>
         <width>40</width>
         <height>40</height>
        </rect>
@@ -1553,7 +1553,7 @@ p, li { white-space: pre-wrap; }
       <property name="geometry">
        <rect>
         <x>765</x>
-        <y>641</y>
+        <y>636</y>
         <width>40</width>
         <height>40</height>
        </rect>
@@ -1611,6 +1611,9 @@ p, li { white-space: pre-wrap; }
       </property>
       <property name="styleSheet">
        <string notr="true"/>
+      </property>
+      <property name="lineWrapMode">
+       <enum>QTextEdit::NoWrap</enum>
       </property>
       <property name="readOnly">
        <bool>true</bool>

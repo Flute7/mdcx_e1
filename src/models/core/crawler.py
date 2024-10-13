@@ -251,13 +251,13 @@ def _decide_websites(json_data, number_website_list):
 
     # 生成各字段及请求网站列表，并请求数据
     if scrape_like == 'speed':
-        request_field_list = [['title', '标题', 'title_language', number_website_list]]
+        request_field_list = [['title', 'title', 'title_language', number_website_list]]
     else:
         if 'official' in config.website_set:
             title_jp_website_new_list.insert(0, 'official')
         request_field_list = [
-            ['title', '标题', 'title_language', title_jp_website_new_list],
-            ['title_zh', '中文标题', 'title_language', title_zh_website_new_list],
+            ['title', 'title', 'title_language', title_jp_website_new_list],
+            ['title_zh', '中文title', 'title_language', title_zh_website_new_list],
             ['outline', '简介', 'outline_language', outline_jp_website_new_list],
             ['outline_zh', '中文简介', 'outline_language', outline_zh_website_new_list],
             ['actor', '演员', 'actor_language', actor_website_new_list],
@@ -342,8 +342,8 @@ def _decide_websites(json_data, number_website_list):
     wanted_website_new_list = _get_new_website_list(wanted_website_list, number_website_list, file_number, short_number,
                                                     'wanted')
     deal_field_list = [
-        ['title', '标题', 'title_language', title_website_new_list],
-        ['originaltitle', '原标题', 'outline_language', title_jp_website_new_list],
+        ['title', 'title', 'title_language', title_website_new_list],
+        ['originaltitle', '原title', 'outline_language', title_jp_website_new_list],
         ['outline', '简介', 'outline_language', outline_website_new_list],
         ['originalplot', '原简介', 'outline_language', outline_jp_website_new_list],
         ['actor', '演员', 'actor_language', actor_website_new_list],
@@ -492,7 +492,7 @@ def _deal_each_field(all_json_data, json_data, website_list, field_name, field_c
         if len(backup_data):
             json_data[field_name] = backup_data
             json_data['fields_info'] += '\n     ' + f"{field_name:<13}" + f': {backup_website} ({title_language})'
-            json_data['log_info'] += f'\n    🟢 {backup_website} (Use backup data)\n     ↳ {backup_data}'
+            json_data['log_info'] += f'\n    🟢 {backup_website} (using backup data)\n     ↳ {backup_data}'
         else:
             json_data['fields_info'] += '\n     ' + f"{field_name:<13}" + f': {"-----"} ({"not found"})'
 
@@ -532,7 +532,7 @@ def _call_crawlers(all_json_data, json_data, website_list, field_name, field_cnn
             json_data['req_web'] = web_data_json['req_web']
             json_data['log_info'] = web_data_json['log_info']
 
-        if field_cnname == '标题':
+        if field_cnname == 'title':
             json_data.update(web_data_json)
         if web_data_json['title'] and web_data_json[field_name]:
             if not len(backup_jsondata):
@@ -540,7 +540,7 @@ def _call_crawlers(all_json_data, json_data, website_list, field_name, field_cnn
                 backup_website = website
                 backup_jsondata.pop('req_web')
                 backup_jsondata.pop('log_info')
-            if field_cnname == '标题':
+            if field_cnname == 'title':
                 json_data['outline_from'] = website
                 json_data['poster_from'] = website
                 json_data['cover_from'] = website
@@ -552,24 +552,24 @@ def _call_crawlers(all_json_data, json_data, website_list, field_name, field_cnn
                         if langid.classify(web_data_json[field_name])[0] != 'ja':
                             if title_language == 'jp':
                                 json_data[
-                                    'log_info'] += f'\n    🔴 {field_cnname} Detected as non-Japanese, skip! ({website})\n     ↳ {web_data_json[field_name]}'
+                                    'log_info'] += f'\n    🔴 {field_cnname} detected as non-Japanese, skip! ({website})\n     ↳ {web_data_json[field_name]}'
                                 continue
                         elif title_language != 'jp':
                             json_data[
-                                'log_info'] += f'\n    🔴 {field_cnname} Detected as Japanese, skip! ({website})\n     ↳ {web_data_json[field_name]}'
+                                'log_info'] += f'\n    🔴 {field_cnname} detected as Japanese, skip! ({website})\n     ↳ {web_data_json[field_name]}'
                             continue
                 elif website == 'official':
                     website = all_json_data['official']['jp']['source']
-            json_data['log_info'] += f'\n    🟢 {field_cnname} Get success! ({website})\n     ↳ {web_data_json[field_name]} '
+            json_data['log_info'] += f'\n    🟢 {field_cnname} attained successfully! ({website})\n     ↳ {web_data_json[field_name]} '
             break
     else:
         if len(backup_jsondata):
             json_data[
-                'log_info'] += f'\n    🟢 {field_cnname} Use backup data! ({backup_website})\n     ↳ {backup_jsondata[field_name]} '
-            if field_cnname == '标题':
+                'log_info'] += f'\n    🟢 {field_cnname} retrieved from backup data! ({backup_website})\n     ↳ {backup_jsondata[field_name]} '
+            if field_cnname == 'title':
                 json_data.update(backup_jsondata)
         else:
-            json_data['log_info'] += f'\n    🔴 {field_cnname} Failed to obtain!'
+            json_data['log_info'] += f'\n    🔴 {field_cnname} retrieval failed!'
 
 
 def _call_specific_crawler(json_data, website):
@@ -786,7 +786,7 @@ def _crawl(json_data, website_name):  # 从JSON返回元数据
     # 车牌字母
     letters = get_number_letters(number)
 
-    # 原标题，用于amazon搜索
+    # 原title，用于amazon搜索
     originaltitle = json_data.get('originaltitle') if json_data.get('originaltitle') else ''
     json_data['originaltitle_amazon'] = originaltitle
     for each in json_data['actor_amazon']:  # 去除演员名，避免搜索不到
@@ -848,7 +848,7 @@ def crawl(json_data, file_mode):
 
 
 def _deal_json_data(json_data):
-    # 标题为空返回
+    # title为空返回
     title = json_data['title']
     if not title:
         return json_data

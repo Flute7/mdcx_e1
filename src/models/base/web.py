@@ -112,7 +112,7 @@ class WebRequests:
                     return _header, response.json()
                 return _header, response.text
             except Exception as e:
-                error_info = '%s\nError: %s' % (url, e)
+                error_info = '%s\n              Error: %s' % (url, e)
                 signal.add_log('[%s/%s] %s' % (i + 1, retry_times, error_info))
         signal.add_log(f"🔴 Request failed! {error_info}")
         return False, error_info
@@ -152,7 +152,7 @@ class WebRequests:
                     return True, response.json()
                 return True, response.text
             except Exception as e:
-                error_info = '%s\nError: %s' % (url, e)
+                error_info = '%s\n              Error: %s' % (url, e)
                 signal.add_log('[%s/%s] %s' % (i + 1, retry_times, error_info))
         signal.add_log(f"🔴 Request failed! {error_info}")
         return False, error_info
@@ -186,9 +186,9 @@ class WebRequests:
     #             response.encoding = 'utf-8'
     #             return True, f.text
     #         except Exception as e:
-    #             error_info = '%s\nError: %s' % (url, e)
+    #             error_info = '%s\n              Error: %s' % (url, e)
     #             signal.add_log('🔴 重试 [%s/%s] %s' % (i + 1, retry_times, error_info))
-    #     signal.add_log(f"🔴 请求失败！{error_info}")
+    #     signal.add_log(f"🔴 Request failed! {error_info}")
     #     return False, error_info
 
     def _get_filesize(self, url):
@@ -325,7 +325,7 @@ class WebRequests:
                     signal.add_log('🔴 Retry [%s/%s] %s' % (i + 1, retry_times, error_info))
                     continue
             except Exception as e:
-                error_info = '%s\nError: %s' % (url, e)
+                error_info = '%s\n              Error: %s' % (url, e)
                 signal.add_log('[%s/%s] %s' % (i + 1, retry_times, error_info))
         signal.add_log(f"🔴 Request failed! {error_info}")
         return False, error_info
@@ -693,7 +693,7 @@ def check_version():
 
 
 def check_theporndb_api_token():
-    tips = '✅ connection OK! '
+    tips = '✅ Connection OK! '
     headers = config.headers
     proxies = config.proxies
     timeout = config.timeout
@@ -714,7 +714,7 @@ def check_theporndb_api_token():
                 tips = '❌ API token error! Please go to [Settings] -> [Network] to modify it.'
             elif response.status_code == 200:
                 if response.json().get('data'):
-                    tips = '✅ connection OK!'
+                    tips = '✅ Connection OK!'
                 else:
                     tips = '❌ The returned data is abnormal!'
             else:
