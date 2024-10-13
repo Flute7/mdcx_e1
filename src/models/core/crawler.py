@@ -435,7 +435,7 @@ def _deal_each_field(all_json_data, json_data, website_list, field_name, field_c
         return
 
     backup_data = ''
-    json_data['log_info'] += '\n\n    🙋🏻‍ %s \n    ====================================\n    🌐 来源优先级：%s' % (
+    json_data['log_info'] += '\n\n    🙋🏻‍ %s \n    ====================================\n    🌐 Source Priority: %s' % (
         field_cnname, ' -> '.join(website_list))
     for website in website_list:
         title_language = getattr(config, field_language)
@@ -458,10 +458,10 @@ def _deal_each_field(all_json_data, json_data, website_list, field_name, field_c
                     if website in ['airav_cc', 'iqqtv', 'airav', 'avsex', 'javlibrary', 'lulubar']:
                         if langid.classify(web_data_json[field_name])[0] != 'ja':
                             if title_language == 'jp':
-                                json_data['log_info'] += f'\n    🔴 {website} (失败，检测为非日文，跳过！)'
+                                json_data['log_info'] += f'\n    🔴 {website} (Failed, detected as non-Japanese, skipped!)'
                                 continue
                         elif title_language != 'jp':
-                            json_data['log_info'] += f'\n    🔴 {website} (失败，检测为日文，跳过！)'
+                            json_data['log_info'] += f'\n    🔴 {website} (Failed, detected as Japanese, skipped!)'
                             continue
             if field_name == 'poster':
                 json_data['poster_from'] = website
@@ -484,15 +484,15 @@ def _deal_each_field(all_json_data, json_data, website_list, field_name, field_c
                     json_data['amazon_orginaltitle_actor'] = web_data_json['actor'].split(',')[0]
             json_data[field_name] = web_data_json[field_name]
             json_data['fields_info'] += '\n     ' + "%-13s" % field_name + ': %s (%s)' % (website, title_language)
-            json_data['log_info'] += f'\n    🟢 {website} (成功)\n     ↳ {json_data[field_name]}'
+            json_data['log_info'] += f'\n    🟢 {website} (success)\n     ↳ {json_data[field_name]}'
             break
         else:
-            json_data['log_info'] += f'\n    🔴 {website} (失败)'
+            json_data['log_info'] += f'\n    🔴 {website} (failed)'
     else:
         if len(backup_data):
             json_data[field_name] = backup_data
             json_data['fields_info'] += '\n     ' + f"{field_name:<13}" + f': {backup_website} ({title_language})'
-            json_data['log_info'] += f'\n    🟢 {backup_website} (使用备用数据)\n     ↳ {backup_data}'
+            json_data['log_info'] += f'\n    🟢 {backup_website} (Use backup data)\n     ↳ {backup_data}'
         else:
             json_data['fields_info'] += '\n     ' + f"{field_name:<13}" + f': {"-----"} ({"not found"})'
 
@@ -552,24 +552,24 @@ def _call_crawlers(all_json_data, json_data, website_list, field_name, field_cnn
                         if langid.classify(web_data_json[field_name])[0] != 'ja':
                             if title_language == 'jp':
                                 json_data[
-                                    'log_info'] += f'\n    🔴 {field_cnname} 检测为非日文，跳过！({website})\n     ↳ {web_data_json[field_name]}'
+                                    'log_info'] += f'\n    🔴 {field_cnname} Detected as non-Japanese, skip! ({website})\n     ↳ {web_data_json[field_name]}'
                                 continue
                         elif title_language != 'jp':
                             json_data[
-                                'log_info'] += f'\n    🔴 {field_cnname} 检测为日文，跳过！({website})\n     ↳ {web_data_json[field_name]}'
+                                'log_info'] += f'\n    🔴 {field_cnname} Detected as Japanese, skip! ({website})\n     ↳ {web_data_json[field_name]}'
                             continue
                 elif website == 'official':
                     website = all_json_data['official']['jp']['source']
-            json_data['log_info'] += f'\n    🟢 {field_cnname} 获取成功！({website})\n     ↳ {web_data_json[field_name]} '
+            json_data['log_info'] += f'\n    🟢 {field_cnname} Get success! ({website})\n     ↳ {web_data_json[field_name]} '
             break
     else:
         if len(backup_jsondata):
             json_data[
-                'log_info'] += f'\n    🟢 {field_cnname} 使用备用数据！({backup_website})\n     ↳ {backup_jsondata[field_name]} '
+                'log_info'] += f'\n    🟢 {field_cnname} Use backup data! ({backup_website})\n     ↳ {backup_jsondata[field_name]} '
             if field_cnname == '标题':
                 json_data.update(backup_jsondata)
         else:
-            json_data['log_info'] += f'\n    🔴 {field_cnname} 获取失败！'
+            json_data['log_info'] += f'\n    🔴 {field_cnname} Failed to obtain!'
 
 
 def _call_specific_crawler(json_data, website):

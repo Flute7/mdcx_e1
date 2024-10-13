@@ -397,9 +397,9 @@ def _get_youdao_key_thread():
         except Exception as e:
             youdaokey = "Ygy_4c=r#e#4EX^NUGUc5"
             signal.show_traceback_log(traceback.format_exc())
-            signal.show_traceback_log('🔴 有道翻译接口key获取失败！' + str(e))
+            signal.show_traceback_log('🔴 Youdao translation interface key acquisition failed!' + str(e))
             signal.show_log_text(traceback.format_exc())
-            signal.show_log_text(' 🔴 有道翻译接口key获取失败！请检查网页版有道是否正常！%s' % str(e))
+            signal.show_log_text(' 🔴 Youdao translation interface key acquisition failed! Please check whether the web version of Youdao is normal! %s' % str(e))
     return youdaokey
 
 

@@ -868,9 +868,9 @@ def newtdisk_creat_symlink(copy_flag, netdisk_path='', local_path=''):
         netdisk_path = convert_path(config.netdisk_path)
     if not local_path:
         local_path = convert_path(config.localdisk_path)
-    signal.show_log_text('🍯 🍯 🍯 NOTE: Begining creat symlink!!!')
-    signal.show_log_text('\n ⏰ Start time: ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-    signal.show_log_text(f' 📁 Source path: {netdisk_path} \n 📁 Softlink path: {local_path} \n')
+    signal.show_log_text('🍯 🍯 🍯 NOTE: Creating symlink!!!')
+    signal.show_log_text('\n ⏰ Start Time: ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+    signal.show_log_text(f' 📁 Source Path: {netdisk_path} \n 📁 Softlink Path: {local_path} \n')
     try:
         if netdisk_path and local_path:
             nfo_type_list = ['.nfo', '.jpg', '.png'] + config.sub_type.split('|')
@@ -961,7 +961,7 @@ def newtdisk_creat_symlink(copy_flag, netdisk_path='', local_path=''):
                                 fail_num += 1
 
             signal.show_log_text(f"\n 🎉🎉🎉 All finished!!!({get_used_time(start_time)}s) Total {total} , "
-                                 f"Linked {link_num} , Copied {copy_num} , Skiped {skip_num} , Failed {fail_num} ")
+                                 f"Linked {link_num} , Copied {copy_num} , Skipped {skip_num} , Failed {fail_num} ")
         else:
             signal.show_log_text(f' 🔴 网盘目录和本地目录不能为空！请重新设置！({get_used_time(start_time)}s)')
     except Exception:

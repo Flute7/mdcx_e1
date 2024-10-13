@@ -471,9 +471,9 @@ def scrape(file_mode: FileMode, movie_list):
         for each_f, each_i in Flags.new_again_dic.items():
             n += 1
             if each_i[0]:
-                signal.show_log_text(f'{n} 🖥 File path: {each_f}\n 🚘 File number: {each_i[0]}')
+                signal.show_log_text(f'{n} 🖥 File Path: {each_f}\n 🚘 File Number: {each_i[0]}')
             else:
-                signal.show_log_text(f'{n} 🖥 File path: {each_f}\n 🌐 File url: {each_i[1]}')
+                signal.show_log_text(f'{n} 🖥 File Path: {each_f}\n 🌐 File URL: {each_i[1]}')
 
     # 获取设置的媒体目录、失败目录、成功目录
     movie_path, success_folder, failed_folder, escape_folder_list, \
@@ -484,10 +484,10 @@ def scrape(file_mode: FileMode, movie_list):
         if config.scrape_softlink_path:
             newtdisk_creat_symlink('copy_netdisk_nfo' in config.switch_on, movie_path, softlink_path)
             movie_path = softlink_path
-        signal.show_log_text('\n ⏰ Start time: ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+        signal.show_log_text('\n ⏰ Start Time: ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         movie_list = get_movie_list(file_mode, movie_path, escape_folder_list)
     else:
-        signal.show_log_text('\n ⏰ Start time: ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+        signal.show_log_text('\n ⏰ Start Time: ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
     Flags.remain_list = movie_list
     Flags.can_save_remain = True
 
@@ -510,7 +510,7 @@ def scrape(file_mode: FileMode, movie_list):
             signal.show_log_text(f' 🕷 Multithreading enabled, threads（{thread_number}) delay（{thread_time}s)')
         if 'rest_scrape' in config.switch_on and config.main_mode != 4:
             signal.show_log_text(
-                f'<font color=\"brown\"> 🍯 Intermittent scraping enabled, batch size {config.rest_count} '
+                f'<font color=\"brown\"> 🍯 Intermittent scraping enabled, batch size ({config.rest_count}) '
                 f'rest interval ({Flags.rest_time_convert}s)</font>')
 
         # 在启动前点了停止按钮
@@ -554,12 +554,12 @@ def scrape(file_mode: FileMode, movie_list):
             signal.show_log_text(" 🔴 %s %s\n    %s" % (i + 1, fail_path, fail_reson))
             signal.show_log_text("=========================================================================================================")
     signal.show_log_text(
-        ' ⏰ Start Time'.ljust(15) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(Flags.start_time)))
+        ' ⏰ Start Time'.ljust(17) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(Flags.start_time)))
     signal.show_log_text(
-        ' 🏁 End Time'.ljust(15) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end_time)))
-    signal.show_log_text(' ⏱ Runtime'.ljust(15) + ': %ss' % used_time)
-    signal.show_log_text(' 📺 Movie Count'.ljust(15) + ': %s' % count_all)
-    signal.show_log_text(' 🍕 Average Time'.ljust(15) + ': %ss' % average_time)
+        ' 🏁 End Time'.ljust(17) + ': ' + time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(end_time)))
+    signal.show_log_text(' ⏱ Runtime'.ljust(17) + ': %ss' % used_time)
+    signal.show_log_text(' 📺 Movie Count'.ljust(17) + ': %s' % count_all)
+    signal.show_log_text(' 🍕 Average Time'.ljust(17) + ': %ss' % average_time)
     signal.show_log_text("=========================================================================================================")
     signal.show_scrape_info('🎉 Scraping Complete %s/%s' % (count_all, count_all))
 

@@ -81,7 +81,7 @@ def get_video_size(json_data, file_path):
             signal.show_traceback_log(traceback.format_exc())
             signal.show_traceback_log(str(e))
             signal.show_log_text(traceback.format_exc())
-            signal.show_log_text(f' 🔴 无法获取视频分辨率！ 文件地址: {file_path}  错误信息: {e}')
+            signal.show_log_text(f' 🔴 Unable to get video resolution! File Address: {file_path}  Error Message: {e}')
     elif hd_get == 'path':
         file_path_temp = file_path.upper()
         if '8K' in file_path_temp:

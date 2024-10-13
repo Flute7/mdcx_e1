@@ -475,6 +475,7 @@ class Ui_MDCx(object):
         self.textBrowser_log_main_2.setStyleSheet("")
         self.textBrowser_log_main_2.setFrameShape(QtWidgets.QFrame.Box)
         self.textBrowser_log_main_2.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.textBrowser_log_main_2.setLineWrapMode(QtWidgets.QTextEdit.NoWrap)
         self.textBrowser_log_main_2.setReadOnly(True)
         self.textBrowser_log_main_2.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
         self.textBrowser_log_main_2.setOpenExternalLinks(True)
@@ -496,6 +497,7 @@ class Ui_MDCx(object):
         self.textBrowser_log_main.setFrameShape(QtWidgets.QFrame.StyledPanel)
         self.textBrowser_log_main.setFrameShadow(QtWidgets.QFrame.Sunken)
         self.textBrowser_log_main.setMidLineWidth(0)
+        self.textBrowser_log_main.setLineWrapMode(QtWidgets.QTextEdit.NoWrap)
         self.textBrowser_log_main.setReadOnly(True)
         self.textBrowser_log_main.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
         self.textBrowser_log_main.setOpenExternalLinks(True)
@@ -530,6 +532,8 @@ class Ui_MDCx(object):
         self.textBrowser_log_main_3.setStyleSheet("")
         self.textBrowser_log_main_3.setFrameShape(QtWidgets.QFrame.Box)
         self.textBrowser_log_main_3.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.textBrowser_log_main_3.setSizeAdjustPolicy(QtWidgets.QAbstractScrollArea.AdjustIgnored)
+        self.textBrowser_log_main_3.setLineWrapMode(QtWidgets.QTextEdit.NoWrap)
         self.textBrowser_log_main_3.setReadOnly(True)
         self.textBrowser_log_main_3.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
         self.textBrowser_log_main_3.setOpenExternalLinks(True)
@@ -10993,7 +10997,7 @@ class Ui_MDCx(object):
         MDCx.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MDCx)
-        self.stackedWidget.setCurrentIndex(3)
+        self.stackedWidget.setCurrentIndex(1)
         self.tabWidget.setCurrentIndex(2)
         QtCore.QMetaObject.connectSlotsByName(MDCx)
 
