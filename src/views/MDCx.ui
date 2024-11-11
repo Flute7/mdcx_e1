@@ -1746,7 +1746,7 @@ p, li { white-space: pre-wrap; }
          <string notr="true">QGroupBox { font-weight: bold; }</string>
         </property>
         <property name="title">
-         <string>Single file scraping (specifying a URL for a particular file, can be used when the same number exists)</string>
+         <string>Single File Scraping (specify the URL for a particular file, can be used when the same number exists)</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1756,7 +1756,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>510</x>
            <y>30</y>
-           <width>151</width>
+           <width>150</width>
            <height>40</height>
           </rect>
          </property>
@@ -1863,7 +1863,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>510</x>
            <y>100</y>
-           <width>151</width>
+           <width>150</width>
            <height>40</height>
           </rect>
          </property>
@@ -1876,16 +1876,16 @@ p, li { white-space: pre-wrap; }
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>800</y>
+          <y>762</y>
           <width>755</width>
-          <height>141</height>
+          <height>139</height>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true"/>
+         <string notr="true">QGroupBox { font-weight: bold; }</string>
         </property>
         <property name="title">
-         <string>Crop poster</string>
+         <string>Crop Poster (crop image to cover size, supports adding a watermark)</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1893,14 +1893,14 @@ p, li { white-space: pre-wrap; }
         <widget class="QPushButton" name="pushButton_select_thumb">
          <property name="geometry">
           <rect>
-           <x>23</x>
+           <x>94</x>
            <y>80</y>
            <width>351</width>
            <height>40</height>
           </rect>
          </property>
          <property name="text">
-          <string>Select Image</string>
+          <string>Open...</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_6">
@@ -1922,7 +1922,7 @@ p, li { white-space: pre-wrap; }
           <string notr="true">color: rgb(8, 128, 128);</string>
          </property>
          <property name="text">
-          <string>This tool supports dragging to select crop range.</string>
+          <string>Supports dragging to select the cropping area and will crop the image into a poster.</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1942,7 +1942,7 @@ p, li { white-space: pre-wrap; }
          <string notr="true">QGroupBox { font-weight: bold; }</string>
         </property>
         <property name="title">
-         <string>Check for missing actor numbers (check for locally missing numbers of specified actors in the resource library)</string>
+         <string>Missing Actor Numbers (check for locally missing numbers of specified actors in the resource library)</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2077,7 +2077,7 @@ p, li { white-space: pre-wrap; }
           <rect>
            <x>510</x>
            <y>40</y>
-           <width>151</width>
+           <width>150</width>
            <height>40</height>
           </rect>
          </property>
@@ -2121,7 +2121,7 @@ p, li { white-space: pre-wrap; }
          <string notr="true">QGroupBox { font-weight: bold; }</string>
         </property>
         <property name="title">
-         <string>Move videos and subtitles (move content from subdirectories under the scraping directory to a single directory)</string>
+         <string>Move Videos and Subtitles (move content from subdirectories under the scraping directory to a single directory)</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -2129,14 +2129,14 @@ p, li { white-space: pre-wrap; }
         <widget class="QPushButton" name="pushButton_move_mp4">
          <property name="geometry">
           <rect>
-           <x>23</x>
-           <y>110</y>
+           <x>94</x>
+           <y>109</y>
            <width>351</width>
            <height>40</height>
           </rect>
          </property>
          <property name="text">
-          <string>Start Move</string>
+          <string>Start</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_41">
@@ -2194,13 +2194,16 @@ p, li { white-space: pre-wrap; }
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>920</y>
+          <y>922</y>
           <width>755</width>
-          <height>311</height>
+          <height>309</height>
          </rect>
         </property>
+        <property name="styleSheet">
+         <string notr="true">QGroupBox { font-weight: bold; }</string>
+        </property>
         <property name="title">
-         <string>Create soft link(s)</string>
+         <string>Create Soft Link</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
