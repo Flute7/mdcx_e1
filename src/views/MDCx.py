@@ -11008,7 +11008,7 @@ class Ui_MDCx(object):
         MDCx.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MDCx)
-        self.stackedWidget.setCurrentIndex(5)
+        self.stackedWidget.setCurrentIndex(4)
         self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MDCx)
 
@@ -11099,7 +11099,7 @@ class Ui_MDCx(object):
         self.label_58.setText(_translate("MDCx", "指不想要刮削的目录，可以填写多个目录，以逗号分开（中英文逗号都可以）"))
         self.label_49.setText(_translate("MDCx", "Catalogue:"))
         self.checkBox_no_escape_dir.setText(_translate("MDCx", "Bypass"))
-        self.label_56.setText(_translate("MDCx", "指含有视频的文件夹，将刮削该目录（含子目录）所有视频的元数据信息"))
+        self.label_56.setText(_translate("MDCx", "The metadata information of all videos in this directory (including subdirectories) will be scraped."))
         self.checkBox_scrape_softlink_path.setText(_translate("MDCx", "在以下目录为待刮削目录中的视频创建软链接，然后刮削以下目录（适合网盘用户）"))
         self.label_47.setText(_translate("MDCx", "Success:"))
         self.pushButton_select_media_folder_setting_page.setText(_translate("MDCx", "Open..."))

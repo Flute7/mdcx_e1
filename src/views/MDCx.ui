@@ -39,7 +39,7 @@
      <string/>
     </property>
     <property name="currentIndex">
-     <number>5</number>
+     <number>4</number>
     </property>
     <widget class="QWidget" name="page_main">
      <property name="contextMenuPolicy">
@@ -2779,7 +2779,7 @@ p, li { white-space: pre-wrap; }
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>指含有视频的文件夹，将刮削该目录（含子目录）所有视频的元数据信息</string>
+               <string>The metadata information of all videos in this directory (including subdirectories) will be scraped.</string>
               </property>
              </widget>
             </item>
