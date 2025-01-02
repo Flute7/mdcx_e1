@@ -9531,7 +9531,7 @@ class Ui_MDCx(object):
         self.label_75.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.label_75.setObjectName("label_75")
         self.label_get_cookie_url = QtWidgets.QLabel(self.groupBox_10)
-        self.label_get_cookie_url.setGeometry(QtCore.QRect(130, 480, 430, 21))
+        self.label_get_cookie_url.setGeometry(QtCore.QRect(180, 480, 430, 21))
         self.label_get_cookie_url.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.label_get_cookie_url.setMouseTracking(False)
         self.label_get_cookie_url.setStyleSheet("color: rgb(10, 52, 255);")
@@ -9541,7 +9541,7 @@ class Ui_MDCx(object):
         self.label_get_cookie_url.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
         self.label_get_cookie_url.setObjectName("label_get_cookie_url")
         self.label_7 = QtWidgets.QLabel(self.groupBox_10)
-        self.label_7.setGeometry(QtCore.QRect(60, 480, 71, 21))
+        self.label_7.setGeometry(QtCore.QRect(60, 480, 121, 21))
         self.label_7.setStyleSheet("color: rgb(8, 128, 128);")
         self.label_7.setObjectName("label_7")
         self.groupBox_28 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
@@ -9549,7 +9549,7 @@ class Ui_MDCx(object):
         self.groupBox_28.setStyleSheet("font:\"Courier\";")
         self.groupBox_28.setObjectName("groupBox_28")
         self.gridLayoutWidget_9 = QtWidgets.QWidget(self.groupBox_28)
-        self.gridLayoutWidget_9.setGeometry(QtCore.QRect(20, 30, 886, 261))
+        self.gridLayoutWidget_9.setGeometry(QtCore.QRect(20, 30, 661, 261))
         self.gridLayoutWidget_9.setObjectName("gridLayoutWidget_9")
         self.gridLayout_9 = QtWidgets.QGridLayout(self.gridLayoutWidget_9)
         self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
@@ -9603,6 +9603,7 @@ class Ui_MDCx(object):
         self.label_103.setObjectName("label_103")
         self.gridLayout_9.addWidget(self.label_103, 2, 1, 1, 1)
         self.horizontalLayout_17 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_17.setSpacing(6)
         self.horizontalLayout_17.setObjectName("horizontalLayout_17")
         self.radioButton_proxy_http = QtWidgets.QRadioButton(self.gridLayoutWidget_9)
         self.radioButton_proxy_http.setMinimumSize(QtCore.QSize(93, 30))
@@ -9835,7 +9836,7 @@ class Ui_MDCx(object):
         self.label_356.setTextInteractionFlags(QtCore.Qt.LinksAccessibleByKeyboard|QtCore.Qt.LinksAccessibleByMouse)
         self.label_356.setObjectName("label_356")
         self.layoutWidget7 = QtWidgets.QWidget(self.groupBox_14)
-        self.layoutWidget7.setGeometry(QtCore.QRect(160, 130, 441, 43))
+        self.layoutWidget7.setGeometry(QtCore.QRect(160, 130, 521, 47))
         self.layoutWidget7.setObjectName("layoutWidget7")
         self.horizontalLayout_150 = QtWidgets.QHBoxLayout(self.layoutWidget7)
         self.horizontalLayout_150.setContentsMargins(0, 0, 0, 0)
@@ -11009,7 +11010,7 @@ class Ui_MDCx(object):
 
         self.retranslateUi(MDCx)
         self.stackedWidget.setCurrentIndex(4)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(10)
         QtCore.QMetaObject.connectSlotsByName(MDCx)
 
     def retranslateUi(self, MDCx):
@@ -11949,26 +11950,26 @@ class Ui_MDCx(object):
         self.checkBox_net_ipv4_only.setText(_translate("MDCx", "Force IPv4"))
         self.label_64.setText(_translate("MDCx", "IP+Port:"))
         self.label_65.setText(_translate("MDCx", "Retries:"))
-        self.label_103.setText(_translate("MDCx", "Username and password example format: username:password@ip:port"))
+        self.label_103.setText(_translate("MDCx", "Example format with credentials: username:password@ip:port"))
         self.radioButton_proxy_http.setText(_translate("MDCx", "http"))
         self.radioButton_proxy_socks5.setText(_translate("MDCx", "socks5"))
         self.radioButton_proxy_nouse.setText(_translate("MDCx", "none"))
         self.label_410.setText(_translate("MDCx", "IPv4 only："))
         self.label_70.setText(_translate("MDCx", "Agent:"))
         self.label_73.setText(_translate("MDCx", "Timeout:"))
-        self.label_411.setText(_translate("MDCx", "Some websites (Javbus, Amazon) will fail to use IPv6 requests. It is recommended to use IPv4 (effective after restarting)"))
+        self.label_411.setText(_translate("MDCx", "IPv6 requests fail with some websites (Javbus, Amazon). IPv4 is recommended (restart required)."))
         self.groupBox_44.setTitle(_translate("MDCx", "URL Settings"))
-        self.label_110.setText(_translate("MDCx", "<p style=\'line-height:15px\'>Customize the URL used when scraping the website. Currently, the following websites are supported:<br>\n"
-"    &nbsp;&nbsp;&nbsp;&nbsp;airavcc  avsex  hdouban  iqqtv  lulubar  mdtv  javbus  javdb  javlibrary* <br>\n"
-"    &nbsp;&nbsp;&nbsp;&nbsp;* 配置后将直连访问<br>\n"
-"<br> PR submissions are welcome for inclusion of other websites. Please refer to:<a href=\"https://github.com/sqzw-x/mdcx/wiki/自定义网址\"><span style=\"color:#094fd1;\" > Github wiki<span/><a/>\n"
+        self.label_110.setText(_translate("MDCx", "<p style=\'line-height:15px\'>Specify a custom scraping URL. Currently supported sites:<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;airavcc  avsex  hdouban  iqqtv  lulubar  mdtv  javbus  javdb  javlibrary*<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;* direct access will be available after configuration.<br>\n"
+"<br> PR submissions for additional websites are welcome. Please refer to:<a href=\"https://github.com/sqzw-x/mdcx/wiki/自定义网址\"><span style=\"color:#094fd1;\" > Github wiki<span/><a/>\n"
 "</p>"))
         self.label_324.setText(_translate("MDCx", "⚠️ Click save after each modification or changes will be lost."))
         self.groupBox_14.setTitle(_translate("MDCx", "API Token"))
         self.label_355.setText(_translate("MDCx", "ThePornDB："))
-        self.label_356.setText(_translate("MDCx", "<html><head/><body><p><a href=\"https://theporndb.net/\"><span style=\" text-decoration: underline; color:#094fd1;\">https://theporndb.net/</span></a> After registering and logging in, click your avatar -> API Tokens -> CREATE. Copy the generated API Token and fill it in here.</p></body></html>"))
-        self.checkBox_theporndb_hash.setText(_translate("MDCx", "Match data without using Hash value"))
-        self.label_422.setText(_translate("MDCx", "<html><head/><body><p>Hash value matching results may be inaccurate</p></body></html>"))
+        self.label_356.setText(_translate("MDCx", "<html><head/><body><p>Visit <a href=\"https://theporndb.net/\"><span style=\" text-decoration: underline; color:#094fd1;\">https://theporndb.net/</span></a> and after you register and login; Click your avatar -> API tokens -> Create. Copy and paste the generated API token here.</p></body></html>"))
+        self.checkBox_theporndb_hash.setText(_translate("MDCx", "Dont use hash value"))
+        self.label_422.setText(_translate("MDCx", "<html><head/><body><p>Hash matching may be inaccurate.</p></body></html>"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab3), _translate("MDCx", " Network "))
         self.groupBox_17.setTitle(_translate("MDCx", "Save Log"))
         self.radioButton_log_on.setText(_translate("MDCx", "Yes"))

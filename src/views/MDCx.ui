@@ -2509,7 +2509,7 @@ p, li { white-space: pre-wrap; }
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>10</number>
       </property>
       <property name="iconSize">
        <size>
@@ -22448,11 +22448,11 @@ font: &quot;Courier&quot;;</string>
            </property>
            <property name="text">
             <string>&lt;p style='line-height:20px'&gt;How to get cookies:&lt;br&gt;
-1. Use Chrome to open the target website and log in, right-click on a blank space on the page and select "Inspect" ；&lt;br&gt;
-2. Select "Network" -> "All" at the top of the pop-up window on the right, and then refresh the current page.；&lt;br&gt;
-3. Click on the first newly loaded content in the "Name" column -&gt; "Header" -&gt; "Request header" -&gt; 「Cookie」；&lt;br&gt;
-4. Copy all the values ​​corresponding to the Cookie and fill them in the input box above. (Don't right-click "Copy Value"!
-Be sure to use the mouse to "manually select" all the text you want to copy, and then right-click "Copy"! Not "copy value"!)&lt;br&gt;
+1. Use Chrome to open the target website and log in, right-click on a blank space on the page and select &quot;Inspect&quot; ；&lt;br&gt;
+2. Select &quot;Network&quot; -&gt; &quot;All&quot; at the top of the pop-up window on the right, and then refresh the current page.；&lt;br&gt;
+3. Click on the first newly loaded content in the &quot;Name&quot; column -&gt; &quot;Header&quot; -&gt; &quot;Request header&quot; -&gt; 「Cookie」；&lt;br&gt;
+4. Copy all the values ​​corresponding to the Cookie and fill them in the input box above. (Don't right-click &quot;Copy Value&quot;!
+Be sure to use the mouse to &quot;manually select&quot; all the text you want to copy, and then right-click &quot;Copy&quot;! Not &quot;copy value&quot;!)&lt;br&gt;
 (Note: Cookies have a validity period. Please obtain them again when they expire.)&lt;/p&gt;</string>
            </property>
            <property name="scaledContents">
@@ -22471,7 +22471,7 @@ Be sure to use the mouse to "manually select" all the text you want to copy, and
           <widget class="QLabel" name="label_get_cookie_url">
            <property name="geometry">
             <rect>
-             <x>130</x>
+             <x>180</x>
              <y>480</y>
              <width>430</width>
              <height>21</height>
@@ -22507,7 +22507,7 @@ Be sure to use the mouse to "manually select" all the text you want to copy, and
             <rect>
              <x>60</x>
              <y>480</y>
-             <width>71</width>
+             <width>121</width>
              <height>21</height>
             </rect>
            </property>
@@ -22539,7 +22539,7 @@ Be sure to use the mouse to "manually select" all the text you want to copy, and
             <rect>
              <x>20</x>
              <y>30</y>
-             <width>886</width>
+             <width>661</width>
              <height>261</height>
             </rect>
            </property>
@@ -22638,12 +22638,15 @@ Be sure to use the mouse to "manually select" all the text you want to copy, and
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Username and password example format: username:password@ip:port</string>
+               <string>Example format with credentials: username:password@ip:port</string>
               </property>
              </widget>
             </item>
             <item row="0" column="1">
              <layout class="QHBoxLayout" name="horizontalLayout_17">
+              <property name="spacing">
+               <number>6</number>
+              </property>
               <item>
                <widget class="QRadioButton" name="radioButton_proxy_http">
                 <property name="minimumSize">
@@ -22928,7 +22931,7 @@ Be sure to use the mouse to "manually select" all the text you want to copy, and
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Some websites (Javbus, Amazon) will fail to use IPv6 requests. It is recommended to use IPv4 (effective after restarting)</string>
+               <string>IPv6 requests fail with some websites (Javbus, Amazon). IPv4 is recommended (restart required).</string>
               </property>
              </widget>
             </item>
@@ -22969,10 +22972,10 @@ Be sure to use the mouse to "manually select" all the text you want to copy, and
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>&lt;p style='line-height:15px'&gt;Customize the URL used when scraping the website. Currently, the following websites are supported:&lt;br&gt;
-    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;airavcc  avsex  hdouban  iqqtv  lulubar  mdtv  javbus  javdb  javlibrary* &lt;br&gt;
-    &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;* 配置后将直连访问&lt;br&gt;
-&lt;br&gt; PR submissions are welcome for inclusion of other websites. Please refer to:&lt;a href=&quot;https://github.com/sqzw-x/mdcx/wiki/自定义网址&quot;&gt;&lt;span style=&quot;color:#094fd1;&quot; &gt; Github wiki&lt;span/&gt;&lt;a/&gt;
+            <string>&lt;p style='line-height:15px'&gt;Specify a custom scraping URL. Currently supported sites:&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;airavcc  avsex  hdouban  iqqtv  lulubar  mdtv  javbus  javdb  javlibrary*&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;* direct access will be available after configuration.&lt;br&gt;
+&lt;br&gt; PR submissions for additional websites are welcome. Please refer to:&lt;a href=&quot;https://github.com/sqzw-x/mdcx/wiki/自定义网址&quot;&gt;&lt;span style=&quot;color:#094fd1;&quot; &gt; Github wiki&lt;span/&gt;&lt;a/&gt;
 &lt;/p&gt;</string>
            </property>
            <property name="openExternalLinks">
@@ -23170,7 +23173,7 @@ font-weight:bold</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://theporndb.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#094fd1;&quot;&gt;https://theporndb.net/&lt;/span&gt;&lt;/a&gt; After registering and logging in, click your avatar -> API Tokens -> CREATE. Copy the generated API Token and fill it in here.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Visit &lt;a href=&quot;https://theporndb.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#094fd1;&quot;&gt;https://theporndb.net/&lt;/span&gt;&lt;/a&gt; and after you register and login; Click your avatar -&gt; API tokens -&gt; Create. Copy and paste the generated API token here.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -23193,8 +23196,8 @@ font-weight:bold</string>
             <rect>
              <x>160</x>
              <y>130</y>
-             <width>441</width>
-             <height>43</height>
+             <width>521</width>
+             <height>47</height>
             </rect>
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_150">
@@ -23207,7 +23210,7 @@ font-weight:bold</string>
                </sizepolicy>
               </property>
               <property name="text">
-               <string>Match data without using Hash value</string>
+               <string>Dont use hash value</string>
               </property>
              </widget>
             </item>
@@ -23223,7 +23226,7 @@ font-weight:bold</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hash value matching results may be inaccurate&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hash matching may be inaccurate.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
