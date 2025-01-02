@@ -9422,7 +9422,7 @@ class Ui_MDCx(object):
         self.scrollArea_3.setWidgetResizable(False)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 760, 1450))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, -327, 760, 1450))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.groupBox_10 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
         self.groupBox_10.setGeometry(QtCore.QRect(30, 350, 701, 531))
@@ -9518,7 +9518,7 @@ class Ui_MDCx(object):
         self.horizontalLayout_152.addWidget(self.label_javbus_cookie_result)
         self.gridLayout_10.addLayout(self.horizontalLayout_152, 3, 1, 1, 1)
         self.label_75 = QtWidgets.QLabel(self.groupBox_10)
-        self.label_75.setGeometry(QtCore.QRect(60, 330, 611, 141))
+        self.label_75.setGeometry(QtCore.QRect(60, 330, 621, 171))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -9531,7 +9531,7 @@ class Ui_MDCx(object):
         self.label_75.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.label_75.setObjectName("label_75")
         self.label_get_cookie_url = QtWidgets.QLabel(self.groupBox_10)
-        self.label_get_cookie_url.setGeometry(QtCore.QRect(180, 480, 430, 21))
+        self.label_get_cookie_url.setGeometry(QtCore.QRect(180, 500, 430, 21))
         self.label_get_cookie_url.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.label_get_cookie_url.setMouseTracking(False)
         self.label_get_cookie_url.setStyleSheet("color: rgb(10, 52, 255);")
@@ -9541,7 +9541,7 @@ class Ui_MDCx(object):
         self.label_get_cookie_url.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
         self.label_get_cookie_url.setObjectName("label_get_cookie_url")
         self.label_7 = QtWidgets.QLabel(self.groupBox_10)
-        self.label_7.setGeometry(QtCore.QRect(60, 480, 121, 21))
+        self.label_7.setGeometry(QtCore.QRect(60, 500, 121, 21))
         self.label_7.setStyleSheet("color: rgb(8, 128, 128);")
         self.label_7.setObjectName("label_7")
         self.groupBox_28 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
@@ -11929,7 +11929,7 @@ class Ui_MDCx(object):
         self.checkBox_actor_photo_kodi.setText(_translate("MDCx", "刮削结束后自动创建"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MDCx", " Performer "))
         self.groupBox_10.setTitle(_translate("MDCx", "Cookie Settings"))
-        self.plainTextEdit_cookie_javbus.setPlaceholderText(_translate("MDCx", "The US node needs to be filled in, and other nodes generally do not need to be filled in unless prompted to fill in."))
+        self.plainTextEdit_cookie_javbus.setPlaceholderText(_translate("MDCx", "Required for United States nodes, generally not required for other nodes unless prompted."))
         self.plainTextEdit_cookie_javdb.setPlaceholderText(_translate("MDCx", "Required for FC2 scraping."))
         self.pushButton_check_javdb_cookie.setText(_translate("MDCx", "Test"))
         self.label_425.setText(_translate("MDCx", "javbus:\n"
@@ -11937,24 +11937,25 @@ class Ui_MDCx(object):
         self.label_45.setText(_translate("MDCx", "javdb:\n"
 "(Login Status)"))
         self.pushButton_check_javbus_cookie.setText(_translate("MDCx", "Test"))
-        self.label_75.setText(_translate("MDCx", "<p style=\'line-height:20px\'>How to get cookies:<br>\n"
-"1. Use Chrome to open the target website and log in, right-click on a blank space on the page and select \"Inspect\" ；<br>\n"
-"2. Select \"Network\" -> \"All\" at the top of the pop-up window on the right, and then refresh the current page.；<br>\n"
-"3. Click on the first newly loaded content in the \"Name\" column -> \"Header\" -> \"Request header\" -> 「Cookie」；<br>\n"
-"4. Copy all the values ​​corresponding to the Cookie and fill them in the input box above. (Don\'t right-click \"Copy Value\"!\n"
-"Be sure to use the mouse to \"manually select\" all the text you want to copy, and then right-click \"Copy\"! Not \"copy value\"!)<br>\n"
-"(Note: Cookies have a validity period. Please obtain them again when they expire.)</p>"))
+        self.label_75.setText(_translate("MDCx", "<p style=\'line-height:20px\'>Cookie Instructions:<br>\n"
+"1. Log into the target website with Chrome. Right-click a blank area of the webpage and select \"Inspect\".<br>\n"
+"2. Select the \"Network\" tab in the pop-up window and then refresh the page.；<br>\n"
+"3. Select the first entry in the loaded content list. In the sub window\'s \"headers\" tab, expand the \"Request Headers\"<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;section and look for \"Cookie\".<br>\n"
+"4. Copy and paste the applicable cookie value it into the input box above (use the mouse to \"manually select\"<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp; the text you want to copy, and then right-click \"Copy\", not \"Copy Value\"!)<br>\n"
+"(Note: Cookies have a validity period. Please replace expired cookies.)</p>"))
         self.label_get_cookie_url.setText(_translate("MDCx", "https://tieba.baidu.com/p/5492736764"))
         self.label_7.setText(_translate("MDCx", "Demonstration Video:"))
         self.groupBox_28.setTitle(_translate("MDCx", "Proxy Settings"))
         self.checkBox_net_ipv4_only.setText(_translate("MDCx", "Force IPv4"))
         self.label_64.setText(_translate("MDCx", "IP+Port:"))
         self.label_65.setText(_translate("MDCx", "Retries:"))
-        self.label_103.setText(_translate("MDCx", "Example format with credentials: username:password@ip:port"))
+        self.label_103.setText(_translate("MDCx", "Credentials Format: username:password@ip:port"))
         self.radioButton_proxy_http.setText(_translate("MDCx", "http"))
         self.radioButton_proxy_socks5.setText(_translate("MDCx", "socks5"))
         self.radioButton_proxy_nouse.setText(_translate("MDCx", "none"))
-        self.label_410.setText(_translate("MDCx", "IPv4 only："))
+        self.label_410.setText(_translate("MDCx", "IP Version:"))
         self.label_70.setText(_translate("MDCx", "Agent:"))
         self.label_73.setText(_translate("MDCx", "Timeout:"))
         self.label_411.setText(_translate("MDCx", "IPv6 requests fail with some websites (Javbus, Amazon). IPv4 is recommended (restart required)."))

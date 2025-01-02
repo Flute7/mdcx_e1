@@ -22221,7 +22221,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>0</y>
+           <y>-327</y>
            <width>760</width>
            <height>1450</height>
           </rect>
@@ -22268,7 +22268,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
 font: &quot;Courier&quot;;</string>
               </property>
               <property name="placeholderText">
-               <string>The US node needs to be filled in, and other nodes generally do not need to be filled in unless prompted to fill in.</string>
+               <string>Required for United States nodes, generally not required for other nodes unless prompted.</string>
               </property>
              </widget>
             </item>
@@ -22433,8 +22433,8 @@ font: &quot;Courier&quot;;</string>
             <rect>
              <x>60</x>
              <y>330</y>
-             <width>611</width>
-             <height>141</height>
+             <width>621</width>
+             <height>171</height>
             </rect>
            </property>
            <property name="sizePolicy">
@@ -22447,13 +22447,14 @@ font: &quot;Courier&quot;;</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>&lt;p style='line-height:20px'&gt;How to get cookies:&lt;br&gt;
-1. Use Chrome to open the target website and log in, right-click on a blank space on the page and select &quot;Inspect&quot; ；&lt;br&gt;
-2. Select &quot;Network&quot; -&gt; &quot;All&quot; at the top of the pop-up window on the right, and then refresh the current page.；&lt;br&gt;
-3. Click on the first newly loaded content in the &quot;Name&quot; column -&gt; &quot;Header&quot; -&gt; &quot;Request header&quot; -&gt; 「Cookie」；&lt;br&gt;
-4. Copy all the values ​​corresponding to the Cookie and fill them in the input box above. (Don't right-click &quot;Copy Value&quot;!
-Be sure to use the mouse to &quot;manually select&quot; all the text you want to copy, and then right-click &quot;Copy&quot;! Not &quot;copy value&quot;!)&lt;br&gt;
-(Note: Cookies have a validity period. Please obtain them again when they expire.)&lt;/p&gt;</string>
+            <string>&lt;p style='line-height:20px'&gt;Cookie Instructions:&lt;br&gt;
+1. Log into the target website with Chrome. Right-click a blank area of the webpage and select &quot;Inspect&quot;.&lt;br&gt;
+2. Select the &quot;Network&quot; tab in the pop-up window and then refresh the page.；&lt;br&gt;
+3. Select the first entry in the loaded content list. In the sub window's &quot;headers&quot; tab, expand the &quot;Request Headers&quot;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;section and look for &quot;Cookie&quot;.&lt;br&gt;
+4. Copy and paste the applicable cookie value it into the input box above (use the mouse to &quot;manually select&quot;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; the text you want to copy, and then right-click &quot;Copy&quot;, not &quot;Copy Value&quot;!)&lt;br&gt;
+(Note: Cookies have a validity period. Please replace expired cookies.)&lt;/p&gt;</string>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -22472,7 +22473,7 @@ Be sure to use the mouse to &quot;manually select&quot; all the text you want to
            <property name="geometry">
             <rect>
              <x>180</x>
-             <y>480</y>
+             <y>500</y>
              <width>430</width>
              <height>21</height>
             </rect>
@@ -22506,7 +22507,7 @@ Be sure to use the mouse to &quot;manually select&quot; all the text you want to
            <property name="geometry">
             <rect>
              <x>60</x>
-             <y>480</y>
+             <y>500</y>
              <width>121</width>
              <height>21</height>
             </rect>
@@ -22638,7 +22639,7 @@ Be sure to use the mouse to &quot;manually select&quot; all the text you want to
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Example format with credentials: username:password@ip:port</string>
+               <string>Credentials Format: username:password@ip:port</string>
               </property>
              </widget>
             </item>
@@ -22787,7 +22788,7 @@ Be sure to use the mouse to &quot;manually select&quot; all the text you want to
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>IPv4 only：</string>
+               <string>IP Version:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
