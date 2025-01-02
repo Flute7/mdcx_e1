@@ -11928,23 +11928,23 @@ class Ui_MDCx(object):
         self.checkBox_actor_photo_kodi.setText(_translate("MDCx", "刮削结束后自动创建"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_5), _translate("MDCx", " Performer "))
         self.groupBox_10.setTitle(_translate("MDCx", "Cookie Settings"))
-        self.plainTextEdit_cookie_javbus.setPlaceholderText(_translate("MDCx", "美国节点需要填写，其他节点一般不需要填写，除非提示需要填写。"))
-        self.plainTextEdit_cookie_javdb.setPlaceholderText(_translate("MDCx", "刮削FC2需要填写"))
-        self.pushButton_check_javdb_cookie.setText(_translate("MDCx", "检查cookie"))
+        self.plainTextEdit_cookie_javbus.setPlaceholderText(_translate("MDCx", "The US node needs to be filled in, and other nodes generally do not need to be filled in unless prompted to fill in."))
+        self.plainTextEdit_cookie_javdb.setPlaceholderText(_translate("MDCx", "Required for FC2 scraping."))
+        self.pushButton_check_javdb_cookie.setText(_translate("MDCx", "Test"))
         self.label_425.setText(_translate("MDCx", "javbus:\n"
 "(Login Status)"))
         self.label_45.setText(_translate("MDCx", "javdb:\n"
 "(Login Status)"))
-        self.pushButton_check_javbus_cookie.setText(_translate("MDCx", "检查cookie"))
-        self.label_75.setText(_translate("MDCx", "<p style=\'line-height:20px\'>Cookie 获取方法：<br>\n"
-"1，使用 Chrome 打开目标网站并登录，在页面空白位置点击鼠标右键，选择 「检查」 ；<br>\n"
-"2，右侧弹窗顶部选择：「网络」 -> 「全部」，然后刷新当前页面；<br>\n"
-"3，点击「名称」栏新加载出来的第一个内容 -> 「标头」 -> 「请求表头」 -> 「Cookie」；<br>\n"
-"4，复制 Cookie 对应的全部值填入上面输入框。（不要直接右键点「复制值」！！！！\n"
-"一定要先用鼠标「手动框选」要复制的全部文字，然后再右键点「复制」！！！不是「复制值」！！！！！！）<br>\n"
-"（注意：Cookie 存在有效期，过期无效时请重新获取。）</p>"))
+        self.pushButton_check_javbus_cookie.setText(_translate("MDCx", "Test"))
+        self.label_75.setText(_translate("MDCx", "<p style=\'line-height:20px\'>How to get cookies:<br>\n"
+"1. Use Chrome to open the target website and log in, right-click on a blank space on the page and select \"Inspect\" ；<br>\n"
+"2. Select \"Network\" -> \"All\" at the top of the pop-up window on the right, and then refresh the current page.；<br>\n"
+"3. Click on the first newly loaded content in the \"Name\" column -> \"Header\" -> \"Request header\" -> 「Cookie」；<br>\n"
+"4. Copy all the values ​​corresponding to the Cookie and fill them in the input box above. (Don\'t right-click \"Copy Value\"!\n"
+"Be sure to use the mouse to \"manually select\" all the text you want to copy, and then right-click \"Copy\"! Not \"copy value\"!)<br>\n"
+"(Note: Cookies have a validity period. Please obtain them again when they expire.)</p>"))
         self.label_get_cookie_url.setText(_translate("MDCx", "https://tieba.baidu.com/p/5492736764"))
-        self.label_7.setText(_translate("MDCx", "演示动画："))
+        self.label_7.setText(_translate("MDCx", "Demonstration Video:"))
         self.groupBox_28.setTitle(_translate("MDCx", "Proxy Settings"))
         self.checkBox_net_ipv4_only.setText(_translate("MDCx", "Force IPv4"))
         self.label_64.setText(_translate("MDCx", "IP+Port:"))
@@ -11957,18 +11957,18 @@ class Ui_MDCx(object):
         self.label_70.setText(_translate("MDCx", "Agent:"))
         self.label_73.setText(_translate("MDCx", "Timeout:"))
         self.label_411.setText(_translate("MDCx", "Some websites (Javbus, Amazon) will fail to use IPv6 requests. It is recommended to use IPv4 (effective after restarting)"))
-        self.groupBox_44.setTitle(_translate("MDCx", "网址设置"))
-        self.label_110.setText(_translate("MDCx", "<p style=\'line-height:15px\'>自定义刮削指定网站时使用的网址，目前支持以下网站：<br>\n"
+        self.groupBox_44.setTitle(_translate("MDCx", "URL Settings"))
+        self.label_110.setText(_translate("MDCx", "<p style=\'line-height:15px\'>Customize the URL used when scraping the website. Currently, the following websites are supported:<br>\n"
 "    &nbsp;&nbsp;&nbsp;&nbsp;airavcc  avsex  hdouban  iqqtv  lulubar  mdtv  javbus  javdb  javlibrary* <br>\n"
 "    &nbsp;&nbsp;&nbsp;&nbsp;* 配置后将直连访问<br>\n"
-"<br>欢迎 pr 实现其它网站的自定义网址功能，参考：<a href=\"https://github.com/sqzw-x/mdcx/wiki/自定义网址\"><span style=\"color:#094fd1;\" > Github wiki<span/><a/>\n"
+"<br> PR submissions are welcome for inclusion of other websites. Please refer to:<a href=\"https://github.com/sqzw-x/mdcx/wiki/自定义网址\"><span style=\"color:#094fd1;\" > Github wiki<span/><a/>\n"
 "</p>"))
-        self.label_324.setText(_translate("MDCx", "⚠️ 修改后先点击保存再切换，否则修改将丢失"))
+        self.label_324.setText(_translate("MDCx", "⚠️ Click save after each modification or changes will be lost."))
         self.groupBox_14.setTitle(_translate("MDCx", "API Token"))
         self.label_355.setText(_translate("MDCx", "ThePornDB："))
-        self.label_356.setText(_translate("MDCx", "<html><head/><body><p><a href=\"https://theporndb.net/\"><span style=\" text-decoration: underline; color:#094fd1;\">https://theporndb.net/</span></a> 注册登录后，点头像 - API Tokens - CREATE。复制生成的 API Token 填入此处。</p></body></html>"))
-        self.checkBox_theporndb_hash.setText(_translate("MDCx", "不使用Hash值匹配数据"))
-        self.label_422.setText(_translate("MDCx", "<html><head/><body><p>该网站的Hash值匹配结果可能错误</p></body></html>"))
+        self.label_356.setText(_translate("MDCx", "<html><head/><body><p><a href=\"https://theporndb.net/\"><span style=\" text-decoration: underline; color:#094fd1;\">https://theporndb.net/</span></a> After registering and logging in, click your avatar -> API Tokens -> CREATE. Copy the generated API Token and fill it in here.</p></body></html>"))
+        self.checkBox_theporndb_hash.setText(_translate("MDCx", "Match data without using Hash value"))
+        self.label_422.setText(_translate("MDCx", "<html><head/><body><p>Hash value matching results may be inaccurate</p></body></html>"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab3), _translate("MDCx", " Network "))
         self.groupBox_17.setTitle(_translate("MDCx", "Save Log"))
         self.radioButton_log_on.setText(_translate("MDCx", "Yes"))

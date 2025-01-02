@@ -22268,7 +22268,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
 font: &quot;Courier&quot;;</string>
               </property>
               <property name="placeholderText">
-               <string>美国节点需要填写，其他节点一般不需要填写，除非提示需要填写。</string>
+               <string>The US node needs to be filled in, and other nodes generally do not need to be filled in unless prompted to fill in.</string>
               </property>
              </widget>
             </item>
@@ -22286,7 +22286,7 @@ font: &quot;Courier&quot;;</string>
 font: &quot;Courier&quot;;</string>
               </property>
               <property name="placeholderText">
-               <string>刮削FC2需要填写</string>
+               <string>Required for FC2 scraping.</string>
               </property>
              </widget>
             </item>
@@ -22301,7 +22301,7 @@ font: &quot;Courier&quot;;</string>
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>检查cookie</string>
+                 <string>Test</string>
                 </property>
                </widget>
               </item>
@@ -22395,7 +22395,7 @@ font: &quot;Courier&quot;;</string>
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>检查cookie</string>
+                 <string>Test</string>
                 </property>
                </widget>
               </item>
@@ -22447,13 +22447,13 @@ font: &quot;Courier&quot;;</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>&lt;p style='line-height:20px'&gt;Cookie 获取方法：&lt;br&gt;
-1，使用 Chrome 打开目标网站并登录，在页面空白位置点击鼠标右键，选择 「检查」 ；&lt;br&gt;
-2，右侧弹窗顶部选择：「网络」 -&gt; 「全部」，然后刷新当前页面；&lt;br&gt;
-3，点击「名称」栏新加载出来的第一个内容 -&gt; 「标头」 -&gt; 「请求表头」 -&gt; 「Cookie」；&lt;br&gt;
-4，复制 Cookie 对应的全部值填入上面输入框。（不要直接右键点「复制值」！！！！
-一定要先用鼠标「手动框选」要复制的全部文字，然后再右键点「复制」！！！不是「复制值」！！！！！！）&lt;br&gt;
-（注意：Cookie 存在有效期，过期无效时请重新获取。）&lt;/p&gt;</string>
+            <string>&lt;p style='line-height:20px'&gt;How to get cookies:&lt;br&gt;
+1. Use Chrome to open the target website and log in, right-click on a blank space on the page and select "Inspect" ；&lt;br&gt;
+2. Select "Network" -> "All" at the top of the pop-up window on the right, and then refresh the current page.；&lt;br&gt;
+3. Click on the first newly loaded content in the "Name" column -&gt; "Header" -&gt; "Request header" -&gt; 「Cookie」；&lt;br&gt;
+4. Copy all the values ​​corresponding to the Cookie and fill them in the input box above. (Don't right-click "Copy Value"!
+Be sure to use the mouse to "manually select" all the text you want to copy, and then right-click "Copy"! Not "copy value"!)&lt;br&gt;
+(Note: Cookies have a validity period. Please obtain them again when they expire.)&lt;/p&gt;</string>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -22515,7 +22515,7 @@ font: &quot;Courier&quot;;</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>演示动画：</string>
+            <string>Demonstration Video:</string>
            </property>
           </widget>
          </widget>
@@ -22948,7 +22948,7 @@ font: &quot;Courier&quot;;</string>
            <string notr="true">font:&quot;Courier&quot;;</string>
           </property>
           <property name="title">
-           <string>网址设置</string>
+           <string>URL Settings</string>
           </property>
           <widget class="QLabel" name="label_110">
            <property name="geometry">
@@ -22969,10 +22969,10 @@ font: &quot;Courier&quot;;</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>&lt;p style='line-height:15px'&gt;自定义刮削指定网站时使用的网址，目前支持以下网站：&lt;br&gt;
+            <string>&lt;p style='line-height:15px'&gt;Customize the URL used when scraping the website. Currently, the following websites are supported:&lt;br&gt;
     &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;airavcc  avsex  hdouban  iqqtv  lulubar  mdtv  javbus  javdb  javlibrary* &lt;br&gt;
     &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;* 配置后将直连访问&lt;br&gt;
-&lt;br&gt;欢迎 pr 实现其它网站的自定义网址功能，参考：&lt;a href=&quot;https://github.com/sqzw-x/mdcx/wiki/自定义网址&quot;&gt;&lt;span style=&quot;color:#094fd1;&quot; &gt; Github wiki&lt;span/&gt;&lt;a/&gt;
+&lt;br&gt; PR submissions are welcome for inclusion of other websites. Please refer to:&lt;a href=&quot;https://github.com/sqzw-x/mdcx/wiki/自定义网址&quot;&gt;&lt;span style=&quot;color:#094fd1;&quot; &gt; Github wiki&lt;span/&gt;&lt;a/&gt;
 &lt;/p&gt;</string>
            </property>
            <property name="openExternalLinks">
@@ -23067,7 +23067,7 @@ font-weight:bold</string>
             <enum>QFrame::NoFrame</enum>
            </property>
            <property name="text">
-            <string>⚠️ 修改后先点击保存再切换，否则修改将丢失</string>
+            <string>⚠️ Click save after each modification or changes will be lost.</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -23170,7 +23170,7 @@ font-weight:bold</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://theporndb.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#094fd1;&quot;&gt;https://theporndb.net/&lt;/span&gt;&lt;/a&gt; 注册登录后，点头像 - API Tokens - CREATE。复制生成的 API Token 填入此处。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://theporndb.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#094fd1;&quot;&gt;https://theporndb.net/&lt;/span&gt;&lt;/a&gt; After registering and logging in, click your avatar -> API Tokens -> CREATE. Copy the generated API Token and fill it in here.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -23207,7 +23207,7 @@ font-weight:bold</string>
                </sizepolicy>
               </property>
               <property name="text">
-               <string>不使用Hash值匹配数据</string>
+               <string>Match data without using Hash value</string>
               </property>
              </widget>
             </item>
@@ -23223,7 +23223,7 @@ font-weight:bold</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;该网站的Hash值匹配结果可能错误&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hash value matching results may be inaccurate&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
