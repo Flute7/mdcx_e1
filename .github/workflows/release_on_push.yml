@@ -22,7 +22,7 @@ jobs:
         id: get-new-commits
         run: |
           echo "count=$(git log --oneline --since '24 hours ago')" >> $GITHUB_OUTPUT
-          echo "short_sha=$(echo ${{ github.sha }} | cut -c1-8)" >> $GITHUB_OUTPUT
+          echo "short_sha=$(echo ${{ github.sha }})" >> $GITHUB_OUTPUT
 
       - name: Delete old release
         uses: dev-drprasad/delete-tag-and-release@v1.1
