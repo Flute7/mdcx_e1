@@ -22221,7 +22221,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-422</y>
+           <y>-465</y>
            <width>760</width>
            <height>1450</height>
           </rect>
@@ -22431,9 +22431,9 @@ font: &quot;Courier&quot;;</string>
           <widget class="QLabel" name="label_75">
            <property name="geometry">
             <rect>
-             <x>10</x>
+             <x>20</x>
              <y>320</y>
-             <width>621</width>
+             <width>661</width>
              <height>171</height>
             </rect>
            </property>
@@ -22448,7 +22448,7 @@ font: &quot;Courier&quot;;</string>
            </property>
            <property name="text">
             <string>&lt;p style='line-height:20px'&gt;Cookie Instructions:&lt;br&gt;
-1. Log into the target website with Chrome. Right-click a blank area of the webpage and select &quot;Inspect&quot;.&lt;br&gt;
+1. Use Chrome to log into the website. Right-click a blank area of the webpage and select &quot;Inspect&quot;.&lt;br&gt;
 2. Select the &quot;Network&quot; tab in the pop-up window and then refresh the page.&lt;br&gt;
 3. Select the first entry in the loaded content list. In the sub window's &quot;headers&quot; tab, expand the &quot;Request Headers&quot; section and look for &quot;Cookie&quot;.&lt;br&gt;
 4. Copy and paste the applicable cookie value it into the input box above (use the mouse to &quot;manually select&quot; the text you want to copy, and then right-click &quot;Copy&quot;, not &quot;Copy Value&quot;!)&lt;br&gt;
@@ -22470,7 +22470,7 @@ font: &quot;Courier&quot;;</string>
           <widget class="QLabel" name="label_get_cookie_url">
            <property name="geometry">
             <rect>
-             <x>130</x>
+             <x>150</x>
              <y>500</y>
              <width>430</width>
              <height>21</height>
@@ -22504,7 +22504,7 @@ font: &quot;Courier&quot;;</string>
           <widget class="QLabel" name="label_7">
            <property name="geometry">
             <rect>
-             <x>10</x>
+             <x>20</x>
              <y>500</y>
              <width>121</width>
              <height>21</height>
