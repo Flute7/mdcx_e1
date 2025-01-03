@@ -23157,7 +23157,7 @@ font-weight:bold</string>
           <widget class="QLabel" name="label_356">
            <property name="geometry">
             <rect>
-             <x>120</x>
+             <x>160</x>
              <y>90</y>
              <width>561</width>
              <height>41</height>
@@ -23173,7 +23173,7 @@ font-weight:bold</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Visit &lt;a href=&quot;https://theporndb.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#094fd1;&quot;&gt;https://theporndb.net/&lt;/span&gt;&lt;/a&gt; and after you register and login; Click your avatar -&gt; API tokens -&gt; Create. Copy and paste the generated API token here.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Visit &lt;a href=&quot;https://theporndb.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#094fd1;&quot;&gt;https://theporndb.net/&lt;/span&gt;&lt;/a&gt;, register and login. Click your avatar -&gt; API tokens -&gt; Create. Copy and paste the generated API token here.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
