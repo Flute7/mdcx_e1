@@ -9422,7 +9422,7 @@ class Ui_MDCx(object):
         self.scrollArea_3.setWidgetResizable(False)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, -327, 760, 1450))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, -422, 760, 1450))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.groupBox_10 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
         self.groupBox_10.setGeometry(QtCore.QRect(30, 350, 701, 531))
@@ -9518,7 +9518,7 @@ class Ui_MDCx(object):
         self.horizontalLayout_152.addWidget(self.label_javbus_cookie_result)
         self.gridLayout_10.addLayout(self.horizontalLayout_152, 3, 1, 1, 1)
         self.label_75 = QtWidgets.QLabel(self.groupBox_10)
-        self.label_75.setGeometry(QtCore.QRect(60, 330, 621, 171))
+        self.label_75.setGeometry(QtCore.QRect(10, 320, 621, 171))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -9531,7 +9531,7 @@ class Ui_MDCx(object):
         self.label_75.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.label_75.setObjectName("label_75")
         self.label_get_cookie_url = QtWidgets.QLabel(self.groupBox_10)
-        self.label_get_cookie_url.setGeometry(QtCore.QRect(180, 500, 430, 21))
+        self.label_get_cookie_url.setGeometry(QtCore.QRect(130, 500, 430, 21))
         self.label_get_cookie_url.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.label_get_cookie_url.setMouseTracking(False)
         self.label_get_cookie_url.setStyleSheet("color: rgb(10, 52, 255);")
@@ -9541,7 +9541,7 @@ class Ui_MDCx(object):
         self.label_get_cookie_url.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
         self.label_get_cookie_url.setObjectName("label_get_cookie_url")
         self.label_7 = QtWidgets.QLabel(self.groupBox_10)
-        self.label_7.setGeometry(QtCore.QRect(60, 500, 121, 21))
+        self.label_7.setGeometry(QtCore.QRect(10, 500, 121, 21))
         self.label_7.setStyleSheet("color: rgb(8, 128, 128);")
         self.label_7.setObjectName("label_7")
         self.groupBox_28 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
@@ -11932,19 +11932,17 @@ class Ui_MDCx(object):
         self.plainTextEdit_cookie_javbus.setPlaceholderText(_translate("MDCx", "Required for United States nodes, generally not required for other nodes unless prompted."))
         self.plainTextEdit_cookie_javdb.setPlaceholderText(_translate("MDCx", "Required for FC2 scraping."))
         self.pushButton_check_javdb_cookie.setText(_translate("MDCx", "Test"))
-        self.label_425.setText(_translate("MDCx", "javbus:\n"
-"(Login Status)"))
-        self.label_45.setText(_translate("MDCx", "javdb:\n"
-"(Login Status)"))
+        self.label_425.setText(_translate("MDCx", "JavBus:\n"
+"(login status)"))
+        self.label_45.setText(_translate("MDCx", "JavDB:\n"
+"(login status)"))
         self.pushButton_check_javbus_cookie.setText(_translate("MDCx", "Test"))
         self.label_75.setText(_translate("MDCx", "<p style=\'line-height:20px\'>Cookie Instructions:<br>\n"
 "1. Log into the target website with Chrome. Right-click a blank area of the webpage and select \"Inspect\".<br>\n"
-"2. Select the \"Network\" tab in the pop-up window and then refresh the page.；<br>\n"
-"3. Select the first entry in the loaded content list. In the sub window\'s \"headers\" tab, expand the \"Request Headers\"<br>\n"
-"&nbsp;&nbsp;&nbsp;&nbsp;section and look for \"Cookie\".<br>\n"
-"4. Copy and paste the applicable cookie value it into the input box above (use the mouse to \"manually select\"<br>\n"
-"&nbsp;&nbsp;&nbsp;&nbsp; the text you want to copy, and then right-click \"Copy\", not \"Copy Value\"!)<br>\n"
-"(Note: Cookies have a validity period. Please replace expired cookies.)</p>"))
+"2. Select the \"Network\" tab in the pop-up window and then refresh the page.<br>\n"
+"3. Select the first entry in the loaded content list. In the sub window\'s \"headers\" tab, expand the \"Request Headers\" section and look for \"Cookie\".<br>\n"
+"4. Copy and paste the applicable cookie value it into the input box above (use the mouse to \"manually select\" the text you want to copy, and then right-click \"Copy\", not \"Copy Value\"!)<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;(Note: Cookies have a validity period. Please replace expired cookies.)</p>"))
         self.label_get_cookie_url.setText(_translate("MDCx", "https://tieba.baidu.com/p/5492736764"))
         self.label_7.setText(_translate("MDCx", "Demonstration Video:"))
         self.groupBox_28.setTitle(_translate("MDCx", "Proxy Settings"))
@@ -11958,7 +11956,8 @@ class Ui_MDCx(object):
         self.label_410.setText(_translate("MDCx", "IP Version:"))
         self.label_70.setText(_translate("MDCx", "Agent:"))
         self.label_73.setText(_translate("MDCx", "Timeout:"))
-        self.label_411.setText(_translate("MDCx", "IPv6 requests fail with some websites (Javbus, Amazon). IPv4 is recommended (restart required)."))
+        self.label_411.setText(_translate("MDCx", "IPv6 requests fail with some websites (Javbus, Amazon).\n"
+"IPv4 is recommended (restart required)."))
         self.groupBox_44.setTitle(_translate("MDCx", "URL Settings"))
         self.label_110.setText(_translate("MDCx", "<p style=\'line-height:15px\'>Specify a custom scraping URL. Currently supported sites:<br>\n"
 "&nbsp;&nbsp;&nbsp;&nbsp;airavcc  avsex  hdouban  iqqtv  lulubar  mdtv  javbus  javdb  javlibrary*<br>\n"
