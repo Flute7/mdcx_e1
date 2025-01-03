@@ -21,7 +21,7 @@ jobs:
       - name: Get new commits
         id: get-new-commits
         run: |
-          echo "count=$(git log --oneline --since '24 hours ago' | wc -l)" >> $GITHUB_OUTPUT
+          echo "count=$(git log --oneline --since '24 hours ago')" >> $GITHUB_OUTPUT
           echo "short_sha=$(echo ${{ github.sha }} | cut -c1-8)" >> $GITHUB_OUTPUT
 
       - name: Delete old release
