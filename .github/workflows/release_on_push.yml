@@ -8,8 +8,7 @@ env:
 
 jobs:
   init-matrix:
-    # runs-on: ubuntu-latest
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     outputs:
       matrix: ${{ steps.set-matrix.outputs.matrix }}
       count: ${{ steps.get-new-commits.outputs.count }}
@@ -17,6 +16,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+
+      - name: Get new commits
+        id: get-new-commits
+        run: |
+          echo "count=$(git log --oneline --since '24 hours ago' | wc -l)" >> $GITHUB_OUTPUT
+          echo "short_sha=$(echo ${{ github.sha }} | cut -c1-8)" >> $GITHUB_OUTPUT
 
       - name: Delete old release
         uses: dev-drprasad/delete-tag-and-release@v1.1
