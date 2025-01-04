@@ -22221,7 +22221,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-465</y>
+           <y>-792</y>
            <width>760</width>
            <height>1450</height>
           </rect>
@@ -22230,9 +22230,9 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>350</y>
+            <y>340</y>
             <width>701</width>
-            <height>531</height>
+            <height>541</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -22448,11 +22448,13 @@ font: &quot;Courier&quot;;</string>
            </property>
            <property name="text">
             <string>&lt;p style='line-height:20px'&gt;Cookie Instructions:&lt;br&gt;
-1. Use Chrome to log into the website. Right-click a blank area of the webpage and select &quot;Inspect&quot;.&lt;br&gt;
+1. Login to the website with Chrome. Right-click on a blank area and select &quot;Inspect&quot;.&lt;br&gt;
 2. Select the &quot;Network&quot; tab in the pop-up window and then refresh the page.&lt;br&gt;
-3. Select the first entry in the loaded content list. In the sub window's &quot;headers&quot; tab, expand the &quot;Request Headers&quot; section and look for &quot;Cookie&quot;.&lt;br&gt;
-4. Copy and paste the applicable cookie value it into the input box above (use the mouse to &quot;manually select&quot; the text you want to copy, and then right-click &quot;Copy&quot;, not &quot;Copy Value&quot;!)&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;(Note: Cookies have a validity period. Please replace expired cookies.)&lt;/p&gt;</string>
+3. Select the first entry in the loaded content list. In the sub window's &quot;headers&quot; tab,&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;expand the &quot;Request Headers&quot; section and look for &quot;Cookie&quot;.&lt;br&gt;
+4. Copy and paste the applicable cookie value it into the input box above (use the mouse&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;to &quot;manually select&quot; the text you want to copy, and then right-click &quot;Copy&quot;, not &quot;Copy Value&quot;!)&lt;br&gt;
+(Note: Cookies have a validity period. Please replace expired cookies.)&lt;/p&gt;</string>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -22470,7 +22472,7 @@ font: &quot;Courier&quot;;</string>
           <widget class="QLabel" name="label_get_cookie_url">
            <property name="geometry">
             <rect>
-             <x>150</x>
+             <x>170</x>
              <y>500</y>
              <width>430</width>
              <height>21</height>
@@ -22524,7 +22526,7 @@ font: &quot;Courier&quot;;</string>
             <x>30</x>
             <y>20</y>
             <width>701</width>
-            <height>311</height>
+            <height>301</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -22543,6 +22545,31 @@ font: &quot;Courier&quot;;</string>
             </rect>
            </property>
            <layout class="QGridLayout" name="gridLayout_9">
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_65">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Retries:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
             <item row="5" column="1">
              <widget class="QCheckBox" name="checkBox_net_ipv4_only">
               <property name="text">
@@ -22578,31 +22605,6 @@ font: &quot;Courier&quot;;</string>
               </property>
              </widget>
             </item>
-            <item row="4" column="0">
-             <widget class="QLabel" name="label_65">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="layoutDirection">
-               <enum>Qt::RightToLeft</enum>
-              </property>
-              <property name="text">
-               <string>Retries:</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
             <item row="1" column="1">
              <widget class="QLineEdit" name="lineEdit_proxy">
               <property name="sizePolicy">
@@ -22622,22 +22624,6 @@ font: &quot;Courier&quot;;</string>
  border: 1px solid rgba(0,0,0, 50);
  border-radius: 15px;
 </string>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QLabel" name="label_103">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">color: rgb(8, 128, 128);</string>
-              </property>
-              <property name="text">
-               <string>Credentials Format: username:password@ip:port</string>
               </property>
              </widget>
             </item>
@@ -22793,6 +22779,31 @@ font: &quot;Courier&quot;;</string>
               </property>
              </widget>
             </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_70">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Agent:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
             <item row="4" column="1">
              <layout class="QHBoxLayout" name="horizontalLayout_retry">
               <item>
@@ -22868,28 +22879,20 @@ font: &quot;Courier&quot;;</string>
               </item>
              </layout>
             </item>
-            <item row="0" column="0">
-             <widget class="QLabel" name="label_70">
+            <item row="6" column="1">
+             <widget class="QLabel" name="label_411">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
-              <property name="minimumSize">
-               <size>
-                <width>130</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="layoutDirection">
-               <enum>Qt::RightToLeft</enum>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Agent:</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               <string> IPv6 requests fail with some websites (Javbus, Amazon).
+ IPv4 is recommended (restart required).</string>
               </property>
              </widget>
             </item>
@@ -22918,8 +22921,8 @@ font: &quot;Courier&quot;;</string>
               </property>
              </widget>
             </item>
-            <item row="6" column="1">
-             <widget class="QLabel" name="label_411">
+            <item row="2" column="1">
+             <widget class="QLabel" name="label_103">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -22930,8 +22933,7 @@ font: &quot;Courier&quot;;</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>IPv6 requests fail with some websites (Javbus, Amazon).
-IPv4 is recommended (restart required).</string>
+               <string> Credentials Format: username:password@ip:port</string>
               </property>
              </widget>
             </item>
@@ -22944,7 +22946,7 @@ IPv4 is recommended (restart required).</string>
             <x>30</x>
             <y>1100</y>
             <width>701</width>
-            <height>281</height>
+            <height>221</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -22956,10 +22958,10 @@ IPv4 is recommended (restart required).</string>
           <widget class="QLabel" name="label_110">
            <property name="geometry">
             <rect>
-             <x>60</x>
+             <x>20</x>
              <y>120</y>
-             <width>581</width>
-             <height>111</height>
+             <width>661</width>
+             <height>91</height>
             </rect>
            </property>
            <property name="sizePolicy">
@@ -22972,10 +22974,10 @@ IPv4 is recommended (restart required).</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>&lt;p style='line-height:15px'&gt;Specify a custom scraping URL. Currently supported sites:&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;airavcc  avsex  hdouban  iqqtv  lulubar  mdtv  javbus  javdb  javlibrary*&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;* direct access will be available after configuration.&lt;br&gt;
-&lt;br&gt; PR submissions for additional websites are welcome. Please refer to:&lt;a href=&quot;https://github.com/sqzw-x/mdcx/wiki/自定义网址&quot;&gt;&lt;span style=&quot;color:#094fd1;&quot; &gt; Github wiki&lt;span/&gt;&lt;a/&gt;
+            <string>&lt;p style='line-height:15px'&gt;Specify a custom scraping URL.&lt;br&gt;
+Currently supported sites: airavcc, avsex, hdouban, iqqtv, lulubar, mdtv, javbus, javdb, javlibrary*&lt;br&gt;
+* direct access available after configuration.&lt;br&gt;&lt;br&gt;
+PR submissions for additional websites are welcome. Please refer to:&lt;a href=&quot;https://github.com/sqzw-x/mdcx/wiki/自定义网址&quot;&gt;&lt;span style=&quot;color:#094fd1;&quot; &gt; Github wiki&lt;span/&gt;&lt;a/&gt;
 &lt;/p&gt;</string>
            </property>
            <property name="openExternalLinks">
@@ -23159,7 +23161,7 @@ font-weight:bold</string>
             <rect>
              <x>160</x>
              <y>90</y>
-             <width>561</width>
+             <width>521</width>
              <height>41</height>
             </rect>
            </property>
@@ -23173,7 +23175,7 @@ font-weight:bold</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Visit &lt;a href=&quot;https://theporndb.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#094fd1;&quot;&gt;https://theporndb.net/&lt;/span&gt;&lt;/a&gt;, register and login. Click your avatar -&gt; API tokens -&gt; Create. Copy and paste the generated API token here.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Register and login to &lt;a href=&quot;https://theporndb.net/&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#094fd1;&quot;&gt;https://theporndb.net/&lt;/span&gt;&lt;/a&gt;. Click your avatar -&gt; API tokens -&gt; create. Copy and paste your token here.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
            <property name="scaledContents">
             <bool>true</bool>
@@ -23210,7 +23212,7 @@ font-weight:bold</string>
                </sizepolicy>
               </property>
               <property name="text">
-               <string>Dont use hash value</string>
+               <string>Don't use hash value</string>
               </property>
              </widget>
             </item>
