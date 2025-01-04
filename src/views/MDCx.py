@@ -9422,7 +9422,7 @@ class Ui_MDCx(object):
         self.scrollArea_3.setWidgetResizable(False)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, -9, 760, 1450))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 760, 1450))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.groupBox_10 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
         self.groupBox_10.setGeometry(QtCore.QRect(30, 340, 701, 541))
