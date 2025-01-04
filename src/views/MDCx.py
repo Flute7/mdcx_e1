@@ -9422,7 +9422,7 @@ class Ui_MDCx(object):
         self.scrollArea_3.setWidgetResizable(False)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 760, 1450))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, -792, 760, 1450))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.groupBox_10 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
         self.groupBox_10.setGeometry(QtCore.QRect(30, 340, 701, 541))
@@ -9773,7 +9773,7 @@ class Ui_MDCx(object):
         self.gridLayout_12.setColumnStretch(0, 2)
         self.gridLayout_12.setColumnStretch(2, 9)
         self.label_324 = QtWidgets.QLabel(self.groupBox_44)
-        self.label_324.setGeometry(QtCore.QRect(140, 80, 621, 41))
+        self.label_324.setGeometry(QtCore.QRect(140, 80, 541, 41))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -11941,9 +11941,9 @@ class Ui_MDCx(object):
 "1. Login to the website with Chrome. Right-click on a blank area and select \"Inspect\".<br>\n"
 "2. Select the \"Network\" tab in the pop-up window and then refresh the page.<br>\n"
 "3. Select the first entry in the loaded content list. In the sub window\'s \"headers\" tab,<br>\n"
-"&nbsp;&nbsp;&nbsp;&nbsp;expand the \"Request Headers\" section and look for \"Cookie\".<br>\n"
+"&nbsp;&nbsp;&nbsp;expand the \"Request Headers\" section and look for \"Cookie\".<br>\n"
 "4. Copy and paste the applicable cookie value it into the input box above (use the mouse<br>\n"
-"&nbsp;&nbsp;&nbsp;&nbsp;to \"manually select\" the text, and then right-click \"Copy\", not \"Copy Value\"!)<br>\n"
+"&nbsp;&nbsp;&nbsp;to \"manually select\" the text, and then right-click \"Copy\", not \"Copy Value\"!)<br>\n"
 "(Note: Cookies have a validity period. Please replace expired cookies.)</p>"))
         self.label_get_cookie_url.setText(_translate("MDCx", "https://tieba.baidu.com/p/5492736764"))
         self.label_7.setText(_translate("MDCx", "Demonstration Video:"))
@@ -11962,10 +11962,10 @@ class Ui_MDCx(object):
         self.groupBox_44.setTitle(_translate("MDCx", "URL Settings"))
         self.label_110.setText(_translate("MDCx", "<p style=\'line-height:15px\'>Specify a custom scraping URL. Currently supported sites:<br>\n"
 "airavcc, avsex, hdouban, iqqtv, lulubar, mdtv, javbus, javdb, javlibrary*<br>\n"
-"(* direct access available after configuration)<br><br>\n"
+"(*direct access available after configuration)<br><br>\n"
 "PR submissions for additional websites are welcome. Please refer to:<a href=\"https://github.com/sqzw-x/mdcx/wiki/自定义网址\"><span style=\"color:#094fd1;\" > Github wiki<span/><a/>\n"
 "</p>"))
-        self.label_324.setText(_translate("MDCx", "⚠️ Click save after each modification or changes will be lost."))
+        self.label_324.setText(_translate("MDCx", " ⚠️ Click save after each modification or changes will be lost."))
         self.groupBox_14.setTitle(_translate("MDCx", "API Token"))
         self.label_355.setText(_translate("MDCx", "ThePornDB："))
         self.label_356.setText(_translate("MDCx", "<html><head/><body><p>Register and login to <a href=\"https://theporndb.net/\"><span style=\" text-decoration: underline; color:#094fd1;\">https://theporndb.net/</span></a>. Click your avatar -> API tokens -> create. Copy and paste your token here.</p></body></html>"))

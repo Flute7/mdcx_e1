@@ -22221,7 +22221,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>0</y>
+           <y>-792</y>
            <width>760</width>
            <height>1450</height>
           </rect>
@@ -22451,9 +22451,9 @@ font: &quot;Courier&quot;;</string>
 1. Login to the website with Chrome. Right-click on a blank area and select &quot;Inspect&quot;.&lt;br&gt;
 2. Select the &quot;Network&quot; tab in the pop-up window and then refresh the page.&lt;br&gt;
 3. Select the first entry in the loaded content list. In the sub window's &quot;headers&quot; tab,&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;expand the &quot;Request Headers&quot; section and look for &quot;Cookie&quot;.&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;expand the &quot;Request Headers&quot; section and look for &quot;Cookie&quot;.&lt;br&gt;
 4. Copy and paste the applicable cookie value it into the input box above (use the mouse&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;to &quot;manually select&quot; the text, and then right-click &quot;Copy&quot;, not &quot;Copy Value&quot;!)&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;to &quot;manually select&quot; the text, and then right-click &quot;Copy&quot;, not &quot;Copy Value&quot;!)&lt;br&gt;
 (Note: Cookies have a validity period. Please replace expired cookies.)&lt;/p&gt;</string>
            </property>
            <property name="scaledContents">
@@ -22975,7 +22975,7 @@ font: &quot;Courier&quot;;</string>
            <property name="text">
             <string>&lt;p style='line-height:15px'&gt;Specify a custom scraping URL. Currently supported sites:&lt;br&gt;
 airavcc, avsex, hdouban, iqqtv, lulubar, mdtv, javbus, javdb, javlibrary*&lt;br&gt;
-(* direct access available after configuration)&lt;br&gt;&lt;br&gt;
+(*direct access available after configuration)&lt;br&gt;&lt;br&gt;
 PR submissions for additional websites are welcome. Please refer to:&lt;a href=&quot;https://github.com/sqzw-x/mdcx/wiki/自定义网址&quot;&gt;&lt;span style=&quot;color:#094fd1;&quot; &gt; Github wiki&lt;span/&gt;&lt;a/&gt;
 &lt;/p&gt;</string>
            </property>
@@ -23044,7 +23044,7 @@ PR submissions for additional websites are welcome. Please refer to:&lt;a href=&
             <rect>
              <x>140</x>
              <y>80</y>
-             <width>621</width>
+             <width>541</width>
              <height>41</height>
             </rect>
            </property>
@@ -23071,7 +23071,7 @@ font-weight:bold</string>
             <enum>QFrame::NoFrame</enum>
            </property>
            <property name="text">
-            <string>⚠️ Click save after each modification or changes will be lost.</string>
+            <string> ⚠️ Click save after each modification or changes will be lost.</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
