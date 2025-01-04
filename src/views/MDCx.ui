@@ -22221,7 +22221,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-792</y>
+           <y>0</y>
            <width>760</width>
            <height>1450</height>
           </rect>
@@ -22232,7 +22232,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
             <x>30</x>
             <y>340</y>
             <width>701</width>
-            <height>541</height>
+            <height>551</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -22432,7 +22432,7 @@ font: &quot;Courier&quot;;</string>
            <property name="geometry">
             <rect>
              <x>20</x>
-             <y>320</y>
+             <y>330</y>
              <width>661</width>
              <height>171</height>
             </rect>
@@ -22451,9 +22451,9 @@ font: &quot;Courier&quot;;</string>
 1. Login to the website with Chrome. Right-click on a blank area and select &quot;Inspect&quot;.&lt;br&gt;
 2. Select the &quot;Network&quot; tab in the pop-up window and then refresh the page.&lt;br&gt;
 3. Select the first entry in the loaded content list. In the sub window's &quot;headers&quot; tab,&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;expand the &quot;Request Headers&quot; section and look for &quot;Cookie&quot;.&lt;br&gt;
+&amp;nbsp;&amp;nbsp;expand the &quot;Request Headers&quot; section and look for &quot;Cookie&quot;.&lt;br&gt;
 4. Copy and paste the applicable cookie value it into the input box above (use the mouse&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;to &quot;manually select&quot; the text you want to copy, and then right-click &quot;Copy&quot;, not &quot;Copy Value&quot;!)&lt;br&gt;
+&amp;nbsp;&amp;nbsp;to &quot;manually select&quot; the text, and then right-click &quot;Copy&quot;, not &quot;Copy Value&quot;!)&lt;br&gt;
 (Note: Cookies have a validity period. Please replace expired cookies.)&lt;/p&gt;</string>
            </property>
            <property name="scaledContents">
@@ -22472,8 +22472,8 @@ font: &quot;Courier&quot;;</string>
           <widget class="QLabel" name="label_get_cookie_url">
            <property name="geometry">
             <rect>
-             <x>170</x>
-             <y>500</y>
+             <x>180</x>
+             <y>510</y>
              <width>430</width>
              <height>21</height>
             </rect>
@@ -22507,8 +22507,8 @@ font: &quot;Courier&quot;;</string>
            <property name="geometry">
             <rect>
              <x>20</x>
-             <y>500</y>
-             <width>121</width>
+             <y>510</y>
+             <width>151</width>
              <height>21</height>
             </rect>
            </property>
@@ -22891,8 +22891,8 @@ font: &quot;Courier&quot;;</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string> IPv6 requests fail with some websites (Javbus, Amazon).
- IPv4 is recommended (restart required).</string>
+               <string>IPv6 requests fail with some websites (Javbus, Amazon).
+IPv4 is recommended (restart required).</string>
               </property>
              </widget>
             </item>
@@ -22933,7 +22933,7 @@ font: &quot;Courier&quot;;</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string> Credentials Format: username:password@ip:port</string>
+               <string>Credentials Format: username:password@ip:port</string>
               </property>
              </widget>
             </item>
@@ -22944,7 +22944,7 @@ font: &quot;Courier&quot;;</string>
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>1100</y>
+            <y>1110</y>
             <width>701</width>
             <height>221</height>
            </rect>
@@ -22974,9 +22974,9 @@ font: &quot;Courier&quot;;</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>&lt;p style='line-height:15px'&gt;Specify a custom scraping URL.&lt;br&gt;
-Currently supported sites: airavcc, avsex, hdouban, iqqtv, lulubar, mdtv, javbus, javdb, javlibrary*&lt;br&gt;
-* direct access available after configuration.&lt;br&gt;&lt;br&gt;
+            <string>&lt;p style='line-height:15px'&gt;Specify a custom scraping URL. Currently supported sites:&lt;br&gt;
+airavcc, avsex, hdouban, iqqtv, lulubar, mdtv, javbus, javdb, javlibrary*&lt;br&gt;
+(* direct access available after configuration)&lt;br&gt;&lt;br&gt;
 PR submissions for additional websites are welcome. Please refer to:&lt;a href=&quot;https://github.com/sqzw-x/mdcx/wiki/自定义网址&quot;&gt;&lt;span style=&quot;color:#094fd1;&quot; &gt; Github wiki&lt;span/&gt;&lt;a/&gt;
 &lt;/p&gt;</string>
            </property>
@@ -23086,7 +23086,7 @@ font-weight:bold</string>
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>900</y>
+            <y>910</y>
             <width>701</width>
             <height>181</height>
            </rect>
@@ -23228,7 +23228,7 @@ font-weight:bold</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Hash matching may be inaccurate.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;(hash matching may be inaccurate)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="scaledContents">
                <bool>true</bool>
