@@ -9422,10 +9422,10 @@ class Ui_MDCx(object):
         self.scrollArea_3.setWidgetResizable(False)
         self.scrollArea_3.setObjectName("scrollArea_3")
         self.scrollAreaWidgetContents_3 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, 0, 760, 1450))
+        self.scrollAreaWidgetContents_3.setGeometry(QtCore.QRect(0, -9, 760, 1450))
         self.scrollAreaWidgetContents_3.setObjectName("scrollAreaWidgetContents_3")
         self.groupBox_10 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
-        self.groupBox_10.setGeometry(QtCore.QRect(30, 340, 701, 551))
+        self.groupBox_10.setGeometry(QtCore.QRect(30, 340, 701, 541))
         self.groupBox_10.setStyleSheet("font:\"Courier\";")
         self.groupBox_10.setObjectName("groupBox_10")
         self.gridLayoutWidget_10 = QtWidgets.QWidget(self.groupBox_10)
@@ -9531,7 +9531,7 @@ class Ui_MDCx(object):
         self.label_75.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.label_75.setObjectName("label_75")
         self.label_get_cookie_url = QtWidgets.QLabel(self.groupBox_10)
-        self.label_get_cookie_url.setGeometry(QtCore.QRect(180, 510, 430, 21))
+        self.label_get_cookie_url.setGeometry(QtCore.QRect(180, 500, 430, 30))
         self.label_get_cookie_url.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.label_get_cookie_url.setMouseTracking(False)
         self.label_get_cookie_url.setStyleSheet("color: rgb(10, 52, 255);")
@@ -9541,7 +9541,7 @@ class Ui_MDCx(object):
         self.label_get_cookie_url.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
         self.label_get_cookie_url.setObjectName("label_get_cookie_url")
         self.label_7 = QtWidgets.QLabel(self.groupBox_10)
-        self.label_7.setGeometry(QtCore.QRect(20, 510, 151, 21))
+        self.label_7.setGeometry(QtCore.QRect(20, 500, 151, 30))
         self.label_7.setStyleSheet("color: rgb(8, 128, 128);")
         self.label_7.setObjectName("label_7")
         self.groupBox_28 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
@@ -9549,7 +9549,7 @@ class Ui_MDCx(object):
         self.groupBox_28.setStyleSheet("font:\"Courier\";")
         self.groupBox_28.setObjectName("groupBox_28")
         self.gridLayoutWidget_9 = QtWidgets.QWidget(self.groupBox_28)
-        self.gridLayoutWidget_9.setGeometry(QtCore.QRect(20, 30, 661, 261))
+        self.gridLayoutWidget_9.setGeometry(QtCore.QRect(20, 30, 669, 261))
         self.gridLayoutWidget_9.setObjectName("gridLayoutWidget_9")
         self.gridLayout_9 = QtWidgets.QGridLayout(self.gridLayoutWidget_9)
         self.gridLayout_9.setContentsMargins(0, 0, 0, 0)
@@ -9727,7 +9727,7 @@ class Ui_MDCx(object):
         self.label_103.setObjectName("label_103")
         self.gridLayout_9.addWidget(self.label_103, 2, 1, 1, 1)
         self.groupBox_44 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
-        self.groupBox_44.setGeometry(QtCore.QRect(30, 1110, 701, 221))
+        self.groupBox_44.setGeometry(QtCore.QRect(30, 1100, 701, 221))
         self.groupBox_44.setStyleSheet("font:\"Courier\";")
         self.groupBox_44.setObjectName("groupBox_44")
         self.label_110 = QtWidgets.QLabel(self.groupBox_44)
@@ -9788,7 +9788,7 @@ class Ui_MDCx(object):
         self.label_324.setWordWrap(True)
         self.label_324.setObjectName("label_324")
         self.groupBox_14 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_3)
-        self.groupBox_14.setGeometry(QtCore.QRect(30, 910, 701, 181))
+        self.groupBox_14.setGeometry(QtCore.QRect(30, 900, 701, 181))
         self.groupBox_14.setStyleSheet("font:\"Courier\";")
         self.groupBox_14.setObjectName("groupBox_14")
         self.gridLayoutWidget_11 = QtWidgets.QWidget(self.groupBox_14)
@@ -11941,9 +11941,9 @@ class Ui_MDCx(object):
 "1. Login to the website with Chrome. Right-click on a blank area and select \"Inspect\".<br>\n"
 "2. Select the \"Network\" tab in the pop-up window and then refresh the page.<br>\n"
 "3. Select the first entry in the loaded content list. In the sub window\'s \"headers\" tab,<br>\n"
-"&nbsp;&nbsp;expand the \"Request Headers\" section and look for \"Cookie\".<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;expand the \"Request Headers\" section and look for \"Cookie\".<br>\n"
 "4. Copy and paste the applicable cookie value it into the input box above (use the mouse<br>\n"
-"&nbsp;&nbsp;to \"manually select\" the text, and then right-click \"Copy\", not \"Copy Value\"!)<br>\n"
+"&nbsp;&nbsp;&nbsp;&nbsp;to \"manually select\" the text, and then right-click \"Copy\", not \"Copy Value\"!)<br>\n"
 "(Note: Cookies have a validity period. Please replace expired cookies.)</p>"))
         self.label_get_cookie_url.setText(_translate("MDCx", "https://tieba.baidu.com/p/5492736764"))
         self.label_7.setText(_translate("MDCx", "Demonstration Video:"))
@@ -11956,8 +11956,7 @@ class Ui_MDCx(object):
         self.radioButton_proxy_nouse.setText(_translate("MDCx", "none"))
         self.label_410.setText(_translate("MDCx", "IP Version:"))
         self.label_70.setText(_translate("MDCx", "Agent:"))
-        self.label_411.setText(_translate("MDCx", "IPv6 requests fail with some websites (Javbus, Amazon).\n"
-"IPv4 is recommended (restart required)."))
+        self.label_411.setText(_translate("MDCx", "IPv6 request fail with some websites (Javbus, Amazon) so IPv4 is recommended (restart required)."))
         self.label_73.setText(_translate("MDCx", "Timeout:"))
         self.label_103.setText(_translate("MDCx", "Credentials Format: username:password@ip:port"))
         self.groupBox_44.setTitle(_translate("MDCx", "URL Settings"))
