@@ -2509,7 +2509,7 @@ p, li { white-space: pre-wrap; }
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>10</number>
+       <number>11</number>
       </property>
       <property name="iconSize">
        <size>
@@ -23392,7 +23392,7 @@ font-weight:bold</string>
                </size>
               </property>
               <property name="text">
-               <string>Display scraping info</string>
+               <string>Show scraping info</string>
               </property>
              </widget>
             </item>
@@ -23411,7 +23411,7 @@ font-weight:bold</string>
                </size>
               </property>
               <property name="text">
-               <string>Display field source info</string>
+               <string>Show field source info</string>
               </property>
              </widget>
             </item>
@@ -23430,7 +23430,7 @@ font-weight:bold</string>
                </size>
               </property>
               <property name="text">
-               <string>Display field content info</string>
+               <string>Show field content info</string>
               </property>
              </widget>
             </item>
@@ -23516,7 +23516,7 @@ font-weight:bold</string>
            </size>
           </property>
           <property name="title">
-           <string>Advanced Functions</string>
+           <string>Advanced Settings</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_20">
            <property name="geometry">
@@ -23590,7 +23590,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Hide dock icon (Mac)</string>
+                 <string>Hide dock icon (MacOS)</string>
                 </property>
                </widget>
               </item>
@@ -23612,7 +23612,7 @@ font-weight:bold</string>
                  <string notr="true">color: rgb(8, 128, 128);</string>
                 </property>
                 <property name="text">
-                 <string>*requires restart</string>
+                 <string>(restart required)</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -23634,7 +23634,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Hide menu bar icon (Mac)</string>
+                 <string>Hide menu bar icon (MacOS)</string>
                 </property>
                </widget>
               </item>
@@ -23682,7 +23682,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Automatically scrape on software startup</string>
+                 <string>Auto scrape on startup</string>
                 </property>
                </widget>
               </item>
@@ -23701,7 +23701,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Automatically exit after scraping</string>
+                 <string>Auto exit after scraping</string>
                 </property>
                </widget>
               </item>
@@ -23724,7 +23724,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>When exiting the software</string>
+                 <string>Software exit</string>
                 </property>
                </widget>
               </item>
@@ -23743,7 +23743,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>When you stop scraping</string>
+                 <string>Stop scraping</string>
                 </property>
                </widget>
               </item>
@@ -23813,7 +23813,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Scrape interval (h:m:s)</string>
+                 <string>Interval (h:m:s)</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -24005,8 +24005,8 @@ font-weight:bold</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Read configuration files, mapping tables, watermark images, actor avatars and other data.
-*restart required</string>
+               <string>Read config files, mapping tables, watermark images, avatars and other data.
+(restart required)</string>
               </property>
              </widget>
             </item>
@@ -24043,7 +24043,7 @@ font-weight:bold</string>
                  <string notr="true">color: rgb(8, 128, 128);</string>
                 </property>
                 <property name="text">
-                 <string>Improves opening speed of directories with a large numbers of files.</string>
+                 <string>Improves opening speed of directories with many files.</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -24259,7 +24259,7 @@ font-weight:bold</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Rest interval (h:m:s)</string>
+                 <string>Interval (h:m:s)</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -24407,7 +24407,7 @@ font-weight:bold</string>
                  <string notr="true">color: rgb(8, 128, 128);</string>
                 </property>
                 <property name="text">
-                 <string>Requires restart (may cause blurring).</string>
+                 <string>May cause blurring (restart required)</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
