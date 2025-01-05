@@ -9531,7 +9531,7 @@ class Ui_MDCx(object):
         self.label_75.setTextInteractionFlags(QtCore.Qt.NoTextInteraction)
         self.label_75.setObjectName("label_75")
         self.label_get_cookie_url = QtWidgets.QLabel(self.groupBox_10)
-        self.label_get_cookie_url.setGeometry(QtCore.QRect(180, 500, 430, 30))
+        self.label_get_cookie_url.setGeometry(QtCore.QRect(170, 500, 430, 30))
         self.label_get_cookie_url.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.label_get_cookie_url.setMouseTracking(False)
         self.label_get_cookie_url.setStyleSheet("color: rgb(10, 52, 255);")
@@ -10421,7 +10421,7 @@ class Ui_MDCx(object):
         self.comboBox_change_config.setFrame(False)
         self.comboBox_change_config.setObjectName("comboBox_change_config")
         self.label_241 = QtWidgets.QLabel(self.page_setting)
-        self.label_241.setGeometry(QtCore.QRect(80, 629, 91, 40))
+        self.label_241.setGeometry(QtCore.QRect(60, 629, 111, 40))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -11940,8 +11940,8 @@ class Ui_MDCx(object):
         self.label_75.setText(_translate("MDCx", "<p style=\'line-height:20px\'>Cookie Instructions:<br>\n"
 "1. Login to the website with Chrome. Right-click on a blank area and select \"Inspect\".<br>\n"
 "2. Select the \"Network\" tab in the pop-up window and then refresh the page.<br>\n"
-"3. Select the first entry in the loaded content list. In the sub window\'s \"headers\" tab,<br>\n"
-"&nbsp;&nbsp;&nbsp;expand the \"Request Headers\" section and look for \"Cookie\".<br>\n"
+"3. Select the first entry in the loaded content list. In the sub window\'s \"headers\"<br>\n"
+"&nbsp;&nbsp;&nbsp;tab, expand the \"Request Headers\" section and look for \"Cookie\".<br>\n"
 "4. Copy and paste the applicable cookie value it into the input box above (use the mouse<br>\n"
 "&nbsp;&nbsp;&nbsp;to \"manually select\" the text, and then right-click \"Copy\", not \"Copy Value\"!)<br>\n"
 "(Note: Cookies have a validity period. Please replace expired cookies.)</p>"))
@@ -11956,15 +11956,15 @@ class Ui_MDCx(object):
         self.radioButton_proxy_nouse.setText(_translate("MDCx", "none"))
         self.label_410.setText(_translate("MDCx", "IP Version:"))
         self.label_70.setText(_translate("MDCx", "Agent:"))
-        self.label_411.setText(_translate("MDCx", "IPv6 request fail with some websites (Javbus, Amazon) so IPv4 is recommended (restart required)."))
+        self.label_411.setText(_translate("MDCx", "IPv6 request fail with some websites (Javbus, Amazon)\n"
+"IPv4 is recommended (restart required)."))
         self.label_73.setText(_translate("MDCx", "Timeout:"))
         self.label_103.setText(_translate("MDCx", "Credentials Format: username:password@ip:port"))
         self.groupBox_44.setTitle(_translate("MDCx", "URL Settings"))
         self.label_110.setText(_translate("MDCx", "<p style=\'line-height:15px\'>Specify a custom scraping URL. Currently supported sites:<br>\n"
 "airavcc, avsex, hdouban, iqqtv, lulubar, mdtv, javbus, javdb, javlibrary*<br>\n"
 "(*direct access available after configuration)<br><br>\n"
-"PR submissions for additional websites are welcome. Please refer to:<a href=\"https://github.com/sqzw-x/mdcx/wiki/自定义网址\"><span style=\"color:#094fd1;\" > Github wiki<span/><a/>\n"
-"</p>"))
+"PR submissions for additional websites are welcome. Please refer to: <a href=\"https://github.com/sqzw-x/mdcx/wiki/自定义网址\"><span style=\"color:#094fd1;\" >Github wiki<span/><a/></p>"))
         self.label_324.setText(_translate("MDCx", " ⚠️ Click save after each modification or changes will be lost."))
         self.groupBox_14.setTitle(_translate("MDCx", "API Token"))
         self.label_355.setText(_translate("MDCx", "ThePornDB："))
