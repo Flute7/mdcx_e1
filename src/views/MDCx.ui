@@ -2509,7 +2509,7 @@ p, li { white-space: pre-wrap; }
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>11</number>
+       <number>9</number>
       </property>
       <property name="iconSize">
        <size>
@@ -20468,7 +20468,7 @@ line-height:50px</string>
           <x>0</x>
           <y>0</y>
           <width>796</width>
-          <height>658</height>
+          <height>661</height>
          </rect>
         </property>
         <property name="frameShape">
@@ -20511,14 +20511,14 @@ line-height:50px</string>
            <string notr="true">font:&quot;Courier&quot;;</string>
           </property>
           <property name="title">
-           <string>Emby/Jellyfin 设置</string>
+           <string>Emby/Jellyfin Settings</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_25">
            <property name="geometry">
             <rect>
              <x>20</x>
              <y>30</y>
-             <width>661</width>
+             <width>671</width>
              <height>292</height>
             </rect>
            </property>
@@ -20566,7 +20566,7 @@ line-height:50px</string>
                <enum>QFrame::NoFrame</enum>
               </property>
               <property name="text">
-               <string>服务器地址：</string>
+               <string>IP+Port:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20591,7 +20591,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>API 密钥创建方法：控制台-&gt;高级-&gt;API 密钥-&gt;添加（APP 名称任意）</string>
+               <string>API key creation method: Console -&gt; Advanced -&gt; API key -&gt; Add (App name optional)</string>
               </property>
              </widget>
             </item>
@@ -20610,47 +20610,47 @@ line-height:50px</string>
                 </property>
                 <item>
                  <property name="text">
-                  <string>1 所有演员</string>
+                  <string>1. Performers (all)</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>2 有信息，有头像的演员</string>
+                  <string>2. Performers with information and avatars</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>3 有信息，没头像的演员</string>
+                  <string>3. Performers with information but no avatars</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>4 没信息，有头像的演员</string>
+                  <string>4. Performers with avatars but no information</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>5 没信息，没头像的演员</string>
+                  <string>5. Performers with no information and no avatars</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>6 有信息的演员</string>
+                  <string>6. Performers with information</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>7 没信息的演员</string>
+                  <string>7. Performers without information</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>8 有头像的演员</string>
+                  <string>8. Performers with avatars</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>9 没头像的演员</string>
+                  <string>9. Performers without avatars</string>
                  </property>
                 </item>
                </widget>
@@ -20673,7 +20673,7 @@ line-height:50px</string>
                  <string notr="true"/>
                 </property>
                 <property name="text">
-                 <string>查看</string>
+                 <string>Start</string>
                 </property>
                </widget>
               </item>
@@ -20746,7 +20746,7 @@ line-height:50px</string>
                <enum>QFrame::NoFrame</enum>
               </property>
               <property name="text">
-               <string>查看信息：</string>
+               <string>Performer Info Check:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20771,7 +20771,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>指你的 Emby/Jellyfin 服务器地址，比如：http://192.168.1.5:8096</string>
+               <string>Emby/Jellyfin server address, for example: http://192.168.1.5:8096</string>
               </property>
              </widget>
             </item>
@@ -20793,7 +20793,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>服务器类型：</string>
+               <string>Media Server:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20821,7 +20821,7 @@ line-height:50px</string>
                <enum>QFrame::NoFrame</enum>
               </property>
               <property name="text">
-               <string>用户 ID：</string>
+               <string>User ID:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20849,7 +20849,7 @@ line-height:50px</string>
                <enum>QFrame::NoFrame</enum>
               </property>
               <property name="text">
-               <string>API 密钥：</string>
+               <string>API Key:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20896,7 +20896,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>如果设置，将仅获取指定 Emby/Jellyfin 用户媒体库中的演员</string>
+               <string>If set, only actors in the specified user's media library will be fetched.</string>
               </property>
              </widget>
             </item>
@@ -20907,9 +20907,9 @@ line-height:50px</string>
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>770</y>
+            <y>750</y>
             <width>701</width>
-            <height>501</height>
+            <height>491</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -20925,19 +20925,19 @@ line-height:50px</string>
            </size>
           </property>
           <property name="title">
-           <string>补全 Emby/Jellyfin 演员头像</string>
+           <string>Complete Emby/Jellyfin Performer Avatars</string>
           </property>
           <widget class="QPushButton" name="pushButton_add_actor_pic">
            <property name="geometry">
             <rect>
              <x>160</x>
              <y>440</y>
-             <width>261</width>
+             <width>111</width>
              <height>40</height>
             </rect>
            </property>
            <property name="text">
-            <string>开始补全</string>
+            <string>Start</string>
            </property>
           </widget>
           <widget class="QLabel" name="label_297">
@@ -20965,7 +20965,7 @@ line-height:50px</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>使用网络头像库或本地头像库，补全 Emby/Jellyfin 演员头像。</string>
+            <string>Add performer avatars from an online or local library.</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
@@ -20974,9 +20974,9 @@ line-height:50px</string>
           <widget class="QCheckBox" name="checkBox_actor_photo_auto">
            <property name="geometry">
             <rect>
-             <x>450</x>
+             <x>300</x>
              <y>440</y>
-             <width>191</width>
+             <width>211</width>
              <height>40</height>
             </rect>
            </property>
@@ -20993,7 +20993,7 @@ line-height:50px</string>
             </size>
            </property>
            <property name="text">
-            <string>刮削结束后自动补全演员头像</string>
+            <string>Automatically run after scraping</string>
            </property>
           </widget>
           <widget class="QFrame" name="frame_2">
@@ -21001,7 +21001,7 @@ line-height:50px</string>
             <rect>
              <x>20</x>
              <y>370</y>
-             <width>661</width>
+             <width>671</width>
              <height>51</height>
             </rect>
            </property>
@@ -21030,14 +21030,14 @@ line-height:50px</string>
                 </size>
                </property>
                <property name="text">
-                <string>所有女优</string>
+                <string>All performers</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QRadioButton" name="radioButton_actor_photo_miss">
                <property name="text">
-                <string>仅缺少头像的女优</string>
+                <string>Only performers with missing information</string>
                </property>
               </widget>
              </item>
@@ -21068,7 +21068,7 @@ line-height:50px</string>
              <enum>Qt::RightToLeft</enum>
             </property>
             <property name="text">
-             <string>补全范围：</string>
+             <string>Scope:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21080,7 +21080,7 @@ line-height:50px</string>
             <rect>
              <x>20</x>
              <y>60</y>
-             <width>661</width>
+             <width>671</width>
              <height>301</height>
             </rect>
            </property>
@@ -21103,7 +21103,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>下载头像包解压，填写头像图片目录的路径</string>
+               <string>Download the package, extract the archive and fill in the path to the avatar image directory.</string>
               </property>
              </widget>
             </item>
@@ -21125,7 +21125,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>头像来源：</string>
+               <string>Source:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21150,7 +21150,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>本地头像库：</string>
+               <string>Local Library:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21174,7 +21174,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>使用 Graphis 背景</string>
+                 <string>Use Graphis background</string>
                 </property>
                </widget>
               </item>
@@ -21193,7 +21193,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>使用 Graphis 头像</string>
+                 <string>Use Graphis avatar</string>
                 </property>
                </widget>
               </item>
@@ -21212,7 +21212,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>请求 Graphis 最新图片</string>
+                 <string>Request Graphis latest images</string>
                 </property>
                </widget>
               </item>
@@ -21276,7 +21276,7 @@ line-height:50px</string>
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>网络头像库（Gfriends）</string>
+                 <string>Online library (Gfriends)</string>
                 </property>
                </widget>
               </item>
@@ -21295,7 +21295,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>本地头像库</string>
+                 <string>Local library</string>
                 </property>
                </widget>
               </item>
@@ -21325,7 +21325,7 @@ line-height:50px</string>
                    <string notr="true">color: rgb(10, 52, 255);</string>
                   </property>
                   <property name="text">
-                   <string>点击下载头像包</string>
+                   <string>Click to download avatar package</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -21399,7 +21399,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>网络头像库：</string>
+               <string>Online Library:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21424,8 +21424,8 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>支持优先使用 Graphis.ne.jp 的图片作为演员头像和演员背景；
-Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片。</string>
+               <string>Prioritise avatar and background images from Graphis (graphis.ne.jp).
+Performer images are from different periods; early pictures are requested by default.</string>
               </property>
              </widget>
             </item>
@@ -21447,7 +21447,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>建议 Fork 该项目到你的 Github，当项目故障时，可填写你 Fork 后的项目地址</string>
+               <string>Github fork the project and use your own URL to avoid potential issues.</string>
               </property>
              </widget>
             </item>
@@ -21465,7 +21465,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
             <x>30</x>
             <y>360</y>
             <width>701</width>
-            <height>391</height>
+            <height>371</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -21481,14 +21481,14 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
            </size>
           </property>
           <property name="title">
-           <string>补全 Emby/Jellyfin 演员信息</string>
+           <string>Complete Emby/Jellyfin Performer Information</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_14">
            <property name="geometry">
             <rect>
              <x>20</x>
              <y>60</y>
-             <width>661</width>
+             <width>671</width>
              <height>191</height>
             </rect>
            </property>
@@ -21504,21 +21504,21 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                  </size>
                 </property>
                 <property name="text">
-                 <string>中文简体</string>
+                 <string>Simplified Chinese</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QRadioButton" name="radioButton_actor_info_zh_tw">
                 <property name="text">
-                 <string>中文繁体</string>
+                 <string>Traditional Chinese</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QRadioButton" name="radioButton_actor_info_ja">
                 <property name="text">
-                 <string>日语</string>
+                 <string>Japanese</string>
                 </property>
                </widget>
               </item>
@@ -21589,7 +21589,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                 <enum>Qt::LeftToRight</enum>
                </property>
                <property name="text">
-                <string>演员信息数据库：</string>
+                <string>Performer Database:</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21636,7 +21636,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                  </size>
                 </property>
                 <property name="text">
-                 <string>选择文件</string>
+                 <string>Open...</string>
                 </property>
                </widget>
               </item>
@@ -21706,7 +21706,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                    </size>
                   </property>
                   <property name="text">
-                   <string>使用数据库补全演员信息</string>
+                   <string>Use database to complete missing information</string>
                   </property>
                  </widget>
                 </item>
@@ -21734,7 +21734,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                    <string notr="true">color: rgb(10, 52, 255);</string>
                   </property>
                   <property name="text">
-                   <string>点击下载演员数据库</string>
+                   <string>Click to download database</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -21766,7 +21766,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>补全语言：</string>
+               <string>Language:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21820,7 +21820,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                    </size>
                   </property>
                   <property name="text">
-                   <string>不存在中文时，翻译日语为中文</string>
+                   <string>When Chinese is unavailable, translate Japanese into Chinese</string>
                   </property>
                  </widget>
                 </item>
@@ -21842,7 +21842,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                    <string notr="true">color: rgb(8, 128, 128);</string>
                   </property>
                   <property name="text">
-                   <string>不勾选则无中文时使用日语</string>
+                   <string>Japanese if unchecked</string>
                   </property>
                  </widget>
                 </item>
@@ -21857,12 +21857,12 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
             <rect>
              <x>160</x>
              <y>320</y>
-             <width>261</width>
+             <width>111</width>
              <height>40</height>
             </rect>
            </property>
            <property name="text">
-            <string>开始补全</string>
+            <string>Start</string>
            </property>
           </widget>
           <widget class="QLabel" name="label_295">
@@ -21890,7 +21890,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>使用维基百科补全 Emby/Jellyfin 演员信息，包括：演员介绍、资料、简历、生平、Imdb主页等。</string>
+            <string>Add performer information from Wikipedia (introduction, data, resume, biography, IMDb homepage, etc).</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
@@ -21930,14 +21930,14 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                 </size>
                </property>
                <property name="text">
-                <string>所有女优</string>
+                <string>All performers</string>
                </property>
               </widget>
              </item>
              <item>
               <widget class="QRadioButton" name="radioButton_actor_info_miss">
                <property name="text">
-                <string>仅缺少信息的女优</string>
+                <string>Only performers with missing information</string>
                </property>
               </widget>
              </item>
@@ -21968,7 +21968,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
              <enum>Qt::RightToLeft</enum>
             </property>
             <property name="text">
-             <string>补全范围：</string>
+             <string>Scope:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21978,9 +21978,9 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
           <widget class="QCheckBox" name="checkBox_actor_info_photo">
            <property name="geometry">
             <rect>
-             <x>450</x>
+             <x>300</x>
              <y>320</y>
-             <width>191</width>
+             <width>211</width>
              <height>40</height>
             </rect>
            </property>
@@ -21997,7 +21997,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
             </size>
            </property>
            <property name="text">
-            <string>补全完成后自动补全演员头像</string>
+            <string>Automatically run after scraping</string>
            </property>
           </widget>
          </widget>
@@ -22005,9 +22005,9 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>1290</y>
+            <y>1260</y>
             <width>701</width>
-            <height>191</height>
+            <height>181</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -22023,19 +22023,19 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
            </size>
           </property>
           <property name="title">
-           <string>补全 Kodi/Plex/Jvedio 演员头像</string>
+           <string>Complete Kodi/Plex/Jvedio Performer Avatars</string>
           </property>
           <widget class="QPushButton" name="pushButton_add_actor_pic_kodi">
            <property name="geometry">
             <rect>
              <x>160</x>
              <y>130</y>
-             <width>161</width>
+             <width>111</width>
              <height>40</height>
             </rect>
            </property>
            <property name="text">
-            <string>开始补全</string>
+            <string>Start</string>
            </property>
           </widget>
           <widget class="QLabel" name="label_414">
@@ -22063,7 +22063,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>将为待刮削目录的每个视频在同目录创建一个 .actors 文件夹，并将该视频的演员图片放在该文件夹中</string>
+            <string>Avatars will be placed in a .actors folder; created in the directory of each video being scraped.</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
@@ -22109,7 +22109,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
                 </size>
                </property>
                <property name="text">
-                <string>覆盖已存在的演员图片</string>
+                <string>Overwrite existing images</string>
                </property>
               </widget>
              </item>
@@ -22140,7 +22140,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
              <enum>Qt::RightToLeft</enum>
             </property>
             <property name="text">
-             <string>图片已存在时：</string>
+             <string>Conflict Policy:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -22150,22 +22150,22 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
           <widget class="QPushButton" name="pushButton_del_actor_folder">
            <property name="geometry">
             <rect>
-             <x>490</x>
+             <x>530</x>
              <y>130</y>
              <width>171</width>
              <height>40</height>
             </rect>
            </property>
            <property name="text">
-            <string>清除所有 .actors 文件夹</string>
+            <string>Clear All .actors Folders</string>
            </property>
           </widget>
           <widget class="QCheckBox" name="checkBox_actor_photo_kodi">
            <property name="geometry">
             <rect>
-             <x>340</x>
+             <x>300</x>
              <y>130</y>
-             <width>141</width>
+             <width>211</width>
              <height>40</height>
             </rect>
            </property>
@@ -22182,7 +22182,7 @@ Graphis.ne.jp 提供了演员不同时期的图片，默认请求早期的图片
             </size>
            </property>
            <property name="text">
-            <string>刮削结束后自动创建</string>
+            <string>Automatically run after scraping</string>
            </property>
           </widget>
          </widget>
@@ -22892,7 +22892,7 @@ font: &quot;Courier&quot;;</string>
               </property>
               <property name="text">
                <string>IPv6 request fail with some websites (Javbus, Amazon)
-IPv4 is recommended (restart required).</string>
+IPv4 is recommended (restart required)</string>
               </property>
              </widget>
             </item>
@@ -23287,7 +23287,7 @@ font-weight:bold</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>0</y>
+           <y>-342</y>
            <width>770</width>
            <height>1000</height>
           </rect>
