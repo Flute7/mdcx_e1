@@ -20493,7 +20493,7 @@ line-height:50px</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-889</y>
+           <y>-57</y>
            <width>770</width>
            <height>1550</height>
           </rect>
@@ -20897,7 +20897,7 @@ Console -&gt; Advanced -&gt; API key -&gt; Add (name optional)</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>If set, only actors in the specified user's media library will be fetched.</string>
+               <string>If set, only actors in the specified user's library will be fetched.</string>
               </property>
              </widget>
             </item>
@@ -20994,7 +20994,7 @@ Console -&gt; Advanced -&gt; API key -&gt; Add (name optional)</string>
             </size>
            </property>
            <property name="text">
-            <string>Auto run after scraping</string>
+            <string>Run after scraping</string>
            </property>
           </widget>
           <widget class="QFrame" name="frame_2">
@@ -21069,7 +21069,7 @@ Console -&gt; Advanced -&gt; API key -&gt; Add (name optional)</string>
              <enum>Qt::RightToLeft</enum>
             </property>
             <property name="text">
-             <string>Scope:</string>
+             <string>Target:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21326,7 +21326,7 @@ Console -&gt; Advanced -&gt; API key -&gt; Add (name optional)</string>
                    <string notr="true">color: rgb(10, 52, 255);</string>
                   </property>
                   <property name="text">
-                   <string>Click to download avatar package</string>
+                   <string>Click to download package</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -21448,7 +21448,7 @@ Images are from different periods; early pictures are chosen by default.</string
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>It is recommended to use fork and use your own URL to avoid potential issues.</string>
+               <string>It is recommended to fork and use your own URL to avoid potential issues.</string>
               </property>
              </widget>
             </item>
@@ -22005,7 +22005,7 @@ Introduction, Data, Resume, Biography, IMDb Homepage, etc).</string>
             </size>
            </property>
            <property name="text">
-            <string>Auto run after scraping</string>
+            <string>Run after scraping</string>
            </property>
           </widget>
          </widget>
@@ -22071,7 +22071,7 @@ Introduction, Data, Resume, Biography, IMDb Homepage, etc).</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>Avatars are placed in a .actors folder; created in the directory of each video being scraped.</string>
+            <string>Avatars are added to a .actors folder; created in the directory of the video being scraped.</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
@@ -22158,14 +22158,14 @@ Introduction, Data, Resume, Biography, IMDb Homepage, etc).</string>
           <widget class="QPushButton" name="pushButton_del_actor_folder">
            <property name="geometry">
             <rect>
-             <x>530</x>
+             <x>500</x>
              <y>120</y>
-             <width>171</width>
+             <width>191</width>
              <height>40</height>
             </rect>
            </property>
            <property name="text">
-            <string>Clear .actors Folders</string>
+            <string>Clear all .actors Folders</string>
            </property>
           </widget>
           <widget class="QCheckBox" name="checkBox_actor_photo_kodi">
@@ -22190,7 +22190,7 @@ Introduction, Data, Resume, Biography, IMDb Homepage, etc).</string>
             </size>
            </property>
            <property name="text">
-            <string>Auto run after scraping</string>
+            <string>Run after scraping</string>
            </property>
           </widget>
          </widget>
