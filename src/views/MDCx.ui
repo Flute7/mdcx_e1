@@ -20493,7 +20493,7 @@ line-height:50px</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>0</y>
+           <y>-889</y>
            <width>770</width>
            <height>1550</height>
           </rect>
@@ -20511,7 +20511,7 @@ line-height:50px</string>
            <string notr="true">font:&quot;Courier&quot;;</string>
           </property>
           <property name="title">
-           <string>Emby/Jellyfin Settings</string>
+           <string>Media Server Settings</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_25">
            <property name="geometry">
@@ -20591,7 +20591,8 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>API key creation method: Console -&gt; Advanced -&gt; API key -&gt; Add (App name optional)</string>
+               <string>API key creation:
+Console -&gt; Advanced -&gt; API key -&gt; Add (name optional)</string>
               </property>
              </widget>
             </item>
@@ -20615,42 +20616,42 @@ line-height:50px</string>
                 </item>
                 <item>
                  <property name="text">
-                  <string>2. Performers with information and avatars</string>
+                  <string>2. With both information and avatars</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>3. Performers with information but no avatars</string>
+                  <string>3. With information but missing avatars</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>4. Performers with avatars but no information</string>
+                  <string>4. With avatars but missing information</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>5. Performers with no information and no avatars</string>
+                  <string>5. Missing both information and avatars</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>6. Performers with information</string>
+                  <string>6. With information</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>7. Performers without information</string>
+                  <string>7. Missing information</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>8. Performers with avatars</string>
+                  <string>8. With avatars</string>
                  </property>
                 </item>
                 <item>
                  <property name="text">
-                  <string>9. Performers without avatars</string>
+                  <string>9. Missing avatars</string>
                  </property>
                 </item>
                </widget>
@@ -20746,7 +20747,7 @@ line-height:50px</string>
                <enum>QFrame::NoFrame</enum>
               </property>
               <property name="text">
-               <string>Performer Info Check:</string>
+               <string>Performer Check:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20771,7 +20772,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Emby/Jellyfin server address, for example: http://192.168.1.5:8096</string>
+               <string>Server address, for example: http://192.168.1.5:8096</string>
               </property>
              </widget>
             </item>
@@ -20793,7 +20794,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>Media Server:</string>
+               <string>Type:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20907,9 +20908,9 @@ line-height:50px</string>
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>750</y>
+            <y>740</y>
             <width>701</width>
-            <height>491</height>
+            <height>481</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -20925,13 +20926,13 @@ line-height:50px</string>
            </size>
           </property>
           <property name="title">
-           <string>Complete Emby/Jellyfin Performer Avatars</string>
+           <string>Emby/Jellyfin Performer Avatars</string>
           </property>
           <widget class="QPushButton" name="pushButton_add_actor_pic">
            <property name="geometry">
             <rect>
              <x>160</x>
-             <y>440</y>
+             <y>430</y>
              <width>111</width>
              <height>40</height>
             </rect>
@@ -20965,7 +20966,7 @@ line-height:50px</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>Add performer avatars from an online or local library.</string>
+            <string>Add performer avatars sourced from an online or local library.</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
@@ -20975,8 +20976,8 @@ line-height:50px</string>
            <property name="geometry">
             <rect>
              <x>300</x>
-             <y>440</y>
-             <width>211</width>
+             <y>430</y>
+             <width>441</width>
              <height>40</height>
             </rect>
            </property>
@@ -20993,7 +20994,7 @@ line-height:50px</string>
             </size>
            </property>
            <property name="text">
-            <string>Automatically run after scraping</string>
+            <string>Auto run after scraping</string>
            </property>
           </widget>
           <widget class="QFrame" name="frame_2">
@@ -21103,7 +21104,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Download the package, extract the archive and fill in the path to the avatar image directory.</string>
+               <string>Download, extract, and fill in the path to the avatar image directory.</string>
               </property>
              </widget>
             </item>
@@ -21174,7 +21175,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Use Graphis background</string>
+                 <string>Graphis background</string>
                 </property>
                </widget>
               </item>
@@ -21193,7 +21194,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Use Graphis avatar</string>
+                 <string>Graphis avatar</string>
                 </property>
                </widget>
               </item>
@@ -21212,7 +21213,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Request Graphis latest images</string>
+                 <string>Request latest images</string>
                 </property>
                </widget>
               </item>
@@ -21375,7 +21376,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Directory</string>
+                 <string>Open...</string>
                 </property>
                </widget>
               </item>
@@ -21425,7 +21426,7 @@ line-height:50px</string>
               </property>
               <property name="text">
                <string>Prioritise avatar and background images from Graphis (graphis.ne.jp).
-Performer images are from different periods; early pictures are requested by default.</string>
+Images are from different periods; early pictures are chosen by default.</string>
               </property>
              </widget>
             </item>
@@ -21447,7 +21448,7 @@ Performer images are from different periods; early pictures are requested by def
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Github fork the project and use your own URL to avoid potential issues.</string>
+               <string>It is recommended to use fork and use your own URL to avoid potential issues.</string>
               </property>
              </widget>
             </item>
@@ -21465,7 +21466,7 @@ Performer images are from different periods; early pictures are requested by def
             <x>30</x>
             <y>360</y>
             <width>701</width>
-            <height>371</height>
+            <height>361</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -21481,7 +21482,7 @@ Performer images are from different periods; early pictures are requested by def
            </size>
           </property>
           <property name="title">
-           <string>Complete Emby/Jellyfin Performer Information</string>
+           <string>Emby/Jellyfin Performer Information</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_14">
            <property name="geometry">
@@ -21504,14 +21505,14 @@ Performer images are from different periods; early pictures are requested by def
                  </size>
                 </property>
                 <property name="text">
-                 <string>Simplified Chinese</string>
+                 <string>Chinese Simplified</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QRadioButton" name="radioButton_actor_info_zh_tw">
                 <property name="text">
-                 <string>Traditional Chinese</string>
+                 <string>Chinese Traditional</string>
                 </property>
                </widget>
               </item>
@@ -21589,7 +21590,7 @@ Performer images are from different periods; early pictures are requested by def
                 <enum>Qt::LeftToRight</enum>
                </property>
                <property name="text">
-                <string>Performer Database:</string>
+                <string>Performer DB:</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21706,7 +21707,7 @@ Performer images are from different periods; early pictures are requested by def
                    </size>
                   </property>
                   <property name="text">
-                   <string>Use database to complete missing information</string>
+                   <string>Use database for missing information</string>
                   </property>
                  </widget>
                 </item>
@@ -21734,7 +21735,7 @@ Performer images are from different periods; early pictures are requested by def
                    <string notr="true">color: rgb(10, 52, 255);</string>
                   </property>
                   <property name="text">
-                   <string>Click to download database</string>
+                   <string>Click to download DB</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignCenter</set>
@@ -21819,8 +21820,14 @@ Performer images are from different periods; early pictures are requested by def
                     <height>30</height>
                    </size>
                   </property>
+                  <property name="layoutDirection">
+                   <enum>Qt::LeftToRight</enum>
+                  </property>
                   <property name="text">
-                   <string>When Chinese is unavailable, translate Japanese into Chinese</string>
+                   <string>If Chinese is unavailable, translate from Japanese.</string>
+                  </property>
+                  <property name="checked">
+                   <bool>false</bool>
                   </property>
                  </widget>
                 </item>
@@ -21842,7 +21849,7 @@ Performer images are from different periods; early pictures are requested by def
                    <string notr="true">color: rgb(8, 128, 128);</string>
                   </property>
                   <property name="text">
-                   <string>Japanese if unchecked</string>
+                   <string>(Japanese default)</string>
                   </property>
                  </widget>
                 </item>
@@ -21856,7 +21863,7 @@ Performer images are from different periods; early pictures are requested by def
            <property name="geometry">
             <rect>
              <x>160</x>
-             <y>320</y>
+             <y>310</y>
              <width>111</width>
              <height>40</height>
             </rect>
@@ -21890,7 +21897,8 @@ Performer images are from different periods; early pictures are requested by def
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>Add performer information from Wikipedia (introduction, data, resume, biography, IMDb homepage, etc).</string>
+            <string>Add performer information from Wikipedia:
+Introduction, Data, Resume, Biography, IMDb Homepage, etc).</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
@@ -21968,7 +21976,7 @@ Performer images are from different periods; early pictures are requested by def
              <enum>Qt::RightToLeft</enum>
             </property>
             <property name="text">
-             <string>Scope:</string>
+             <string>Target:</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21979,8 +21987,8 @@ Performer images are from different periods; early pictures are requested by def
            <property name="geometry">
             <rect>
              <x>300</x>
-             <y>320</y>
-             <width>211</width>
+             <y>310</y>
+             <width>391</width>
              <height>40</height>
             </rect>
            </property>
@@ -21997,7 +22005,7 @@ Performer images are from different periods; early pictures are requested by def
             </size>
            </property>
            <property name="text">
-            <string>Automatically run after scraping</string>
+            <string>Auto run after scraping</string>
            </property>
           </widget>
          </widget>
@@ -22005,9 +22013,9 @@ Performer images are from different periods; early pictures are requested by def
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>1260</y>
+            <y>1240</y>
             <width>701</width>
-            <height>181</height>
+            <height>171</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -22023,13 +22031,13 @@ Performer images are from different periods; early pictures are requested by def
            </size>
           </property>
           <property name="title">
-           <string>Complete Kodi/Plex/Jvedio Performer Avatars</string>
+           <string>Kodi/Plex/Jvedio Performer Avatars</string>
           </property>
           <widget class="QPushButton" name="pushButton_add_actor_pic_kodi">
            <property name="geometry">
             <rect>
              <x>160</x>
-             <y>130</y>
+             <y>120</y>
              <width>111</width>
              <height>40</height>
             </rect>
@@ -22063,7 +22071,7 @@ Performer images are from different periods; early pictures are requested by def
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>Avatars will be placed in a .actors folder; created in the directory of each video being scraped.</string>
+            <string>Avatars are placed in a .actors folder; created in the directory of each video being scraped.</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
@@ -22151,21 +22159,21 @@ Performer images are from different periods; early pictures are requested by def
            <property name="geometry">
             <rect>
              <x>530</x>
-             <y>130</y>
+             <y>120</y>
              <width>171</width>
              <height>40</height>
             </rect>
            </property>
            <property name="text">
-            <string>Clear All .actors Folders</string>
+            <string>Clear .actors Folders</string>
            </property>
           </widget>
           <widget class="QCheckBox" name="checkBox_actor_photo_kodi">
            <property name="geometry">
             <rect>
              <x>300</x>
-             <y>130</y>
-             <width>211</width>
+             <y>120</y>
+             <width>231</width>
              <height>40</height>
             </rect>
            </property>
@@ -22182,7 +22190,7 @@ Performer images are from different periods; early pictures are requested by def
             </size>
            </property>
            <property name="text">
-            <string>Automatically run after scraping</string>
+            <string>Auto run after scraping</string>
            </property>
           </widget>
          </widget>
