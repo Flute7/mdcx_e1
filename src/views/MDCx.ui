@@ -20493,7 +20493,7 @@ line-height:50px</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-889</y>
+           <y>0</y>
            <width>770</width>
            <height>1550</height>
           </rect>
@@ -20604,6 +20604,9 @@ line-height:50px</string>
                   <width>0</width>
                   <height>40</height>
                  </size>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::ClickFocus</enum>
                 </property>
                 <property name="maxVisibleItems">
                  <number>30</number>
