@@ -18891,7 +18891,7 @@ line-height:50px</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-215</y>
+           <y>-435</y>
            <width>796</width>
            <height>1100</height>
           </rect>
@@ -19136,7 +19136,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>genre (tag field)</string>
+                 <string>genre (tag)</string>
                 </property>
                </widget>
               </item>
@@ -19155,7 +19155,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>collection (user field)</string>
+                 <string>collection (user)</string>
                 </property>
                </widget>
               </item>
@@ -19171,7 +19171,7 @@ line-height:50px</string>
                  <enum>Qt::LeftToRight</enum>
                 </property>
                 <property name="text">
-                 <string>collection (series field)</string>
+                 <string>collection (series)</string>
                 </property>
                </widget>
               </item>
@@ -19488,7 +19488,7 @@ line-height:50px</string>
                  <string notr="true">color: rgb(8, 128, 128);</string>
                 </property>
                 <property name="text">
-                 <string>Distributor Tag Format</string>
+                 <string>Distributor Tag Format:</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -19921,7 +19921,7 @@ line-height:50px</string>
                  <string notr="true">color: rgb(8, 128, 128);</string>
                 </property>
                 <property name="text">
-                 <string>Publisher Tag Format</string>
+                 <string>Publisher Tag Format:</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
