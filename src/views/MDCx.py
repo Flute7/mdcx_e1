@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MDCx(object):
     def setupUi(self, MDCx):
         MDCx.setObjectName("MDCx")
-        MDCx.resize(1305, 879)
+        MDCx.resize(1030, 700)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -11014,7 +11014,7 @@ class Ui_MDCx(object):
 
         self.retranslateUi(MDCx)
         self.stackedWidget.setCurrentIndex(4)
-        self.tabWidget.setCurrentIndex(8)
+        self.tabWidget.setCurrentIndex(9)
         QtCore.QMetaObject.connectSlotsByName(MDCx)
 
     def retranslateUi(self, MDCx):
