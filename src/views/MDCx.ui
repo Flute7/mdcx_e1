@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1030</width>
-    <height>700</height>
+    <width>1305</width>
+    <height>879</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -2509,7 +2509,7 @@ p, li { white-space: pre-wrap; }
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>9</number>
+       <number>8</number>
       </property>
       <property name="iconSize">
        <size>
@@ -18891,7 +18891,7 @@ line-height:50px</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>0</y>
+           <y>-442</y>
            <width>796</width>
            <height>1100</height>
           </rect>
@@ -18918,14 +18918,14 @@ line-height:50px</string>
            </size>
           </property>
           <property name="title">
-           <string>写入 NFO 的字段：</string>
+           <string>NFO Field Data</string>
           </property>
           <widget class="QWidget" name="layoutWidget_10">
            <property name="geometry">
             <rect>
              <x>20</x>
-             <y>30</y>
-             <width>661</width>
+             <y>60</y>
+             <width>671</width>
              <height>931</height>
             </rect>
            </property>
@@ -18960,7 +18960,7 @@ line-height:50px</string>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_all_actor">
                 <property name="text">
-                 <string>写入男女演员（不勾选，则仅写入女演员）</string>
+                 <string>Include both male and female performers (female only if unchecked)</string>
                 </property>
                </widget>
               </item>
@@ -18984,7 +18984,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>年份/时长/想看人数：</string>
+               <string>Year/Duration/Wishlist:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -18996,28 +18996,28 @@ line-height:50px</string>
               <item>
                <widget class="QCheckBox" name="checkBox_tag_letters">
                 <property name="text">
-                 <string>番号前缀</string>
+                 <string>Number Prefix</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_tag_actor">
                 <property name="text">
-                 <string>演员</string>
+                 <string>Performer</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_tag_definition">
                 <property name="text">
-                 <string>分辨率</string>
+                 <string>Resolution</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_tag_cnword">
                 <property name="text">
-                 <string>中文字幕</string>
+                 <string>Chinese Subtitle</string>
                 </property>
                </widget>
               </item>
@@ -19060,7 +19060,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>请填写 Tagline 格式：</string>
+               <string>Please fill in the Tagline format:</string>
               </property>
              </widget>
             </item>
@@ -19085,7 +19085,7 @@ line-height:50px</string>
 </string>
               </property>
               <property name="text">
-               <string>发行日期：release</string>
+               <string>Release Date: release</string>
               </property>
              </widget>
             </item>
@@ -19106,14 +19106,14 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>类标题（sorttitle）</string>
+                 <string>Category Title （sorttitle）</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_originaltitle">
                 <property name="text">
-                 <string>原标题（originaltitle）</string>
+                 <string>Original Title （originaltitle）</string>
                 </property>
                </widget>
               </item>
@@ -19136,7 +19136,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>风格（使用标签字段）</string>
+                 <string>Genre (using tag field)</string>
                 </property>
                </widget>
               </item>
@@ -19155,7 +19155,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>合集（使用演员字段）</string>
+                 <string>Collection (using user field)</string>
                 </property>
                </widget>
               </item>
@@ -19171,7 +19171,7 @@ line-height:50px</string>
                  <enum>Qt::LeftToRight</enum>
                 </property>
                 <property name="text">
-                 <string>合集（使用系列字段）</string>
+                 <string>Collection (using series field)</string>
                 </property>
                </widget>
               </item>
@@ -19182,32 +19182,82 @@ line-height:50px</string>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_poster">
                 <property name="text">
-                 <string>封面（poster）</string>
+                 <string>Poster （poster）</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_cover">
                 <property name="text">
-                 <string>背景（cover）</string>
+                 <string>Background （cover）</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_trailer">
                 <property name="text">
-                 <string>预告片（trilaer）</string>
+                 <string>Trailer （trailer）</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_website">
                 <property name="text">
-                 <string>网址（website）</string>
+                 <string>Website （website）</string>
                 </property>
                </widget>
               </item>
              </layout>
+            </item>
+            <item row="6" column="0">
+             <widget class="QLabel" name="label_387">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_209">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
             </item>
             <item row="15" column="0">
              <widget class="QLabel" name="label_301">
@@ -19259,8 +19309,8 @@ line-height:50px</string>
               </property>
              </widget>
             </item>
-            <item row="1" column="0">
-             <widget class="QLabel" name="label_209">
+            <item row="21" column="0">
+             <widget class="QLabel" name="label_388">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -19277,32 +19327,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string/>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="6" column="0">
-             <widget class="QLabel" name="label_387">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>130</width>
-                <height>30</height>
-               </size>
-              </property>
-              <property name="layoutDirection">
-               <enum>Qt::LeftToRight</enum>
-              </property>
-              <property name="text">
-               <string/>
+               <string>Distributor/Publisher:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -19334,31 +19359,6 @@ line-height:50px</string>
               </property>
              </widget>
             </item>
-            <item row="21" column="0">
-             <widget class="QLabel" name="label_388">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>130</width>
-                <height>30</height>
-               </size>
-              </property>
-              <property name="layoutDirection">
-               <enum>Qt::LeftToRight</enum>
-              </property>
-              <property name="text">
-               <string>片商/发行商：</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
             <item row="2" column="1">
              <layout class="QHBoxLayout" name="horizontalLayout_136">
               <item>
@@ -19376,7 +19376,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>简介（outline）</string>
+                 <string>Introduction （outline）</string>
                 </property>
                </widget>
               </item>
@@ -19395,14 +19395,14 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>简介（plot）</string>
+                 <string>Introduction （plot）</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_originalplot">
                 <property name="text">
-                 <string>原简介（originalplot）</string>
+                 <string>Original Introduction （originalplot）</string>
                 </property>
                </widget>
               </item>
@@ -19431,7 +19431,7 @@ line-height:50px</string>
                  <string notr="true">color: rgb(8, 128, 128);</string>
                 </property>
                 <property name="text">
-                 <string>标签中系列的格式：</string>
+                 <string>Series Tag Format:</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -19459,7 +19459,7 @@ line-height:50px</string>
 </string>
                 </property>
                 <property name="text">
-                 <string>系列: series</string>
+                 <string>Series: series</string>
                 </property>
                </widget>
               </item>
@@ -19488,7 +19488,7 @@ line-height:50px</string>
                  <string notr="true">color: rgb(8, 128, 128);</string>
                 </property>
                 <property name="text">
-                 <string>标签中片商的格式：</string>
+                 <string>Distributor Tag Format</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -19516,7 +19516,7 @@ line-height:50px</string>
 </string>
                 </property>
                 <property name="text">
-                 <string>片商: studio</string>
+                 <string>Distributor: studio</string>
                 </property>
                </widget>
               </item>
@@ -19552,7 +19552,7 @@ line-height:50px</string>
               <item>
                <widget class="QCheckBox" name="checkBox_outline_cdata">
                 <property name="text">
-                 <string>简介不写入 &lt;![CDATA[*]]&gt; 标记</string>
+                 <string>The introduction does not include the &lt;![CDATA[*]]&gt; tag</string>
                 </property>
                </widget>
               </item>
@@ -19576,7 +19576,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>评分：</string>
+               <string>Rating:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -19600,7 +19600,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>公众评分（score）</string>
+                 <string>Public Rating （score）</string>
                 </property>
                </widget>
               </item>
@@ -19619,7 +19619,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>影评人评分（criticrating）</string>
+                 <string>Critic Rating （criticrating）</string>
                 </property>
                </widget>
               </item>
@@ -19642,7 +19642,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>片商（studio）</string>
+                 <string>Distributor （studio）</string>
                 </property>
                </widget>
               </item>
@@ -19661,7 +19661,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>片商（maker）</string>
+                 <string>Distributor （maker）</string>
                 </property>
                </widget>
               </item>
@@ -19674,7 +19674,7 @@ line-height:50px</string>
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>发行商（publisher）</string>
+                 <string>Publisher （publisher）</string>
                 </property>
                </widget>
               </item>
@@ -19693,7 +19693,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>发行商（label）</string>
+                 <string>Publisher （label）</string>
                 </property>
                </widget>
               </item>
@@ -19754,7 +19754,7 @@ line-height:50px</string>
               <item>
                <widget class="QCheckBox" name="checkBox_tag_mosaic">
                 <property name="text">
-                 <string>有码/无码</string>
+                 <string>Coded/Uncoded</string>
                 </property>
                </widget>
               </item>
@@ -19768,56 +19768,14 @@ line-height:50px</string>
               <item>
                <widget class="QCheckBox" name="checkBox_tag_studio">
                 <property name="text">
-                 <string>片商</string>
+                 <string>Distributor</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_tag_publisher">
                 <property name="text">
-                 <string>发行商</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="12" column="1">
-             <layout class="QHBoxLayout" name="horizontalLayout_140">
-              <item>
-               <widget class="QCheckBox" name="checkBox_nfo_series">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>150</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>系列（series）</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QCheckBox" name="checkBox_nfo_tag">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>150</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>标签（tag）</string>
+                 <string>Publisher</string>
                 </property>
                </widget>
               </item>
@@ -19848,6 +19806,48 @@ line-height:50px</string>
               </property>
              </widget>
             </item>
+            <item row="12" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout_140">
+              <item>
+               <widget class="QCheckBox" name="checkBox_nfo_series">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>150</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Series （series）</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="checkBox_nfo_tag">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>150</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Tag （tag）</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
             <item row="12" column="0">
              <widget class="QLabel" name="label_208">
               <property name="sizePolicy">
@@ -19866,7 +19866,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>系列/标签：</string>
+               <string>Series/Tags:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -19921,7 +19921,7 @@ line-height:50px</string>
                  <string notr="true">color: rgb(8, 128, 128);</string>
                 </property>
                 <property name="text">
-                 <string>标签中发行的格式：</string>
+                 <string>Publisher Tag Format</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -19949,7 +19949,7 @@ line-height:50px</string>
 </string>
                 </property>
                 <property name="text">
-                 <string>Distributor: publisher</string>
+                 <string>Publisher: publisher</string>
                 </property>
                </widget>
               </item>
@@ -19972,7 +19972,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>发行日期（release）</string>
+                 <string>Release Date （release）</string>
                 </property>
                </widget>
               </item>
@@ -19991,14 +19991,14 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>发行日期（releasedate）</string>
+                 <string>Release Date （releasedate）</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_premiered">
                 <property name="text">
-                 <string>发行日期（premiered）</string>
+                 <string>Release Date （premiered）</string>
                 </property>
                </widget>
               </item>
@@ -20022,7 +20022,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>风格/合集：</string>
+               <string>Genre/Collection</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20047,7 +20047,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>发行日期：</string>
+               <string>Release Date:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20072,7 +20072,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>国家/分级：</string>
+               <string>Country/Age Rating:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20096,7 +20096,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>年份（year）</string>
+                 <string>Release Year （year）</string>
                 </property>
                </widget>
               </item>
@@ -20115,7 +20115,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>时长（runtime）</string>
+                 <string>Duration （runtime）</string>
                 </property>
                </widget>
               </item>
@@ -20128,7 +20128,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>想看人数（votes）</string>
+                 <string>Wishlist （votes）</string>
                 </property>
                </widget>
               </item>
@@ -20158,6 +20158,55 @@ line-height:50px</string>
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
               </property>
              </widget>
+            </item>
+            <item row="7" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout_141">
+              <item>
+               <widget class="QCheckBox" name="checkBox_nfo_country">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>150</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Origin Country （country）</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="checkBox_nfo_mpaa">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>150</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Age Rating （mpaa）</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QCheckBox" name="checkBox_nfo_customrating">
+                <property name="text">
+                 <string>Custom Rating （customrating）</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </item>
             <item row="1" column="1">
              <layout class="QHBoxLayout" name="horizontalLayout_121">
@@ -20189,83 +20238,25 @@ line-height:50px</string>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_title_cd">
                 <property name="text">
-                 <string>标题末尾写入分集信息</string>
+                 <string>Add episode information to the end of the title</string>
                 </property>
                </widget>
               </item>
              </layout>
             </item>
-            <item row="7" column="1">
-             <layout class="QHBoxLayout" name="horizontalLayout_141">
-              <item>
-               <widget class="QCheckBox" name="checkBox_nfo_country">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>150</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>国家（country）</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QCheckBox" name="checkBox_nfo_mpaa">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>150</width>
-                  <height>0</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>分级信息（mpaa）</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QCheckBox" name="checkBox_nfo_customrating">
-                <property name="text">
-                 <string>自定义分级（customrating）</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="10" column="0">
-             <widget class="QLabel" name="label_386">
+            <item row="13" column="1">
+             <widget class="QLabel" name="label_395">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
               </property>
-              <property name="minimumSize">
-               <size>
-                <width>130</width>
-                <height>30</height>
-               </size>
-              </property>
-              <property name="layoutDirection">
-               <enum>Qt::LeftToRight</enum>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>演员/导演：</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+               <string>Please select the information to tag:</string>
               </property>
              </widget>
             </item>
@@ -20286,7 +20277,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>演员（actor）</string>
+                 <string>Performer （actor）</string>
                 </property>
                </widget>
               </item>
@@ -20311,24 +20302,8 @@ line-height:50px</string>
               </item>
              </layout>
             </item>
-            <item row="13" column="1">
-             <widget class="QLabel" name="label_395">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">color: rgb(8, 128, 128);</string>
-              </property>
-              <property name="text">
-               <string>请勾选写入标签的信息：</string>
-              </property>
-             </widget>
-            </item>
-            <item row="22" column="0">
-             <widget class="QLabel" name="label_150">
+            <item row="10" column="0">
+             <widget class="QLabel" name="label_386">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -20345,7 +20320,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>封面/背景/预告片：</string>
+               <string>Performer/Director</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20373,7 +20348,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>注意：如果需要繁体，请到「设置」-「翻译」-「标签」，勾选为繁体！</string>
+               <string>Note: For Traditional Chinese, go to 'Settings -&gt; Translation -&gt; Tags'  and check the box!</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -20405,13 +20380,38 @@ line-height:50px</string>
               </property>
              </widget>
             </item>
+            <item row="22" column="0">
+             <widget class="QLabel" name="label_150">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::LeftToRight</enum>
+              </property>
+              <property name="text">
+               <string>Poster/Background/Trailer:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
            </layout>
           </widget>
           <widget class="QLabel" name="label_389">
            <property name="geometry">
             <rect>
-             <x>150</x>
-             <y>0</y>
+             <x>20</x>
+             <y>30</y>
              <width>431</width>
              <height>21</height>
             </rect>
@@ -20426,16 +20426,16 @@ line-height:50px</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>注：同一字段多个名称可以兼容更多类型版本的媒体库</string>
+            <string>Note: The same field name may be compatible with multiple types of media library.</string>
            </property>
           </widget>
          </widget>
          <widget class="QPushButton" name="pushButton_field_tips_nfo">
           <property name="geometry">
            <rect>
-            <x>640</x>
+            <x>599</x>
             <y>20</y>
-            <width>80</width>
+            <width>121</width>
             <height>26</height>
            </rect>
           </property>
@@ -20452,7 +20452,7 @@ line-height:50px</string>
            </size>
           </property>
           <property name="text">
-           <string>字段说明</string>
+           <string>Field Description</string>
           </property>
          </widget>
         </widget>
@@ -20619,7 +20619,7 @@ line-height:50px</string>
                 </property>
                 <item>
                  <property name="text">
-                  <string>1. All Performers</string>
+                  <string>1. All performers</string>
                  </property>
                 </item>
                 <item>
@@ -21832,7 +21832,7 @@ Images are from different periods; early pictures are chosen by default.</string
                    <enum>Qt::LeftToRight</enum>
                   </property>
                   <property name="text">
-                   <string>If Chinese is unavailable, translate from Japanese.</string>
+                   <string>If Chinese is unavailable, translate from Japanese</string>
                   </property>
                   <property name="checked">
                    <bool>false</bool>
