@@ -20493,7 +20493,7 @@ line-height:50px</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>0</y>
+           <y>-889</y>
            <width>770</width>
            <height>1550</height>
           </rect>
@@ -20603,6 +20603,12 @@ line-height:50px</string>
                  <size>
                   <width>0</width>
                   <height>40</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
                  </size>
                 </property>
                 <property name="focusPolicy">
@@ -20935,7 +20941,7 @@ line-height:50px</string>
             <rect>
              <x>160</x>
              <y>430</y>
-             <width>191</width>
+             <width>201</width>
              <height>40</height>
             </rect>
            </property>
@@ -20946,9 +20952,9 @@ line-height:50px</string>
           <widget class="QLabel" name="label_297">
            <property name="geometry">
             <rect>
-             <x>50</x>
+             <x>20</x>
              <y>20</y>
-             <width>541</width>
+             <width>671</width>
              <height>41</height>
             </rect>
            </property>
@@ -20968,7 +20974,7 @@ line-height:50px</string>
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>Add performer avatars sourced from an online or local library.</string>
+            <string>Add performer avatars sourced from either an online or local library.</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
@@ -20977,9 +20983,9 @@ line-height:50px</string>
           <widget class="QCheckBox" name="checkBox_actor_photo_auto">
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>380</x>
              <y>430</y>
-             <width>321</width>
+             <width>311</width>
              <height>40</height>
             </rect>
            </property>
@@ -21592,7 +21598,7 @@ Images are from different periods; early pictures are chosen by default.</string
                 <enum>Qt::LeftToRight</enum>
                </property>
                <property name="text">
-                <string>Performer Database:</string>
+                <string>Performer DB:</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -21866,7 +21872,7 @@ Images are from different periods; early pictures are chosen by default.</string
             <rect>
              <x>160</x>
              <y>310</y>
-             <width>191</width>
+             <width>201</width>
              <height>40</height>
             </rect>
            </property>
@@ -21877,9 +21883,9 @@ Images are from different periods; early pictures are chosen by default.</string
           <widget class="QLabel" name="label_295">
            <property name="geometry">
             <rect>
-             <x>50</x>
+             <x>20</x>
              <y>20</y>
-             <width>631</width>
+             <width>671</width>
              <height>41</height>
             </rect>
            </property>
@@ -21899,7 +21905,7 @@ Images are from different periods; early pictures are chosen by default.</string
             <string notr="true">color: rgb(8, 128, 128);</string>
            </property>
            <property name="text">
-            <string>Add information from Wikipedia (introduction, data, resume, biography, IMDb homepage, etc).</string>
+            <string>Add information from Wikipedia (intro, data, resume, biography, IMDb homepage, etc).</string>
            </property>
            <property name="wordWrap">
             <bool>true</bool>
@@ -21956,9 +21962,9 @@ Images are from different periods; early pictures are chosen by default.</string
             <property name="geometry">
              <rect>
               <x>0</x>
-              <y>20</y>
+              <y>10</y>
               <width>130</width>
-              <height>16</height>
+              <height>30</height>
              </rect>
             </property>
             <property name="sizePolicy">
@@ -21987,9 +21993,9 @@ Images are from different periods; early pictures are chosen by default.</string
           <widget class="QCheckBox" name="checkBox_actor_info_photo">
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>380</x>
              <y>310</y>
-             <width>321</width>
+             <width>311</width>
              <height>40</height>
             </rect>
            </property>
@@ -22039,7 +22045,7 @@ Images are from different periods; early pictures are chosen by default.</string
             <rect>
              <x>160</x>
              <y>120</y>
-             <width>191</width>
+             <width>201</width>
              <height>40</height>
             </rect>
            </property>
@@ -22050,9 +22056,9 @@ Images are from different periods; early pictures are chosen by default.</string
           <widget class="QLabel" name="label_414">
            <property name="geometry">
             <rect>
-             <x>50</x>
+             <x>20</x>
              <y>20</y>
-             <width>631</width>
+             <width>671</width>
              <height>41</height>
             </rect>
            </property>
@@ -22161,20 +22167,20 @@ Images are from different periods; early pictures are chosen by default.</string
             <rect>
              <x>160</x>
              <y>180</y>
-             <width>191</width>
+             <width>201</width>
              <height>40</height>
             </rect>
            </property>
            <property name="text">
-            <string>Clear all .actors Folders</string>
+            <string>Clear All .actors Folders</string>
            </property>
           </widget>
           <widget class="QCheckBox" name="checkBox_actor_photo_kodi">
            <property name="geometry">
             <rect>
-             <x>370</x>
+             <x>380</x>
              <y>120</y>
-             <width>321</width>
+             <width>311</width>
              <height>40</height>
             </rect>
            </property>
