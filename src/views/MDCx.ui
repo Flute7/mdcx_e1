@@ -2509,7 +2509,7 @@ p, li { white-space: pre-wrap; }
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>9</number>
+       <number>8</number>
       </property>
       <property name="iconSize">
        <size>
@@ -18891,7 +18891,7 @@ line-height:50px</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-442</y>
+           <y>-215</y>
            <width>796</width>
            <height>1100</height>
           </rect>
@@ -19060,7 +19060,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Please fill in the Tagline format:</string>
+               <string>Tagline format:</string>
               </property>
              </widget>
             </item>
@@ -19106,14 +19106,14 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Category Title （sorttitle）</string>
+                 <string>sorttitle</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_originaltitle">
                 <property name="text">
-                 <string>Original Title （originaltitle）</string>
+                 <string>originaltitle</string>
                 </property>
                </widget>
               </item>
@@ -19136,7 +19136,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Genre (using tag field)</string>
+                 <string>genre (tag field)</string>
                 </property>
                </widget>
               </item>
@@ -19155,7 +19155,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Collection (using user field)</string>
+                 <string>collection (user field)</string>
                 </property>
                </widget>
               </item>
@@ -19171,7 +19171,7 @@ line-height:50px</string>
                  <enum>Qt::LeftToRight</enum>
                 </property>
                 <property name="text">
-                 <string>Collection (using series field)</string>
+                 <string>collection (series field)</string>
                 </property>
                </widget>
               </item>
@@ -19182,28 +19182,28 @@ line-height:50px</string>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_poster">
                 <property name="text">
-                 <string>Poster （poster）</string>
+                 <string>poster</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_cover">
                 <property name="text">
-                 <string>Background （cover）</string>
+                 <string>cover</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_trailer">
                 <property name="text">
-                 <string>Trailer （trailer）</string>
+                 <string>trailer</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_website">
                 <property name="text">
-                 <string>Website （website）</string>
+                 <string>website</string>
                 </property>
                </widget>
               </item>
@@ -19376,7 +19376,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Introduction （outline）</string>
+                 <string>outline</string>
                 </property>
                </widget>
               </item>
@@ -19395,14 +19395,14 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Introduction （plot）</string>
+                 <string>plot</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_originalplot">
                 <property name="text">
-                 <string>Original Introduction （originalplot）</string>
+                 <string>originalplot</string>
                 </property>
                </widget>
               </item>
@@ -19600,7 +19600,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Public Rating （score）</string>
+                 <string>score</string>
                 </property>
                </widget>
               </item>
@@ -19619,7 +19619,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Critic Rating （criticrating）</string>
+                 <string>criticrating</string>
                 </property>
                </widget>
               </item>
@@ -19642,7 +19642,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Distributor （studio）</string>
+                 <string>studio</string>
                 </property>
                </widget>
               </item>
@@ -19661,7 +19661,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Distributor （maker）</string>
+                 <string>maker</string>
                 </property>
                </widget>
               </item>
@@ -19674,7 +19674,7 @@ line-height:50px</string>
                  </sizepolicy>
                 </property>
                 <property name="text">
-                 <string>Publisher （publisher）</string>
+                 <string>publisher</string>
                 </property>
                </widget>
               </item>
@@ -19693,7 +19693,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Publisher （label）</string>
+                 <string>label</string>
                 </property>
                </widget>
               </item>
@@ -19823,7 +19823,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Series （series）</string>
+                 <string>series</string>
                 </property>
                </widget>
               </item>
@@ -19842,7 +19842,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Tag （tag）</string>
+                 <string>tag</string>
                 </property>
                </widget>
               </item>
@@ -19972,7 +19972,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Release Date （release）</string>
+                 <string>release</string>
                 </property>
                </widget>
               </item>
@@ -19991,14 +19991,14 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Release Date （releasedate）</string>
+                 <string>releasedate</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_premiered">
                 <property name="text">
-                 <string>Release Date （premiered）</string>
+                 <string>premiered</string>
                 </property>
                </widget>
               </item>
@@ -20096,7 +20096,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Release Year （year）</string>
+                 <string>year</string>
                 </property>
                </widget>
               </item>
@@ -20115,7 +20115,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Duration （runtime）</string>
+                 <string>runtime</string>
                 </property>
                </widget>
               </item>
@@ -20128,7 +20128,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Wishlist （votes）</string>
+                 <string>votes</string>
                 </property>
                </widget>
               </item>
@@ -20176,7 +20176,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Origin Country （country）</string>
+                 <string>country</string>
                 </property>
                </widget>
               </item>
@@ -20195,14 +20195,14 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Age Rating （mpaa）</string>
+                 <string>mpaa</string>
                 </property>
                </widget>
               </item>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_customrating">
                 <property name="text">
-                 <string>Custom Rating （customrating）</string>
+                 <string>customrating</string>
                 </property>
                </widget>
               </item>
@@ -20277,7 +20277,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Performer （actor）</string>
+                 <string>actor</string>
                 </property>
                </widget>
               </item>
@@ -20296,7 +20296,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>Director（director）</string>
+                 <string>director</string>
                 </property>
                </widget>
               </item>
@@ -20412,7 +20412,7 @@ line-height:50px</string>
             <rect>
              <x>20</x>
              <y>30</y>
-             <width>431</width>
+             <width>671</width>
              <height>21</height>
             </rect>
            </property>
@@ -20433,9 +20433,9 @@ line-height:50px</string>
          <widget class="QPushButton" name="pushButton_field_tips_nfo">
           <property name="geometry">
            <rect>
-            <x>599</x>
+            <x>559</x>
             <y>20</y>
-            <width>121</width>
+            <width>161</width>
             <height>26</height>
            </rect>
           </property>
@@ -20452,7 +20452,7 @@ line-height:50px</string>
            </size>
           </property>
           <property name="text">
-           <string>Field Description</string>
+           <string>Field Descriptions</string>
           </property>
          </widget>
         </widget>
