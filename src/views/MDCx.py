@@ -7395,6 +7395,7 @@ class Ui_MDCx(object):
         self.groupBox_31.setObjectName("groupBox_31")
         self.gridLayoutWidget_24 = QtWidgets.QWidget(self.groupBox_31)
         self.gridLayoutWidget_24.setGeometry(QtCore.QRect(20, 30, 661, 500))
+        self.gridLayoutWidget_24.setMinimumSize(QtCore.QSize(100, 0))
         self.gridLayoutWidget_24.setObjectName("gridLayoutWidget_24")
         self.gridLayout_24 = QtWidgets.QGridLayout(self.gridLayoutWidget_24)
         self.gridLayout_24.setContentsMargins(0, 0, 0, 0)
@@ -7513,7 +7514,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_128.sizePolicy().hasHeightForWidth())
         self.label_128.setSizePolicy(sizePolicy)
-        self.label_128.setMinimumSize(QtCore.QSize(130, 0))
+        self.label_128.setMinimumSize(QtCore.QSize(100, 0))
         self.label_128.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_128.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_128.setObjectName("label_128")
@@ -7524,7 +7525,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_135.sizePolicy().hasHeightForWidth())
         self.label_135.setSizePolicy(sizePolicy)
-        self.label_135.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_135.setMinimumSize(QtCore.QSize(100, 0))
         self.label_135.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_135.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.label_135.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
@@ -7566,7 +7567,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_139.sizePolicy().hasHeightForWidth())
         self.label_139.setSizePolicy(sizePolicy)
-        self.label_139.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_139.setMinimumSize(QtCore.QSize(100, 0))
         self.label_139.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_139.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_139.setObjectName("label_139")
@@ -7609,7 +7610,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_127.sizePolicy().hasHeightForWidth())
         self.label_127.setSizePolicy(sizePolicy)
-        self.label_127.setMinimumSize(QtCore.QSize(0, 0))
+        self.label_127.setMinimumSize(QtCore.QSize(100, 0))
         self.label_127.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_127.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_127.setObjectName("label_127")
@@ -7690,7 +7691,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_126.sizePolicy().hasHeightForWidth())
         self.label_126.setSizePolicy(sizePolicy)
-        self.label_126.setMinimumSize(QtCore.QSize(130, 0))
+        self.label_126.setMinimumSize(QtCore.QSize(100, 0))
         self.label_126.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_126.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_126.setObjectName("label_126")
@@ -7750,7 +7751,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_131.sizePolicy().hasHeightForWidth())
         self.label_131.setSizePolicy(sizePolicy)
-        self.label_131.setMinimumSize(QtCore.QSize(130, 0))
+        self.label_131.setMinimumSize(QtCore.QSize(100, 0))
         self.label_131.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_131.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_131.setObjectName("label_131")
@@ -7806,7 +7807,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_134.sizePolicy().hasHeightForWidth())
         self.label_134.setSizePolicy(sizePolicy)
-        self.label_134.setMinimumSize(QtCore.QSize(130, 30))
+        self.label_134.setMinimumSize(QtCore.QSize(100, 30))
         self.label_134.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_134.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_134.setObjectName("label_134")
@@ -7862,7 +7863,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_216.sizePolicy().hasHeightForWidth())
         self.label_216.setSizePolicy(sizePolicy)
-        self.label_216.setMinimumSize(QtCore.QSize(130, 0))
+        self.label_216.setMinimumSize(QtCore.QSize(100, 0))
         self.label_216.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_216.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_216.setObjectName("label_216")
@@ -7922,7 +7923,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_233.sizePolicy().hasHeightForWidth())
         self.label_233.setSizePolicy(sizePolicy)
-        self.label_233.setMinimumSize(QtCore.QSize(130, 0))
+        self.label_233.setMinimumSize(QtCore.QSize(100, 0))
         self.label_233.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_233.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_233.setObjectName("label_233")
@@ -11711,22 +11712,22 @@ class Ui_MDCx(object):
         self.checkBox_sub_rescrape.setText(_translate("MDCx", "新添加字幕的视频在结束后重新刮削"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_2), _translate("MDCx", " Subtitle "))
         self.groupBox_26.setTitle(_translate("MDCx", "Custom Watermark Style"))
-        self.label_118.setText(_translate("MDCx", "<p style=\'line-height:20px\'>Download, extract, and save the watermark images to the below locations.<br><br>\n"
-"&nbsp;&nbsp;· You can use your own images.<br>\n"
-"&nbsp;&nbsp;· The \'config\' directory is set in \'Settings -> Advanced\'.<br>\n"
-"&nbsp;&nbsp;· Use forward slash \' / \' for MacOS paths.<br><br>\n"
-"Subtitle:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\sub.png<br>\n"
-"Censored:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\youma.png<br>\n"
-"Decensored:  &nbsp;&nbsp;\\config\\userdata\\watermark\\umr.png<br>\n"
-"Leaked:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;\\config\\userdata\\watermark\\leak.png<br>\n"
-"Uncensored:  &nbsp;&nbsp;\\config\\userdata\\watermark\\wuma.png<br>\n"
-"4K:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\4k.png<br>\n"
-"8K:  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\8k.png<br><br>\n"
+        self.label_118.setText(_translate("MDCx", "<p style=\'line-height:20px\'>Download, extract, and save the watermark images to the below locations.<br>\n"
+"&nbsp;· You can use your own images.<br>\n"
+"&nbsp;· The \'config\' directory is set in \'Settings -> Advanced\'.<br>\n"
+"&nbsp;· Use forward slash \' / \' for MacOS paths.<br><br>\n"
+"Subtitle:  &nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\sub.png<br>\n"
+"Censored:  &nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\youma.png<br>\n"
+"Decensored:  &nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\umr.png<br>\n"
+"Leaked:  &nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\leak.png<br>\n"
+"Uncensored:  &nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\wuma.png<br>\n"
+"4K: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\4k.png<br>\n"
+"8K: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\8k.png<br><br>\n"
 "Logic for displaying watermark images:<br>\n"
-"&nbsp;&nbsp;· First, calculate watermark image height using this formula: [poster image height * specified watermark size / 40]<br>\n"
-"&nbsp;&nbsp;&nbsp;&nbsp;(e.g. if the watermark size is set to 5, the height of the watermark image will be scaled to 5/40 of the poster image height)<br>\n"
-"&nbsp;&nbsp;· Then, based on the calculated height and aspect ratio of the watermark image, calculate the width.<br>\n"
-"&nbsp;&nbsp;· Finally, arrange the watermark images around the four corners of the poster based on priority and positioning parameters.<br>"))
+"&nbsp;· First, calculate watermark image height using this formula: [poster image height * specified watermark size / 40]<br>\n"
+"&nbsp;&nbsp;&nbsp;(e.g. if the watermark size is set to 5, the height of the watermark image will be scaled to 5/40 of the poster image height)<br>\n"
+"&nbsp;· Then, based on the calculated height and aspect ratio of the watermark image, calculate the width.<br>\n"
+"&nbsp;· Finally, arrange the watermark images around the four corners of the poster based on priority and positioning parameters.<br>"))
         self.label_download_mark_zip.setText(_translate("MDCx", "Click to download watermark image package"))
         self.groupBox_31.setTitle(_translate("MDCx", "Watermark"))
         self.checkBox_sub.setText(_translate("MDCx", "Subtitles"))

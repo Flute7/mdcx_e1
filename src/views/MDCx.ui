@@ -17620,22 +17620,22 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
 line-height:50px</string>
            </property>
            <property name="text">
-            <string>&lt;p style='line-height:20px'&gt;Download, extract, and save the watermark images to the below locations.&lt;br&gt;&lt;br&gt;
-&amp;nbsp;&amp;nbsp;· You can use your own images.&lt;br&gt;
-&amp;nbsp;&amp;nbsp;· The 'config' directory is set in 'Settings -&gt; Advanced'.&lt;br&gt;
-&amp;nbsp;&amp;nbsp;· Use forward slash ' / ' for MacOS paths.&lt;br&gt;&lt;br&gt;
-Subtitle:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\sub.png&lt;br&gt;
-Censored:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\youma.png&lt;br&gt;
-Decensored:  &amp;nbsp;&amp;nbsp;\config\userdata\watermark\umr.png&lt;br&gt;
-Leaked:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;emsp;\config\userdata\watermark\leak.png&lt;br&gt;
-Uncensored:  &amp;nbsp;&amp;nbsp;\config\userdata\watermark\wuma.png&lt;br&gt;
-4K:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\4k.png&lt;br&gt;
-8K:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\8k.png&lt;br&gt;&lt;br&gt;
+            <string>&lt;p style='line-height:20px'&gt;Download, extract, and save the watermark images to the below locations.&lt;br&gt;
+&amp;nbsp;· You can use your own images.&lt;br&gt;
+&amp;nbsp;· The 'config' directory is set in 'Settings -&gt; Advanced'.&lt;br&gt;
+&amp;nbsp;· Use forward slash ' / ' for MacOS paths.&lt;br&gt;&lt;br&gt;
+Subtitle:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\sub.png&lt;br&gt;
+Censored:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\youma.png&lt;br&gt;
+Decensored:  &amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\umr.png&lt;br&gt;
+Leaked:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\leak.png&lt;br&gt;
+Uncensored:  &amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\wuma.png&lt;br&gt;
+4K: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\4k.png&lt;br&gt;
+8K: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\8k.png&lt;br&gt;&lt;br&gt;
 Logic for displaying watermark images:&lt;br&gt;
-&amp;nbsp;&amp;nbsp;· First, calculate watermark image height using this formula: [poster image height * specified watermark size / 40]&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;(e.g. if the watermark size is set to 5, the height of the watermark image will be scaled to 5/40 of the poster image height)&lt;br&gt;
-&amp;nbsp;&amp;nbsp;· Then, based on the calculated height and aspect ratio of the watermark image, calculate the width.&lt;br&gt;
-&amp;nbsp;&amp;nbsp;· Finally, arrange the watermark images around the four corners of the poster based on priority and positioning parameters.&lt;br&gt;</string>
+&amp;nbsp;· First, calculate watermark image height using this formula: [poster image height * specified watermark size / 40]&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;(e.g. if the watermark size is set to 5, the height of the watermark image will be scaled to 5/40 of the poster image height)&lt;br&gt;
+&amp;nbsp;· Then, based on the calculated height and aspect ratio of the watermark image, calculate the width.&lt;br&gt;
+&amp;nbsp;· Finally, arrange the watermark images around the four corners of the poster based on priority and positioning parameters.&lt;br&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -17705,6 +17705,12 @@ Logic for displaying watermark images:&lt;br&gt;
              <width>661</width>
              <height>500</height>
             </rect>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
            </property>
            <layout class="QGridLayout" name="gridLayout_24">
             <item row="4" column="1">
@@ -17937,7 +17943,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>100</width>
                 <height>0</height>
                </size>
               </property>
@@ -17962,7 +17968,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>0</width>
+                <width>100</width>
                 <height>0</height>
                </size>
               </property>
@@ -18051,7 +18057,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>0</width>
+                <width>100</width>
                 <height>0</height>
                </size>
               </property>
@@ -18151,7 +18157,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>0</width>
+                <width>100</width>
                 <height>0</height>
                </size>
               </property>
@@ -18325,7 +18331,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>100</width>
                 <height>0</height>
                </size>
               </property>
@@ -18458,7 +18464,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>100</width>
                 <height>0</height>
                </size>
               </property>
@@ -18575,7 +18581,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>100</width>
                 <height>30</height>
                </size>
               </property>
@@ -18692,7 +18698,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>100</width>
                 <height>0</height>
                </size>
               </property>
@@ -18825,7 +18831,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>100</width>
                 <height>0</height>
                </size>
               </property>
