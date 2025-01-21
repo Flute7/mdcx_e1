@@ -17577,7 +17577,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>0</y>
+           <y>-996</y>
            <width>760</width>
            <height>1670</height>
           </rect>
@@ -17624,13 +17624,13 @@ line-height:50px</string>
 &amp;nbsp;· You can use your own images.&lt;br&gt;
 &amp;nbsp;· The 'config' directory is set in 'Settings -&gt; Advanced'.&lt;br&gt;
 &amp;nbsp;· Use forward slash ' / ' for MacOS paths.&lt;br&gt;&lt;br&gt;
-Subtitle:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\sub.png&lt;br&gt;
-Censored:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\youma.png&lt;br&gt;
-Decensored:  &amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\umr.png&lt;br&gt;
-Leaked:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\leak.png&lt;br&gt;
-Uncensored:  &amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\wuma.png&lt;br&gt;
-4K: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\4k.png&lt;br&gt;
-8K: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\8k.png&lt;br&gt;&lt;br&gt;
+Subtitle: &amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\sub.png&lt;br&gt;
+Censored: &amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\youma.png&lt;br&gt;
+Decensored: &amp;nbsp;&amp;nbsp;\config\userdata\watermark\umr.png&lt;br&gt;
+Leaked: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\leak.png&lt;br&gt;
+Uncensored: &amp;nbsp;&amp;nbsp;\config\userdata\watermark\wuma.png&lt;br&gt;
+4K: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\4k.png&lt;br&gt;
+8K: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\8k.png&lt;br&gt;&lt;br&gt;
 Logic for displaying watermark images:&lt;br&gt;
 &amp;nbsp;· First, calculate watermark image height using this formula: [poster image height * specified watermark size / 40]&lt;br&gt;
 &amp;nbsp;&amp;nbsp;&amp;nbsp;(e.g. if the watermark size is set to 5, the height of the watermark image will be scaled to 5/40 of the poster image height)&lt;br&gt;
@@ -17943,7 +17943,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>100</width>
+                <width>70</width>
                 <height>0</height>
                </size>
               </property>
@@ -17968,7 +17968,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>100</width>
+                <width>70</width>
                 <height>0</height>
                </size>
               </property>
@@ -18057,7 +18057,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>100</width>
+                <width>70</width>
                 <height>0</height>
                </size>
               </property>
@@ -18157,7 +18157,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>100</width>
+                <width>70</width>
                 <height>0</height>
                </size>
               </property>
@@ -18331,7 +18331,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>100</width>
+                <width>70</width>
                 <height>0</height>
                </size>
               </property>
@@ -18339,7 +18339,7 @@ Logic for displaying watermark images:&lt;br&gt;
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>Starting Position:</string>
+               <string>Start:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -18464,7 +18464,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>100</width>
+                <width>70</width>
                 <height>0</height>
                </size>
               </property>
@@ -18581,8 +18581,8 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>100</width>
-                <height>30</height>
+                <width>70</width>
+                <height>0</height>
                </size>
               </property>
               <property name="layoutDirection">
@@ -18698,7 +18698,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>100</width>
+                <width>70</width>
                 <height>0</height>
                </size>
               </property>
@@ -18831,7 +18831,7 @@ Logic for displaying watermark images:&lt;br&gt;
               </property>
               <property name="minimumSize">
                <size>
-                <width>100</width>
+                <width>70</width>
                 <height>0</height>
                </size>
               </property>
@@ -18839,7 +18839,7 @@ Logic for displaying watermark images:&lt;br&gt;
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>Starting Position:</string>
+               <string>Start:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

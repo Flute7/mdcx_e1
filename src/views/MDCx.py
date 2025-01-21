@@ -7357,7 +7357,7 @@ class Ui_MDCx(object):
         self.scrollArea_4.setWidgetResizable(False)
         self.scrollArea_4.setObjectName("scrollArea_4")
         self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 760, 1670))
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, -996, 760, 1670))
         self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
         self.groupBox_26 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_4)
         self.groupBox_26.setGeometry(QtCore.QRect(30, 1040, 701, 521))
@@ -7514,7 +7514,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_128.sizePolicy().hasHeightForWidth())
         self.label_128.setSizePolicy(sizePolicy)
-        self.label_128.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_128.setMinimumSize(QtCore.QSize(70, 0))
         self.label_128.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_128.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_128.setObjectName("label_128")
@@ -7525,7 +7525,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_135.sizePolicy().hasHeightForWidth())
         self.label_135.setSizePolicy(sizePolicy)
-        self.label_135.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_135.setMinimumSize(QtCore.QSize(70, 0))
         self.label_135.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_135.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.label_135.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
@@ -7567,7 +7567,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_139.sizePolicy().hasHeightForWidth())
         self.label_139.setSizePolicy(sizePolicy)
-        self.label_139.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_139.setMinimumSize(QtCore.QSize(70, 0))
         self.label_139.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_139.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_139.setObjectName("label_139")
@@ -7610,7 +7610,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_127.sizePolicy().hasHeightForWidth())
         self.label_127.setSizePolicy(sizePolicy)
-        self.label_127.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_127.setMinimumSize(QtCore.QSize(70, 0))
         self.label_127.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_127.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_127.setObjectName("label_127")
@@ -7691,7 +7691,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_126.sizePolicy().hasHeightForWidth())
         self.label_126.setSizePolicy(sizePolicy)
-        self.label_126.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_126.setMinimumSize(QtCore.QSize(70, 0))
         self.label_126.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_126.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_126.setObjectName("label_126")
@@ -7751,7 +7751,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_131.sizePolicy().hasHeightForWidth())
         self.label_131.setSizePolicy(sizePolicy)
-        self.label_131.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_131.setMinimumSize(QtCore.QSize(70, 0))
         self.label_131.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_131.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_131.setObjectName("label_131")
@@ -7807,7 +7807,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_134.sizePolicy().hasHeightForWidth())
         self.label_134.setSizePolicy(sizePolicy)
-        self.label_134.setMinimumSize(QtCore.QSize(100, 30))
+        self.label_134.setMinimumSize(QtCore.QSize(70, 0))
         self.label_134.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_134.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_134.setObjectName("label_134")
@@ -7863,7 +7863,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_216.sizePolicy().hasHeightForWidth())
         self.label_216.setSizePolicy(sizePolicy)
-        self.label_216.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_216.setMinimumSize(QtCore.QSize(70, 0))
         self.label_216.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_216.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_216.setObjectName("label_216")
@@ -7923,7 +7923,7 @@ class Ui_MDCx(object):
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_233.sizePolicy().hasHeightForWidth())
         self.label_233.setSizePolicy(sizePolicy)
-        self.label_233.setMinimumSize(QtCore.QSize(100, 0))
+        self.label_233.setMinimumSize(QtCore.QSize(70, 0))
         self.label_233.setLayoutDirection(QtCore.Qt.RightToLeft)
         self.label_233.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label_233.setObjectName("label_233")
@@ -11716,13 +11716,13 @@ class Ui_MDCx(object):
 "&nbsp;· You can use your own images.<br>\n"
 "&nbsp;· The \'config\' directory is set in \'Settings -> Advanced\'.<br>\n"
 "&nbsp;· Use forward slash \' / \' for MacOS paths.<br><br>\n"
-"Subtitle:  &nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\sub.png<br>\n"
-"Censored:  &nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\youma.png<br>\n"
-"Decensored:  &nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\umr.png<br>\n"
-"Leaked:  &nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\leak.png<br>\n"
-"Uncensored:  &nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\wuma.png<br>\n"
-"4K: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\4k.png<br>\n"
-"8K: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\8k.png<br><br>\n"
+"Subtitle: &nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\sub.png<br>\n"
+"Censored: &nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\youma.png<br>\n"
+"Decensored: &nbsp;&nbsp;\\config\\userdata\\watermark\\umr.png<br>\n"
+"Leaked: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\leak.png<br>\n"
+"Uncensored: &nbsp;&nbsp;\\config\\userdata\\watermark\\wuma.png<br>\n"
+"4K: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\4k.png<br>\n"
+"8K: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\8k.png<br><br>\n"
 "Logic for displaying watermark images:<br>\n"
 "&nbsp;· First, calculate watermark image height using this formula: [poster image height * specified watermark size / 40]<br>\n"
 "&nbsp;&nbsp;&nbsp;(e.g. if the watermark size is set to 5, the height of the watermark image will be scaled to 5/40 of the poster image height)<br>\n"
@@ -11755,7 +11755,7 @@ class Ui_MDCx(object):
         self.radioButton_top_right.setText(_translate("MDCx", "Upper Right"))
         self.radioButton_bottom_right.setText(_translate("MDCx", "Lower Right"))
         self.radioButton_bottom_left.setText(_translate("MDCx", "Lower Left"))
-        self.label_126.setText(_translate("MDCx", "Starting Position:"))
+        self.label_126.setText(_translate("MDCx", "Start:"))
         self.groupBox_42.setTitle(_translate("MDCx", "Custom Position"))
         self.radioButton_top_left_sub.setText(_translate("MDCx", "Upper Left"))
         self.radioButton_top_right_sub.setText(_translate("MDCx", "Upper Right"))
@@ -11777,7 +11777,7 @@ class Ui_MDCx(object):
         self.radioButton_top_right_corner.setText(_translate("MDCx", "Upper Right"))
         self.radioButton_bottom_right_corner.setText(_translate("MDCx", "Lower Right"))
         self.radioButton_bottom_left_corner.setText(_translate("MDCx", "Lower Left"))
-        self.label_233.setText(_translate("MDCx", "Starting Position:"))
+        self.label_233.setText(_translate("MDCx", "Start:"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab4), _translate("MDCx", " Watermark "))
         self.groupBox_81.setTitle(_translate("MDCx", "NFO Field Data"))
         self.checkBox_nfo_all_actor.setText(_translate("MDCx", "Include both male and female performers (unchecked: female only)"))
