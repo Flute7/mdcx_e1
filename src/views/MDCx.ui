@@ -2509,7 +2509,7 @@ p, li { white-space: pre-wrap; }
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>8</number>
+       <number>7</number>
       </property>
       <property name="iconSize">
        <size>
@@ -17586,24 +17586,24 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>1010</y>
+            <y>1040</y>
             <width>701</width>
-            <height>561</height>
+            <height>521</height>
            </rect>
           </property>
           <property name="styleSheet">
            <string notr="true">font:&quot;Courier&quot;;</string>
           </property>
           <property name="title">
-           <string>自定义水印样式</string>
+           <string>Custom Watermark Style</string>
           </property>
           <widget class="QLabel" name="label_118">
            <property name="geometry">
             <rect>
-             <x>50</x>
+             <x>30</x>
              <y>70</y>
-             <width>631</width>
-             <height>461</height>
+             <width>651</width>
+             <height>401</height>
             </rect>
            </property>
            <property name="sizePolicy">
@@ -17620,29 +17620,22 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
 line-height:50px</string>
            </property>
            <property name="text">
-            <string>&lt;p style='line-height:20px'&gt;1、下载水印图片包并解压（也可以使用自己的图片），水印图片的保存路径为：&lt;br&gt;
-   · Windows位置：（配置文件目录在「设置」-「高级」中设置）&lt;br&gt;
-       字幕水印：\配置文件目录\userdata\watermark\sub.png&lt;br&gt;
-       有码水印：\配置文件目录\userdata\watermark\youma.png&lt;br&gt;
-       破解水印：\配置文件目录\userdata\watermark\umr.png&lt;br&gt;
-       流出水印：\配置文件目录\userdata\watermark\leak.png&lt;br&gt;
-       无码水印：\配置文件目录\userdata\watermark\wuma.png&lt;br&gt;
-       4K水印：\配置文件目录\userdata\watermark\4k.png&lt;br&gt;
-       8K水印：\配置文件目录\userdata\watermark\8k.png&lt;br&gt;
-   · Mac位置：（配置文件目录在「设置」-「高级」中设置）&lt;br&gt;
-       字幕水印：/配置文件目录/userdata/watermark/sub.png&lt;br&gt;
-       有码水印：/配置文件目录/userdata/watermark/youma.png&lt;br&gt;
-       破解水印：/配置文件目录/userdata/watermark/umr.png&lt;br&gt;
-       流出水印：/配置文件目录/userdata/watermark/leak.png&lt;br&gt;
-       无码水印：/配置文件目录/userdata/watermark/wuma.png&lt;br&gt;
-       4K水印：/配置文件目录/userdata/watermark/4k.png&lt;br&gt;
-       8K水印：/配置文件目录/userdata/watermark/8k.png&lt;br&gt;
-&lt;br&gt;
-2、水印图片显示的逻辑：&lt;br&gt;
-   · 首先计算水印图片的显示高度 = 封面图高度 * 设置的水印大小 / 40&lt;br&gt;
-       比如水印大小设置为 5，则水印图片的高度会缩放为封面图高度的 5/40&lt;br&gt;
-   · 然后根据水印图片的显示高度，和水印图片的宽高比，计算水印图片的显示宽度&lt;br&gt;
-   · 最后根据设置的要添加的水印类型和首个水印位置，顺时针依次显示在封面图的四个角上&lt;/p&gt;</string>
+            <string>&lt;p style='line-height:20px'&gt;Download, extract, and save the watermark images to the below locations.&lt;br&gt;&lt;br&gt;
+&amp;nbsp;&amp;nbsp;· You can use your own images.&lt;br&gt;
+&amp;nbsp;&amp;nbsp;· The 'config' directory is set in 'Settings -&gt; Advanced'.&lt;br&gt;
+&amp;nbsp;&amp;nbsp;· Use forward slash ' / ' for MacOS paths.&lt;br&gt;&lt;br&gt;
+Subtitle:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\sub.png&lt;br&gt;
+Censored:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\youma.png&lt;br&gt;
+Decensored:  &amp;nbsp;&amp;nbsp;\config\userdata\watermark\umr.png&lt;br&gt;
+Leaked:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;emsp;\config\userdata\watermark\leak.png&lt;br&gt;
+Uncensored:  &amp;nbsp;&amp;nbsp;\config\userdata\watermark\wuma.png&lt;br&gt;
+4K:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\4k.png&lt;br&gt;
+8K:  &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\8k.png&lt;br&gt;&lt;br&gt;
+Logic for displaying watermark images:&lt;br&gt;
+&amp;nbsp;&amp;nbsp;· First, calculate watermark image height using this formula: [poster image height * specified watermark size / 40]&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;(e.g. if the watermark size is set to 5, the height of the watermark image will be scaled to 5/40 of the poster image height)&lt;br&gt;
+&amp;nbsp;&amp;nbsp;· Then, based on the calculated height and aspect ratio of the watermark image, calculate the width.&lt;br&gt;
+&amp;nbsp;&amp;nbsp;· Finally, arrange the watermark images around the four corners of the poster based on priority and positioning parameters.&lt;br&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -17656,7 +17649,7 @@ line-height:50px</string>
             <rect>
              <x>30</x>
              <y>30</y>
-             <width>141</width>
+             <width>301</width>
              <height>30</height>
             </rect>
            </property>
@@ -17682,7 +17675,7 @@ line-height:50px</string>
             <string notr="true">color: rgb(10, 52, 255);</string>
            </property>
            <property name="text">
-            <string>点击下载水印图片包</string>
+            <string>Click to download watermark image package</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -17695,14 +17688,14 @@ line-height:50px</string>
             <x>30</x>
             <y>20</y>
             <width>701</width>
-            <height>511</height>
+            <height>541</height>
            </rect>
           </property>
           <property name="styleSheet">
            <string notr="true">font:&quot;Courier&quot;;</string>
           </property>
           <property name="title">
-           <string>水印设置</string>
+           <string>Watermark</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_24">
            <property name="geometry">
@@ -17710,155 +17703,10 @@ line-height:50px</string>
              <x>20</x>
              <y>30</y>
              <width>661</width>
-             <height>461</height>
+             <height>500</height>
             </rect>
            </property>
            <layout class="QGridLayout" name="gridLayout_24">
-            <item row="6" column="1">
-             <layout class="QHBoxLayout" name="horizontalLayout_5">
-              <item>
-               <widget class="QRadioButton" name="radioButton_not_fixed_position">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>30</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>不固定位置</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QRadioButton" name="radioButton_fixed_corner">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>30</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>固定一个位置</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QRadioButton" name="radioButton_fixed_position">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="minimumSize">
-                 <size>
-                  <width>0</width>
-                  <height>30</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>固定不同位置</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item row="5" column="1">
-             <widget class="QLabel" name="label_138">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="mouseTracking">
-               <bool>true</bool>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">color: rgb(8, 128, 128);</string>
-              </property>
-              <property name="text">
-               <string>&lt;p style='line-height:20px'&gt;水印分为字幕水印、马赛克水印、4K/8K水印。&lt;br&gt;
-马赛克水印有四个：有码、破解、流出、无码，将按优先级显示其中一种状态&lt;br&gt;
-马赛克水印优先级：有码 &gt; 破解 &gt; 流出 &gt; 无码&lt;br&gt;
-举例：如果视频是流出版本&lt;br&gt;
-   ·当流出和无码都勾选时，会显示流出水印&lt;br&gt;
-   ·当流出未勾选，无码已勾选时，会显示无码水印&lt;br&gt;
-   ·当流出和无码都不勾选时，则不显示水印客&lt;/p&gt;</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-              </property>
-              <property name="textInteractionFlags">
-               <set>Qt::NoTextInteraction</set>
-              </property>
-             </widget>
-            </item>
-            <item row="4" column="0">
-             <widget class="QLabel" name="label_135">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="layoutDirection">
-               <enum>Qt::RightToLeft</enum>
-              </property>
-              <property name="frameShape">
-               <enum>QFrame::NoFrame</enum>
-              </property>
-              <property name="text">
-               <string>水印类型：</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item row="0" column="0">
-             <widget class="QLabel" name="label_128">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>130</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="layoutDirection">
-               <enum>Qt::RightToLeft</enum>
-              </property>
-              <property name="text">
-               <string>添加水印的图片：</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
-              </property>
-             </widget>
-            </item>
             <item row="4" column="1">
              <layout class="QHBoxLayout" name="horizontalLayout_14">
               <item>
@@ -17876,7 +17724,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>字幕</string>
+                 <string>Subtitles</string>
                 </property>
                </widget>
               </item>
@@ -17895,7 +17743,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>有码</string>
+                 <string>Censored</string>
                 </property>
                </widget>
               </item>
@@ -17914,7 +17762,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>破解</string>
+                 <string>Decensored</string>
                 </property>
                </widget>
               </item>
@@ -17933,7 +17781,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>流出</string>
+                 <string>Leaked</string>
                 </property>
                </widget>
               </item>
@@ -17952,7 +17800,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>无码</string>
+                 <string>Uncensored</string>
                 </property>
                </widget>
               </item>
@@ -17989,11 +17837,11 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>水印图片的显示高度 = 设置的水印大小 / 40 * 封面图高度</string>
+               <string>Final watermark size = specified size / 40 * the height of the poster image.</string>
               </property>
              </widget>
             </item>
-            <item row="7" column="1">
+            <item row="8" column="1">
              <widget class="QLabel" name="label_141">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -18008,10 +17856,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>&lt;p style='line-height:20px'&gt;不固定位置：将从首个水印位置开始，顺时针方向依次添加其他水印&lt;br&gt;
-固定一个位置：水印在指定位置依次横向显示&lt;br&gt;
-固定多个位置：可单独设置 4K/8K 水印、字幕水印和马赛克水印的位置&lt;br&gt;
-注意：不固定位置时，4K/8K 水印会使用固定位置方式，并自动挤开其他水印&lt;/p&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Dynamic: Watermarks will be added in a clockwise direction from the first watermark position.&lt;/p&gt;&lt;p&gt;Fixed: Watermarks are displayed horizontally in sequence from the specified position.&lt;/p&gt;&lt;p&gt;Custom: The positions of the subtitle, censorship and 4K/8K watermarks can be set separately.&lt;/p&gt;&lt;p&gt;Note: If 'Dynamic' is not set; 4K/8K will use the 'Fixed' method, displacing other watermarks.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -18038,7 +17883,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>poster</string>
+                 <string>Poster</string>
                 </property>
                </widget>
               </item>
@@ -18057,7 +17902,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>thumb</string>
+                 <string>Thumb</string>
                 </property>
                </widget>
               </item>
@@ -18076,7 +17921,121 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>fanart</string>
+                 <string>Fanart</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_128">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>130</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="text">
+               <string>Scope:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_135">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="layoutDirection">
+               <enum>Qt::RightToLeft</enum>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="text">
+               <string>Type:</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="QRadioButton" name="radioButton_not_fixed_position">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Dynamic</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_fixed_corner">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Fixed</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QRadioButton" name="radioButton_fixed_position">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>30</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>Variable</string>
                 </property>
                </widget>
               </item>
@@ -18100,7 +18059,7 @@ line-height:50px</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>水印大小：</string>
+               <string>Size:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -18182,7 +18141,7 @@ line-height:50px</string>
               </item>
              </layout>
             </item>
-            <item row="6" column="0">
+            <item row="7" column="0">
              <widget class="QLabel" name="label_127">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -18200,7 +18159,7 @@ line-height:50px</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>水印位置：</string>
+               <string>Position:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -18219,7 +18178,32 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Emby 中 fanart 作为背景图，不需要添加水印。其他软件作为预览图时，可添加水印</string>
+               <string>Fanart in Emby is used as the background image so there is no need to add a watermark.</string>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <widget class="QLabel" name="label_138">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="mouseTracking">
+               <bool>true</bool>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(8, 128, 128);</string>
+              </property>
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Watermarks are divided into subtitle, censorship, and 4K/8K resolution.&lt;/p&gt;&lt;p&gt;Censorship watermarks are prioritised as follows: censored &amp;gt; desensored &amp;gt; leaked &amp;gt; uncensored.&lt;/p&gt;&lt;p&gt;For example, if the video is a leaked version:&lt;/p&gt;&lt;p&gt;- When both leaked and uncensored are checked, the leaked watermark will be displayed.&lt;/p&gt;&lt;p&gt;- When leaked is unchecked and uncensored is checked, the uncensored watermark will be displayed.&lt;/p&gt;&lt;p&gt;- When neither leaked nor uncensored is checked, no watermark will be displayed.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="textInteractionFlags">
+               <set>Qt::NoTextInteraction</set>
               </property>
              </widget>
             </item>
@@ -18230,7 +18214,7 @@ line-height:50px</string>
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>550</y>
+            <y>580</y>
             <width>701</width>
             <height>101</height>
            </rect>
@@ -18239,7 +18223,7 @@ line-height:50px</string>
            <string notr="true">font:&quot;Courier&quot;;</string>
           </property>
           <property name="title">
-           <string>不固定位置</string>
+           <string>Dynamic Position</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_30">
            <property name="geometry">
@@ -18268,7 +18252,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>左上</string>
+                 <string>Upper Left</string>
                 </property>
                </widget>
               </item>
@@ -18287,7 +18271,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>右上</string>
+                 <string>Upper Right</string>
                 </property>
                </widget>
               </item>
@@ -18306,7 +18290,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>右下</string>
+                 <string>Lower Right</string>
                 </property>
                </widget>
               </item>
@@ -18325,7 +18309,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>左下</string>
+                 <string>Lower Left</string>
                 </property>
                </widget>
               </item>
@@ -18349,7 +18333,7 @@ line-height:50px</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>首个水印位置：</string>
+               <string>Starting Position:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -18363,7 +18347,7 @@ line-height:50px</string>
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>790</y>
+            <y>820</y>
             <width>701</width>
             <height>201</height>
            </rect>
@@ -18372,7 +18356,7 @@ line-height:50px</string>
            <string notr="true">font:&quot;Courier&quot;;</string>
           </property>
           <property name="title">
-           <string>固定不同位置</string>
+           <string>Custom Position</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_31">
            <property name="geometry">
@@ -18401,7 +18385,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>左上</string>
+                 <string>Upper Left</string>
                 </property>
                </widget>
               </item>
@@ -18420,7 +18404,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>右上</string>
+                 <string>Upper Right</string>
                 </property>
                </widget>
               </item>
@@ -18439,7 +18423,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>右下</string>
+                 <string>Lower Right</string>
                 </property>
                </widget>
               </item>
@@ -18458,7 +18442,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>左下</string>
+                 <string>Lower Left</string>
                 </property>
                </widget>
               </item>
@@ -18482,7 +18466,7 @@ line-height:50px</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>字幕水印位置：</string>
+               <string>Subtitle:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -18518,7 +18502,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>左上</string>
+                 <string>Upper Left</string>
                 </property>
                </widget>
               </item>
@@ -18537,7 +18521,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>右上</string>
+                 <string>Upper Right</string>
                 </property>
                </widget>
               </item>
@@ -18556,7 +18540,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>右下</string>
+                 <string>Lower Right</string>
                 </property>
                </widget>
               </item>
@@ -18575,7 +18559,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>左下</string>
+                 <string>Lower Left</string>
                 </property>
                </widget>
               </item>
@@ -18599,7 +18583,7 @@ line-height:50px</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>马赛克水印位置：</string>
+               <string>Censorship</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -18635,7 +18619,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>左上</string>
+                 <string>Upper Left</string>
                 </property>
                </widget>
               </item>
@@ -18654,7 +18638,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>右上</string>
+                 <string>Upper Right</string>
                 </property>
                </widget>
               </item>
@@ -18673,7 +18657,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>右下</string>
+                 <string>Lower Right</string>
                 </property>
                </widget>
               </item>
@@ -18692,7 +18676,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>左下</string>
+                 <string>Lower Left</string>
                 </property>
                </widget>
               </item>
@@ -18716,7 +18700,7 @@ line-height:50px</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>4K/8K水印位置：</string>
+               <string>4K/8K:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -18730,7 +18714,7 @@ line-height:50px</string>
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>670</y>
+            <y>700</y>
             <width>701</width>
             <height>101</height>
            </rect>
@@ -18739,7 +18723,7 @@ line-height:50px</string>
            <string notr="true">font:&quot;Courier&quot;;</string>
           </property>
           <property name="title">
-           <string>固定一个位置</string>
+           <string>Fixed Position</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_33">
            <property name="geometry">
@@ -18768,7 +18752,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>左上</string>
+                 <string>Upper Left</string>
                 </property>
                </widget>
               </item>
@@ -18787,7 +18771,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>右上</string>
+                 <string>Upper Right</string>
                 </property>
                </widget>
               </item>
@@ -18806,7 +18790,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>右下</string>
+                 <string>Lower Right</string>
                 </property>
                </widget>
               </item>
@@ -18825,7 +18809,7 @@ line-height:50px</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>左下</string>
+                 <string>Lower Left</string>
                 </property>
                </widget>
               </item>
@@ -18849,7 +18833,7 @@ line-height:50px</string>
                <enum>Qt::RightToLeft</enum>
               </property>
               <property name="text">
-               <string>水印显示位置：</string>
+               <string>Starting Position:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -18891,7 +18875,7 @@ line-height:50px</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-442</y>
+           <y>0</y>
            <width>796</width>
            <height>1100</height>
           </rect>
@@ -20493,7 +20477,7 @@ line-height:50px</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>0</y>
+           <y>-561</y>
            <width>770</width>
            <height>1550</height>
           </rect>
@@ -20511,7 +20495,7 @@ line-height:50px</string>
            <string notr="true">font:&quot;Courier&quot;;</string>
           </property>
           <property name="title">
-           <string>Media Server Settings</string>
+           <string>Media Server</string>
           </property>
           <widget class="QWidget" name="gridLayoutWidget_25">
            <property name="geometry">
@@ -22656,7 +22640,7 @@ font: &quot;Courier&quot;;</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>http</string>
+                 <string>Http</string>
                 </property>
                </widget>
               </item>
@@ -22669,7 +22653,7 @@ font: &quot;Courier&quot;;</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>socks5</string>
+                 <string>Socks5</string>
                 </property>
                </widget>
               </item>
@@ -22682,7 +22666,7 @@ font: &quot;Courier&quot;;</string>
                  </size>
                 </property>
                 <property name="text">
-                 <string>none</string>
+                 <string>None</string>
                 </property>
                </widget>
               </item>
