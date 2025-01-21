@@ -18891,7 +18891,7 @@ line-height:50px</string>
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-435</y>
+           <y>-442</y>
            <width>796</width>
            <height>1100</height>
           </rect>
@@ -18902,7 +18902,7 @@ line-height:50px</string>
             <x>30</x>
             <y>20</y>
             <width>701</width>
-            <height>981</height>
+            <height>1001</height>
            </rect>
           </property>
           <property name="minimumSize">
@@ -18960,7 +18960,7 @@ line-height:50px</string>
               <item>
                <widget class="QCheckBox" name="checkBox_nfo_all_actor">
                 <property name="text">
-                 <string>Include both male and female performers (female only if unchecked)</string>
+                 <string>Include both male and female performers (unchecked for female only)</string>
                 </property>
                </widget>
               </item>
@@ -18976,7 +18976,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19033,7 +19033,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19219,7 +19219,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19244,7 +19244,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19269,7 +19269,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19294,7 +19294,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19319,7 +19319,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19344,7 +19344,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19568,7 +19568,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19709,7 +19709,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19734,7 +19734,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19791,7 +19791,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19858,7 +19858,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -19883,7 +19883,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -20014,7 +20014,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -20022,7 +20022,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>Genre/Collection</string>
+               <string>Genre/Collection:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20039,7 +20039,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -20064,7 +20064,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -20144,7 +20144,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -20312,7 +20312,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -20320,7 +20320,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>Performer/Director</string>
+               <string>Performer/Director:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -20348,7 +20348,7 @@ line-height:50px</string>
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>Note: For Traditional Chinese, go to 'Settings -&gt; Translation -&gt; Tags'  and check the box!</string>
+               <string>Note: For Traditional Chinese, go to Settings -&gt; Translate -&gt; Tags.</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -20365,7 +20365,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -20390,7 +20390,7 @@ line-height:50px</string>
               </property>
               <property name="minimumSize">
                <size>
-                <width>130</width>
+                <width>135</width>
                 <height>30</height>
                </size>
               </property>
@@ -20398,7 +20398,7 @@ line-height:50px</string>
                <enum>Qt::LeftToRight</enum>
               </property>
               <property name="text">
-               <string>Poster/Background/Trailer:</string>
+               <string>Images/Trailer:</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
