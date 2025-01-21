@@ -7357,14 +7357,14 @@ class Ui_MDCx(object):
         self.scrollArea_4.setWidgetResizable(False)
         self.scrollArea_4.setObjectName("scrollArea_4")
         self.scrollAreaWidgetContents_4 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, -996, 760, 1670))
+        self.scrollAreaWidgetContents_4.setGeometry(QtCore.QRect(0, 0, 760, 1670))
         self.scrollAreaWidgetContents_4.setObjectName("scrollAreaWidgetContents_4")
         self.groupBox_26 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_4)
-        self.groupBox_26.setGeometry(QtCore.QRect(30, 1040, 701, 521))
+        self.groupBox_26.setGeometry(QtCore.QRect(30, 1010, 701, 461))
         self.groupBox_26.setStyleSheet("font:\"Courier\";")
         self.groupBox_26.setObjectName("groupBox_26")
         self.label_118 = QtWidgets.QLabel(self.groupBox_26)
-        self.label_118.setGeometry(QtCore.QRect(30, 70, 651, 401))
+        self.label_118.setGeometry(QtCore.QRect(30, 70, 651, 361))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -7637,7 +7637,7 @@ class Ui_MDCx(object):
         self.label_138.setObjectName("label_138")
         self.gridLayout_24.addWidget(self.label_138, 5, 1, 1, 1)
         self.groupBox_36 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_4)
-        self.groupBox_36.setGeometry(QtCore.QRect(30, 580, 701, 101))
+        self.groupBox_36.setGeometry(QtCore.QRect(30, 580, 701, 91))
         self.groupBox_36.setStyleSheet("font:\"Courier\";")
         self.groupBox_36.setObjectName("groupBox_36")
         self.gridLayoutWidget_30 = QtWidgets.QWidget(self.groupBox_36)
@@ -7697,7 +7697,7 @@ class Ui_MDCx(object):
         self.label_126.setObjectName("label_126")
         self.gridLayout_30.addWidget(self.label_126, 0, 0, 1, 1)
         self.groupBox_42 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_4)
-        self.groupBox_42.setGeometry(QtCore.QRect(30, 820, 701, 201))
+        self.groupBox_42.setGeometry(QtCore.QRect(30, 800, 701, 191))
         self.groupBox_42.setStyleSheet("font:\"Courier\";")
         self.groupBox_42.setObjectName("groupBox_42")
         self.gridLayoutWidget_31 = QtWidgets.QWidget(self.groupBox_42)
@@ -7869,7 +7869,7 @@ class Ui_MDCx(object):
         self.label_216.setObjectName("label_216")
         self.gridLayout_39.addWidget(self.label_216, 0, 0, 1, 1)
         self.groupBox_39 = QtWidgets.QGroupBox(self.scrollAreaWidgetContents_4)
-        self.groupBox_39.setGeometry(QtCore.QRect(30, 700, 701, 101))
+        self.groupBox_39.setGeometry(QtCore.QRect(30, 690, 701, 91))
         self.groupBox_39.setStyleSheet("font:\"Courier\";")
         self.groupBox_39.setObjectName("groupBox_39")
         self.gridLayoutWidget_33 = QtWidgets.QWidget(self.groupBox_39)
@@ -11718,16 +11718,17 @@ class Ui_MDCx(object):
 "&nbsp;· Use forward slash \' / \' for MacOS paths.<br><br>\n"
 "Subtitle: &nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\sub.png<br>\n"
 "Censored: &nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\youma.png<br>\n"
-"Decensored: &nbsp;&nbsp;\\config\\userdata\\watermark\\umr.png<br>\n"
+"Decensored: &nbsp;\\config\\userdata\\watermark\\umr.png<br>\n"
 "Leaked: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\leak.png<br>\n"
-"Uncensored: &nbsp;&nbsp;\\config\\userdata\\watermark\\wuma.png<br>\n"
-"4K: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\4k.png<br>\n"
-"8K: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\8k.png<br><br>\n"
+"Uncensored: &nbsp;\\config\\userdata\\watermark\\wuma.png<br>\n"
+"4K: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\4k.png<br>\n"
+"8K: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\\config\\userdata\\watermark\\8k.png<br><br>\n"
 "Logic for displaying watermark images:<br>\n"
-"&nbsp;· First, calculate watermark image height using this formula: [poster image height * specified watermark size / 40]<br>\n"
-"&nbsp;&nbsp;&nbsp;(e.g. if the watermark size is set to 5, the height of the watermark image will be scaled to 5/40 of the poster image height)<br>\n"
+"&nbsp;· First, calculate watermark image height using this formula:<br>\n"
+"&nbsp;&nbsp;&nbsp;[poster image height * specified watermark size / 40]<br>\n"
+"&nbsp;&nbsp;&nbsp;(e.g. if watermark size set to 5; the height will be scaled to 5/40 of the poster\'s height)<br>\n"
 "&nbsp;· Then, based on the calculated height and aspect ratio of the watermark image, calculate the width.<br>\n"
-"&nbsp;· Finally, arrange the watermark images around the four corners of the poster based on priority and positioning parameters.<br>"))
+"&nbsp;· Finally, arrange around the four corners based on priority and positioning parameters.<br>"))
         self.label_download_mark_zip.setText(_translate("MDCx", "Click to download watermark image package"))
         self.groupBox_31.setTitle(_translate("MDCx", "Watermark"))
         self.checkBox_sub.setText(_translate("MDCx", "Subtitles"))
@@ -11737,7 +11738,7 @@ class Ui_MDCx(object):
         self.checkBox_uncensored.setText(_translate("MDCx", "Uncensored"))
         self.checkBox_hd.setText(_translate("MDCx", "4K/8K"))
         self.label_140.setText(_translate("MDCx", "Final watermark size = specified size / 40 * the height of the poster image."))
-        self.label_141.setText(_translate("MDCx", "<html><head/><body><p>Dynamic: Watermarks will be added in a clockwise direction from the first watermark position.</p><p>Fixed: Watermarks are displayed horizontally in sequence from the specified position.</p><p>Custom: The positions of the subtitle, censorship and 4K/8K watermarks can be set separately.</p><p>Note: If \'Dynamic\' is not set; 4K/8K will use the \'Fixed\' method, displacing other watermarks.</p></body></html>"))
+        self.label_141.setText(_translate("MDCx", "<html><head/><body><p>Dynamic: Aadded in a clockwise direction from the first watermark position.</p><p>Fixed: Displayed horizontally in sequence from the specified position.</p><p>Custom: Watermark positions can be set separately.</p><p><br>Note: If \'Dynamic\' is not set; 4K/8K will use the \'Fixed\' method,<br>&nbsp;&nbsp;&nbsp;displacing other watermarks.</p></body></html>"))
         self.checkBox_poster_mark.setText(_translate("MDCx", "Poster"))
         self.checkBox_thumb_mark.setText(_translate("MDCx", "Thumb"))
         self.checkBox_fanart_mark.setText(_translate("MDCx", "Fanart"))
@@ -11749,7 +11750,7 @@ class Ui_MDCx(object):
         self.label_139.setText(_translate("MDCx", "Size:"))
         self.label_127.setText(_translate("MDCx", "Position:"))
         self.label_130.setText(_translate("MDCx", "Fanart in Emby is used as the background image so there is no need to add a watermark."))
-        self.label_138.setText(_translate("MDCx", "<html><head/><body><p>Watermarks are divided into subtitle, censorship, and 4K/8K resolution.</p><p>Censorship watermarks are prioritised as follows: censored &gt; desensored &gt; leaked &gt; uncensored.</p><p>For example, if the video is a leaked version:</p><p>- When both leaked and uncensored are checked, the leaked watermark will be displayed.</p><p>- When leaked is unchecked and uncensored is checked, the uncensored watermark will be displayed.</p><p>- When neither leaked nor uncensored is checked, no watermark will be displayed.</p></body></html>"))
+        self.label_138.setText(_translate("MDCx", "<html><head/><body><p>Watermarks are divided into subtitle, censorship, and 4K/8K resolution.</p><p>Censorship watermark priority: censored &gt; desensored &gt; leaked &gt; uncensored.</p><p>For example, if the video is a leaked version:</p><p>- both leaked and uncensored are checked, the leaked watermark is displayed.</p><p>- leaked is unchecked and uncensored is checked, the uncensored watermark is displayed.</p><p>- neither leaked nor uncensored is checked, no watermark is displayed.</p></body></html>"))
         self.groupBox_36.setTitle(_translate("MDCx", "Dynamic Position"))
         self.radioButton_top_left.setText(_translate("MDCx", "Upper Left"))
         self.radioButton_top_right.setText(_translate("MDCx", "Upper Right"))

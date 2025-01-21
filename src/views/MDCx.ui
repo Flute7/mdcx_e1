@@ -17577,7 +17577,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
          <property name="geometry">
           <rect>
            <x>0</x>
-           <y>-996</y>
+           <y>0</y>
            <width>760</width>
            <height>1670</height>
           </rect>
@@ -17586,9 +17586,9 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>1040</y>
+            <y>1010</y>
             <width>701</width>
-            <height>521</height>
+            <height>461</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -17603,7 +17603,7 @@ title （标题）, originaltitle （原标题）, actor （女演员）, all_ac
              <x>30</x>
              <y>70</y>
              <width>651</width>
-             <height>401</height>
+             <height>361</height>
             </rect>
            </property>
            <property name="sizePolicy">
@@ -17626,16 +17626,17 @@ line-height:50px</string>
 &amp;nbsp;· Use forward slash ' / ' for MacOS paths.&lt;br&gt;&lt;br&gt;
 Subtitle: &amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\sub.png&lt;br&gt;
 Censored: &amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\youma.png&lt;br&gt;
-Decensored: &amp;nbsp;&amp;nbsp;\config\userdata\watermark\umr.png&lt;br&gt;
+Decensored: &amp;nbsp;\config\userdata\watermark\umr.png&lt;br&gt;
 Leaked: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\leak.png&lt;br&gt;
-Uncensored: &amp;nbsp;&amp;nbsp;\config\userdata\watermark\wuma.png&lt;br&gt;
-4K: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\4k.png&lt;br&gt;
-8K: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\8k.png&lt;br&gt;&lt;br&gt;
+Uncensored: &amp;nbsp;\config\userdata\watermark\wuma.png&lt;br&gt;
+4K: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\4k.png&lt;br&gt;
+8K: &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;\config\userdata\watermark\8k.png&lt;br&gt;&lt;br&gt;
 Logic for displaying watermark images:&lt;br&gt;
-&amp;nbsp;· First, calculate watermark image height using this formula: [poster image height * specified watermark size / 40]&lt;br&gt;
-&amp;nbsp;&amp;nbsp;&amp;nbsp;(e.g. if the watermark size is set to 5, the height of the watermark image will be scaled to 5/40 of the poster image height)&lt;br&gt;
+&amp;nbsp;· First, calculate watermark image height using this formula:&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;[poster image height * specified watermark size / 40]&lt;br&gt;
+&amp;nbsp;&amp;nbsp;&amp;nbsp;(e.g. if watermark size set to 5; the height will be scaled to 5/40 of the poster's height)&lt;br&gt;
 &amp;nbsp;· Then, based on the calculated height and aspect ratio of the watermark image, calculate the width.&lt;br&gt;
-&amp;nbsp;· Finally, arrange the watermark images around the four corners of the poster based on priority and positioning parameters.&lt;br&gt;</string>
+&amp;nbsp;· Finally, arrange around the four corners based on priority and positioning parameters.&lt;br&gt;</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -17862,7 +17863,7 @@ Logic for displaying watermark images:&lt;br&gt;
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Dynamic: Watermarks will be added in a clockwise direction from the first watermark position.&lt;/p&gt;&lt;p&gt;Fixed: Watermarks are displayed horizontally in sequence from the specified position.&lt;/p&gt;&lt;p&gt;Custom: The positions of the subtitle, censorship and 4K/8K watermarks can be set separately.&lt;/p&gt;&lt;p&gt;Note: If 'Dynamic' is not set; 4K/8K will use the 'Fixed' method, displacing other watermarks.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Dynamic: Aadded in a clockwise direction from the first watermark position.&lt;/p&gt;&lt;p&gt;Fixed: Displayed horizontally in sequence from the specified position.&lt;/p&gt;&lt;p&gt;Custom: Watermark positions can be set separately.&lt;/p&gt;&lt;p&gt;&lt;br&gt;Note: If 'Dynamic' is not set; 4K/8K will use the 'Fixed' method,&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;displacing other watermarks.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -18203,7 +18204,7 @@ Logic for displaying watermark images:&lt;br&gt;
                <string notr="true">color: rgb(8, 128, 128);</string>
               </property>
               <property name="text">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Watermarks are divided into subtitle, censorship, and 4K/8K resolution.&lt;/p&gt;&lt;p&gt;Censorship watermarks are prioritised as follows: censored &amp;gt; desensored &amp;gt; leaked &amp;gt; uncensored.&lt;/p&gt;&lt;p&gt;For example, if the video is a leaked version:&lt;/p&gt;&lt;p&gt;- When both leaked and uncensored are checked, the leaked watermark will be displayed.&lt;/p&gt;&lt;p&gt;- When leaked is unchecked and uncensored is checked, the uncensored watermark will be displayed.&lt;/p&gt;&lt;p&gt;- When neither leaked nor uncensored is checked, no watermark will be displayed.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Watermarks are divided into subtitle, censorship, and 4K/8K resolution.&lt;/p&gt;&lt;p&gt;Censorship watermark priority: censored &amp;gt; desensored &amp;gt; leaked &amp;gt; uncensored.&lt;/p&gt;&lt;p&gt;For example, if the video is a leaked version:&lt;/p&gt;&lt;p&gt;- both leaked and uncensored are checked, the leaked watermark is displayed.&lt;/p&gt;&lt;p&gt;- leaked is unchecked and uncensored is checked, the uncensored watermark is displayed.&lt;/p&gt;&lt;p&gt;- neither leaked nor uncensored is checked, no watermark is displayed.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
               </property>
               <property name="alignment">
                <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
@@ -18222,7 +18223,7 @@ Logic for displaying watermark images:&lt;br&gt;
             <x>30</x>
             <y>580</y>
             <width>701</width>
-            <height>101</height>
+            <height>91</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -18353,9 +18354,9 @@ Logic for displaying watermark images:&lt;br&gt;
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>820</y>
+            <y>800</y>
             <width>701</width>
-            <height>201</height>
+            <height>191</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -18720,9 +18721,9 @@ Logic for displaying watermark images:&lt;br&gt;
           <property name="geometry">
            <rect>
             <x>30</x>
-            <y>700</y>
+            <y>690</y>
             <width>701</width>
-            <height>101</height>
+            <height>91</height>
            </rect>
           </property>
           <property name="styleSheet">
